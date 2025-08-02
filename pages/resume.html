@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Jenna Studio</title>
+    <meta name="description"
+        content="Download Jenna's resume - Frontend Developer with expertise in React, JavaScript, and modern web technologies">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/resume.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container" id="navigation">
+        <div class="nav">
+            <a href="../index.html" class="nav-logo">Jenna Studio</a>
+            <a href="../index.html#home" class="nav-link">Home</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#projects" class="nav-link">Projects</a>
+            <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h1 class="page-title">Resume</h1>
+                <p class="page-subtitle">Frontend Developer & UI/UX Designer</p>
+                <div class="header-actions">
+                    <button class="btn btn-primary download-btn" onclick="window.print()">
+                        <span class="btn-icon">📄</span>
+                        Download PDF
+                    </button>
+                    <a href="contact.html" class="btn btn-outline">
+                        <span class="btn-icon">💬</span>
+                        Get In Touch
+                    </a>
+                </div>
+            </section>
+
+            <!-- Resume Content -->
+            <div class="resume-container">
+                <!-- Personal Information -->
+                <section class="resume-section personal-info">
+                    <div class="card">
+                        <div class="personal-header">
+                            <div class="personal-image">
+                                <div class="image-placeholder">
+                                    <span>JY</span>
+                                </div>
+                            </div>
+                            <div class="personal-details">
+                                <h2>Jenna Yoo</h2>
+                                <p class="title">Frontend Developer & UI/UX Designer</p>
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <span class="icon">📧</span>
+                                        <span>hello@jennastudio.com</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="icon">📱</span>
+                                        <span>+1 (555) 123-4567</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="icon">📍</span>
+                                        <span>San Francisco, CA</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="icon">🌐</span>
+                                        <span>jennastudio.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Summary -->
+                <section class="resume-section summary">
+                    <div class="card">
+                        <h3 class="section-title">Professional Summary</h3>
+                        <p>Passionate Frontend Developer with 3+ years of experience creating engaging, user-centered
+                            web applications. Specialized in React, JavaScript, and modern CSS frameworks. Strong
+                            background in UI/UX design with a keen eye for detail and accessibility. Proven track record
+                            of delivering high-quality projects on time and collaborating effectively with
+                            cross-functional teams.</p>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="resume-section experience">
+                    <div class="card">
+                        <h3 class="section-title">Professional Experience</h3>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h4>Senior Frontend Developer</h4>
+                                    <p class="company">TechForward Inc.</p>
+                                </div>
+                                <div class="experience-date">Jan 2023 - Present</div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Lead frontend development for a React-based e-commerce platform serving 100k+ users
+                                </li>
+                                <li>Implemented responsive design patterns, improving mobile user experience by 40%</li>
+                                <li>Mentored 3 junior developers and established coding standards and best practices
+                                </li>
+                                <li>Collaborated with UX team to redesign checkout flow, increasing conversion rates by
+                                    25%</li>
+                                <li>Optimized application performance, reducing load times by 60% through code splitting
+                                    and lazy loading</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Styled Components</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h4>Frontend Developer</h4>
+                                    <p class="company">Creative Digital Agency</p>
+                                </div>
+                                <div class="experience-date">Mar 2022 - Dec 2022</div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Developed responsive websites for 15+ clients using modern JavaScript frameworks
+                                </li>
+                                <li>Created interactive prototypes and wireframes using Figma and Adobe XD</li>
+                                <li>Implemented accessibility standards (WCAG 2.1 AA) across all projects</li>
+                                <li>Built custom WordPress themes and plugins for client content management</li>
+                                <li>Collaborated with designers and project managers in agile development environment
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">SASS</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h4>Junior Web Developer</h4>
+                                    <p class="company">StartUp Solutions</p>
+                                </div>
+                                <div class="experience-date">Jun 2021 - Feb 2022</div>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Assisted in developing web applications using HTML, CSS, and JavaScript</li>
+                                <li>Participated in code reviews and learned best practices for clean, maintainable code
+                                </li>
+                                <li>Contributed to UI component library used across multiple projects</li>
+                                <li>Fixed bugs and implemented feature requests based on user feedback</li>
+                                <li>Gained experience with version control (Git) and continuous integration pipelines
+                                </li>
+                            </ul>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="resume-section skills">
+                    <div class="card">
+                        <h3 class="section-title">Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Frontend Development</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag expert">JavaScript (ES6+)</span>
+                                    <span class="skill-tag expert">React</span>
+                                    <span class="skill-tag advanced">TypeScript</span>
+                                    <span class="skill-tag advanced">Vue.js</span>
+                                    <span class="skill-tag expert">HTML5</span>
+                                    <span class="skill-tag expert">CSS3</span>
+                                    <span class="skill-tag advanced">Next.js</span>
+                                    <span class="skill-tag intermediate">Angular</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Styling & Design</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag expert">Responsive Design</span>
+                                    <span class="skill-tag advanced">Tailwind CSS</span>
+                                    <span class="skill-tag advanced">Styled Components</span>
+                                    <span class="skill-tag advanced">SASS/SCSS</span>
+                                    <span class="skill-tag expert">Figma</span>
+                                    <span class="skill-tag intermediate">Adobe XD</span>
+                                    <span class="skill-tag advanced">UI/UX Design</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools & Technologies</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag expert">Git & GitHub</span>
+                                    <span class="skill-tag advanced">Webpack</span>
+                                    <span class="skill-tag advanced">Vite</span>
+                                    <span class="skill-tag intermediate">Node.js</span>
+                                    <span class="skill-tag intermediate">MongoDB</span>
+                                    <span class="skill-tag advanced">Jest</span>
+                                    <span class="skill-tag intermediate">Cypress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="resume-section education">
+                    <div class="card">
+                        <h3 class="section-title">Education</h3>
+
+                        <div class="education-item">
+                            <div class="education-header">
+                                <div class="education-title">
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <p class="institution">University of California, Berkeley</p>
+                                </div>
+                                <div class="education-date">2017 - 2021</div>
+                            </div>
+                            <p class="education-details">Relevant coursework: Web Development, Human-Computer
+                                Interaction, Database Systems, Software Engineering</p>
+                        </div>
+
+                        <div class="education-item">
+                            <div class="education-header">
+                                <div class="education-title">
+                                    <h4>Frontend Web Development Certificate</h4>
+                                    <p class="institution">FreeCodeCamp</p>
+                                </div>
+                                <div class="education-date">2020</div>
+                            </div>
+                            <p class="education-details">300+ hours of hands-on web development training covering HTML,
+                                CSS, JavaScript, and React</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section class="resume-section projects">
+                    <div class="card">
+                        <h3 class="section-title">Notable Projects</h3>
+
+                        <div class="project-item">
+                            <h4>E-Commerce Analytics Dashboard</h4>
+                            <p class="project-description">Built a comprehensive analytics dashboard for e-commerce data
+                                visualization using React, D3.js, and TypeScript. Features real-time data updates,
+                                interactive charts, and responsive design.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <h4>Task Management Progressive Web App</h4>
+                            <p class="project-description">Developed a collaborative task management PWA with offline
+                                capabilities, real-time synchronization, and drag-and-drop functionality for team
+                                productivity.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">PWA</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <h4>Design System Component Library</h4>
+                            <p class="project-description">Created a reusable component library with comprehensive
+                                documentation using Storybook, implementing consistent design patterns across multiple
+                                applications.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Storybook</span>
+                                <span class="tech-tag">Jest</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="resume-section certifications">
+                    <div class="card">
+                        <h3 class="section-title">Certifications & Awards</h3>
+
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <h4>React Developer Certification</h4>
+                                <p class="cert-issuer">Meta (Facebook)</p>
+                                <p class="cert-date">2023</p>
+                            </div>
+                            <div class="cert-item">
+                                <h4>AWS Certified Cloud Practitioner</h4>
+                                <p class="cert-issuer">Amazon Web Services</p>
+                                <p class="cert-date">2023</p>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Best Web Design Award</h4>
+                                <p class="cert-issuer">SF Design Awards</p>
+                                <p class="cert-date">2023</p>
+                            </div>
+                            <div class="cert-item">
+                                <h4>Google Analytics Certified</h4>
+                                <p class="cert-issuer">Google</p>
+                                <p class="cert-date">2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="resume-section languages">
+                    <div class="card">
+                        <h3 class="section-title">Languages</h3>
+                        <div class="language-grid">
+                            <div class="language-item">
+                                <span class="language-name">English</span>
+                                <span class="language-level">Native</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Korean</span>
+                                <span class="language-level">Native</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Spanish</span>
+                                <span class="language-level">Conversational</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interests -->
+                <section class="resume-section interests">
+                    <div class="card">
+                        <h3 class="section-title">Interests & Hobbies</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <span class="interest-icon">🎨</span>
+                                <span class="interest-name">Digital Art</span>
+                            </div>
+                            <div class="interest-item">
+                                <span class="interest-icon">📚</span>
+                                <span class="interest-name">Tech Blogs</span>
+                            </div>
+                            <div class="interest-item">
+                                <span class="interest-icon">🏃‍♀️</span>
+                                <span class="interest-name">Running</span>
+                            </div>
+                            <div class="interest-item">
+                                <span class="interest-icon">📷</span>
+                                <span class="interest-name">Photography</span>
+                            </div>
+                            <div class="interest-item">
+                                <span class="interest-icon">🌱</span>
+                                <span class="interest-name">Gardening</span>
+                            </div>
+                            <div class="interest-item">
+                                <span class="interest-icon">🎮</span>
+                                <span class="interest-name">Gaming</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- References -->
+                <section class="resume-section references">
+                    <div class="card">
+                        <h3 class="section-title">References</h3>
+                        <div class="references-note">
+                            <p>Professional references are available upon request. I'm happy to provide contact
+                                information for former colleagues, supervisors, and clients who can speak to my work
+                                quality and professional character.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">Jenna Studio</div>
+                    <p class="footer-description">Crafting delightful web experiences with creativity and technical
+                        excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/jinseon-yoo" target="_blank"
+                                    rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://github.com/jenna-studio" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jenna Studio. Crafted with ✨ and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle particle effects">
+        <span class="toggle-icon">✨</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+
+    <!-- Print Styles for PDF Generation -->
+    <style media="print">
+        .nav-container,
+        .theme-toggle,
+        .footer,
+        .particles,
+        .cursor {
+            display: none !important;
+        }
+
+        .main-content {
+            margin-top: 0 !important;
+        }
+
+        .container {
+            max-width: none !important;
+            padding: 0 !important;
+        }
+
+        .card {
+            box-shadow: none !important;
+            border: 1px solid #ddd !important;
+            page-break-inside: avoid;
+        }
+
+        .resume-section {
+            margin-bottom: 20px !important;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px !important;
+        }
+
+        .header-actions {
+            display: none !important;
+        }
+
+        .btn {
+            display: none !important;
+        }
+
+        .tech-tag,
+        .skill-tag {
+            border: 1px solid #ddd !important;
+            background: white !important;
+            color: black !important;
+        }
+
+        body {
+            background: white !important;
+            color: black !important;
+        }
+
+        * {
+            print-color-adjust: exact !important;
+            -webkit-print-color-adjust: exact !important;
+        }
+    </style>
+</body>
+
+</html>

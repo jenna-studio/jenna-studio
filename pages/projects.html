@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jenna Studio</title>
+    <meta name="description"
+        content="Explore Jenna's portfolio of web development projects featuring modern technologies and creative solutions">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container" id="navigation">
+        <div class="nav">
+            <a href="../index.html" class="nav-logo">Jenna Studio</a>
+            <a href="../index.html#home" class="nav-link">Home</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#projects" class="nav-link active">Projects</a>
+            <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h1 class="page-title">My Projects</h1>
+                <p class="page-subtitle">A collection of my latest work and creative experiments</p>
+            </section>
+
+            <!-- Filter Navigation -->
+            <section class="filter-section">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web-app">Web Apps</button>
+                    <button class="filter-btn" data-filter="website">Websites</button>
+                    <button class="filter-btn" data-filter="component">Components</button>
+                    <button class="filter-btn" data-filter="experiment">Experiments</button>
+                </div>
+            </section>
+
+            <!-- Featured Project -->
+            <section class="featured-project section">
+                <h2 class="section-title">Featured Project</h2>
+                <div class="card featured-card">
+                    <div class="featured-content">
+                        <div class="featured-image">
+                            <div class="project-placeholder">
+                                <span>E-Commerce Dashboard</span>
+                            </div>
+                            <div class="featured-badges">
+                                <span class="badge badge-featured">Featured</span>
+                                <span class="badge badge-new">New</span>
+                            </div>
+                        </div>
+                        <div class="featured-details">
+                            <h3>E-Commerce Analytics Dashboard</h3>
+                            <p class="featured-description">A comprehensive dashboard for e-commerce analytics featuring
+                                real-time data visualization, interactive charts, and responsive design. Built with
+                                React, TypeScript, and D3.js for optimal performance and user experience. This project
+                                demonstrates advanced state management, API integration, and complex data visualization
+                                techniques.</p>
+                            <div class="featured-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="featured-actions">
+                                <a href="#" class="btn btn-primary">Live Demo</a>
+                                <a href="https://github.com/jenna-studio" class="btn btn-outline" target="_blank"
+                                    rel="noopener">View Code</a>
+                                <a href="#" class="btn btn-secondary">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid-section section">
+                <h2 class="section-title">All Projects</h2>
+                <div class="projects-grid" id="projectsGrid">
+
+                    <!-- Project 1: Task Management App -->
+                    <article class="card project-card" data-category="web-app">
+                        <div class="project-image">
+                            <div class="project-placeholder">Task Manager</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">A collaborative task management application with
+                                drag-and-drop functionality, real-time updates, and team collaboration features.
+                                Includes user authentication, role-based permissions, and notification systems.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Express</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Web Application</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2024</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Portfolio Website -->
+                    <article class="card project-card" data-category="website">
+                        <div class="project-image">
+                            <div class="project-placeholder">Portfolio Site</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Creative Agency Website</h3>
+                            <p class="project-description">A modern, responsive website for a creative agency featuring
+                                smooth animations, interactive elements, and optimized performance. Built with vanilla
+                                JavaScript and GSAP for stunning visual effects.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">GSAP</span>
+                                <span class="tag">Netlify</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Website</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2024</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Component Library -->
+                    <article class="card project-card" data-category="component">
+                        <div class="project-image">
+                            <div class="project-placeholder">UI Components</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Storybook</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Design System Library</h3>
+                            <p class="project-description">A comprehensive design system with reusable React components,
+                                documentation, and testing suite for consistent UI development. Includes theming,
+                                accessibility features, and comprehensive documentation.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Storybook</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Jest</span>
+                                <span class="tag">Rollup</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Component Library</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2024</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Data Visualization -->
+                    <article class="card project-card" data-category="experiment">
+                        <div class="project-image">
+                            <div class="project-placeholder">Data Viz</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Interactive Data Visualization</h3>
+                            <p class="project-description">An interactive dashboard for visualizing complex datasets
+                                with custom charts, filters, and real-time data updates. Features advanced D3.js
+                                visualizations and machine learning integration.</p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">WebSockets</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Experiment</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2023</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Mobile App -->
+                    <article class="card project-card" data-category="web-app">
+                        <div class="project-image">
+                            <div class="project-placeholder">Mobile PWA</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Forecast PWA</h3>
+                            <p class="project-description">A progressive web app for weather forecasting with offline
+                                capabilities, push notifications, and geolocation features. Includes weather maps,
+                                extended forecasts, and user preferences.</p>
+                            <div class="project-tags">
+                                <span class="tag">PWA</span>
+                                <span class="tag">Service Workers</span>
+                                <span class="tag">IndexedDB</span>
+                                <span class="tag">Web APIs</span>
+                                <span class="tag">Chart.js</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Progressive Web App</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2023</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Blog Platform -->
+                    <article class="card project-card" data-category="website">
+                        <div class="project-image">
+                            <div class="project-placeholder">Blog Platform</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Modern Blog Platform</h3>
+                            <p class="project-description">A full-stack blog platform with content management, user
+                                authentication, and social features built with modern web technologies. Includes rich
+                                text editor, comments system, and SEO optimization.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Prisma</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">NextAuth</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Full-Stack Website</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2023</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: E-learning Platform -->
+                    <article class="card project-card" data-category="web-app">
+                        <div class="project-image">
+                            <div class="project-placeholder">Learning Platform</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Online Learning Platform</h3>
+                            <p class="project-description">An interactive e-learning platform with video streaming,
+                                progress tracking, quizzes, and certificate generation for students and instructors.
+                                Features course creation tools and analytics dashboard.</p>
+                            <div class="project-tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Socket.io</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Web Application</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2023</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Animation Library -->
+                    <article class="card project-card" data-category="component">
+                        <div class="project-image">
+                            <div class="project-placeholder">Animation Lib</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Documentation</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CSS Animation Library</h3>
+                            <p class="project-description">A lightweight CSS animation library with custom easing
+                                functions, keyframe generators, and performance optimizations for modern web
+                                applications. Easy to integrate and customize.</p>
+                            <div class="project-tags">
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Sass</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Performance</span>
+                                <span class="tag">NPM</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Open Source Library</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2023</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9: 3D Portfolio -->
+                    <article class="card project-card" data-category="experiment">
+                        <div class="project-image">
+                            <div class="project-placeholder">3D Experience</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">3D Interactive Portfolio</h3>
+                            <p class="project-description">An experimental 3D portfolio website using Three.js with
+                                interactive models, particle systems, and immersive user experiences. Features custom
+                                shaders and physics simulations.</p>
+                            <div class="project-tags">
+                                <span class="tag">Three.js</span>
+                                <span class="tag">WebGL</span>
+                                <span class="tag">GLSL</span>
+                                <span class="tag">Blender</span>
+                                <span class="tag">React</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">3D Experiment</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2024</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 10: E-commerce Store -->
+                    <article class="card project-card" data-category="website">
+                        <div class="project-image">
+                            <div class="project-placeholder">E-commerce</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fashion E-commerce Store</h3>
+                            <p class="project-description">A modern e-commerce platform for fashion retail with product
+                                catalogs, shopping cart, payment integration, and order management. Features advanced
+                                search and recommendation engine.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Stripe</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Algolia</span>
+                                <span class="tag">PWA</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">E-commerce Website</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2022</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 11: Fitness App -->
+                    <article class="card project-card" data-category="web-app">
+                        <div class="project-image">
+                            <div class="project-placeholder">Fitness App</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fitness Tracking App</h3>
+                            <p class="project-description">A comprehensive fitness tracking application with workout
+                                planning, progress monitoring, nutrition tracking, and social features. Includes
+                                wearable device integration and AI-powered recommendations.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">ML Kit</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Mobile App</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2022</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 12: Developer Tools -->
+                    <article class="card project-card" data-category="component">
+                        <div class="project-image">
+                            <div class="project-placeholder">Dev Tools</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="#" class="overlay-btn">Documentation</a>
+                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Developer Productivity Suite</h3>
+                            <p class="project-description">A collection of developer tools including code snippets
+                                manager, API testing interface, and performance monitoring dashboard. Built to improve
+                                developer workflow and productivity.</p>
+                            <div class="project-tags">
+                                <span class="tag">Electron</span>
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Tauri</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Desktop Application</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2022</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-outline load-more-btn" id="loadMoreBtn">
+                        <span class="btn-text">Load More Projects</span>
+                        <span class="btn-loading" style="display: none;">Loading...</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Project Statistics -->
+            <section class="stats-section section">
+                <h2 class="section-title">Project Statistics</h2>
+                <div class="stats-grid">
+                    <div class="card stat-card">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">💼</div>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Used -->
+            <section class="tech-section section">
+                <h2 class="section-title">Technologies & Tools</h2>
+                <div class="tech-grid">
+                    <div class="card tech-category">
+                        <h3>Frontend Frameworks</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">React</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="90"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Vue.js</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="75"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Next.js</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="85"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Angular</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tech-category">
+                        <h3>Styling & Design</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">CSS3</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="95"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Tailwind CSS</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="90"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Sass/SCSS</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="80"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Styled Components</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tech-category">
+                        <h3>Backend & Database</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">Node.js</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="80"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">PostgreSQL</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="75"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Firebase</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card tech-category">
+                        <h3>Tools & Services</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-name">Git & GitHub</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="95"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Docker</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="70"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">AWS</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="65"></div>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Figma</span>
+                                <div class="tech-usage">
+                                    <div class="usage-bar" data-usage="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Methodology -->
+            <section class="methodology-section section">
+                <h2 class="section-title">Development Methodology</h2>
+                <div class="methodology-grid">
+                    <div class="card methodology-card">
+                        <div class="methodology-icon">🔍</div>
+                        <h3>Research & Planning</h3>
+                        <p>Every project begins with thorough research and strategic planning. I analyze user needs,
+                            market trends, and technical requirements to create a solid foundation for development.</p>
+                        <ul class="methodology-list">
+                            <li>User research and persona development</li>
+                            <li>Competitive analysis and market research</li>
+                            <li>Technical feasibility assessment</li>
+                            <li>Project timeline and milestone planning</li>
+                        </ul>
+                    </div>
+                    <div class="card methodology-card">
+                        <div class="methodology-icon">🎨</div>
+                        <h3>Design & Prototyping</h3>
+                        <p>Creating intuitive and visually appealing designs that prioritize user experience. I use
+                            modern design tools and principles to craft interfaces that are both beautiful and
+                            functional.</p>
+                        <ul class="methodology-list">
+                            <li>Wireframing and user flow mapping</li>
+                            <li>High-fidelity mockups and prototypes</li>
+                            <li>Design system creation and documentation</li>
+                            <li>Usability testing and iteration</li>
+                        </ul>
+                    </div>
+                    <div class="card methodology-card">
+                        <div class="methodology-icon">⚡</div>
+                        <h3>Agile Development</h3>
+                        <p>Using agile methodologies to ensure efficient development cycles with regular feedback loops.
+                            This approach allows for flexibility and continuous improvement throughout the project.</p>
+                        <ul class="methodology-list">
+                            <li>Sprint planning and daily standups</li>
+                            <li>Continuous integration and deployment</li>
+                            <li>Regular client communication and updates</li>
+                            <li>Iterative development and testing</li>
+                        </ul>
+                    </div>
+                    <div class="card methodology-card">
+                        <div class="methodology-icon">🚀</div>
+                        <h3>Launch & Optimization</h3>
+                        <p>Ensuring smooth project launches with comprehensive testing, performance optimization, and
+                            ongoing support. The goal is to deliver solutions that perform excellently in production.
+                        </p>
+                        <ul class="methodology-list">
+                            <li>Comprehensive testing and quality assurance</li>
+                            <li>Performance optimization and monitoring</li>
+                            <li>SEO and accessibility compliance</li>
+                            <li>Post-launch support and maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Client Success Stories -->
+            <section class="success-stories section">
+                <h2 class="section-title">Client Success Stories</h2>
+                <div class="stories-grid">
+                    <div class="card story-card">
+                        <div class="story-header">
+                            <div class="story-company">TechForward Inc.</div>
+                            <div class="story-result">+150% User Engagement</div>
+                        </div>
+                        <h3>E-Commerce Platform Redesign</h3>
+                        <p>Completely redesigned and rebuilt their e-commerce platform, resulting in a 150% increase in
+                            user engagement and 85% improvement in conversion rates. The new platform handles 10x more
+                            traffic with better performance.</p>
+                        <div class="story-metrics">
+                            <div class="metric">
+                                <span class="metric-number">150%</span>
+                                <span class="metric-label">User Engagement</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">85%</span>
+                                <span class="metric-label">Conversion Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">10x</span>
+                                <span class="metric-label">Traffic Capacity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card story-card">
+                        <div class="story-header">
+                            <div class="story-company">EduTech Solutions</div>
+                            <div class="story-result">+300% Student Retention</div>
+                        </div>
+                        <h3>Learning Management System</h3>
+                        <p>Developed a comprehensive learning management system that improved student retention by 300%
+                            and reduced course completion time by 40%. The platform now serves over 50,000 active
+                            learners.</p>
+                        <div class="story-metrics">
+                            <div class="metric">
+                                <span class="metric-number">300%</span>
+                                <span class="metric-label">Retention Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">40%</span>
+                                <span class="metric-label">Time Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">50K+</span>
+                                <span class="metric-label">Active Users</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card story-card">
+                        <div class="story-header">
+                            <div class="story-company">StartupLaunch</div>
+                            <div class="story-result">$2M Series A Funding</div>
+                        </div>
+                        <h3>MVP Development & Launch</h3>
+                        <p>Built their minimum viable product from concept to launch in 12 weeks. The platform attracted
+                            100K+ users in the first 6 months and helped secure $2M in Series A funding.</p>
+                        <div class="story-metrics">
+                            <div class="metric">
+                                <span class="metric-number">12</span>
+                                <span class="metric-label">Weeks to Launch</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">100K+</span>
+                                <span class="metric-label">Users in 6 Months</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number">$2M</span>
+                                <span class="metric-label">Funding Raised</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Deep Dive -->
+            <section class="tech-deep-dive section">
+                <h2 class="section-title">Technology Expertise</h2>
+                <div class="tech-tabs">
+                    <button class="tech-tab-btn active" data-tab="frontend">Frontend</button>
+                    <button class="tech-tab-btn" data-tab="backend">Backend</button>
+                    <button class="tech-tab-btn" data-tab="mobile">Mobile</button>
+                    <button class="tech-tab-btn" data-tab="devops">DevOps</button>
+                </div>
+                <div class="tech-tab-content">
+                    <div class="tech-tab-panel active" id="frontend-panel">
+                        <div class="tech-expertise-grid">
+                            <div class="card tech-expertise-card">
+                                <h4>React Ecosystem</h4>
+                                <p>Advanced React development with hooks, context, and state management solutions like
+                                    Redux and Zustand.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge expert">React 18</span>
+                                    <span class="skill-badge expert">TypeScript</span>
+                                    <span class="skill-badge advanced">Next.js</span>
+                                    <span class="skill-badge advanced">Redux Toolkit</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Modern CSS</h4>
+                                <p>Expert in CSS Grid, Flexbox, animations, and modern CSS features including custom
+                                    properties and container queries.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge expert">CSS Grid</span>
+                                    <span class="skill-badge expert">Flexbox</span>
+                                    <span class="skill-badge advanced">Tailwind</span>
+                                    <span class="skill-badge advanced">Sass</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Build Tools</h4>
+                                <p>Proficient with modern build tools and bundlers for optimizing development workflow
+                                    and production builds.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge advanced">Vite</span>
+                                    <span class="skill-badge advanced">Webpack</span>
+                                    <span class="skill-badge intermediate">Rollup</span>
+                                    <span class="skill-badge intermediate">Parcel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-tab-panel" id="backend-panel">
+                        <div class="tech-expertise-grid">
+                            <div class="card tech-expertise-card">
+                                <h4>Node.js Development</h4>
+                                <p>Full-stack JavaScript development with Express, Fastify, and modern Node.js features
+                                    for scalable applications.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge expert">Node.js</span>
+                                    <span class="skill-badge advanced">Express</span>
+                                    <span class="skill-badge intermediate">Fastify</span>
+                                    <span class="skill-badge intermediate">NestJS</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Database Management</h4>
+                                <p>Experience with both SQL and NoSQL databases, including design, optimization, and
+                                    scaling strategies.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge advanced">PostgreSQL</span>
+                                    <span class="skill-badge advanced">MongoDB</span>
+                                    <span class="skill-badge intermediate">Redis</span>
+                                    <span class="skill-badge intermediate">Firebase</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>API Development</h4>
+                                <p>RESTful and GraphQL API design and development with proper authentication,
+                                    validation, and documentation.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge expert">REST APIs</span>
+                                    <span class="skill-badge advanced">GraphQL</span>
+                                    <span class="skill-badge advanced">JWT Auth</span>
+                                    <span class="skill-badge intermediate">WebSockets</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-tab-panel" id="mobile-panel">
+                        <div class="tech-expertise-grid">
+                            <div class="card tech-expertise-card">
+                                <h4>Progressive Web Apps</h4>
+                                <p>Building PWAs with offline capabilities, push notifications, and native-like user
+                                    experiences.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge expert">Service Workers</span>
+                                    <span class="skill-badge advanced">Web App Manifest</span>
+                                    <span class="skill-badge advanced">Push Notifications</span>
+                                    <span class="skill-badge intermediate">Background Sync</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Cross-Platform Development</h4>
+                                <p>React Native and hybrid app development for iOS and Android platforms with shared
+                                    codebases.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge advanced">React Native</span>
+                                    <span class="skill-badge intermediate">Expo</span>
+                                    <span class="skill-badge intermediate">Ionic</span>
+                                    <span class="skill-badge beginner">Flutter</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Mobile Optimization</h4>
+                                <p>Performance optimization, responsive design, and mobile-specific features for optimal
+                                    user experience.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge expert">Responsive Design</span>
+                                    <span class="skill-badge advanced">Touch Gestures</span>
+                                    <span class="skill-badge advanced">Mobile Performance</span>
+                                    <span class="skill-badge intermediate">App Store Deploy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-tab-panel" id="devops-panel">
+                        <div class="tech-expertise-grid">
+                            <div class="card tech-expertise-card">
+                                <h4>Cloud Platforms</h4>
+                                <p>Deployment and management on major cloud platforms with scalable infrastructure
+                                    solutions.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge advanced">AWS</span>
+                                    <span class="skill-badge intermediate">Vercel</span>
+                                    <span class="skill-badge intermediate">Netlify</span>
+                                    <span class="skill-badge beginner">Google Cloud</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Containerization</h4>
+                                <p>Docker and container orchestration for consistent development and production
+                                    environments.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge advanced">Docker</span>
+                                    <span class="skill-badge intermediate">Docker Compose</span>
+                                    <span class="skill-badge beginner">Kubernetes</span>
+                                    <span class="skill-badge intermediate">CI/CD</span>
+                                </div>
+                            </div>
+                            <div class="card tech-expertise-card">
+                                <h4>Monitoring & Analytics</h4>
+                                <p>Application monitoring, performance tracking, and analytics implementation for
+                                    production systems.</p>
+                                <div class="tech-skills">
+                                    <span class="skill-badge advanced">Google Analytics</span>
+                                    <span class="skill-badge intermediate">Sentry</span>
+                                    <span class="skill-badge intermediate">New Relic</span>
+                                    <span class="skill-badge beginner">DataDog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section section">
+                <div class="card cta-card">
+                    <h2>Have a Project in Mind?</h2>
+                    <p>I'm always excited to work on new challenges and bring creative ideas to life. Let's discuss your
+                        project and see how we can create something amazing together!</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+                        <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+                        <a href="resume.html" class="btn btn-outline">Download Resume</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">Jenna Studio</div>
+                    <p class="footer-description">Crafting delightful web experiences with creativity and technical
+                        excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/jinseon-yoo" target="_blank"
+                                    rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://github.com/jenna-studio" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jenna Studio. Crafted with ✨ and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle particle effects">
+        <span class="toggle-icon">✨</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

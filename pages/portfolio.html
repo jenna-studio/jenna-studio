@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jenna Studio</title>
+    <meta name="description"
+        content="Browse Jenna's creative portfolio showcasing web design, UI/UX, and digital art projects">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container" id="navigation">
+        <div class="nav">
+            <a href="../index.html" class="nav-logo">Jenna Studio</a>
+            <a href="../index.html#home" class="nav-link">Home</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#projects" class="nav-link">Projects</a>
+            <a href="../index.html#portfolio" class="nav-link active">Portfolio</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h1 class="page-title">Portfolio</h1>
+                <p class="page-subtitle">A visual journey through my creative work and design evolution</p>
+            </section>
+
+            <!-- Portfolio Filter -->
+            <section class="portfolio-filter">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="web-design">Web Design</button>
+                    <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="illustration">Illustration</button>
+                </div>
+            </section>
+
+            <!-- Portfolio Gallery -->
+            <section class="portfolio-gallery section">
+                <div class="gallery-grid" id="portfolioGrid">
+
+                    <!-- Portfolio Item 1 -->
+                    <article class="portfolio-item" data-category="web-design">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">E-Commerce Website</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>E-Commerce Platform</h3>
+                                        <p>Modern online store design</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="ecommerce">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Live Site</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">E-Commerce Platform</h3>
+                                <p class="portfolio-category">Web Design</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 2 -->
+                    <article class="portfolio-item" data-category="ui-ux">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Mobile App UI</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Fitness Tracker App</h3>
+                                        <p>Mobile app interface design</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="fitness-app">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Prototype</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Fitness Tracker App</h3>
+                                <p class="portfolio-category">UI/UX Design</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 3 -->
+                    <article class="portfolio-item" data-category="branding">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Brand Identity</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Coffee Shop Branding</h3>
+                                        <p>Complete brand identity design</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="coffee-brand">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Brand Guide</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Coffee Shop Branding</h3>
+                                <p class="portfolio-category">Branding</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 4 -->
+                    <article class="portfolio-item" data-category="web-design">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Agency Website</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Creative Agency</h3>
+                                        <p>Modern agency website</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="agency-site">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Live Site</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Creative Agency</h3>
+                                <p class="portfolio-category">Web Design</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 5 -->
+                    <article class="portfolio-item" data-category="illustration">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Digital Art</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Character Illustrations</h3>
+                                        <p>Digital character designs</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="illustrations">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Gallery</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Character Illustrations</h3>
+                                <p class="portfolio-category">Digital Art</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 6 -->
+                    <article class="portfolio-item" data-category="ui-ux">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Dashboard UI</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Analytics Dashboard</h3>
+                                        <p>Data visualization interface</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="dashboard">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Prototype</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Analytics Dashboard</h3>
+                                <p class="portfolio-category">UI/UX Design</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 7 -->
+                    <article class="portfolio-item" data-category="branding">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Tech Startup</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Tech Startup Brand</h3>
+                                        <p>Modern tech company identity</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="tech-brand">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Brand Guide</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Tech Startup Brand</h3>
+                                <p class="portfolio-category">Branding</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 8 -->
+                    <article class="portfolio-item" data-category="web-design">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Restaurant Site</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Restaurant Website</h3>
+                                        <p>Fine dining restaurant site</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="restaurant">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Live Site</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Restaurant Website</h3>
+                                <p class="portfolio-category">Web Design</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio Item 9 -->
+                    <article class="portfolio-item" data-category="illustration">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">Icon Set</div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Custom Icon Set</h3>
+                                        <p>Modern icon collection</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" data-portfolio="icons">View
+                                                Details</button>
+                                            <a href="#" class="overlay-btn">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Custom Icon Set</h3>
+                                <p class="portfolio-category">Illustration</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Portfolio Stats -->
+            <section class="portfolio-stats section">
+                <h2 class="section-title">Portfolio Highlights</h2>
+                <div class="stats-grid">
+                    <div class="card stat-card">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Design Projects</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-number" data-target="20">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials section">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="card testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Jenna's attention to detail and creative vision transformed our brand completely. The
+                                website she designed exceeded all our expectations and significantly boosted our online
+                                presence."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>SM</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Martinez</h4>
+                                <p>CEO, Creative Agency</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Working with Jenna was a pleasure. She understood our vision immediately and delivered a
+                                stunning e-commerce platform that's both beautiful and highly functional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>DJ</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>David Johnson</h4>
+                                <p>Founder, E-Shop</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The mobile app UI that Jenna designed for us is intuitive, modern, and our users
+                                absolutely love it. Her design thinking approach is remarkable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>AL</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Anna Lee</h4>
+                                <p>Product Manager, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section section">
+                <div class="card cta-card">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's collaborate and create something amazing together. I'd love to help bring your vision to
+                        life with thoughtful design and seamless user experience.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                        <a href="projects.html" class="btn btn-secondary">View Projects</a>
+                        <a href="resume.html" class="btn btn-outline">Download Resume</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal" id="portfolioModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="image-placeholder">Project Image</div>
+                </div>
+                <div class="modal-details">
+                    <h3 class="modal-title">Project Title</h3>
+                    <p class="modal-category">Category</p>
+                    <p class="modal-description">Detailed project description will go here...</p>
+                    <div class="modal-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">Jenna Studio</div>
+                    <p class="footer-description">Crafting delightful web experiences with creativity and technical
+                        excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/jinseon-yoo" target="_blank"
+                                    rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://github.com/jenna-studio" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jenna Studio. Crafted with ✨ and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle particle effects">
+        <span class="toggle-icon">✨</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jenna Studio</title>
+    <meta name="description"
+        content="Get in touch with Jenna for web development projects, collaborations, and creative opportunities">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container" id="navigation">
+        <div class="nav">
+            <a href="../index.html" class="nav-logo">Jenna Studio</a>
+            <a href="../index.html#home" class="nav-link">Home</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../index.html#projects" class="nav-link">Projects</a>
+            <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
+            <a href="../index.html#contact" class="nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h1 class="page-title">Let's Work Together</h1>
+                <p class="page-subtitle">Ready to bring your ideas to life? I'd love to hear from you!</p>
+            </section>
+
+            <!-- Contact Options -->
+            <section class="contact-options section">
+                <div class="options-grid">
+                    <div class="card contact-option">
+                        <div class="option-icon">💬</div>
+                        <h3>Let's Chat</h3>
+                        <p>Have a project in mind? I'd love to discuss your ideas and see how we can bring them to life together.</p>
+                        <a href="mailto:hello@jennastudio.com" class="option-link">Send Email</a>
+                    </div>
+                    <div class="card contact-option">
+                        <div class="option-icon">📅</div>
+                        <h3>Schedule a Call</h3>
+                        <p>Book a free 30-minute consultation to discuss your project requirements and goals in detail.</p>
+                        <a href="#" class="option-link">Book Meeting</a>
+                    </div>
+                    <div class="card contact-option">
+                        <div class="option-icon">💼</div>
+                        <h3>View My Work</h3>
+                        <p>Browse through my portfolio and projects to get a better sense of my design and development style.</p>
+                        <a href="portfolio.html" class="option-link">See Portfolio</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2 class="section-title">Send Me a Message</h2>
+                        <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                    </div>
+                    <form class="contact-form-element" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType">
+                                <option value="">Select a project type</option>
+                                <option value="website">Website Development</option>
+                                <option value="webapp">Web Application</option>
+                                <option value="ecommerce">E-commerce Store</option>
+                                <option value="redesign">Website Redesign</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k+">$50,000+</option>
+                                <option value="discuss">Let's Discuss</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-2months">1-2 Months</option>
+                                <option value="3-6months">3-6 Months</option>
+                                <option value="6months+">6+ Months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Project *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Describe your project, goals, and any specific requirements..." required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive updates about new projects and design tips
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="contact-info section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="info-grid">
+                    <div class="card info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>hello@jennastudio.com</p>
+                        <a href="mailto:hello@jennastudio.com" class="info-link">Send Email</a>
+                    </div>
+                    <div class="card info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <a href="tel:+15551234567" class="info-link">Call Now</a>
+                    </div>
+                    <div class="card info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>San Francisco, CA</p>
+                        <p class="info-note">Available for remote work worldwide</p>
+                    </div>
+                    <div class="card info-card">
+                        <div class="info-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me professionally</p>
+                        <a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noopener" class="info-link">View Profile</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section section">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="card faq-item">
+                        <button class="faq-question" data-faq="1">
+                            <span>What's your typical project timeline?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-1">
+                            <p>Project timelines vary depending on scope and complexity. A simple website typically takes 2-4 weeks, while complex web applications can take 2-6 months. I always provide detailed timelines during our initial consultation.</p>
+                        </div>
+                    </div>
+                    <div class="card faq-item">
+                        <button class="faq-question" data-faq="2">
+                            <span>Do you work with international clients?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-2">
+                            <p>Absolutely! I work with clients worldwide and am comfortable collaborating across different time zones. I use various communication tools to ensure smooth project coordination regardless of location.</p>
+                        </div>
+                    </div>
+                    <div class="card faq-item">
+                        <button class="faq-question" data-faq="3">
+                            <span>What's included in your web development services?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-3">
+                            <p>My services include frontend development, UI/UX design, responsive design, performance optimization, SEO basics, and post-launch support. I can also coordinate with backend developers and other specialists as needed.</p>
+                        </div>
+                    </div>
+                    <div class="card faq-item">
+                        <button class="faq-question" data-faq="4">
+                            <span>Do you provide ongoing maintenance?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-4">
+                            <p>Yes, I offer ongoing maintenance and support packages. This includes updates, security patches, content updates, and technical support. We can discuss maintenance options during the project planning phase.</p>
+                        </div>
+                    </div>
+                    <div class="card faq-item">
+                        <button class="faq-question" data-faq="5">
+                            <span>What information do you need to get started?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-5">
+                            <p>To get started, I need to understand your project goals, target audience, preferred timeline, budget range, and any specific features or requirements. The more details you can provide, the better I can tailor my proposal to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Proof -->
+            <section class="social-proof section">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="card testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Working with Jenna was an absolute pleasure. She delivered our project on time and exceeded our expectations. Her attention to detail and communication skills are exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>SM</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Martinez</h4>
+                                <p>CEO, Creative Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Jenna's technical expertise and creative vision transformed our outdated website into a modern, user-friendly platform. Our engagement rates have increased by 200%!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>DJ</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>David Johnson</h4>
+                                <p>Founder, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Professional, reliable, and incredibly talented. Jenna understood our vision immediately and brought it to life with stunning results. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <span>AL</span>
+                            </div>
+                            <div class="author-info">
+                                <h4>Anna Lee</h4>
+                                <p>Marketing Director, InnovateCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section section">
+                <div class="card cta-card">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's work together to create something amazing. I'm here to help bring your vision to life with clean code, beautiful design, and exceptional user experience.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:hello@jennastudio.com" class="btn btn-primary">Send Email</a>
+                        <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+                        <a href="resume.html" class="btn btn-outline">Download Resume</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">Jenna Studio</div>
+                    <p class="footer-description">Crafting delightful web experiences with creativity and technical excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="https://github.com/jenna-studio" target="_blank" rel="noopener">GitHub</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jenna Studio. Crafted with ✨ and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle particle effects">
+        <span class="toggle-icon">✨</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
