@@ -974,13 +974,16 @@ p {
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--spacing-md);
     color: var(--color-text-primary);
+    text-align: center;
 }
 
 .project-description {
     color: var(--color-text-light);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
     line-height: var(--line-height-relaxed);
     flex: 1;
+    text-align: justify;
+    padding: 0 10px;
 }
 
 .project-tags {
@@ -988,6 +991,7 @@ p {
     flex-wrap: wrap;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-lg);
+    padding: 0 10px;
 }
 
 .project-links {
@@ -1007,7 +1011,7 @@ p {
     height: 180px;
     background: var(--gradient-main);
     border-radius: var(--border-radius-lg);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1037,13 +1041,16 @@ p {
 .portfolio-title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
     color: var(--color-text-primary);
+    text-align: center;
 }
 
 .portfolio-description {
     color: var(--color-text-light);
     line-height: var(--line-height-relaxed);
+    text-align: justify;
+    padding: 0 10px;
 }
 
 /* ===== 14. CONTACT SECTION ===== */
@@ -1416,10 +1423,49 @@ p {
 }
 
 /* ===== 19. RESPONSIVE DESIGN ===== */
+
+/* Base responsive font sizes */
+@media (max-width: 1440px) {
+    :root {
+        --font-size-6xl: clamp(3.5rem, 4vw, 4.5rem);
+        --font-size-5xl: clamp(2.5rem, 3.5vw, 3.5rem);
+        --font-size-4xl: clamp(2rem, 2.5vw, 2.75rem);
+    }
+}
+
+/* Large Desktop - 1200px and up */
+@media (min-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop - 1024px to 1199px */
+@media (max-width: 1199px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptop/Tablet Landscape - 1024px and down */
 @media (max-width: 1024px) {
+    :root {
+        --container-padding: var(--spacing-lg);
+        --section-padding: var(--spacing-3xl);
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: var(--spacing-xl);
     }
 
     .about-image {
@@ -1436,8 +1482,157 @@ p {
     .footer-links {
         justify-content: center;
     }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
 }
 
+/* iPad Pro 12.9" (landscape) - 1366px x 1024px */
+@media (max-width: 1366px) and (min-width: 1025px) and (orientation: landscape) {
+    .nav-container {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    .hero {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+}
+
+/* iPad Pro (landscape) - 1024px */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .nav {
+        gap: var(--spacing-md);
+    }
+
+    .hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .main-content {
+        padding-top: 100px;
+    }
+
+    /* Touch-friendly buttons for iPad */
+    .btn {
+        min-height: 44px;
+        min-width: 88px;
+    }
+
+    .nav-link {
+        min-height: 44px;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    /* Improve tap targets */
+    .contact-item {
+        min-height: 120px;
+    }
+
+    .theme-toggle {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* iPad Pro 12.9" (portrait) - 1024px x 1366px */
+@media (max-width: 1024px) and (min-width: 835px) and (orientation: portrait) {
+    .hero {
+        padding: var(--spacing-4xl) 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    /* Touch-friendly design for iPad */
+    .btn {
+        min-height: 48px;
+        padding: var(--spacing-md) var(--spacing-xl);
+    }
+
+    .card {
+        padding: var(--spacing-2xl);
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* iPad Air/Mini (portrait) - 768px to 834px */
+@media (max-width: 834px) and (min-width: 769px) and (orientation: portrait) {
+    .nav-container {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .nav {
+        gap: var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* iPad-specific touch improvements */
+    .btn {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+
+    .nav-link {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+
+    .card {
+        touch-action: manipulation;
+    }
+}
+
+/* Standard iPad (portrait) - 768px */
+@media (max-width: 768px) and (min-width: 769px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablet Portrait - 768px and down */
 @media (max-width: 768px) {
     :root {
         --container-padding: var(--spacing-md);
@@ -1445,9 +1640,11 @@ p {
     }
 
     .nav {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-        padding: var(--spacing-md);
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-sm);
+        justify-content: center;
     }
 
     .nav-container {
@@ -1456,10 +1653,22 @@ p {
         right: auto !important;
         transform: translateX(-50%) !important;
         width: auto;
+        max-width: calc(100vw - 1rem);
+    }
+
+    .nav-logo {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
     }
 
     .main-content {
-        padding-top: 140px;
+        padding-top: 160px;
+    }
+
+    .hero {
+        padding: var(--spacing-2xl) 0;
     }
 
     .hero-title {
@@ -1479,16 +1688,21 @@ p {
     }
 
     .contact-methods {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
     }
 
     .contact-cta {
         flex-direction: column;
         align-items: center;
+        gap: var(--spacing-sm);
     }
 
     .about-cta {
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
     }
 
     .footer-links {
@@ -1503,11 +1717,71 @@ p {
         height: 50px;
         font-size: var(--font-size-lg);
     }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .portfolio-image {
+        height: 160px;
+    }
+
+    .image-placeholder {
+        height: 400px;
+    }
 }
 
+/* Large Mobile / Small Tablet - 640px to 767px */
+@media (max-width: 767px) and (min-width: 481px) {
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .portfolio-image {
+        height: 140px;
+    }
+}
+
+/* Mobile Landscape - 640px and down */
+@media (max-width: 640px) and (orientation: landscape) {
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .main-content {
+        padding-top: 140px;
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: var(--spacing-xs);
+    }
+}
+
+/* Standard Mobile - 480px and down */
 @media (max-width: 480px) {
+    :root {
+        --container-padding: var(--spacing-sm);
+        --section-padding: var(--spacing-xl);
+    }
+
     .hero-title {
         font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
     }
 
     .section-title {
@@ -1524,12 +1798,534 @@ p {
     }
 
     .nav-logo {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-base);
+    }
+
+    .nav-container {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        max-width: calc(100vw - 0.5rem);
+    }
+
+    .nav {
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs);
+    }
+
+    .nav-link {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    .portfolio-image {
+        height: 120px;
+    }
+
+    .image-placeholder {
+        height: 300px;
+    }
+
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Small Mobile - 375px and down */
+@media (max-width: 375px) {
+    :root {
+        --container-padding: var(--spacing-sm);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-sm);
+    }
+
+    .card {
+        padding: var(--spacing-md);
+    }
+
+    .nav {
+        padding: var(--spacing-xs);
+        gap: 2px;
+    }
+
+    .nav-link {
+        padding: var(--spacing-xs) 6px;
+        font-size: 0.7rem;
+    }
+
+    .nav-logo {
+        font-size: var(--font-size-sm);
+        margin-bottom: 2px;
+    }
+
+    .project-description {
+        padding: 0 var(--spacing-xs);
+    }
+
+    .project-tags {
+        padding: 0 var(--spacing-xs);
+    }
+
+    .portfolio-description {
+        padding: 0 var(--spacing-xs);
+    }
+}
+
+/* ===== FOLDABLE DEVICE SUPPORT ===== */
+
+/* Samsung Galaxy Z Fold (unfolded) - 717px x 512px landscape */
+@media (max-width: 717px) and (orientation: landscape) and (max-height: 512px) {
+    .hero {
+        padding: var(--spacing-md) 0;
+    }
+
+    .main-content {
+        padding-top: 120px;
+    }
+
+    .nav-container {
+        top: var(--spacing-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .nav {
+        gap: var(--spacing-xs);
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    /* Optimize for narrow landscape */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Samsung Galaxy Z Fold (inner screen unfolded portrait) - 768px x 1024px */
+@media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Touch optimizations */
+    .btn {
+        min-height: 48px;
+        touch-action: manipulation;
+    }
+
+    .nav-link {
+        min-height: 48px;
+    }
+}
+
+/* Samsung Galaxy Z Flip (unfolded) - 412px x 915px */
+@media (max-width: 412px) and (min-height: 800px) and (orientation: portrait) {
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .nav-container {
+        max-width: calc(100vw - 1rem);
+    }
+
+    /* Optimize for tall narrow screen */
+    .section {
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .card {
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Samsung Galaxy Z Flip (flex mode) - split screen */
+@media (max-width: 412px) and (max-height: 500px) and (orientation: portrait) {
+    .hero {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .main-content {
+        padding-top: 100px;
+    }
+
+    .nav-container {
+        top: var(--spacing-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .nav {
+        gap: var(--spacing-xs);
+    }
+
+    .section {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    /* Optimize for flex mode */
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-description {
+        font-size: var(--font-size-sm);
+    }
+
+    .card {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Galaxy Fold (folded/cover screen) - 280px */
+@media (max-width: 280px) {
+    :root {
+        --container-padding: var(--spacing-xs);
+        --section-padding: var(--spacing-lg);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-xs);
+    }
+
+    .section-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .card {
+        padding: var(--spacing-sm);
+    }
+
+    .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-xs);
+        min-height: 36px;
+    }
+
+    .nav-logo {
+        font-size: var(--font-size-base);
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1px;
+        padding: var(--spacing-xs);
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 2px 4px;
+        font-size: 0.6rem;
+        border-radius: 4px;
+    }
+
+    .nav-logo {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+    }
+
+    .project-image {
+        height: 120px;
+    }
+
+    .portfolio-image {
+        height: 100px;
+    }
+
+    .image-placeholder {
+        height: 200px;
+    }
+
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-sm);
+        bottom: var(--spacing-sm);
+        right: var(--spacing-sm);
+    }
+
+    .project-title,
+    .portfolio-title {
+        font-size: var(--font-size-base);
+    }
+
+    .contact-item {
+        padding: var(--spacing-sm);
+    }
+
+    .contact-icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Optimize for very narrow screen */
+    .projects-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* Microsoft Surface Duo (single screen) - 540px x 720px */
+@media (max-width: 540px) and (min-width: 480px) and (min-height: 720px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .hero {
+        padding: var(--spacing-2xl) 0;
+    }
+}
+
+/* Microsoft Surface Duo (dual screen mode) - 1080px x 720px landscape */
+@media (min-width: 1080px) and (max-width: 1080px) and (max-height: 720px) and (orientation: landscape) {
+    .container {
+        max-width: 1040px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    /* Dual screen optimization */
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-3xl);
+    }
+
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+}
+
+/* iPhone SE and small screens - 320px */
+@media (max-width: 320px) {
+    .hero-description {
+        font-size: var(--font-size-sm);
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .contact-cta {
+        gap: var(--spacing-xs);
+    }
+
+    .about-cta {
+        gap: var(--spacing-xs);
+    }
+}
+
+/* ===== ADDITIONAL RESPONSIVE OPTIMIZATIONS ===== */
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Improve touch targets for mobile devices */
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .nav-link {
+        min-height: 44px;
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .contact-item {
+        min-height: 88px;
+        padding: var(--spacing-lg);
+    }
+
+    .theme-toggle {
+        min-width: 48px;
+        min-height: 48px;
+    }
+
+    /* Remove hover effects on touch devices */
+    .card:hover {
+        transform: none;
+        box-shadow: var(--shadow-card);
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    .nav-link:hover {
+        transform: none;
+    }
+
+    /* Add touch feedback */
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .card:active {
+        transform: scale(0.98);
+    }
+
+    .nav-link:active {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* High DPI/Retina display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .cursor {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    .particle {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    .loading-spinner {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Landscape mobile optimizations */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .main-content {
+        padding-top: 100px;
+    }
+
+    .section {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .nav-container {
+        top: var(--spacing-xs);
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+}
+
+/* Ultra-wide displays */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Performance optimizations for low-end devices */
+@media (max-width: 480px) {
+    /* Reduce animations on small screens */
+    .particles {
+        display: none;
+    }
+
+    .cursor-sparkle {
+        display: none;
+    }
+
+    /* Simplify backgrounds */
+    .card {
+        backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .nav-container {
+        backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Reduce shadow complexity */
+    .card,
+    .btn,
+    .nav-container {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -1678,6 +2474,72 @@ p {
     }
 }
 
+/* Safe area insets for devices with notches */
+@supports (padding: max(0px)) {
+    .nav-container {
+        padding-left: max(var(--spacing-lg), env(safe-area-inset-left));
+        padding-right: max(var(--spacing-lg), env(safe-area-inset-right));
+    }
+
+    .container {
+        padding-left: max(var(--container-padding), env(safe-area-inset-left));
+        padding-right: max(var(--container-padding), env(safe-area-inset-right));
+    }
+
+    .theme-toggle {
+        right: max(var(--spacing-xl), env(safe-area-inset-right));
+        bottom: max(var(--spacing-xl), env(safe-area-inset-bottom));
+    }
+}
+
+/* Responsive images with lazy loading support */
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius-md);
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-thumbnail {
+    transform: scale(1.05);
+}
+
+/* Ensure proper aspect ratios for different screen sizes */
+@media (max-width: 768px) {
+    .project-image {
+        aspect-ratio: 16/9;
+        height: auto;
+        min-height: 180px;
+    }
+
+    .portfolio-image {
+        aspect-ratio: 4/3;
+        height: auto;
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image {
+        min-height: 150px;
+    }
+
+    .portfolio-image {
+        min-height: 120px;
+    }
+}
+
+/* Improved scrolling performance */
+@media (max-width: 1024px) {
+    .main-content,
+    .section {
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+}
+
 /* Print Styles */
 @media print {
     * {
@@ -1700,6 +2562,17 @@ p {
 
     a:after {
         content: " (" attr(href) ")";
+    }
+
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+
+    .projects-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-md) !important;
     }
 }
 
