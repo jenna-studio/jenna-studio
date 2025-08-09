@@ -3785,3 +3785,177 @@ p {
     }
 }
 
+/***** RESPONSIVE LAYOUT OVERRIDES (append at end of file) *****/
+
+/* 0) Global fluid spacing & safe top offset for fixed nav */
+:root {
+    --nav-safe-top: clamp(72px, 10vh, 140px);
+    --section-y: clamp(2rem, 5vw, 4rem);
+    --container-x: clamp(0.75rem, 3vw, 2rem);
+}
+
+/* Normalize container padding across breakpoints */
+.container {
+    padding-left: var(--container-x) !important;
+    padding-right: var(--container-x) !important;
+}
+
+/* Ensure main content clears the fixed nav without stacking multiple !important rules */
+.main-content {
+    padding-top: var(--nav-safe-top) !important;
+}
+
+/* 1) Navigation: keep original positioning */
+
+.nav {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    gap: var(--spacing-lg) !important;
+}
+
+.nav-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: var(--spacing-lg) !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+.nav-links::-webkit-scrollbar {
+    display: none !important;
+}
+
+.nav-link {
+    min-height: 36px !important;
+    padding: 6px 10px !important;
+    font-size: clamp(0.7rem, 1.6vw, 0.95rem) !important;
+    flex: 0 0 auto !important;
+}
+
+/* 2) Hero: flexible spacing, no over-tall halos on tiny screens */
+.hero {
+    padding: clamp(1.25rem, 5vw, 3rem) 0 !important;
+}
+
+.hero::before {
+    width: min(90vw, 800px) !important;
+    height: min(90vw, 800px) !important;
+}
+
+/* 3) Grids: fluid auto-fit columns with sensible min widths */
+.grid {
+    gap: clamp(0.75rem, 2.5vw, 1.5rem) !important;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem) !important;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem) !important;
+}
+
+/* 4) Card/media blocks: use aspect-ratio instead of rigid heights */
+.project-image,
+.portfolio-image {
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    min-height: 140px !important;
+}
+
+.image-placeholder {
+    height: auto !important;
+    aspect-ratio: 3 / 4;
+    max-width: 100% !important;
+}
+
+/* 5) About layout: stack cleanly with consistent gaps */
+.about-content {
+    grid-template-columns: 1fr !important;
+    gap: clamp(1rem, 3vw, 2rem) !important;
+}
+@media (min-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr 320px !important;
+    }
+}
+
+/* 6) Contact grid: auto-fit without device-specific breakpoints */
+.contact-methods {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem) !important;
+}
+
+/* 7) Section spacing: fluid and consistent */
+.section {
+    margin-bottom: var(--section-y) !important;
+    scroll-margin-top: calc(var(--nav-safe-top) + 16px) !important;
+}
+
+/* 8) Footer columns: collapse gracefully */
+.footer-content {
+    grid-template-columns: 1fr !important;
+    gap: clamp(1rem, 3vw, 2rem) !important;
+}
+@media (min-width: 900px) {
+    .footer-content {
+        grid-template-columns: 1fr auto !important;
+    }
+}
+
+/* 9) Buttons: tap-friendly min sizes without changing visual style */
+.btn,
+.nav-link {
+    min-height: 44px !important;
+}
+
+/* 10) Prevent layout jumps from multiple mobile padding rules */
+@media (max-width: 768px) {
+    body {
+        padding-left: var(--container-x) !important;
+        padding-right: var(--container-x) !important;
+    }
+    .main-content {
+        padding-top: var(--nav-safe-top) !important;
+    }
+}
+
+/* 11) Landscape short screens: avoid cramped top spacing */
+@media (orientation: landscape) and (max-height: 500px) {
+    :root { --nav-safe-top: clamp(56px, 12vh, 96px); }
+    .hero { padding: 0.75rem 0 !important; }
+}
+
+/* 12) High-DPI/touch sanity: ensure overlays never block pointer events */
+.particles,
+.cursor,
+.cursor-sparkle {
+    pointer-events: none !important;
+}
+
+/* 13) Reduce fixed heights on very narrow cover/fold screens */
+@media (max-width: 320px) {
+    .project-image,
+    .portfolio-image { min-height: 110px !important; }
+    .nav-link { padding: 4px 6px !important; }
+}
+
+/* 14) Section titles: prevent overflow on small widths */
+.section-title {
+    font-size: clamp(1.25rem, 5vw, var(--font-size-4xl)) !important;
+}
+
+/* 15) Clamp long centered containers on ultrawide to keep rhythm */
+@media (min-width: 1920px) {
+    .container { max-width: 1400px !important; }
+}
+
