@@ -506,6 +506,9 @@ select {
     transition: all var(--transition-normal);
     position: relative;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link:hover {
