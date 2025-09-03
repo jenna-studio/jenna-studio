@@ -881,10 +881,9 @@ p {
 
 /* ===== 11. ABOUT SECTION ===== */
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: var(--spacing-2xl);
-    align-items: start;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text {
@@ -1062,6 +1061,8 @@ p {
     flex: 1;
     text-align: justify;
     padding: 0 10px;
+    font-size: var(--font-size-sm);
+    word-spacing: -0.1em;
 }
 
 .project-tags {
@@ -1129,6 +1130,8 @@ p {
     line-height: var(--line-height-relaxed);
     text-align: justify;
     padding: 0 10px;
+    font-size: var(--font-size-sm);
+    word-spacing: -0.1em;
 }
 
 /* ===== 14. CONTACT SECTION ===== */
@@ -1577,9 +1580,8 @@ p {
     }
 
     .about-content {
-        grid-template-columns: 1fr;
+        max-width: 100%;
         text-align: center;
-        gap: var(--spacing-xl);
     }
 
     .about-image {
@@ -2641,8 +2643,8 @@ p {
 
     /* Dual screen optimization */
     .about-content {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-3xl);
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .hero {
@@ -3882,13 +3884,9 @@ p {
 
 /* 5) About layout: stack cleanly with consistent gaps */
 .about-content {
-    grid-template-columns: 1fr !important;
-    gap: clamp(1rem, 3vw, 2rem) !important;
-}
-@media (min-width: 1024px) {
-    .about-content {
-        grid-template-columns: 1fr 320px !important;
-    }
+    display: block !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
 }
 
 /* 6) Contact grid: auto-fit without device-specific breakpoints */
