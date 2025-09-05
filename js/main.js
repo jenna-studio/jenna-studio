@@ -706,23 +706,15 @@ class PageLinkHandler {
     }
 
     handlePageNavigation(event, link) {
-        event.preventDefault();
         const href = link.getAttribute("href");
 
         // Add loading state
         document.body.style.transition = "opacity 0.3s ease";
         document.body.style.opacity = "0.7";
 
-        // Simulate page transition
+        // Navigate to the actual page
         setTimeout(() => {
-            // In a real implementation, this would navigate to the actual page
-            console.log(`Navigating to: ${href}`);
-            alert(
-                `This would navigate to: ${href}\n\nIn your implementation, replace this with actual page navigation.`
-            );
-
-            // Reset opacity
-            document.body.style.opacity = "1";
+            window.location.href = href;
         }, 300);
     }
 }

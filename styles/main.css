@@ -38,6 +38,7 @@
     --color-mint: #baf4ba;
     --color-mint-light: #d2fad2;
     --color-mint-dark: #9be9ad;
+    --color-green: #22c270;
     --color-sky: #98dbf6;
     --color-sky-light: #bae6f9;
     --color-sky-dark: #6dc9e5;
@@ -68,6 +69,9 @@
     --color-text-primary: var(--color-gray-800);
     --color-text-secondary: var(--color-gray-600);
     --color-text-light: var(--color-gray-500);
+
+    /* Custom Colors */
+    --color-hotpink: var(--color-pink-dark);
 
     /* Gradient Backgrounds */
     --gradient-main: linear-gradient(
@@ -881,19 +885,49 @@ p {
 
 /* ===== 11. ABOUT SECTION ===== */
 .about-content {
+    /* display: grid;
+    grid-template-columns: 3fr 2fr; text wider | video larger */
+    /* align-items: start; */
+    /* gap: var(--spacing-3xl); */
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: var(--spacing-xl) 0;
+}
+.about-content > * {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-video {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.bunny-video {
     display: block;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: clamp(350px, 100%, 600px);
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+    margin-right: 0;
 }
 
 .about-text {
+    display: inline-block;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-loose);
-    text-align: justify;
+    text-align: left;
+    margin-right: 10px;
 }
 
 .about-text p {
     color: var(--color-text-secondary);
+    text-align: justify;
 }
 
 .about-skills {
@@ -912,6 +946,67 @@ p {
 .about-image {
     position: relative;
     background: transparent;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1200px) {
+    .about-content {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--spacing-xl);
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .bunny-video {
+        max-width: clamp(250px, 100%, 400px);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .about-video {
+        order: -1;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .bunny-video {
+        max-width: clamp(200px, 80%, 350px);
+    }
+
+    .about-text {
+        text-align: left;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 600px) {
+    .about-content {
+        padding: var(--spacing-md) var(--spacing-xs);
+        gap: var(--spacing-lg);
+    }
+
+    .bunny-video {
+        max-width: clamp(180px, 70%, 280px);
+    }
+
+    .about-skills {
+        justify-content: center;
+        gap: var(--spacing-xs);
+    }
+
+    .about-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
 }
 
 /* profile-image */
@@ -3689,15 +3784,15 @@ p {
         justify-content: center !important;
         gap: var(--spacing-md) !important;
     }
-    
+
     .nav-logo {
         font-size: 0.9rem !important;
     }
-    
+
     .nav-links {
         gap: var(--spacing-sm) !important;
     }
-    
+
     .nav-link {
         font-size: 0.8rem !important;
         padding: var(--spacing-xs) var(--spacing-sm) !important;
@@ -3884,9 +3979,28 @@ p {
 
 /* 5) About layout: stack cleanly with consistent gaps */
 .about-content {
-    display: block !important;
-    max-width: 800px !important;
-    margin: 0 auto !important;
+    display: flex !important;
+    max-width: 1136px !important;
+    padding: 32px;
+    flex-direction: row;
+    gap: 0;
+}
+
+.about-text {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+}
+
+.about-text p {
+    width: fit-content;
+}
+
+.about-video > .bunny-video {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
 }
 
 /* 6) Contact grid: auto-fit without device-specific breakpoints */
@@ -3932,8 +4046,12 @@ p {
 
 /* 11) Landscape short screens: avoid cramped top spacing */
 @media (orientation: landscape) and (max-height: 500px) {
-    :root { --nav-safe-top: clamp(56px, 12vh, 96px); }
-    .hero { padding: 0.75rem 0 !important; }
+    :root {
+        --nav-safe-top: clamp(56px, 12vh, 96px);
+    }
+    .hero {
+        padding: 0.75rem 0 !important;
+    }
 }
 
 /* 12) High-DPI/touch sanity: ensure overlays never block pointer events */
@@ -3946,8 +4064,12 @@ p {
 /* 13) Reduce fixed heights on very narrow cover/fold screens */
 @media (max-width: 320px) {
     .project-image,
-    .portfolio-image { min-height: 110px !important; }
-    .nav-link { padding: 4px 6px !important; }
+    .portfolio-image {
+        min-height: 110px !important;
+    }
+    .nav-link {
+        padding: 4px 6px !important;
+    }
 }
 
 /* 14) Section titles: prevent overflow on small widths */
@@ -3957,6 +4079,7 @@ p {
 
 /* 15) Clamp long centered containers on ultrawide to keep rhythm */
 @media (min-width: 1920px) {
-    .container { max-width: 1400px !important; }
+    .container {
+        max-width: 1400px !important;
+    }
 }
-
