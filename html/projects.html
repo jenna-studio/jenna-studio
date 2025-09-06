@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles/main.css">
@@ -112,29 +114,25 @@
                 <h2 class="section-title">All Projects</h2>
                 <div class="projects-grid" id="projectsGrid">
 
-                    <!-- Project 1: Task Management App -->
+                    <!-- Project 1: Photo Album Maker -->
                     <article class="card project-card" data-category="web-app">
                         <div class="project-image">
-                            <div class="project-placeholder">Task Manager</div>
+                            <img src="../img/photo-album-maker-thumbnail.png" alt="Photo Album Maker Screenshot" class="project-thumbnail">
                             <div class="project-overlay">
                                 <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                    <a href="https://jenna-studio.github.io/photo-album-maker" class="overlay-btn" target="_blank">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio/photo-album-maker" class="overlay-btn" target="_blank"
                                         rel="noopener">Code</a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Task Management App</h3>
-                            <p class="project-description">A collaborative task management application with
-                                drag-and-drop functionality, real-time updates, and team collaboration features.
-                                Includes user authentication, role-based permissions, and notification systems.</p>
+                            <h3 class="project-title">Photo Album Maker</h3>
+                            <p class="project-description">A web application for creating digital photo albums. Features intelligent photo organization by date, book-style interface with page-turning effects, and export options including PDF, JPEG, and interactive HTML albums. 100% client-side processing ensures privacy.</p>
                             <div class="project-tags">
                                 <span class="tag">React</span>
-                                <span class="tag">Redux</span>
-                                <span class="tag">Socket.io</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">Express</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Vite</span>
                             </div>
                             <div class="project-meta">
                                 <span class="meta-item">
@@ -143,72 +141,33 @@
                                 </span>
                                 <span class="meta-item">
                                     <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2024</span>
+                                    <span class="meta-value">2025</span>
                                 </span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 2: Portfolio Website -->
-                    <article class="card project-card" data-category="website">
-                        <div class="project-image">
-                            <div class="project-placeholder">Portfolio Site</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Creative Agency Website</h3>
-                            <p class="project-description">A modern, responsive website for a creative agency featuring
-                                smooth animations, interactive elements, and optimized performance. Built with vanilla
-                                JavaScript and GSAP for stunning visual effects.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">GSAP</span>
-                                <span class="tag">Netlify</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Website</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2024</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3: Component Library -->
+                    <!-- Project 2: Cotton Candy Code Editor -->
                     <article class="card project-card" data-category="component">
                         <div class="project-image">
-                            <div class="project-placeholder">UI Components</div>
+                            <div class="project-placeholder">Cotton Candy Editor</div>
                             <div class="project-overlay">
                                 <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Storybook</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                    <a href="https://jenna-studio.github.io/cotton-candy-editor" class="overlay-btn" target="_blank">Live Demo</a>
+                                    <a href="https://github.com/jenna-studio/cotton-candy-editor" class="overlay-btn" target="_blank"
                                         rel="noopener">Code</a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Design System Library</h3>
-                            <p class="project-description">A comprehensive design system with reusable React components,
-                                documentation, and testing suite for consistent UI development. Includes theming,
-                                accessibility features, and comprehensive documentation.</p>
+                            <h3 class="project-title">Cotton Candy Code Editor</h3>
+                            <p class="project-description">A web-based code editor built with CodeMirror 6 featuring multiple themes including a signature Cotton Candy theme. Supports 12+ programming languages with smart editing features like auto-completion, syntax highlighting, and one-click code copying. Responsive design with easy website embedding.</p>
                             <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Storybook</span>
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">Jest</span>
-                                <span class="tag">Rollup</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">CodeMirror 6</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">Responsive</span>
                             </div>
                             <div class="project-meta">
                                 <span class="meta-item">
@@ -223,219 +182,32 @@
                         </div>
                     </article>
 
-                    <!-- Project 4: Data Visualization -->
+                    <!-- Project 3: Terminal Snake Game -->
                     <article class="card project-card" data-category="experiment">
                         <div class="project-image">
-                            <div class="project-placeholder">Data Viz</div>
+                            <div class="project-placeholder">Snake Game</div>
                             <div class="project-overlay">
                                 <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                    <a href="https://github.com/jenna-studio/terminal-snake-game#how-to-play" class="overlay-btn" target="_blank">How to Play</a>
+                                    <a href="https://github.com/jenna-studio/terminal-snake-game" class="overlay-btn" target="_blank"
                                         rel="noopener">Code</a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Interactive Data Visualization</h3>
-                            <p class="project-description">An interactive dashboard for visualizing complex datasets
-                                with custom charts, filters, and real-time data updates. Features advanced D3.js
-                                visualizations and machine learning integration.</p>
+                            <h3 class="project-title">Terminal Snake Game</h3>
+                            <p class="project-description">A terminal-based Snake game implemented in C++ using ncurses library. Features stage-based gameplay with 4 unique stages, dynamic game mechanics including growth and poison items, teleportation gates, and mission-based progression with scoring and ranking system.</p>
                             <div class="project-tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">D3.js</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">FastAPI</span>
-                                <span class="tag">WebSockets</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">ncurses</span>
+                                <span class="tag">Terminal</span>
+                                <span class="tag">Game Development</span>
+                                <span class="tag">Linux</span>
                             </div>
                             <div class="project-meta">
                                 <span class="meta-item">
                                     <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Experiment</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2023</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 5: Mobile App -->
-                    <article class="card project-card" data-category="web-app">
-                        <div class="project-image">
-                            <div class="project-placeholder">Mobile PWA</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Weather Forecast PWA</h3>
-                            <p class="project-description">A progressive web app for weather forecasting with offline
-                                capabilities, push notifications, and geolocation features. Includes weather maps,
-                                extended forecasts, and user preferences.</p>
-                            <div class="project-tags">
-                                <span class="tag">PWA</span>
-                                <span class="tag">Service Workers</span>
-                                <span class="tag">IndexedDB</span>
-                                <span class="tag">Web APIs</span>
-                                <span class="tag">Chart.js</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Progressive Web App</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2023</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 6: Blog Platform -->
-                    <article class="card project-card" data-category="website">
-                        <div class="project-image">
-                            <div class="project-placeholder">Blog Platform</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Modern Blog Platform</h3>
-                            <p class="project-description">A full-stack blog platform with content management, user
-                                authentication, and social features built with modern web technologies. Includes rich
-                                text editor, comments system, and SEO optimization.</p>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Prisma</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Tailwind CSS</span>
-                                <span class="tag">NextAuth</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Full-Stack Website</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2023</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 7: E-learning Platform -->
-                    <article class="card project-card" data-category="web-app">
-                        <div class="project-image">
-                            <div class="project-placeholder">Learning Platform</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Online Learning Platform</h3>
-                            <p class="project-description">An interactive e-learning platform with video streaming,
-                                progress tracking, quizzes, and certificate generation for students and instructors.
-                                Features course creation tools and analytics dashboard.</p>
-                            <div class="project-tags">
-                                <span class="tag">Angular</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">Express</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Socket.io</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Web Application</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2023</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 8: Animation Library -->
-                    <article class="card project-card" data-category="component">
-                        <div class="project-image">
-                            <div class="project-placeholder">Animation Lib</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Documentation</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">CSS Animation Library</h3>
-                            <p class="project-description">A lightweight CSS animation library with custom easing
-                                functions, keyframe generators, and performance optimizations for modern web
-                                applications. Easy to integrate and customize.</p>
-                            <div class="project-tags">
-                                <span class="tag">CSS3</span>
-                                <span class="tag">Sass</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Performance</span>
-                                <span class="tag">NPM</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Open Source Library</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2023</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 9: 3D Portfolio -->
-                    <article class="card project-card" data-category="experiment">
-                        <div class="project-image">
-                            <div class="project-placeholder">3D Experience</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">3D Interactive Portfolio</h3>
-                            <p class="project-description">An experimental 3D portfolio website using Three.js with
-                                interactive models, particle systems, and immersive user experiences. Features custom
-                                shaders and physics simulations.</p>
-                            <div class="project-tags">
-                                <span class="tag">Three.js</span>
-                                <span class="tag">WebGL</span>
-                                <span class="tag">GLSL</span>
-                                <span class="tag">Blender</span>
-                                <span class="tag">React</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">3D Experiment</span>
+                                    <span class="meta-value">Console Game</span>
                                 </span>
                                 <span class="meta-item">
                                     <span class="meta-label">Year:</span>
@@ -445,116 +217,76 @@
                         </div>
                     </article>
 
-                    <!-- Project 10: E-commerce Store -->
-                    <article class="card project-card" data-category="website">
-                        <div class="project-image">
-                            <div class="project-placeholder">E-commerce</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Fashion E-commerce Store</h3>
-                            <p class="project-description">A modern e-commerce platform for fashion retail with product
-                                catalogs, shopping cart, payment integration, and order management. Features advanced
-                                search and recommendation engine.</p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Stripe</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">Algolia</span>
-                                <span class="tag">PWA</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">E-commerce Website</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2022</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 11: Fitness App -->
-                    <article class="card project-card" data-category="web-app">
-                        <div class="project-image">
-                            <div class="project-placeholder">Fitness App</div>
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
-                                        rel="noopener">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Fitness Tracking App</h3>
-                            <p class="project-description">A comprehensive fitness tracking application with workout
-                                planning, progress monitoring, nutrition tracking, and social features. Includes
-                                wearable device integration and AI-powered recommendations.</p>
-                            <div class="project-tags">
-                                <span class="tag">React Native</span>
-                                <span class="tag">Redux</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">ML Kit</span>
-                            </div>
-                            <div class="project-meta">
-                                <span class="meta-item">
-                                    <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Mobile App</span>
-                                </span>
-                                <span class="meta-item">
-                                    <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2022</span>
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 12: Developer Tools -->
+                    <!-- Project 4: Alfred Color to Hex Workflow -->
                     <article class="card project-card" data-category="component">
                         <div class="project-image">
-                            <div class="project-placeholder">Dev Tools</div>
+                            <div class="project-placeholder">Alfred Workflow</div>
                             <div class="project-overlay">
                                 <div class="overlay-actions">
-                                    <a href="#" class="overlay-btn">Documentation</a>
-                                    <a href="https://github.com/jenna-studio" class="overlay-btn" target="_blank"
+                                    <a href="https://github.com/jenna-studio/alfred-colortohex#installation" class="overlay-btn" target="_blank">Installation</a>
+                                    <a href="https://github.com/jenna-studio/alfred-colortohex" class="overlay-btn" target="_blank"
                                         rel="noopener">Code</a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Developer Productivity Suite</h3>
-                            <p class="project-description">A collection of developer tools including code snippets
-                                manager, API testing interface, and performance monitoring dashboard. Built to improve
-                                developer workflow and productivity.</p>
+                            <h3 class="project-title">Alfred Color to Hex Workflow</h3>
+                            <p class="project-description">A simple Alfred workflow that allows you to search CSS color names and copy their HEX values with a circular color preview icon. Perfect for designers and developers who need quick access to color codes with visual previews to aid selection.</p>
                             <div class="project-tags">
-                                <span class="tag">Electron</span>
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">SQLite</span>
-                                <span class="tag">Tauri</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Alfred</span>
+                                <span class="tag">macOS</span>
+                                <span class="tag">Productivity</span>
+                                <span class="tag">CSS Colors</span>
                             </div>
                             <div class="project-meta">
                                 <span class="meta-item">
                                     <span class="meta-label">Type:</span>
-                                    <span class="meta-value">Desktop Application</span>
+                                    <span class="meta-value">Productivity Tool</span>
                                 </span>
                                 <span class="meta-item">
                                     <span class="meta-label">Year:</span>
-                                    <span class="meta-value">2022</span>
+                                    <span class="meta-value">2024</span>
                                 </span>
                             </div>
                         </div>
                     </article>
+
+                    <!-- Project 5: Chrome Theme Extension -->
+                    <article class="card project-card" data-category="website">
+                        <div class="project-image">
+                            <div class="project-placeholder">Chrome Themes</div>
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <a href="https://chromewebstore.google.com/search/jenna%20studio" class="overlay-btn" target="_blank">Chrome Store</a>
+                                    <a href="https://github.com/jenna-studio/chrome-theme-extension" class="overlay-btn" target="_blank"
+                                        rel="noopener">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Chrome Theme Collection</h3>
+                            <p class="project-description">A collection of custom Chrome browser themes with stunning designs and vibrant color palettes. Features multiple unique themes including Black-Pink-Inspiration, Bled-Lake, Blue-Workspace, Denim-Rose, and more. Fully compatible with latest Chrome versions for aesthetic browsing experience.</p>
+                            <div class="project-tags">
+                                <span class="tag">Chrome Extension</span>
+                                <span class="tag">JSON</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Themes</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Browser Extension</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2024</span>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
 
                 </div>
 

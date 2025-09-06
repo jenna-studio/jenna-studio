@@ -749,6 +749,9 @@ textarea:hover,
     margin-bottom: var(--spacing-md);
     line-height: var(--line-height-relaxed);
     flex: 1;
+    text-align: justify;
+    word-spacing: -0.1em;
+    font-size: var(--font-size-sm);
 }
 
 .project-tags {

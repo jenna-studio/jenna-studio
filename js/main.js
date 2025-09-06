@@ -359,7 +359,7 @@ class ParticleSystem {
         particle.style.animationDuration = duration + "s";
 
         // Random size variation - bigger particles
-        const size = Math.random() * 8 + 16; // 16-24px range
+        const size = Math.random() * 9 + 18; // 18-27px range
         particle.style.width = size + "px";
         particle.style.height = size + "px";
 
