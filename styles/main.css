@@ -299,13 +299,41 @@ select {
     position: fixed;
     width: 4px;
     height: 4px;
-    background: radial-gradient(circle, var(--color-yellow), rgba(255, 255, 0, 0.8));
     border-radius: 50%;
     pointer-events: none;
     z-index: var(--z-toast);
     animation: sparkle-fade 0.8s ease-out forwards;
-    box-shadow: 0 0 6px var(--color-yellow), 0 0 12px rgba(255, 255, 0, 0.6),
-        0 0 18px rgba(255, 255, 0, 0.3);
+}
+
+/* Rainbow gradient sparkle colors */
+.cursor-sparkle.sparkle-pink {
+    background: radial-gradient(circle, var(--color-pink), rgba(255, 206, 214, 0.8));
+    box-shadow: 0 0 6px var(--color-pink), 0 0 12px rgba(255, 206, 214, 0.6),
+        0 0 18px rgba(255, 206, 214, 0.3);
+}
+
+.cursor-sparkle.sparkle-yellow {
+    background: radial-gradient(circle, var(--color-yellow), rgba(243, 255, 181, 0.8));
+    box-shadow: 0 0 6px var(--color-yellow), 0 0 12px rgba(243, 255, 181, 0.6),
+        0 0 18px rgba(243, 255, 181, 0.3);
+}
+
+.cursor-sparkle.sparkle-green {
+    background: radial-gradient(circle, var(--color-mint), rgba(186, 244, 186, 0.8));
+    box-shadow: 0 0 6px var(--color-mint), 0 0 12px rgba(186, 244, 186, 0.6),
+        0 0 18px rgba(186, 244, 186, 0.3);
+}
+
+.cursor-sparkle.sparkle-skyblue {
+    background: radial-gradient(circle, var(--color-sky), rgba(152, 219, 246, 0.8));
+    box-shadow: 0 0 6px var(--color-sky), 0 0 12px rgba(152, 219, 246, 0.6),
+        0 0 18px rgba(152, 219, 246, 0.3);
+}
+
+.cursor-sparkle.sparkle-purple {
+    background: radial-gradient(circle, var(--color-lavender), rgba(187, 185, 253, 0.8));
+    box-shadow: 0 0 6px var(--color-lavender), 0 0 12px rgba(187, 185, 253, 0.6),
+        0 0 18px rgba(187, 185, 253, 0.3);
 }
 
 @keyframes sparkle-fade {

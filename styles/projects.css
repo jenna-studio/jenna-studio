@@ -158,19 +158,19 @@ textarea:hover,
 
 .featured-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: var(--spacing-2xl);
-    align-items: center;
+    align-items: start;
 }
 
 .featured-image {
     position: relative;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    height: 300px;
+    height: 400px;
     background: var(--gradient-main);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: var(--color-white);
     font-size: var(--font-size-xl);
@@ -293,7 +293,7 @@ textarea:hover,
     border-radius: var(--border-radius-md);
     margin-bottom: var(--spacing-lg);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: var(--color-white);
     font-weight: var(--font-weight-semibold);
@@ -321,7 +321,7 @@ textarea:hover,
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     opacity: 0;
     transition: all var(--transition-normal);
@@ -411,7 +411,7 @@ textarea:hover,
 .meta-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     text-align: center;
 }
 
@@ -531,19 +531,19 @@ textarea:hover,
 
 .featured-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: var(--spacing-2xl);
-    align-items: center;
+    align-items: start;
 }
 
 .featured-image {
     position: relative;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    height: 300px;
+    height: 400px;
     background: var(--gradient-main);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: var(--color-white);
     font-size: var(--font-size-xl);
@@ -666,7 +666,7 @@ textarea:hover,
     border-radius: var(--border-radius-md);
     margin-bottom: var(--spacing-lg);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: var(--color-white);
     font-weight: var(--font-weight-semibold);
@@ -694,7 +694,7 @@ textarea:hover,
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     opacity: 0;
     transition: all var(--transition-normal);
@@ -784,7 +784,7 @@ textarea:hover,
 .meta-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     text-align: center;
 }
 
@@ -901,7 +901,7 @@ textarea:hover,
 .tech-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: var(--spacing-sm) 0;
 }
 
@@ -1043,7 +1043,7 @@ textarea:hover,
 @media (max-width: 768px) {
     .filter-container {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         gap: var(--spacing-sm);
     }
 
@@ -1083,7 +1083,7 @@ textarea:hover,
 
     .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
 
     .cta-buttons .btn {
@@ -1124,7 +1124,7 @@ textarea:hover,
 
     .overlay-actions {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
 
     .tech-item {
@@ -1148,7 +1148,7 @@ textarea:hover,
 .projects-loading {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 200px;
 }
 
@@ -1300,7 +1300,7 @@ textarea:hover,
 .tech-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .tech-name {
@@ -1397,7 +1397,7 @@ textarea:hover,
 @media (max-width: 768px) {
     .filter-container {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         gap: var(--spacing-sm);
     }
 
@@ -1437,7 +1437,7 @@ textarea:hover,
 
     .cta-buttons {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
 
     .cta-buttons .btn {
@@ -1497,7 +1497,7 @@ textarea:hover,
 .projects-loading {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 200px;
 }
 
@@ -1555,4 +1555,29 @@ textarea:hover,
     .projects-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* ===== PROJECT THUMBNAIL STYLING ===== */
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: var(--color-dark);
+    z-index: 0;
+}
+
+/* ===== FEATURED TITLE STYLING ===== */
+.featured-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-primary);
+    text-align: left;
+}
+
+/* ===== FEATURED LEFT COLUMN ===== */
+.featured-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
 }

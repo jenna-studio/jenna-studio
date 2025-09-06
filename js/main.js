@@ -193,6 +193,11 @@ class CustomCursor {
         const sparkle = document.createElement("div");
         sparkle.className = "cursor-sparkle";
 
+        // Add rainbow gradient colors
+        const colors = ["pink", "yellow", "green", "skyblue", "purple"];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        sparkle.classList.add(`sparkle-${randomColor}`);
+
         // Position sparkle at the end/tail of the cursor (bottom part)
         // Cursor is 32x50px, so offset to the bottom area
         const cursorBottomOffsetX = (Math.random() - 0.5) * 15; // smaller random spread
