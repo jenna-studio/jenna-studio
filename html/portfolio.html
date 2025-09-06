@@ -439,11 +439,6 @@
         </div>
     </footer>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle particle effects">
-        <span class="toggle-icon">✨</span>
-    </button>
-
     <!-- Scripts -->
     <script src="../js/main.js"></script>
 
@@ -452,6 +447,26 @@
         // Override touch detection globally
         window.isTouchDevice = function () { return false; };
         window.prefersReducedMotion = function () { return false; };
+
+        // Fix navigation links
+        document.addEventListener('DOMContentLoaded', function () {
+            // Force hide loading overlay immediately
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (loadingOverlay) {
+                loadingOverlay.style.display = 'none';
+                loadingOverlay.style.pointerEvents = 'none';
+            }
+
+            const navLinks = document.querySelectorAll('.nav-link, .nav-logo');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    console.log('Navigation clicked:', this.href);
+                    // Force immediate navigation
+                    window.location.href = this.href;
+                    return false;
+                });
+            });
+        });
 
         window.addEventListener('load', function () {
             // Wait a bit for everything to load

@@ -288,7 +288,7 @@ textarea:hover,
 .project-image {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 160px;
     background: var(--gradient-main);
     border-radius: var(--border-radius-md);
     margin-bottom: var(--spacing-lg);
@@ -661,7 +661,7 @@ textarea:hover,
 .project-image {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 160px;
     background: var(--gradient-main);
     border-radius: var(--border-radius-md);
     margin-bottom: var(--spacing-lg);
@@ -692,7 +692,7 @@ textarea:hover,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(255, 105, 180, 0.3);
     display: flex;
     align-items: start;
     justify-content: center;
@@ -709,6 +709,7 @@ textarea:hover,
     display: flex;
     gap: var(--spacing-sm);
     flex-wrap: wrap;
+    margin-top: var(--spacing-3xl);
 }
 
 .overlay-btn {
@@ -746,7 +747,7 @@ textarea:hover,
 
 .project-description {
     color: var(--color-text-light);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
     line-height: var(--line-height-relaxed);
     flex: 1;
     text-align: justify;
@@ -1152,7 +1153,7 @@ textarea:hover,
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 200px;
+    height: 160px;
 }
 
 .loading-spinner {
@@ -1165,8 +1166,8 @@ textarea:hover,
 }
 
 /* ===== HOVER EFFECTS ===== */
-.project-card:hover .project-title {
-    color: var(--color-primary);
+.project-card:hover h3.project-title {
+    color: var(--color-hotpink);
 }
 
 .project-card:hover .tech-tag {
@@ -1501,7 +1502,7 @@ textarea:hover,
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 200px;
+    height: 160px;
 }
 
 .loading-spinner {

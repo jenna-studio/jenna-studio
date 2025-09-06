@@ -4010,26 +4010,36 @@ p {
 .about-content {
     display: flex !important;
     max-width: 1136px !important;
-    padding: 32px;
+    padding: var(--spacing-xl);
     flex-direction: row;
-    gap: 0;
+    gap: var(--spacing-2xl);
+    align-items: flex-start;
 }
 
 .about-text {
-    display: inline-block;
+    flex: 1;
     text-align: left;
     margin: 0;
 }
 
 .about-text p {
-    width: fit-content;
+    width: 100%;
+}
+
+.about-video {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .about-video > .bunny-video {
-    display: inline-block;
     width: 100%;
+    max-width: 300px;
+    height: auto;
     margin: 0;
     object-fit: cover;
+    border-radius: var(--border-radius-lg);
 }
 
 /* 6) Contact grid: auto-fit without device-specific breakpoints */
@@ -4110,5 +4120,172 @@ p {
 @media (min-width: 1920px) {
     .container {
         max-width: 1400px !important;
+    }
+}
+
+/* ===== COMPREHENSIVE INDEX.HTML RESPONSIVE DESIGN ===== */
+
+/* Tablet and below - 768px */
+@media (max-width: 768px) {
+    /* About section - mobile layout */
+    .about-content {
+        flex-direction: column !important;
+        gap: var(--spacing-xl) !important;
+        padding: var(--spacing-lg) !important;
+        text-align: center;
+    }
+
+    .about-video {
+        flex: none !important;
+        order: -1;
+        margin: 0 auto;
+    }
+
+    .about-video > .bunny-video {
+        max-width: 280px !important;
+        width: 90% !important;
+    }
+
+    .about-text {
+        text-align: left !important;
+    }
+
+    .about-skills {
+        justify-content: center;
+        margin: var(--spacing-lg) 0;
+    }
+
+    .about-cta {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: center;
+    }
+
+    .about-cta .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(1rem, 4vw, 1.25rem);
+    }
+
+    .hero-description {
+        font-size: var(--font-size-base);
+        max-width: 100%;
+    }
+
+    /* Card improvements */
+    .card {
+        margin: var(--spacing-lg) var(--spacing-sm);
+        padding: var(--spacing-lg);
+    }
+}
+
+/* Mobile - 480px and below */
+@media (max-width: 480px) {
+    .about-content {
+        padding: var(--spacing-md) var(--spacing-sm) !important;
+        gap: var(--spacing-lg) !important;
+    }
+
+    .about-video > .bunny-video {
+        max-width: 250px !important;
+    }
+
+    .about-text {
+        font-size: var(--font-size-base) !important;
+    }
+
+    .about-text p {
+        font-size: var(--font-size-sm);
+        line-height: 1.6;
+    }
+
+    .skill-tag {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .about-cta .btn {
+        max-width: 200px;
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Hero adjustments for small screens */
+    .hero {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: clamp(1.5rem, 7vw, 2.5rem);
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    }
+
+    .hero-description {
+        font-size: var(--font-size-sm);
+        line-height: 1.5;
+    }
+
+    .hero-cta .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Card spacing */
+    .card {
+        margin: var(--spacing-md) var(--spacing-xs);
+        padding: var(--spacing-md);
+    }
+
+    /* Section spacing */
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+}
+
+/* Very small screens - 320px */
+@media (max-width: 320px) {
+    .about-content {
+        padding: var(--spacing-sm) var(--spacing-xs) !important;
+    }
+
+    .about-video > .bunny-video {
+        max-width: 220px !important;
+    }
+
+    .skill-tag {
+        font-size: var(--font-size-xs);
+        padding: 4px 8px;
+    }
+
+    .hero-title {
+        font-size: clamp(1.25rem, 6vw, 2rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+    }
+
+    .about-cta .btn {
+        max-width: 180px;
+        padding: var(--spacing-xs) var(--spacing-sm);
     }
 }

@@ -116,7 +116,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: var(--spacing-md);
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(92, 220, 128, 0.18);
     border: 1px solid rgba(132, 204, 22, 0.3);
     border-radius: var(--border-radius-md);
     color: var(--color-text-primary);

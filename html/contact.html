@@ -58,7 +58,14 @@
                     <h2 class="section-title">Send Me a Message</h2>
                 </div>
                 <div class="form-container">
-                    <form class="contact-form-element" id="contactForm">
+                    <form class="contact-form-element" id="contactForm" action="https://formspree.io/f/xzzaypnq"
+                        method="POST">
+                        <!-- Hidden inputs for Formspree -->
+                        <input type="hidden" name="_to" value="jenna@jenna-studio.dev">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission from Jenna Studio">
+                        <input type="hidden" name="_replyto" value="jenna@jenna-studio.dev">
+                        <input type="hidden" name="_next" value="https://jenna-studio.dev/contact.html?success=true">
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
@@ -82,10 +89,10 @@
                             <select id="projectType" name="projectType">
                                 <option value="">Select a project type</option>
                                 <option value="website">Website Development</option>
+                                <option value="redesign">Website Design</option>
                                 <option value="webapp">Web Application</option>
-                                <option value="ecommerce">E-commerce Store</option>
-                                <option value="redesign">Website Redesign</option>
-                                <option value="consultation">Consultation</option>
+                                <option value="AI">AI Chatbot</option>
+                                <option value="automation">AI Automation</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -168,13 +175,31 @@
         </div>
     </footer>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle particle effects">
-        <span class="toggle-icon">✨</span>
-    </button>
-
     <!-- Scripts -->
     <script src="../js/main.js"></script>
+
+    <!-- Contact Form Handler -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+
+            if (form) {
+                const submitBtn = form.querySelector('.submit-btn');
+                const btnText = submitBtn?.querySelector('.btn-text');
+                const btnLoading = submitBtn?.querySelector('.btn-loading');
+
+                form.addEventListener('submit', function (e) {
+                    // Don't prevent default - let Formspree handle it naturally
+                    // Just show loading state
+                    if (btnText && btnLoading) {
+                        btnText.style.display = 'none';
+                        btnLoading.style.display = 'inline';
+                        submitBtn.disabled = true;
+                    }
+                });
+            }
+        });
+    </script>
 
     <!-- Override touch detection and fix cursor for contact page -->
     <script>
@@ -182,32 +207,48 @@
         window.isTouchDevice = function () { return false; };
         window.prefersReducedMotion = function () { return false; };
 
+        // Fix navigation links
+        document.addEventListener('DOMContentLoaded', function () {
+            // Force hide loading overlay immediately
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (loadingOverlay) {
+                loadingOverlay.style.display = 'none';
+                loadingOverlay.style.pointerEvents = 'none';
+            }
+
+            const navLinks = document.querySelectorAll('.nav-link, .nav-logo');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    console.log('Navigation clicked:', this.href);
+                    // Force immediate navigation
+                    window.location.href = this.href;
+                    return false;
+                });
+            });
+        });
+
         window.addEventListener('load', function () {
             // Wait a bit for everything to load
             setTimeout(function () {
-                if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
-                    const cursor = window.jennaStudio.components.customCursor;
+                // Force cursor to be visible with CSS overrides
+                const style = document.createElement('style');
+                style.textContent = `
+                    html, body, *, *::before, *::after { 
+                        cursor: none !important; 
+                    }
+                    #cursor { 
+                        display: block !important; 
+                        visibility: visible !important; 
+                        opacity: 1 !important; 
+                        pointer-events: none !important; 
+                        position: fixed !important; 
+                        z-index: 10000 !important; 
+                    }
+                `;
+                document.head.appendChild(style);
 
-                    console.log('Fixing cursor...');
-
-                    // Reset cursor state
-                    cursor.isLoading = false;
-                    cursor.isVisible = true;
-                    cursor.setLoading(false);
-
-                    // Remove loading class and add proper styling
-                    cursor.element.classList.remove('loading');
-                    cursor.element.style.display = 'block';
-                    cursor.element.style.visibility = 'visible';
-                    cursor.element.style.opacity = '1';
-
-                    // Force re-initialization
-                    cursor.show();
-                    cursor.animate();
-
-                    console.log('Cursor fixed');
-                }
-            }, 1500); // Wait 1.5 seconds for loading to complete
+                console.log('Cursor CSS overrides applied');
+            }, 500);
         });
     </script>
 </body>
