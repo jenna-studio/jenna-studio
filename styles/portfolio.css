@@ -3,10 +3,92 @@
  * Specific styles for the portfolio page components
  */
 
+/* ===== CURSOR OVERRIDE ===== */
+/* Force cursor visibility on portfolio page */
+.cursor {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Override media queries that hide cursor */
+@media (hover: none) and (pointer: coarse) {
+    .cursor {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .cursor {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Hide system cursor to show only custom cursor */
+html,
+body,
+*,
+*::before,
+*::after {
+    cursor: none !important;
+}
+
+/* Override any specific cursor styles */
+a,
+button,
+input,
+select,
+textarea,
+.btn,
+.nav-link,
+.card,
+[role="button"],
+[tabindex] {
+    cursor: none !important;
+}
+
+/* Force cursor none on all interactive elements */
+a:hover,
+button:hover,
+input:hover,
+select:hover,
+textarea:hover,
+.btn:hover,
+.nav-link:hover,
+.card:hover {
+    cursor: none !important;
+}
+
+/* Override media queries that might restore cursor */
+@media (hover: hover) and (pointer: fine) {
+    html,
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: none !important;
+    }
+}
+
 /* ===== PAGE HEADER ===== */
 .page-header {
     text-align: center;
     margin-bottom: var(--spacing-3xl);
+    margin-top: var(--spacing-3xl);
 }
 
 .page-title {

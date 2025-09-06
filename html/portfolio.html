@@ -33,11 +33,17 @@
     <nav class="nav-container" id="navigation">
         <div class="nav">
             <a href="../index.html" class="nav-logo">Jenna Studio</a>
-            <a href="../index.html#home" class="nav-link">Home</a>
-            <a href="../index.html#about" class="nav-link">About</a>
-            <a href="../index.html#projects" class="nav-link">Projects</a>
-            <a href="../index.html#portfolio" class="nav-link active">Portfolio</a>
-            <a href="../index.html#contact" class="nav-link">Contact</a>
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="portfolio.html" class="nav-link active">Portfolio</a>
+
+
+
+
+
+
+            <a href="contact.html" class="nav-link">Contact</a>
         </div>
     </nav>
 
@@ -446,6 +452,41 @@
 
     <!-- Scripts -->
     <script src="../js/main.js"></script>
+
+    <!-- Override touch detection and fix cursor for portfolio page -->
+    <script>
+        // Override touch detection globally
+        window.isTouchDevice = function () { return false; };
+        window.prefersReducedMotion = function () { return false; };
+
+        window.addEventListener('load', function () {
+            // Wait a bit for everything to load
+            setTimeout(function () {
+                if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
+                    const cursor = window.jennaStudio.components.customCursor;
+
+                    console.log('Fixing cursor...');
+
+                    // Reset cursor state
+                    cursor.isLoading = false;
+                    cursor.isVisible = true;
+                    cursor.setLoading(false);
+
+                    // Remove loading class and add proper styling
+                    cursor.element.classList.remove('loading');
+                    cursor.element.style.display = 'block';
+                    cursor.element.style.visibility = 'visible';
+                    cursor.element.style.opacity = '1';
+
+                    // Force re-initialization
+                    cursor.show();
+                    cursor.animate();
+
+                    console.log('Cursor fixed');
+                }
+            }, 1500); // Wait 1.5 seconds for loading to complete
+        });
+    </script>
 </body>
 
 </html>

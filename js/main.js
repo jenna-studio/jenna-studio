@@ -328,15 +328,15 @@ class ParticleSystem {
     }
 
     startRandomSpawning() {
-        // Spawn random hearts more frequently
+        // Spawn random hearts at a moderate frequency
         const spawnRandomHeart = () => {
             this.createRandomParticle();
-            const nextSpawnTime = 800 + Math.random() * 1200; // 0.8-2 seconds
+            const nextSpawnTime = 600 + Math.random() * 900; // 0.6-1.5 seconds (moderate frequency)
             setTimeout(spawnRandomHeart, nextSpawnTime);
         };
 
         // Start the first spawn quickly
-        setTimeout(spawnRandomHeart, Math.random() * 1000);
+        setTimeout(spawnRandomHeart, Math.random() * 750);
     }
 
     createRandomParticle() {
@@ -674,17 +674,18 @@ class LoadingScreen {
     setLoadingCursor(isLoading) {
         if (this.customCursor) {
             if (isLoading) {
-                // Force cursor to be visible and in loading state
-                this.customCursor.isVisible = true;
-                this.customCursor.element.style.opacity = "1";
-                this.customCursor.element.style.display = "block";
-                this.customCursor.setLoading(true);
-                // Ensure animation loop is running
-                if (!this.customCursor.animationFrameId) {
-                    this.customCursor.animate();
-                }
+                // Hide custom cursor during loading screen to prevent conflicts
+                this.customCursor.element.style.display = "none";
+                this.customCursor.element.style.opacity = "0";
+                this.customCursor.isVisible = false;
             } else {
+                // Restore custom cursor after loading
                 this.customCursor.setLoading(false);
+                this.customCursor.element.style.display = "block";
+                this.customCursor.element.style.opacity = "1";
+                this.customCursor.isVisible = true;
+                this.customCursor.show();
+                this.customCursor.animate();
             }
         }
     }
