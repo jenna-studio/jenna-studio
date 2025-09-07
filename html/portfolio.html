@@ -56,7 +56,7 @@
             <section class="portfolio-filter">
                 <div class="filter-container">
                     <button class="filter-btn active scale-in stagger-1" data-filter="all">All Work</button>
-                    <button class="filter-btn scale-in stagger-2" data-filter="3d">3D Works</button>
+                    <button class="filter-btn scale-in stagger-2" data-filter="3d">3D Work</button>
                     <button class="filter-btn scale-in stagger-3" data-filter="web-design">Web Design</button>
                     <button class="filter-btn scale-in stagger-4" data-filter="ui-ux">UI/UX</button>
                     <button class="filter-btn scale-in stagger-5" data-filter="tools">Tools</button>
@@ -69,217 +69,199 @@
                 <div class="gallery-grid" id="portfolioGrid">
 
                     <!-- Portfolio Item 1 -->
-                    <article class="portfolio-item scale-in stagger-1" data-category="web-design">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-1" data-category="tools"
+                        data-portfolio-id="english-tutor">
+                        <div class="portfolio-card" onclick="openPortfolioModal('english-tutor')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Your English Tutor</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Your English Tutor</h3>
+                                    <p>AI Tools</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Your English Tutor</h3>
                                         <p>Custom ChatGPT</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="customGPT">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Live Site</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Your English Tutor</h3>
-                                <p class="portfolio-category">Tools</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 2 -->
-                    <article class="portfolio-item scale-in stagger-2" data-category="ui-ux">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-2" data-category="tools"
+                        data-portfolio-id="customGPT">
+                        <div class="portfolio-card" onclick="openPortfolioModal('personal-color-analysis-service')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Mobile App UI</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Personal Color Analysis Service</h3>
+                                    <p>AI Tools</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
-                                        <h3>Fitness Tracker App</h3>
-                                        <p>Mobile app interface design</p>
+                                        <h3>Personal Color Analysis Service</h3>
+                                        <p>Custom ChatGPT</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="fitness-app">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Prototype</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Fitness Tracker App</h3>
-                                <p class="portfolio-category">UI/UX Design</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 3 -->
-                    <article class="portfolio-item scale-in stagger-3" data-category="branding">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-3" data-category="creation"
+                        data-portfolio-id="coffee-brand">
+                        <div class="portfolio-card" onclick="openPortfolioModal('coffee-brand')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Brand Identity</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Coffee Shop Branding</h3>
+                                    <p>Brand Design</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Coffee Shop Branding</h3>
                                         <p>Complete brand identity design</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="coffee-brand">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Brand Guide</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Coffee Shop Branding</h3>
-                                <p class="portfolio-category">Branding</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 4 -->
-                    <article class="portfolio-item scale-in stagger-4" data-category="web-design">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-4" data-category="web-design"
+                        data-portfolio-id="agency-site">
+                        <div class="portfolio-card" onclick="openPortfolioModal('agency-site')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Agency Website</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Creative Agency</h3>
+                                    <p>Web Design</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Creative Agency</h3>
                                         <p>Modern agency website</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="agency-site">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Live Site</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Creative Agency</h3>
-                                <p class="portfolio-category">Web Design</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 5 -->
-                    <article class="portfolio-item scale-in stagger-5" data-category="illustration">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-5" data-category="creation"
+                        data-portfolio-id="illustrations">
+                        <div class="portfolio-card" onclick="openPortfolioModal('illustrations')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Digital Art</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Character Illustrations</h3>
+                                    <p>Digital Art</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Character Illustrations</h3>
                                         <p>Digital character designs</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="illustrations">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Gallery</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Character Illustrations</h3>
-                                <p class="portfolio-category">Digital Art</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 6 -->
-                    <article class="portfolio-item scale-in stagger-6" data-category="ui-ux">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-6" data-category="ui-ux"
+                        data-portfolio-id="dashboard">
+                        <div class="portfolio-card" onclick="openPortfolioModal('dashboard')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Dashboard UI</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Analytics Dashboard</h3>
+                                    <p>UI/UX Design</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Analytics Dashboard</h3>
                                         <p>Data visualization interface</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="dashboard">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Prototype</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Analytics Dashboard</h3>
-                                <p class="portfolio-category">UI/UX Design</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 7 -->
-                    <article class="portfolio-item scale-in stagger-7" data-category="branding">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-7" data-category="creation"
+                        data-portfolio-id="tech-brand">
+                        <div class="portfolio-card" onclick="openPortfolioModal('tech-brand')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Tech Startup</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Tech Startup Brand</h3>
+                                    <p>Brand Design</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Tech Startup Brand</h3>
                                         <p>Modern tech company identity</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="tech-brand">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Brand Guide</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Tech Startup Brand</h3>
-                                <p class="portfolio-category">Branding</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 8 -->
-                    <article class="portfolio-item scale-in stagger-8" data-category="web-design">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-8" data-category="web-design"
+                        data-portfolio-id="restaurant">
+                        <div class="portfolio-card" onclick="openPortfolioModal('restaurant')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Restaurant Site</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Restaurant Website</h3>
+                                    <p>Web Design</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Restaurant Website</h3>
                                         <p>Fine dining restaurant site</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="restaurant">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Live Site</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Restaurant Website</h3>
-                                <p class="portfolio-category">Web Design</p>
                             </div>
                         </div>
                     </article>
 
                     <!-- Portfolio Item 9 -->
-                    <article class="portfolio-item scale-in stagger-9" data-category="illustration">
-                        <div class="portfolio-card">
+                    <article class="portfolio-item scale-in stagger-9" data-category="creation"
+                        data-portfolio-id="icons">
+                        <div class="portfolio-card" onclick="openPortfolioModal('icons')">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">Icon Set</div>
+                                <div class="portfolio-text-content">
+                                    <h3>Custom Icon Set</h3>
+                                    <p>Illustration</p>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Custom Icon Set</h3>
                                         <p>Modern icon collection</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="icons">View
-                                                Details</button>
-                                            <a href="#" class="overlay-btn">Download</a>
+                                            <button class="overlay-btn view-btn">View Details</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h3 class="portfolio-title">Custom Icon Set</h3>
-                                <p class="portfolio-category">Illustration</p>
                             </div>
                         </div>
                     </article>
@@ -508,6 +490,160 @@
                     }, index * 200);
                 });
             }, 300);
+        });
+
+        // Portfolio Modal Functionality
+        const portfolioData = {
+            'english-tutor': {
+                title: 'Your English Tutor',
+                category: 'AI Tools',
+                description: 'A custom ChatGPT-powered English tutor designed to help students improve their language skills through interactive conversations, grammar corrections, and personalized learning experiences. Features include real-time feedback, progress tracking, and adaptive difficulty levels.',
+                tags: ['ChatGPT', 'AI', 'Education', 'Language Learning'],
+                actions: [
+                    { text: 'Try This Tool', url: 'https://chatgpt.com/g/g-674b5729dd5c81916d0b5e7c4a2e5481-your-english-tutor', primary: true },
+                    { text: 'Learn More', url: '#', primary: false }
+                ]
+            },
+            'fitness-app': {
+                title: 'Fitness Tracker App',
+                category: 'UI/UX Design',
+                description: 'A comprehensive mobile fitness tracking application featuring an intuitive interface for workout planning, progress monitoring, and health analytics. The design focuses on user-friendly navigation, motivational elements, and seamless data visualization to encourage healthy habits.',
+                tags: ['Mobile UI', 'Fitness', 'Health', 'React Native'],
+                actions: [
+                    { text: 'View Prototype', url: '#', primary: true },
+                    { text: 'View Designs', url: '#', primary: false }
+                ]
+            },
+            'coffee-brand': {
+                title: 'Coffee Shop Branding',
+                category: 'Brand Design',
+                description: 'Complete brand identity design for a modern coffee shop including logo design, color palette, typography, packaging design, and marketing materials. The brand reflects warmth, quality, and artisanal craftsmanship through carefully chosen visual elements.',
+                tags: ['Branding', 'Logo Design', 'Packaging', 'Adobe Illustrator'],
+                actions: [
+                    { text: 'View Brand Guide', url: '#', primary: true },
+                    { text: 'See Portfolio', url: '#', primary: false }
+                ]
+            },
+            'agency-site': {
+                title: 'Creative Agency Website',
+                category: 'Web Design',
+                description: 'Modern, responsive website design for a creative agency showcasing their portfolio, services, and team. Features clean aesthetics, smooth animations, and optimized user experience across all devices. Built with focus on conversion and client engagement.',
+                tags: ['Web Design', 'Responsive', 'Animation', 'WordPress'],
+                actions: [
+                    { text: 'Live Demo', url: '#', primary: true },
+                    { text: 'View Code', url: '#', primary: false }
+                ]
+            },
+            'illustrations': {
+                title: 'Character Illustrations',
+                category: 'Digital Art',
+                description: 'A collection of original character illustrations created for various digital media projects. Each character is designed with unique personalities, detailed expressions, and vibrant colors, suitable for games, animations, and storytelling applications.',
+                tags: ['Digital Art', 'Character Design', 'Illustration', 'Adobe Photoshop'],
+                actions: [
+                    { text: 'View Gallery', url: '#', primary: true },
+                    { text: 'Commission Art', url: 'contact.html', primary: false }
+                ]
+            },
+            'dashboard': {
+                title: 'Analytics Dashboard',
+                category: 'UI/UX Design',
+                description: 'Data visualization dashboard interface designed for business analytics and reporting. Features intuitive charts, customizable widgets, and real-time data updates. The design prioritizes clarity, functionality, and ease of use for data-driven decision making.',
+                tags: ['Dashboard', 'Data Visualization', 'Analytics', 'React'],
+                actions: [
+                    { text: 'Interactive Demo', url: '#', primary: true },
+                    { text: 'View Documentation', url: '#', primary: false }
+                ]
+            },
+            'tech-brand': {
+                title: 'Tech Startup Brand',
+                category: 'Brand Design',
+                description: 'Modern brand identity for an innovative tech startup, including logo design, brand guidelines, website design, and marketing materials. The brand reflects innovation, reliability, and cutting-edge technology through contemporary visual elements.',
+                tags: ['Tech Branding', 'Startup', 'Modern Design', 'Brand Strategy'],
+                actions: [
+                    { text: 'View Brand Book', url: '#', primary: true },
+                    { text: 'Case Study', url: '#', primary: false }
+                ]
+            },
+            'restaurant': {
+                title: 'Restaurant Website',
+                category: 'Web Design',
+                description: 'Elegant website design for a fine dining restaurant featuring online reservations, menu showcase, and event booking system. The design captures the restaurant\'s sophisticated atmosphere while providing seamless user experience for customers.',
+                tags: ['Restaurant', 'Fine Dining', 'Reservations', 'Hospitality'],
+                actions: [
+                    { text: 'Visit Site', url: '#', primary: true },
+                    { text: 'View Menu', url: '#', primary: false }
+                ]
+            },
+            'icons': {
+                title: 'Custom Icon Set',
+                category: 'Illustration',
+                description: 'A comprehensive collection of custom-designed icons for modern applications and websites. The set includes 200+ icons in multiple styles and formats, ensuring consistency and visual harmony across digital products.',
+                tags: ['Icons', 'UI Elements', 'Vector Graphics', 'Design System'],
+                actions: [
+                    { text: 'Download Free', url: '#', primary: true },
+                    { text: 'Full Collection', url: '#', primary: false }
+                ]
+            }
+        };
+
+        function openPortfolioModal(portfolioId) {
+            const modal = document.getElementById('portfolioModal');
+            const data = portfolioData[portfolioId];
+
+            if (!data) return;
+
+            // Update modal content
+            modal.querySelector('.modal-title').textContent = data.title;
+            modal.querySelector('.modal-category').textContent = data.category;
+            modal.querySelector('.modal-description').textContent = data.description;
+
+            // Update tags
+            const tagsContainer = modal.querySelector('.modal-tags');
+            tagsContainer.innerHTML = data.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+            // Update action buttons
+            const actionsContainer = modal.querySelector('.modal-actions');
+            actionsContainer.innerHTML = data.actions.map(action =>
+                `<a href="${action.url}" class="btn ${action.primary ? 'btn-primary' : 'btn-outline'}" ${action.url.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}>${action.text}</a>`
+            ).join('');
+
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            // Add animation
+            setTimeout(() => {
+                modal.querySelector('.modal-content').style.transform = 'scale(1)';
+                modal.querySelector('.modal-content').style.opacity = '1';
+            }, 10);
+        }
+
+        function closePortfolioModal() {
+            const modal = document.getElementById('portfolioModal');
+            modal.querySelector('.modal-content').style.transform = 'scale(0.8)';
+            modal.querySelector('.modal-content').style.opacity = '0';
+
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Modal event listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = document.getElementById('portfolioModal');
+            const closeBtn = modal.querySelector('.modal-close');
+            const overlay = modal.querySelector('.modal-overlay');
+
+            closeBtn.addEventListener('click', closePortfolioModal);
+            overlay.addEventListener('click', closePortfolioModal);
+
+            // Close modal with escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && modal.style.display === 'flex') {
+                    closePortfolioModal();
+                }
+            });
         });
     </script>
 </body>

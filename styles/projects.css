@@ -406,6 +406,7 @@ textarea:hover,
     font-size: var(--font-size-sm);
     color: var(--color-text-light);
     margin-top: auto;
+    padding: 0 10px;
 }
 
 .meta-item {
@@ -1095,7 +1096,7 @@ textarea:hover,
     }
 
     .project-meta {
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--spacing-xs);
         text-align: center;
     }
