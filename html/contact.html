@@ -57,11 +57,11 @@
             <!-- Contact Form -->
             <section class="contact-form section">
                 <div class="form-header">
-                    <h2 class="section-title">Send Me a Message</h2>
+                    <h2 class="section-title fade-in-up">Send Me a Message</h2>
                 </div>
                 <div class="form-container">
-                    <form class="contact-form-element" id="contactForm" action="https://formspree.io/f/xzzaypnq"
-                        method="POST">
+                    <form class="contact-form-element fade-in-up stagger-1" id="contactForm"
+                        action="https://formspree.io/f/xzzaypnq" method="POST">
                         <!-- Hidden inputs for Formspree -->
                         <input type="hidden" name="_to" value="jenna@jenna-studio.dev">
                         <input type="hidden" name="_subject" value="New Contact Form Submission from Jenna Studio">
@@ -251,6 +251,17 @@
 
                 console.log('Cursor CSS overrides applied');
             }, 500);
+
+            // Trigger page load animations
+            setTimeout(() => {
+                const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-description, .hero-cta, .hero-buttons');
+                heroElements.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+            }, 300);
         });
     </script>
 </body>

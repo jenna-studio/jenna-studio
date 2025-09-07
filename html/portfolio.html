@@ -56,10 +56,11 @@
             <section class="portfolio-filter">
                 <div class="filter-container">
                     <button class="filter-btn active" data-filter="all">All Work</button>
+                    <button class="filter-btn" data-filter="3d">3D Works</button>
                     <button class="filter-btn" data-filter="web-design">Web Design</button>
                     <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
-                    <button class="filter-btn" data-filter="branding">Branding</button>
-                    <button class="filter-btn" data-filter="illustration">Illustration</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                    <button class="filter-btn" data-filter="creation">Creation</button>
                 </div>
             </section>
 
@@ -71,13 +72,13 @@
                     <article class="portfolio-item" data-category="web-design">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
-                                <div class="image-placeholder">E-Commerce Website</div>
+                                <div class="image-placeholder">Your English Tutor</div>
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
-                                        <h3>E-Commerce Platform</h3>
-                                        <p>Modern online store design</p>
+                                        <h3>Your English Tutor</h3>
+                                        <p>Custom ChatGPT</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn" data-portfolio="ecommerce">View
+                                            <button class="overlay-btn view-btn" data-portfolio="customGPT">View
                                                 Details</button>
                                             <a href="#" class="overlay-btn">Live Site</a>
                                         </div>
@@ -85,8 +86,8 @@
                                 </div>
                             </div>
                             <div class="portfolio-info">
-                                <h3 class="portfolio-title">E-Commerce Platform</h3>
-                                <p class="portfolio-category">Web Design</p>
+                                <h3 class="portfolio-title">Your English Tutor</h3>
+                                <p class="portfolio-category">Tools</p>
                             </div>
                         </div>
                     </article>
@@ -288,7 +289,7 @@
 
             <!-- Portfolio Stats -->
             <section class="portfolio-stats section">
-                <h2 class="section-title">Portfolio Highlights</h2>
+                <h2 class="section-title fade-in-up">Portfolio Highlights</h2>
                 <div class="stats-grid">
                     <div class="card stat-card">
                         <div class="stat-number" data-target="50">0</div>
@@ -311,7 +312,7 @@
 
             <!-- Testimonials -->
             <section class="testimonials section">
-                <h2 class="section-title">What Clients Say</h2>
+                <h2 class="section-title fade-in-up">What Clients Say</h2>
                 <div class="testimonials-grid">
                     <div class="card testimonial-card">
                         <div class="testimonial-content">
@@ -493,9 +494,20 @@
                     cursor.show();
                     cursor.animate();
 
-                    console.log('Cursor fixed');
+                    console.log('Cursor failed');
                 }
             }, 1500); // Wait 1.5 seconds for loading to complete
+
+            // Trigger page load animations
+            setTimeout(() => {
+                const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-description, .hero-cta, .hero-buttons');
+                heroElements.forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+            }, 300);
         });
     </script>
 </body>

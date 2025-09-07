@@ -555,20 +555,11 @@ class AnimationObserver {
     }
 
     observeElements() {
-        // Observe sections and cards for scroll animations
+        // Observe all elements with animation classes
         const elementsToObserve = document.querySelectorAll(
-            ".scroll-animate, section:not(#home), .card:not(.fade-in-up):not(.scale-in), .project-card:not(.fade-in-up), .portfolio-item:not(.fade-in-left)"
+            ".fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right, .scale-in, .scroll-animate"
         );
-        elementsToObserve.forEach((el, index) => {
-            // Don't override existing animation classes
-            if (
-                !el.classList.contains("fade-in-up") &&
-                !el.classList.contains("fade-in-left") &&
-                !el.classList.contains("fade-in-right") &&
-                !el.classList.contains("scale-in")
-            ) {
-                el.classList.add("scroll-animate");
-            }
+        elementsToObserve.forEach((el) => {
             this.observer.observe(el);
         });
     }
@@ -944,7 +935,7 @@ class JennaStudio {
         // Initialize all components (cursor already initialized)
         this.components.errorHandler = new ErrorHandler();
         this.components.loadingScreen = new LoadingScreen(this.components.customCursor);
-        this.components.loadingAnimations = new LoadingAnimations();
+        // this.components.loadingAnimations = new LoadingAnimations();
         this.components.particleSystem = new ParticleSystem();
         this.components.navigation = new Navigation();
         this.components.animationObserver = new AnimationObserver();

@@ -933,7 +933,9 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: fadeInUp 1s ease both;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
 .hero-subtitle {
@@ -941,7 +943,9 @@ p {
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-2xl);
     font-weight: var(--font-weight-medium);
-    animation: fadeInUp 1s ease 0.2s both;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
 .hero-description {
@@ -950,11 +954,15 @@ p {
     max-width: 600px;
     margin: 0 auto var(--spacing-2xl);
     line-height: var(--line-height-relaxed);
-    animation: fadeInUp 1s ease 0.4s both;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
 .hero-cta {
-    animation: fadeInUp 1s ease 0.6s both;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
 @keyframes pulse {
@@ -1962,51 +1970,86 @@ p {
     }
 }
 
-/* Animation Classes */
+/* Animation Classes - Working with intersection observer */
 .fade-in-up {
-    animation: fadeInUp 0.8s ease both;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-up.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-in-down {
-    animation: fadeInDown 0.8s ease both;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-down.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-in-left {
-    animation: fadeInLeft 0.8s ease both;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-left.animate-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .fade-in-right {
-    animation: fadeInRight 0.8s ease both;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-right.animate-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .scale-in {
-    animation: scaleIn 0.6s ease both;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease;
 }
 
-/* Stagger Animations */
+.scale-in.animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger Animations - Using transition-delay for intersection observer */
 .stagger-1 {
-    animation-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 .stagger-2 {
-    animation-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 .stagger-3 {
-    animation-delay: 0.3s;
+    transition-delay: 0.3s;
 }
 .stagger-4 {
-    animation-delay: 0.4s;
+    transition-delay: 0.4s;
 }
 .stagger-5 {
-    animation-delay: 0.5s;
+    transition-delay: 0.5s;
 }
 .stagger-6 {
-    animation-delay: 0.6s;
+    transition-delay: 0.6s;
 }
 .stagger-7 {
-    animation-delay: 0.7s;
+    transition-delay: 0.7s;
 }
 .stagger-8 {
-    animation-delay: 0.8s;
+    transition-delay: 0.8s;
 }
 
 /* Scroll-based animations - elements start hidden and animate in */
@@ -2125,10 +2168,8 @@ p {
     .fade-in-left,
     .fade-in-right,
     .scale-in {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
-        animation: none !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
 
