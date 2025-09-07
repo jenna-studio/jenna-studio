@@ -2160,7 +2160,7 @@ p {
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
     }
-    
+
     /* Allow our specific transition-based animations to work with shorter durations */
     .fade-in-up,
     .fade-in-down,
@@ -2260,7 +2260,7 @@ p {
 
     /* Ensure profile image displays on tablets with seamless blur */
     .about-image .image-placeholder {
-        background-image: url(../img/profile2-bgx.png) !important;
+        background: #f1ccdb !important;
         background-size: cover !important;
         background-position: center center !important;
         background-repeat: no-repeat !important;
@@ -3603,7 +3603,7 @@ p {
 
     /* Mobile profile image optimizations with seamless blur */
     .image-placeholder {
-        background: #f1d0de !important;
+        background: #f1ccdb !important;
         background-size: cover !important;
         background-position: center center !important;
         background-repeat: no-repeat !important;
@@ -3619,7 +3619,7 @@ p {
 
     /* Fallback for older mobile browsers */
     .about-image {
-        background: #f1d0de;
+        background: #f1ccdb;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
