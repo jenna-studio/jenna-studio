@@ -557,11 +557,18 @@ class AnimationObserver {
     observeElements() {
         // Observe sections and cards for scroll animations
         const elementsToObserve = document.querySelectorAll(
-            "section:not(#home), .card, .project-card, .portfolio-item, .section-title"
+            ".scroll-animate, section:not(#home), .card:not(.fade-in-up):not(.scale-in), .project-card:not(.fade-in-up), .portfolio-item:not(.fade-in-left)"
         );
         elementsToObserve.forEach((el, index) => {
-            el.classList.add("animate-fade-up"); // Add the animation class
-            el.style.transitionDelay = `${index * 0.1}s`; // Stagger animations
+            // Don't override existing animation classes
+            if (
+                !el.classList.contains("fade-in-up") &&
+                !el.classList.contains("fade-in-left") &&
+                !el.classList.contains("fade-in-right") &&
+                !el.classList.contains("scale-in")
+            ) {
+                el.classList.add("scroll-animate");
+            }
             this.observer.observe(el);
         });
     }

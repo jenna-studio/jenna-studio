@@ -1999,6 +1999,138 @@ p {
 .stagger-5 {
     animation-delay: 0.5s;
 }
+.stagger-6 {
+    animation-delay: 0.6s;
+}
+.stagger-7 {
+    animation-delay: 0.7s;
+}
+.stagger-8 {
+    animation-delay: 0.8s;
+}
+
+/* Scroll-based animations - elements start hidden and animate in */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.scroll-animate.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Specific element animations */
+.hero-animate {
+    animation: fadeInUp 1.2s ease both;
+}
+
+.about-animate {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.projects-animate {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.portfolio-animate {
+    animation: fadeInLeft 0.8s ease both;
+}
+
+.contact-animate {
+    animation: scaleIn 0.8s ease both;
+}
+
+/* Page load animations with delays - removed conflicting global rules */
+
+/* Mobile animation adjustments */
+@media (max-width: 768px) {
+    .fade-in-up,
+    .fade-in-down,
+    .fade-in-left,
+    .fade-in-right,
+    .scale-in {
+        animation-duration: 0.6s;
+    }
+
+    .scroll-animate {
+        transition: all 0.6s ease;
+    }
+
+    /* Reduce stagger delays on mobile */
+    .stagger-1 {
+        animation-delay: 0.05s;
+    }
+    .stagger-2 {
+        animation-delay: 0.1s;
+    }
+    .stagger-3 {
+        animation-delay: 0.15s;
+    }
+    .stagger-4 {
+        animation-delay: 0.2s;
+    }
+    .stagger-5 {
+        animation-delay: 0.25s;
+    }
+    .stagger-6 {
+        animation-delay: 0.3s;
+    }
+    .stagger-7 {
+        animation-delay: 0.35s;
+    }
+    .stagger-8 {
+        animation-delay: 0.4s;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .fade-in-up,
+    .fade-in-down,
+    .fade-in-left,
+    .fade-in-right,
+    .scale-in {
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+
+/* High refresh rate device optimizations */
+@media (min-resolution: 120dpi) {
+    .fade-in-up,
+    .fade-in-down,
+    .fade-in-left,
+    .fade-in-right,
+    .scale-in {
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* Responsive animation preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .scroll-animate,
+    .fade-in-up,
+    .fade-in-down,
+    .fade-in-left,
+    .fade-in-right,
+    .scale-in {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
 
 /* ===== 19. RESPONSIVE DESIGN ===== */
 
