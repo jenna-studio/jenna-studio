@@ -2158,18 +2158,16 @@ p {
     *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-
-    .scroll-animate,
+    
+    /* Allow our specific transition-based animations to work with shorter durations */
     .fade-in-up,
     .fade-in-down,
     .fade-in-left,
     .fade-in-right,
     .scale-in {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
+        transition-duration: 0.2s !important;
     }
 }
 
