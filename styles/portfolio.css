@@ -4,15 +4,8 @@
  */
 
 /* ===== CURSOR OVERRIDE ===== */
-/* Force cursor visibility on portfolio page */
-.cursor {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-/* Override media queries that hide cursor */
-@media (hover: none) and (pointer: coarse) {
+/* Force cursor visibility on portfolio page - DESKTOP ONLY */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
     .cursor {
         display: block !important;
         visibility: visible !important;
@@ -20,51 +13,28 @@
     }
 }
 
-@media (max-width: 768px) {
-    .cursor {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+/* Hide cursor on mobile and touch devices */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor,
+    .cursor-sparkle {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    /* Reset cursor styles */
+    html,
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: auto !important;
     }
 }
 
-/* Hide system cursor to show only custom cursor */
-html,
-body,
-*,
-*::before,
-*::after {
-    cursor: none !important;
-}
-
-/* Override any specific cursor styles */
-a,
-button,
-input,
-select,
-textarea,
-.btn,
-.nav-link,
-.card,
-[role="button"],
-[tabindex] {
-    cursor: none !important;
-}
-
-/* Force cursor none on all interactive elements */
-a:hover,
-button:hover,
-input:hover,
-select:hover,
-textarea:hover,
-.btn:hover,
-.nav-link:hover,
-.card:hover {
-    cursor: none !important;
-}
-
-/* Override media queries that might restore cursor */
-@media (hover: hover) and (pointer: fine) {
+/* Hide system cursor to show only custom cursor - DESKTOP ONLY */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
     html,
     body,
     *,
@@ -74,7 +44,36 @@ textarea:hover,
     }
 }
 
-@media (max-width: 768px) {
+/* Override any specific cursor styles - DESKTOP ONLY */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+    a,
+    button,
+    input,
+    select,
+    textarea,
+    .btn,
+    .nav-link,
+    .card,
+    [role="button"],
+    [tabindex] {
+        cursor: none !important;
+    }
+
+    /* Force cursor none on all interactive elements */
+    a:hover,
+    button:hover,
+    input:hover,
+    select:hover,
+    textarea:hover,
+    .btn:hover,
+    .nav-link:hover,
+    .card:hover {
+        cursor: none !important;
+    }
+}
+
+/* Override media queries that might restore cursor - DESKTOP ONLY */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
     html,
     body,
     *,

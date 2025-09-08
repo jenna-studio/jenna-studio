@@ -3374,9 +3374,12 @@ p {
 /* Enhanced touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
     /* Hide custom cursor on touch devices */
-    .cursor {
+    .cursor,
+    .cursor-sparkle {
         display: none !important;
         visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
     }
 
     body,
@@ -3561,8 +3564,20 @@ p {
         display: none;
     }
 
+    .cursor,
     .cursor-sparkle {
-        display: none;
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    /* Reset cursor styles on mobile */
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: auto !important;
     }
 
     .hero::before {
@@ -3874,6 +3889,23 @@ p {
 
 /* Ensure proper aspect ratios for different screen sizes */
 @media (max-width: 768px) {
+    /* Hide custom cursor on tablets and mobile */
+    .cursor,
+    .cursor-sparkle {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    /* Reset cursor styles on tablets and mobile */
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: auto !important;
+    }
+
     .project-image {
         aspect-ratio: 16/9;
         height: auto;
@@ -4784,6 +4816,28 @@ p {
         text-align: center;
     }
 
+    .about-image {
+        order: -1 !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+        background: #f1ccdb !important;
+        padding: var(--spacing-lg) !important;
+        border-radius: var(--radius-lg) !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        display: flex !important;
+        align-items: center !important;
+        box-shadow: 0 4px 20px rgba(241, 204, 219, 0.15) !important;
+    }
+
+    .about-image .profile-image {
+        border-radius: var(--radius-md) !important;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+        max-width: 240px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
     .about-video {
         flex: none !important;
         order: -1;
@@ -4848,8 +4902,31 @@ p {
 /* Mobile - 480px and below */
 @media (max-width: 480px) {
     .about-content {
+        flex-direction: column !important;
         padding: var(--spacing-md) var(--spacing-sm) !important;
         gap: var(--spacing-lg) !important;
+        text-align: center !important;
+    }
+
+    .about-image {
+        order: -1 !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+        background: #f1ccdb !important;
+        padding: var(--spacing-lg) !important;
+        border-radius: var(--radius-lg) !important;
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        box-shadow: 0 4px 20px rgba(241, 204, 219, 0.2) !important;
+    }
+
+    .about-image .profile-image {
+        border-radius: var(--radius-md) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+        max-width: 200px !important;
+        width: 100% !important;
+        height: auto !important;
     }
 
     .about-video > .bunny-video {
