@@ -93,7 +93,7 @@
     image-rendering: crisp-edges;
 }
 
-/* Logo fallback styles */
+/* logo fallback styles */
 .logo-fallback {
     width: 60px;
     height: 60px;
@@ -117,13 +117,18 @@
 }
 
 .logo-fallback::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 70%
+    );
     transform: rotate(45deg);
     transition: transform 0.6s ease;
 }
@@ -814,7 +819,7 @@
         visibility: visible !important;
         transform: scale(1) !important;
     }
-    
+
     .logo-fallback {
         width: 40px;
         height: 40px;
