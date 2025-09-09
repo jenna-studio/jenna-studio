@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/portfolio.css">
 
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
 </head>
@@ -117,7 +123,7 @@
                         data-portfolio-id="travel-map">
                         <div class="portfolio-card" onclick="openPortfolioModal('travel-map')">
                             <div class="portfolio-image">
-                                <img src="../img/main-proile-landscape.png" alt="Travel Maps Design"
+                                <img src="../img/portfolio-thumbnails/travel-map-thumbnail.png" alt="Travel Maps Design"
                                     class="portfolio-img">
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
@@ -135,18 +141,19 @@
                     </article>
 
                     <!-- Portfolio Item 4 -->
-                    <article class="portfolio-item scale-in stagger-4" data-category="web-design"
-                        data-portfolio-id="agency-site">
-                        <div class="portfolio-card" onclick="openPortfolioModal('agency-site')">
+                    <article class="portfolio-item scale-in stagger-4" data-category="UI/UX"
+                        data-portfolio-id="chrome-theme">
+                        <div class="portfolio-card" onclick="openPortfolioModal('chrome-theme')">
                             <div class="portfolio-image">
-                                <img src="../img/main-proile-landscape.png" alt="Creative Agency" class="portfolio-img">
+                                <img src="../img/portfolio-thumbnails/chrome-theme-thumbnail.png" alt="Chrome Theme"
+                                    class="portfolio-img">
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
-                                        <h3>Creative Agency</h3>
-                                        <p>Modern agency website</p>
+                                        <h3>Chrome Theme Extension</h3>
+                                        <p>Browser Extension</p>
                                         <div class="overlay-actions">
                                             <button class="overlay-btn view-btn"
-                                                onclick="event.stopPropagation(); openPortfolioModal('agency-site');">View
+                                                onclick="event.stopPropagation(); openPortfolioModal('chrome-theme');">View
                                                 Details</button>
                                         </div>
                                     </div>
@@ -321,6 +328,18 @@
         </div>
     </div>
 
+    <!-- Image Lightbox Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-overlay"></div>
+        <div class="image-modal-content">
+            <button class="image-modal-close" aria-label="Close image">&times;</button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="image-info">
+                <p class="image-title" id="imageTitle"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -359,6 +378,13 @@
 
     <!-- Scripts -->
     <script src="../js/main.js"></script>
+
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
     <!-- Override touch detection and fix cursor for portfolio page -->
     <script>
@@ -470,20 +496,45 @@
             'travel-map': {
                 title: 'Travel Maps Design',
                 category: 'Creation',
-                description: 'A comprehensive mobile fitness tracking application featuring an intuitive interface for workout planning, progress monitoring, and health analytics. The design focuses on user-friendly navigation, motivational elements, and seamless data visualization to encourage healthy habits.',
+                description: 'Create custom cruise journey maps for (주)삶은여행 that visually highlight routes, ports, and key experiences with clear, intuitive design. These maps help travelers easily understand their itinerary and feel the excitement of their voyage before departure.',
                 tags: ['Travel', 'Map', 'Photoshop'],
+                hasCarousel: true,
+                carouselImages: [
+                    { src: '../img/travel-maps/map1.JPG', alt: 'Mediterranean Cruise Map' },
+                    { src: '../img/travel-maps/map2.jpg', alt: 'Northern Europe Cruise Route' },
+                    { src: '../img/travel-maps/map3.jpg', alt: 'Western Mediterranean Europe Journey' },
+                    {
+                        src: '../img/travel-maps/map4.jpg', alt: 'Balkan Peninsula Cruise Destination'
+                    },
+                    { src: '../img/travel-maps/map5.jpg', alt: 'Arabian Cruise Destination' },
+                    { src: '../img/travel-maps/map6.jpg', alt: 'Western Mediterranean Cruise Destination' }
+                ],
                 actions: [
-                    { text: 'View Prototype', url: '#', primary: true },
-                    { text: 'View Designs', url: '#', primary: false }
+                    { text: 'Visit Website', url: 'https://lifejourney.co.kr', primary: true }
+                    // { text: 'View Designs', url: '#', primary: false }
                 ]
             },
             'chrome-theme': {
                 title: 'Chrome Theme Extension',
                 category: 'UI/UX Design',
-                description: 'Complete brand identity design for a modern coffee shop including logo design, color palette, typography, packaging design, and marketing materials. The brand reflects warmth, quality, and artisanal craftsmanship through carefully chosen visual elements.',
-                tags: ['Branding', 'Logo Design', 'Packaging', 'Adobe Illustrator'],
+                description: 'Curated Chrome themes that blend pastel gradients and clean geometry for a calm, modern browsing experience. Lightweight and readability-tuned across tabs, the Omnibox, and system UI, with cohesive palettes for both light and dark modes.',
+                tags: ['Chrome', 'Theme', 'UI/UX'],
+                hasCarousel: true,
+                displayType: 'carousel', // Different from travel-map's 'gallery'
+                carouselImages: [
+                    { src: '../img/chrome-theme-thumbnails/pinkworks-screenshot.png', alt: 'Pink Works Theme' },
+                    { src: '../img/chrome-theme-thumbnails/blue-workspace-screenshot.png', alt: 'Blue Workspace Theme' },
+                    { src: '../img/chrome-theme-thumbnails/dreamy-pastel-clouds-screenshot.png', alt: 'Dreamy Pastel Clouds Theme' },
+                    { src: '../img/chrome-theme-thumbnails/frozen-castle-screenshot.png', alt: 'Frozen Castle Theme' },
+                    { src: '../img/chrome-theme-thumbnails/green-workspace-screenshot.png', alt: 'Green Workspace Theme' },
+                    { src: '../img/chrome-theme-thumbnails/purple-workspace-screenshot.png', alt: 'Purple Workspace Theme' },
+                    { src: '../img/chrome-theme-thumbnails/yellow-workspace-screenshot.jpg', alt: 'Yellow Workspace Theme' },
+                    { src: '../img/chrome-theme-thumbnails/blackpink-screenshot.jpg', alt: 'BlackPink Theme' },
+                    { src: '../img/chrome-theme-thumbnails/denimrose-screenshot.jpg', alt: 'Denim Rose Theme' },
+                    { src: '../img/chrome-theme-thumbnails/milkyway-galaxy-screenshot.jpg', alt: 'Milky Way Galaxy Theme' }
+                ],
                 actions: [
-                    { text: 'Install', url: '#', primary: true },
+                    { text: 'Install Pink Workspace', url: 'https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb', primary: true },
                     { text: 'View More', url: 'https://github.com/jenna-studio/chrome-theme-extensions', primary: false }
                 ]
             },
@@ -560,9 +611,58 @@
             modal.querySelector('.modal-category').textContent = data.category;
             modal.querySelector('.modal-description').textContent = data.description;
 
+            // Handle image gallery or carousel if present
+            const modalDetails = modal.querySelector('.modal-details');
+            let contentHTML = '';
+
+            if (data.hasCarousel && data.carouselImages) {
+                if (data.displayType === 'carousel') {
+                    // Slick carousel for chrome themes
+                    contentHTML = `
+                        <div class="modal-carousel-container">
+                            <div class="portfolio-carousel" id="portfolioCarousel">
+                                ${data.carouselImages.map(image =>
+                        `<div class="carousel-slide">
+                                        <img src="${image.src}" alt="${image.alt}" class="carousel-image">
+                                        <div class="carousel-caption">${image.alt}</div>
+                                    </div>`
+                    ).join('')}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // Pinterest-style gallery for travel maps
+                    contentHTML = `
+                        <div class="modal-gallery-container">
+                            <div class="image-grid">
+                                ${data.carouselImages.map((image, index) =>
+                        `<div class="gallery-item">
+                                        <img src="${image.src}" alt="${image.alt}" class="gallery-image" onclick="openImageModal('${image.src}', '${image.alt}', ${index})">
+                                    </div>`
+                    ).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
             // Update tags
             const tagsContainer = modal.querySelector('.modal-tags');
             tagsContainer.innerHTML = data.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+            // Insert content after description, before tags
+            const description = modal.querySelector('.modal-description');
+            const existingGallery = modal.querySelector('.modal-gallery-container');
+            const existingCarousel = modal.querySelector('.modal-carousel-container');
+            if (existingGallery) {
+                existingGallery.remove();
+            }
+            if (existingCarousel) {
+                existingCarousel.remove();
+            }
+            if (contentHTML) {
+                description.insertAdjacentHTML('afterend', contentHTML);
+            }
 
             // Update action buttons
             const actionsContainer = modal.querySelector('.modal-actions');
@@ -574,6 +674,27 @@
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
 
+            // Initialize carousel if present
+            if (data.hasCarousel && data.carouselImages && data.displayType === 'carousel') {
+                setTimeout(() => {
+                    $('#portfolioCarousel').slick({
+                        dots: true,
+                        arrows: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 4000,
+                        pauseOnHover: true,
+                        pauseOnFocus: true,
+                        adaptiveHeight: false,
+                        fade: true,
+                        cssEase: 'ease-in-out'
+                    });
+                }, 100);
+            }
+
             // Add animation
             setTimeout(() => {
                 modal.querySelector('.modal-content').style.transform = 'scale(1)';
@@ -583,12 +704,29 @@
 
         function closePortfolioModal() {
             const modal = document.getElementById('portfolioModal');
+
+            // Destroy carousel if it exists
+            const carousel = modal.querySelector('#portfolioCarousel');
+            if (carousel && $(carousel).hasClass('slick-initialized')) {
+                $(carousel).slick('unslick');
+            }
+
             modal.querySelector('.modal-content').style.transform = 'scale(0.8)';
             modal.querySelector('.modal-content').style.opacity = '0';
 
             setTimeout(() => {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
+
+                // Remove gallery and carousel HTML
+                const galleryContainer = modal.querySelector('.modal-gallery-container');
+                const carouselContainer = modal.querySelector('.modal-carousel-container');
+                if (galleryContainer) {
+                    galleryContainer.remove();
+                }
+                if (carouselContainer) {
+                    carouselContainer.remove();
+                }
             }, 300);
         }
 
@@ -605,6 +743,53 @@
             document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape' && modal.style.display === 'flex') {
                     closePortfolioModal();
+                }
+            });
+        });
+
+        // Image Modal Functions
+        function openImageModal(imageSrc, imageAlt, index) {
+            const imageModal = document.getElementById('imageModal');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageTitle = document.getElementById('imageTitle');
+
+            lightboxImage.src = imageSrc;
+            lightboxImage.alt = imageAlt;
+            imageTitle.textContent = imageAlt;
+
+            imageModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            setTimeout(() => {
+                imageModal.querySelector('.image-modal-content').style.transform = 'scale(1)';
+                imageModal.querySelector('.image-modal-content').style.opacity = '1';
+            }, 10);
+        }
+
+        function closeImageModal() {
+            const imageModal = document.getElementById('imageModal');
+            imageModal.querySelector('.image-modal-content').style.transform = 'scale(0.8)';
+            imageModal.querySelector('.image-modal-content').style.opacity = '0';
+
+            setTimeout(() => {
+                imageModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Image Modal Event Listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            const imageModal = document.getElementById('imageModal');
+            const closeBtn = imageModal.querySelector('.image-modal-close');
+            const overlay = imageModal.querySelector('.image-modal-overlay');
+
+            closeBtn.addEventListener('click', closeImageModal);
+            overlay.addEventListener('click', closeImageModal);
+
+            // Close image modal with escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && imageModal.style.display === 'flex') {
+                    closeImageModal();
                 }
             });
         });

@@ -1096,9 +1096,11 @@ textarea:hover,
     }
 
     .project-meta {
-        flex-direction: row;
+        justify-content: flex;
+        flex-direction: row !important;
         gap: var(--spacing-xs);
         text-align: center;
+        justify-content: space-between !important;
     }
 }
 
