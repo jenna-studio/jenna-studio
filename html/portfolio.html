@@ -73,14 +73,16 @@
                         data-portfolio-id="english-tutor">
                         <div class="portfolio-card" onclick="openPortfolioModal('english-tutor')">
                             <div class="portfolio-image">
-                                <img src="../img/main-proile-landscape.png" alt="Your English Tutor"
-                                    class="portfolio-img">
+                                <img src="../img/portfolio-thumbnails/english-tutor-thumbnail.png"
+                                    alt="Your English Tutor" class="portfolio-img">
                                 <div class="portfolio-overlay">
                                     <div class="overlay-content">
                                         <h3>Your English Tutor</h3>
                                         <p>Custom ChatGPT</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn">View Details</button>
+                                            <a href="https://chatgpt.com/g/g-L4mUqZGvo-your-english-tutor"
+                                                target="_blank" rel="noopener" class="overlay-btn view-btn">View
+                                                Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +102,9 @@
                                         <h3>Personal Color Analysis Service</h3>
                                         <p>Custom ChatGPT</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn">View Details</button>
+                                            <a href="https://chatgpt.com/g/g-6750a7a2c0b88191a7cf96ccbecf1bb4-personal-color-analysis-service"
+                                                target="_blank" rel="noopener" class="overlay-btn view-btn">View
+                                                Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +124,9 @@
                                         <h3>Coffee Shop Branding</h3>
                                         <p>Complete brand identity design</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn">View Details</button>
+                                            <button class="overlay-btn view-btn"
+                                                onclick="event.stopPropagation(); openPortfolioModal('coffee-brand');">View
+                                                Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +145,9 @@
                                         <h3>Creative Agency</h3>
                                         <p>Modern agency website</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn">View Details</button>
+                                            <button class="overlay-btn view-btn"
+                                                onclick="event.stopPropagation(); openPortfolioModal('agency-site');">View
+                                                Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +167,9 @@
                                         <h3>Character Illustrations</h3>
                                         <p>Digital character designs</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn">View Details</button>
+                                            <button class="overlay-btn view-btn"
+                                                onclick="event.stopPropagation(); openPortfolioModal('illustrations');">View
+                                                Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +189,9 @@
                                         <h3>Analytics Dashboard</h3>
                                         <p>Data visualization interface</p>
                                         <div class="overlay-actions">
-                                            <button class="overlay-btn view-btn">View Details</button>
+                                            <button class="overlay-btn view-btn"
+                                                onclick="event.stopPropagation(); openPortfolioModal('dashboard');">View
+                                                Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +286,7 @@
                     <div class="cta-buttons">
                         <a href="contact.html" class="btn btn-primary">Get In Touch</a>
                         <a href="projects.html" class="btn btn-secondary">View Projects</a>
-                        <a href="resume.html" class="btn btn-outline">Download Resume</a>
+                        <a href="about.html" class="btn btn-outline">More About Me</a>
                     </div>
                 </div>
             </section>
@@ -287,21 +299,22 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
             <div class="modal-body">
-                <div class="modal-image">
-                    <div class="image-placeholder">Project Image</div>
-                </div>
                 <div class="modal-details">
-                    <h3 class="modal-title">Project Title</h3>
-                    <p class="modal-category">Category</p>
-                    <p class="modal-description">Detailed project description will go here...</p>
+                    <h3 class="modal-title">Your English Tutor</h3>
+                    <p class="modal-category">AI Tools</p>
+                    <p class="modal-description">A custom ChatGPT-powered English tutor designed to help students
+                        improve their language skills through interactive conversations, grammar corrections, and
+                        personalized learning experiences. Features include real-time feedback, progress tracking, and
+                        adaptive difficulty levels.</p>
                     <div class="modal-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+                        <span class="tag">ChatGPT</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Education</span>
+                        <span class="tag">Language Learning</span>
                     </div>
                     <div class="modal-actions">
-                        <a href="#" class="btn btn-primary">Live Demo</a>
-                        <a href="#" class="btn btn-outline">View Code</a>
+                        <a href="https://chatgpt.com/g/g-L4mUqZGvo-your-english-tutor" class="btn btn-primary"
+                            target="_blank" rel="noopener">Try This Tool</a>
                     </div>
                 </div>
             </div>
@@ -412,15 +425,45 @@
             }, 300);
         });
 
+        // Add portfolio elements to cursor hover detection
+        document.addEventListener('DOMContentLoaded', function () {
+            // Wait for main.js cursor to be initialized
+            setTimeout(() => {
+                if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
+                    const cursor = window.jennaStudio.components.customCursor;
+
+                    // Add portfolio-specific hover elements
+                    const portfolioHoverElements = document.querySelectorAll(
+                        '.portfolio-card, .portfolio-image, .portfolio-overlay, .filter-btn, .overlay-btn, .modal-close, .btn'
+                    );
+
+                    portfolioHoverElements.forEach((el) => {
+                        el.addEventListener("mouseenter", () => cursor.setHover(true));
+                        el.addEventListener("mouseleave", () => cursor.setHover(false));
+                    });
+                }
+            }, 100);
+        });
+
         // Portfolio Modal Functionality
         const portfolioData = {
             'english-tutor': {
                 title: 'Your English Tutor',
                 category: 'AI Tools',
                 description: 'A custom ChatGPT-powered English tutor designed to help students improve their language skills through interactive conversations, grammar corrections, and personalized learning experiences. Features include real-time feedback, progress tracking, and adaptive difficulty levels.',
-                tags: ['ChatGPT', 'AI', 'Education', 'Language Learning'],
+                tags: ['Education', 'Language', 'ChatGPT'],
                 actions: [
-                    { text: 'Try This Tool', url: 'https://chatgpt.com/g/g-674b5729dd5c81916d0b5e7c4a2e5481-your-english-tutor', primary: true },
+                    { text: 'Try This Tool', url: 'https://chatgpt.com/g/g-L4mUqZGvo-your-english-tutor', primary: true }
+                    // { text: 'Learn More', url: '#', primary: false }
+                ]
+            },
+            'personal-color-analysis-service': {
+                title: 'Personal Color Analysis Service',
+                category: 'AI Tools',
+                description: 'A specialized ChatGPT service that provides personalized color analysis and styling recommendations. Helps users discover their ideal color palette, makeup suggestions, and fashion advice based on their unique features and preferences.',
+                tags: ['ChatGPT', 'AI', 'Color Analysis', 'Fashion'],
+                actions: [
+                    { text: 'Try This Service', url: 'https://chatgpt.com/g/g-6750a7a2c0b88191a7cf96ccbecf1bb4-personal-color-analysis-service', primary: true },
                     { text: 'Learn More', url: '#', primary: false }
                 ]
             },

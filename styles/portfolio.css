@@ -3,13 +3,14 @@
  * Specific styles for the portfolio page components
  */
 
-/* ===== CURSOR OVERRIDE ===== */
-/* Force cursor visibility on portfolio page - DESKTOP ONLY */
+/* ===== CUSTOM CURSOR ===== */
+/* Ensure custom cursor is visible on portfolio page - DESKTOP ONLY */
 @media (min-width: 769px) and (hover: hover) and (pointer: fine) {
     .cursor {
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
+        z-index: 9999 !important;
     }
 }
 
@@ -35,6 +36,7 @@
 
 /* Hide system cursor to show only custom cursor - DESKTOP ONLY */
 @media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+    /* Hide all system cursors */
     html,
     body,
     *,
@@ -44,44 +46,21 @@
     }
 }
 
-/* Override any specific cursor styles - DESKTOP ONLY */
+/* Custom cursor hover states for portfolio elements */
 @media (min-width: 769px) and (hover: hover) and (pointer: fine) {
-    a,
-    button,
-    input,
-    select,
-    textarea,
-    .btn,
-    .nav-link,
-    .card,
-    [role="button"],
-    [tabindex] {
-        cursor: none !important;
-    }
-
-    /* Force cursor none on all interactive elements */
-    a:hover,
-    button:hover,
-    input:hover,
-    select:hover,
-    textarea:hover,
-    .btn:hover,
-    .nav-link:hover,
-    .card:hover {
-        cursor: none !important;
-    }
+    /* Interactive elements that should trigger hover cursor */
+    /* .portfolio-card:hover,
+    .portfolio-image:hover,
+    .portfolio-overlay:hover,
+    .filter-btn:hover,
+    .overlay-btn:hover,
+    .modal-close:hover,
+    .modal-actions .btn:hover,
+    .cta-buttons .btn:hover {
+        /* The cursor change will be handled by JavaScript */
 }
+*/
 
-/* Override media queries that might restore cursor - DESKTOP ONLY */
-@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
-    html,
-    body,
-    *,
-    *::before,
-    *::after {
-        cursor: none !important;
-    }
-}
 
 /* ===== PAGE HEADER ===== */
 .page-header {
@@ -127,7 +106,6 @@
     border-radius: var(--border-radius-lg);
     color: var(--color-text-secondary);
     font-weight: var(--font-weight-medium);
-    cursor: pointer;
     transition: all var(--transition-normal);
     backdrop-filter: var(--backdrop-blur-light);
     font-family: var(--font-primary);
@@ -181,7 +159,6 @@
     transition: all 0.2s ease;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
     border-radius: var(--radius-lg);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -191,6 +168,7 @@
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     border-color: var(--color-primary-light);
+    background: #ff69b47d;
 }
 
 /* Portfolio Text Content */
@@ -241,7 +219,6 @@
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-md);
-    cursor: pointer;
 }
 
 .portfolio-img {
@@ -329,7 +306,6 @@
     text-decoration: none;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
-    cursor: pointer;
     transition: all var(--transition-fast);
 }
 
@@ -647,7 +623,6 @@
     border-radius: var(--border-radius-full);
     color: var(--color-text-primary);
     font-size: var(--font-size-xl);
-    cursor: pointer;
     transition: all var(--transition-fast);
     z-index: 10;
     display: flex;
@@ -1151,6 +1126,7 @@
     display: flex;
     flex-direction: column;
     transition: all var(--transition-normal);
+    border-radius: var(--border-radius-lg);
 }
 
 .portfolio-card:hover {
@@ -1164,7 +1140,6 @@
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     margin-bottom: var(--spacing-md);
-    cursor: pointer;
 }
 
 .image-placeholder {
@@ -1388,7 +1363,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(84, 247, 187, 0.3);
     backdrop-filter: var(--backdrop-blur);
 }
 
@@ -1398,7 +1373,7 @@
     backdrop-filter: var(--backdrop-blur);
     border-radius: var(--border-radius-xl);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     max-height: 90vh;
     overflow-y: auto;
@@ -1429,8 +1404,9 @@
 
 .modal-body {
     padding: var(--spacing-2xl);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-2xl);
     align-items: start;
 }
@@ -1448,7 +1424,7 @@
 }
 
 .modal-category {
-    color: var(--color-primary);
+    color: var(--color-hotpink);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
     text-transform: uppercase;
