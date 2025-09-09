@@ -94,8 +94,8 @@
                             <div class="education-logo">
                                 <img src="../img/kookmin-logo.png" alt="Kookmin University"
                                     class="edu-logo scale-in stagger-3"
-                                    onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                    onload="this.style.opacity='1';">
+                                    onerror="console.error('Kookmin logo 1 failed:', this.src); this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                    onload="console.log('Kookmin logo 1 loaded:', this.src); this.style.opacity='1';">
                                 <div class="logo-fallback" style="display:none;">KMU</div>
                             </div>
                             <div class="education-content">
@@ -136,8 +136,8 @@
                             <div class="education-logo">
                                 <img src="../img/kookmin-logo.png" alt="Kookmin University"
                                     class="edu-logo scale-in stagger-9"
-                                    onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                    onload="this.style.opacity='1';">
+                                    onerror="console.error('Kookmin logo 2 failed:', this.src); this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                    onload="console.log('Kookmin logo 2 loaded:', this.src); this.style.opacity='1';">
                                 <div class="logo-fallback" style="display:none;">KMU</div>
                             </div>
                             <div class="education-content">
@@ -502,9 +502,22 @@
 
             // Enhanced image loading with retry logic for education logos
             const eduLogos = document.querySelectorAll('.edu-logo');
+            console.log('Found education logos:', eduLogos.length);
+
+            // TEST: Force show fallbacks for debugging (remove this later)
+            // Uncomment the next 7 lines to test fallbacks
+            // eduLogos.forEach((img, index) => {
+            //     img.style.display = 'none';
+            //     const fallback = img.nextElementSibling;
+            //     if (fallback) fallback.style.display = 'flex';
+            //     console.log('TEST: Forced fallback for logo', index);
+            // });
+            // return;
+
             eduLogos.forEach((img, index) => {
+                console.log('Processing logo', index, 'with src:', img.src);
                 let retryCount = 0;
-                const maxRetries = 3;
+                const maxRetries = 5; // Increased retries
 
                 const retryLoad = () => {
                     if (retryCount < maxRetries) {
@@ -519,7 +532,7 @@
                         if (fallback && fallback.classList.contains('logo-fallback')) {
                             fallback.style.display = 'flex';
                         }
-                        console.log('Image failed to load after retries:', img.src);
+                        console.log('Max retries reached for logo', index, 'showing fallback');
                     }
                 };
 
@@ -538,8 +551,50 @@
                         // Force a reload if image hasn't loaded after timeout
                         img.src = img.src;
                     }
-                }, 2000 + (index * 500));
+                }, 1000 + (index * 200));
+
+                // Additional aggressive check after a short delay
+                setTimeout(() => {
+                    if (img.style.opacity !== '1' && img.style.display !== 'none') {
+                        console.log('Logo', index, 'still not loaded, trying backup approaches');
+
+                        // Try different path variations
+                        const originalSrc = img.src.split('?')[0];
+                        if (originalSrc.includes('kookmin-logo.png')) {
+                            // Try backup file
+                            img.src = originalSrc.replace('kookmin-logo.png', 'kookmin-logo-backup.png') + '?backup=' + Date.now();
+                        }
+                    }
+                }, 3000 + (index * 300));
+
+                // Final failsafe - after all attempts, ensure something is visible
+                setTimeout(() => {
+                    if (img.style.opacity !== '1' && img.style.display !== 'none') {
+                        console.log('All attempts failed for logo', index, 'forcing fallback');
+                        img.style.display = 'none';
+                        const fallback = img.nextElementSibling;
+                        if (fallback) {
+                            fallback.style.display = 'flex';
+                            console.log('Fallback activated for logo', index);
+                        } else {
+                            console.error('No fallback element found for logo', index);
+                        }
+                    }
+                }, 5000 + (index * 500));
             });
+
+            // Add a global timeout to ensure at least fallbacks are shown
+            setTimeout(() => {
+                console.log('Final check - ensuring all logos are visible');
+                eduLogos.forEach((img, index) => {
+                    if (img.style.opacity !== '1' && img.style.display !== 'none') {
+                        console.log('Final fallback activation for logo', index);
+                        img.style.display = 'none';
+                        const fallback = img.nextElementSibling;
+                        if (fallback) fallback.style.display = 'flex';
+                    }
+                });
+            }, 8000);
 
             // Trigger page load animations
             setTimeout(() => {
