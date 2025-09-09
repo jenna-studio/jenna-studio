@@ -81,14 +81,41 @@
     object-position: center;
     border: 2px solid rgba(132, 204, 22, 0.3);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
     background: rgba(255, 255, 255, 0.95);
     padding: 8px;
     display: block !important;
     max-width: 100%;
-    opacity: 1 !important;
+    opacity: 0;
     visibility: visible !important;
     transform: scale(1) !important;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Logo fallback styles */
+.logo-fallback {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid rgba(132, 204, 22, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    line-height: 1;
+    font-family: var(--font-primary);
+}
+
+.logo-fallback:hover {
+    transform: scale(1.05);
+    border-color: var(--color-primary);
 }
 
 .edu-logo:hover {
@@ -764,9 +791,15 @@
         width: 40px;
         height: 40px;
         display: block !important;
-        opacity: 1 !important;
+        opacity: 0;
         visibility: visible !important;
         transform: scale(1) !important;
+    }
+    
+    .logo-fallback {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
     }
 
     .education-header h4 {

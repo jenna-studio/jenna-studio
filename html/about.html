@@ -93,7 +93,10 @@
                         <div class="education-item scale-in stagger-2">
                             <div class="education-logo">
                                 <img src="../img/kookmin-logo.png" alt="Kookmin University"
-                                    class="edu-logo scale-in stagger-3">
+                                    class="edu-logo scale-in stagger-3"
+                                    onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                    onload="this.style.opacity='1';">
+                                <div class="logo-fallback" style="display:none;">KMU</div>
                             </div>
                             <div class="education-content">
                                 <div class="education-header">
@@ -132,7 +135,10 @@
                         <div class="education-item scale-in stagger-8">
                             <div class="education-logo">
                                 <img src="../img/kookmin-logo.png" alt="Kookmin University"
-                                    class="edu-logo scale-in stagger-9">
+                                    class="edu-logo scale-in stagger-9"
+                                    onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                    onload="this.style.opacity='1';">
+                                <div class="logo-fallback" style="display:none;">KMU</div>
                             </div>
                             <div class="education-content">
                                 <div class="education-header">
@@ -475,7 +481,7 @@
 
     <!-- Fix navigation links -->
     <script>
-        // Fix navigation links
+        // Fix navigation links and image loading
         document.addEventListener('DOMContentLoaded', function () {
             // Force hide loading overlay immediately
             const loadingOverlay = document.getElementById('loadingOverlay');
@@ -492,6 +498,47 @@
                     window.location.href = this.href;
                     return false;
                 });
+            });
+
+            // Enhanced image loading with retry logic for education logos
+            const eduLogos = document.querySelectorAll('.edu-logo');
+            eduLogos.forEach((img, index) => {
+                let retryCount = 0;
+                const maxRetries = 3;
+
+                const retryLoad = () => {
+                    if (retryCount < maxRetries) {
+                        retryCount++;
+                        // Add cache busting parameter
+                        const originalSrc = img.src.split('?')[0];
+                        img.src = originalSrc + '?retry=' + retryCount + '&t=' + Date.now();
+                    } else {
+                        // Show fallback after max retries
+                        img.style.display = 'none';
+                        const fallback = img.nextElementSibling;
+                        if (fallback && fallback.classList.contains('logo-fallback')) {
+                            fallback.style.display = 'flex';
+                        }
+                        console.log('Image failed to load after retries:', img.src);
+                    }
+                };
+
+                img.addEventListener('error', retryLoad);
+
+                img.addEventListener('load', function () {
+                    this.style.opacity = '1';
+                    console.log('Image loaded successfully:', this.src);
+                });
+
+                // Preload images with timeout
+                setTimeout(() => {
+                    if (img.complete && img.naturalHeight !== 0) {
+                        img.style.opacity = '1';
+                    } else if (!img.complete) {
+                        // Force a reload if image hasn't loaded after timeout
+                        img.src = img.src;
+                    }
+                }, 2000 + (index * 500));
             });
 
             // Trigger page load animations
