@@ -238,11 +238,13 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* Hide default cursor on all elements */
-*,
-*::before,
-*::after {
-    cursor: none !important;
+/* Hide default cursor on all elements - DESKTOP ONLY */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+    *,
+    *::before,
+    *::after {
+        cursor: none !important;
+    }
 }
 
 /* Remove default styling from common elements */
@@ -277,6 +279,26 @@ select {
 }
 
 /* ===== 3. CUSTOM CURSOR ===== */
+/* Show custom cursor only on desktop devices with precise pointing */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
+    .cursor {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Hide custom cursor on mobile and touch devices */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor,
+    .cursor-sparkle {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}
+
 .cursor {
     position: fixed;
     width: 32px;

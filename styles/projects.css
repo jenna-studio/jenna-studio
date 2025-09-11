@@ -3,38 +3,51 @@
  * Specific styles for the projects page components
  */
 
-/* ===== CURSOR OVERRIDE ===== */
-/* Force cursor visibility on projects page */
-.cursor {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-/* Override media queries that hide cursor */
-@media (hover: none) and (pointer: coarse) {
+/* ===== CURSOR CONFIGURATION ===== */
+/* Show custom cursor only on desktop devices with precise pointing */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
     .cursor {
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
     }
-}
-
-@media (max-width: 768px) {
-    .cursor {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+    
+    /* Hide system cursor to show only custom cursor */
+    html,
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: none !important;
     }
 }
 
-/* Hide system cursor to show only custom cursor */
-html,
-body,
-*,
-*::before,
-*::after {
-    cursor: none !important;
+/* Hide custom cursor on mobile and touch devices */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor,
+    .cursor-sparkle {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    /* Reset cursor styles on mobile */
+    html,
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: auto !important;
+    }
+    
+    /* Reset cursor for interactive elements */
+    .btn,
+    .nav-link,
+    a,
+    button {
+        cursor: pointer !important;
+    }
 }
 
 /* Override any specific cursor styles */

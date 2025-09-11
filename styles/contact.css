@@ -3,38 +3,48 @@
  * Specific styles for the contact page components
  */
 
-/* ===== CURSOR OVERRIDE ===== */
-/* Force cursor visibility on contact page */
-.cursor {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-/* Override media queries that hide cursor */
-@media (hover: none) and (pointer: coarse) {
+/* ===== CURSOR CONFIGURATION ===== */
+/* Show custom cursor only on desktop devices with precise pointing */
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
     .cursor {
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
     }
-}
-
-@media (max-width: 768px) {
-    .cursor {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+    
+    /* Hide system cursor to show only custom cursor */
+    body,
+    * {
+        cursor: none !important;
     }
 }
 
-/* Hide system cursor to show only custom cursor */
-body {
-    cursor: none !important;
-}
-
-* {
-    cursor: none !important;
+/* Hide custom cursor on mobile and touch devices */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor,
+    .cursor-sparkle {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    /* Reset cursor styles on mobile */
+    body,
+    *,
+    *::before,
+    *::after {
+        cursor: auto !important;
+    }
+    
+    /* Reset cursor for interactive elements */
+    .btn,
+    .nav-link,
+    .contact-item,
+    a,
+    button {
+        cursor: pointer !important;
+    }
 }
 
 /* ===== PAGE HEADER ===== */
