@@ -1407,6 +1407,7 @@
     font-size: var(--font-size-xl);
     margin-bottom: var(--spacing-sm);
     color: var(--color-white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .overlay-content p {
@@ -1770,9 +1771,10 @@
 
 /* ===== CAROUSEL STYLES ===== */
 .modal-carousel-container {
-    padding: 0;
-    width: 500px;
+    padding: 0 60px;
+    width: 620px;
     margin: var(--spacing-lg) auto;
+    position: relative;
 }
 
 .portfolio-carousel {
@@ -1780,6 +1782,7 @@
     overflow: hidden;
     box-shadow: var(--shadow-card);
     background: var(--color-surface);
+    position: relative;
 }
 
 .carousel-slide {
@@ -1793,6 +1796,10 @@
     height: 300px;
     object-fit: contain;
     background-color: var(--color-surface);
+    display: block;
+}
+
+.carousel-slide a {
     display: block;
 }
 
@@ -1840,7 +1847,7 @@
     transform: scale(1.2);
 }
 
-/* .portfolio-carousel .slick-prev,
+.portfolio-carousel .slick-prev,
 .portfolio-carousel .slick-next {
     position: absolute;
     top: 50%;
@@ -1852,20 +1859,19 @@
     border-radius: var(--border-radius-full);
     background: rgba(255, 255, 255, 0.9);
     color: var(--color-text-primary);
-    font-size: var(--font-size-lg);
-    cursor: pointer;
+    font-size: 0;
     transition: all var(--transition-fast);
     display: flex !important;
     align-items: center;
     justify-content: center;
-} */
+}
 
 .portfolio-carousel .slick-prev {
-    left: var(--spacing-md);
+    left: -50px;
 }
 
 .portfolio-carousel .slick-next {
-    right: var(--spacing-md);
+    right: -50px;
 }
 
 .portfolio-carousel .slick-prev:hover,
@@ -1877,16 +1883,18 @@
 
 .portfolio-carousel .slick-prev:before {
     content: "<";
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     line-height: 1;
     font-family: monospace;
+    color: var(--color-text-primary);
 }
 
 .portfolio-carousel .slick-next:before {
     content: ">";
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
     line-height: 1;
     font-family: monospace;
+    color: var(--color-text-primary);
 }
 
 /* ===== IMAGE GALLERY STYLES ===== */

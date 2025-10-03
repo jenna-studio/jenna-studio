@@ -152,7 +152,7 @@
                     </article>
 
                     <!-- Portfolio Item 5 -->
-                    <article class="portfolio-item scale-in stagger-5" data-category="creation"
+                    <!-- <article class="portfolio-item scale-in stagger-5" data-category="creation"
                         data-portfolio-id="illustrations">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
@@ -168,10 +168,10 @@
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </article> -->
 
                     <!-- Portfolio Item 6 -->
-                    <article class="portfolio-item scale-in stagger-6" data-category="ui-ux"
+                    <!-- <article class="portfolio-item scale-in stagger-6" data-category="ui-ux"
                         data-portfolio-id="dashboard">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
@@ -187,7 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </article> -->
             </section>
 
 
@@ -443,7 +443,7 @@
 
                     // Add portfolio-specific hover elements
                     const portfolioHoverElements = document.querySelectorAll(
-                        '.portfolio-card, .portfolio-image, .portfolio-overlay, .filter-btn, .overlay-btn, .modal-close, .btn'
+                        '.portfolio-card, .portfolio-image, .portfolio-overlay, .filter-btn, .overlay-btn, .modal-close, .btn, .carousel-image, .carousel-slide a'
                     );
 
                     portfolioHoverElements.forEach((el) => {
@@ -505,16 +505,25 @@
                 hasCarousel: true,
                 displayType: 'carousel', // Different from travel-map's 'gallery'
                 carouselImages: [
-                    { src: '../img/chrome-theme-thumbnails/pinkworks-screenshot.png', alt: 'Pink Works Theme' },
-                    { src: '../img/chrome-theme-thumbnails/blue-workspace-screenshot.png', alt: 'Blue Workspace Theme' },
-                    { src: '../img/chrome-theme-thumbnails/dreamy-pastel-clouds-screenshot.png', alt: 'Dreamy Pastel Clouds Theme' },
-                    { src: '../img/chrome-theme-thumbnails/frozen-castle-screenshot.png', alt: 'Frozen Castle Theme' },
-                    { src: '../img/chrome-theme-thumbnails/green-workspace-screenshot.png', alt: 'Green Workspace Theme' },
-                    { src: '../img/chrome-theme-thumbnails/purple-workspace-screenshot.png', alt: 'Purple Workspace Theme' },
-                    { src: '../img/chrome-theme-thumbnails/yellow-workspace-screenshot.jpg', alt: 'Yellow Workspace Theme' },
-                    { src: '../img/chrome-theme-thumbnails/blackpink-screenshot.jpg', alt: 'BlackPink Theme' },
-                    { src: '../img/chrome-theme-thumbnails/denimrose-screenshot.jpg', alt: 'Denim Rose Theme' },
-                    { src: '../img/chrome-theme-thumbnails/milkyway-galaxy-screenshot.jpg', alt: 'Milky Way Galaxy Theme' }
+                    { src: '../img/chrome-theme-thumbnails/pinkworks-screenshot.png', alt: 'Pink Workspace Theme', url: 'https://chromewebstore.google.com/detail/pink-workspace/kaedikmphlfjdjhodnigpmacidjkjlbl' },
+                    { src: '../img/chrome-theme-thumbnails/blue-workspace-screenshot.png', alt: 'Blue Workspace Theme', url: 'https://chromewebstore.google.com/detail/blue-workspace/jmmmdffgaelkkilmpamphmhddgjchkpn' },
+                    { src: '../img/chrome-theme-thumbnails/green-workspace-screenshot.png', alt: 'Green Workspace Theme', url: 'https://chrome.google.com/webstore/detail/ahiamedbidnpddfnehmjnahbjcdjpofl' },
+                    { src: '../img/chrome-theme-thumbnails/grey-workspace-screenshot.jpg', alt: 'Grey Workspace Theme', url: 'https://chromewebstore.google.com/detail/grey-workspace/mbagehcboonlnlnjjlcmhhdbpkaipejm' },
+                    { src: '../img/chrome-theme-thumbnails/purple-workspace-screenshot.png', alt: 'Purple Workspace Theme', url: 'https://chrome.google.com/webstore/detail/mjjclblgefkgngfkaeoegiloamaoobnk' },
+                    { src: '../img/chrome-theme-thumbnails/yellow-workspace-screenshot.jpg', alt: 'Yellow Workspace Theme', url: 'https://chromewebstore.google.com/detail/yellow-workspace/jpafjjakfmejaefokgboiidcmhhfombn' },
+                    { src: '../img/chrome-theme-thumbnails/skyclouds-screenshot.jpg', alt: 'Sky with Clouds Theme', url: 'https://chromewebstore.google.com/detail/sky-with-clouds/hkecnmgmjibfhcohhobhlehkepciddhn' },
+                    { src: '../img/chrome-theme-thumbnails/blackpink-screenshot.jpg', alt: 'Black Pink Inspiration  Theme', url: 'https://chromewebstore.google.com/detail/black-pink-inspiration/gaccfmbgljmoglaecfbgdihjmmjolnki' },
+                    { src: '../img/chrome-theme-thumbnails/bledlake-screenshot.jpg', alt: 'Bled Lake Theme', url: 'https://chromewebstore.google.com/detail/bled-lake/adcjnpbgcjeonclmknnbncjkchbndchc' },
+                    { src: '../img/chrome-theme-thumbnails/denimrose-screenshot.jpg', alt: 'Denim Rose Theme', url: 'https://chromewebstore.google.com/detail/denim-rose/gnbamdkobiaciiidhhglbejgoakdgcic' },
+                    { src: '../img/chrome-theme-thumbnails/dreamy-pastel-clouds-screenshot.png', alt: 'Dreamy Pastel Clouds Theme', url: 'https://chromewebstore.google.com/detail/dreamy-pastel-clouds/nncjdihloloicmgnakndpbfmenijnppg' },
+                    { src: '../img/chrome-theme-thumbnails/dubrovniknight-screenshot.jpg', alt: 'Dubrovnik Night Theme', url: 'https://chromewebstore.google.com/detail/dubrovnik-night/bfbafimgbcncoliinlokaphcflkmhhnn' },
+                    { src: '../img/chrome-theme-thumbnails/frozen-castle-screenshot.png', alt: 'Frozen Castle Theme', url: 'https://chromewebstore.google.com/detail/frozen-castle/imnnoglioopghbhcoelbkdgemnneohnn' },
+                    { src: '../img/chrome-theme-thumbnails/luminescentlove-screenshot.jpg', alt: 'Luminescent Love Theme', url: 'https://chromewebstore.google.com/detail/luminescent-love/gipmkpjpjpendaldcmdbpbffecdbjnhi' },
+                    { src: '../img/chrome-theme-thumbnails/milkyway-galaxy-screenshot.jpg', alt: 'Milky Way Galaxy Theme', url: 'https://chromewebstore.google.com/detail/milky-way-galaxy/hnlbcaohoogbfakdnepkcadeagejkhkd' },
+                    { src: '../img/chrome-theme-thumbnails/northmiracle-screenshot.jpg', alt: 'North Miracle Theme', url: 'https://chromewebstore.google.com/detail/north-miracle/fnocimdfbbckhbnejikmilmfhfeeniil' },
+                    { src: '../img/chrome-theme-thumbnails/pinkgreen-screenshot.png', alt: 'Pink Green Theme', url: 'https://chromewebstore.google.com/detail/pink-green/alckjkejfeekolloegjdcgpoicllkhfb' },
+                    { src: '../img/chrome-theme-thumbnails/prague-screenshot.png', alt: 'Prague Sunset Theme', url: 'https://chromewebstore.google.com/detail/prague-sunset/bghpmnhknhagilmjobfcfebfmfnmgdgl' },
+                    { src: '../img/chrome-theme-thumbnails/purple-green-screenshot.jpg', alt: 'Purple Green Gradient Theme', url: 'https://chromewebstore.google.com/detail/purple-green-gradient/bieanadeicepnfhlajaiogbgmmbpfben' }
                 ],
                 actions: [
                     { text: 'Install Pink Workspace', url: 'https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb', primary: true },
@@ -606,7 +615,9 @@
                             <div class="portfolio-carousel" id="portfolioCarousel">
                                 ${data.carouselImages.map(image =>
                         `<div class="carousel-slide">
-                                        <img src="${image.src}" alt="${image.alt}" class="carousel-image">
+                                        <a href="${image.url}" target="_blank" rel="noopener noreferrer">
+                                            <img src="${image.src}" alt="${image.alt}" class="carousel-image">
+                                        </a>
                                         <div class="carousel-caption">${image.alt}</div>
                                     </div>`
                     ).join('')}
@@ -664,17 +675,27 @@
                         dots: true,
                         arrows: true,
                         infinite: true,
-                        speed: 500,
+                        speed: 300,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 2000,
+                        autoplaySpeed: 1000,
                         pauseOnHover: true,
                         pauseOnFocus: true,
                         adaptiveHeight: false,
                         fade: true,
                         cssEase: 'ease-in-out'
                     });
+
+                    // Attach cursor hover to carousel elements after initialization
+                    if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
+                        const cursor = window.jennaStudio.components.customCursor;
+                        const carouselElements = document.querySelectorAll('.carousel-image, .carousel-slide a, .slick-prev, .slick-next, .slick-dots button');
+                        carouselElements.forEach((el) => {
+                            el.addEventListener("mouseenter", () => cursor.setHover(true));
+                            el.addEventListener("mouseleave", () => cursor.setHover(false));
+                        });
+                    }
                 }, 100);
             }
 
