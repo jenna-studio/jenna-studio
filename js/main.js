@@ -401,9 +401,15 @@ class Navigation {
         // Smooth scroll for navigation links
         this.navLinks.forEach((link) => {
             link.addEventListener("click", (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute("href").substring(1);
-                this.scrollToSection(targetId);
+                const href = link.getAttribute("href");
+
+                // Only prevent default and smooth scroll if it's a hash link (same page)
+                if (href && href.startsWith("#")) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    this.scrollToSection(targetId);
+                }
+                // Otherwise, allow normal navigation to other pages
             });
         });
 

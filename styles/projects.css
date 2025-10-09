@@ -11,7 +11,7 @@
         visibility: visible !important;
         opacity: 1 !important;
     }
-    
+
     /* Hide system cursor to show only custom cursor */
     html,
     body,
@@ -31,7 +31,7 @@
         opacity: 0 !important;
         pointer-events: none !important;
     }
-    
+
     /* Reset cursor styles on mobile */
     html,
     body,
@@ -40,7 +40,7 @@
     *::after {
         cursor: auto !important;
     }
-    
+
     /* Reset cursor for interactive elements */
     .btn,
     .nav-link,
@@ -279,7 +279,7 @@ textarea:hover,
 /* ===== PROJECTS GRID ===== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-2xl);
 }
@@ -291,6 +291,14 @@ textarea:hover,
     transition: all var(--transition-normal);
     overflow: hidden;
     position: relative;
+}
+
+.project-card.filter-hidden {
+    display: none;
+}
+
+.project-card.filter-visible {
+    display: flex;
 }
 
 .project-card:hover {
@@ -653,7 +661,7 @@ textarea:hover,
 /* ===== PROJECTS GRID ===== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: var(--spacing-xl);
     margin-bottom: var(--spacing-2xl);
 }
@@ -665,6 +673,14 @@ textarea:hover,
     transition: all var(--transition-normal);
     overflow: hidden;
     position: relative;
+}
+
+.project-card.filter-hidden {
+    display: none;
+}
+
+.project-card.filter-visible {
+    display: block;
 }
 
 .project-card:hover {
@@ -1045,7 +1061,6 @@ textarea:hover,
 /* ===== FILTER ANIMATIONS ===== */
 .project-card.filter-hidden {
     opacity: 0;
-    transform: scale(0.8);
     pointer-events: none;
     transition: all var(--transition-normal);
 }
@@ -1086,7 +1101,7 @@ textarea:hover,
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-lg);
     }
 
@@ -1128,6 +1143,11 @@ textarea:hover,
 
     .featured-details h3 {
         font-size: var(--font-size-2xl);
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
     }
 
     .project-card {
@@ -1238,7 +1258,7 @@ textarea:hover,
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .project-overlay {
@@ -1442,7 +1462,7 @@ textarea:hover,
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-lg);
     }
 
@@ -1482,6 +1502,12 @@ textarea:hover,
 
     .featured-details h3 {
         font-size: var(--font-size-2xl);
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
     }
 
     .project-card {
@@ -1573,7 +1599,7 @@ textarea:hover,
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 

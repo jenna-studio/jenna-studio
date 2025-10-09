@@ -11,7 +11,7 @@
         visibility: visible !important;
         opacity: 1 !important;
     }
-    
+
     /* Hide system cursor to show only custom cursor */
     body,
     * {
@@ -28,7 +28,7 @@
         opacity: 0 !important;
         pointer-events: none !important;
     }
-    
+
     /* Reset cursor styles on mobile */
     body,
     *,
@@ -36,7 +36,7 @@
     *::after {
         cursor: auto !important;
     }
-    
+
     /* Reset cursor for interactive elements */
     .btn,
     .nav-link,
@@ -274,7 +274,7 @@
     }
 
     .form-container {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-lg) !important;
         border-radius: var(--border-radius-md);
     }
 
@@ -325,14 +325,14 @@
     .cta-buttons {
         flex-direction: column;
         gap: var(--spacing-sm);
-        align-items: stretch;
+        align-items: center;
     }
 
     .cta-buttons .btn {
-        width: 100%;
+        width: 200px;
         text-align: center;
-        padding: var(--spacing-md);
-        font-size: var(--font-size-sm);
+        padding: var(--spacing-md) !important;
+        font-size: var(--font-size-sm) !important;
     }
 }
 

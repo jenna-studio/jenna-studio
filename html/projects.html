@@ -60,8 +60,8 @@
                     <button class="filter-btn active scale-in stagger-1" data-filter="all">All Projects</button>
                     <button class="filter-btn scale-in stagger-2" data-filter="web-app">Web Apps</button>
                     <button class="filter-btn scale-in stagger-3" data-filter="website">Websites</button>
-                    <button class="filter-btn scale-in stagger-4" data-filter="component">Components</button>
-                    <button class="filter-btn scale-in stagger-5" data-filter="experiment">Experiments</button>
+                    <button class="filter-btn scale-in stagger-4" data-filter="mobile-app">Mobile Apps</button>
+                    <button class="filter-btn scale-in stagger-5" data-filter="other">Other</button>
                 </div>
             </section>
 
@@ -155,7 +155,7 @@
                     </article>
 
                     <!-- Project 2: Cotton Candy Code Editor -->
-                    <article class="card project-card scale-in stagger-2" data-category="component">
+                    <article class="card project-card scale-in stagger-2" data-category="web-app">
                         <div class="project-image">
                             <img src="../img/cotton-candy-editor-thumbnail.png" alt="Cotton Candy Editor Screenshot"
                                 class="project-thumbnail">
@@ -193,7 +193,7 @@
                     </article>
 
                     <!-- Project 3: Terminal Snake Game -->
-                    <article class="card project-card scale-in stagger-3" data-category="experiment">
+                    <article class="card project-card scale-in stagger-3" data-category="other">
                         <div class="project-image">
                             <img src="../img/snake-game-thumbnail.png" alt="Terminal Snake Game Screenshot"
                                 class="project-thumbnail">
@@ -231,7 +231,7 @@
                     </article>
 
                     <!-- Project 4: Alfred Color to Hex Workflow -->
-                    <article class="card project-card scale-in stagger-4" data-category="component">
+                    <article class="card project-card scale-in stagger-4" data-category="other">
                         <div class="project-image">
                             <img src="../img/color-to-hex-thumbnail.png" alt="Alfred Color to Hex Workflow Screenshot"
                                 class="project-thumbnail">
@@ -719,6 +719,50 @@
                     }, index * 200);
                 });
             }, 300);
+        });
+
+        // Projects Filter Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.projects-grid .project-card');
+
+            // Ensure all items start visible
+            projectItems.forEach(item => {
+                item.classList.remove('filter-hidden');
+                item.classList.add('filter-visible');
+            });
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const filter = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter project items
+                    projectItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+
+                        if (filter === 'all' || category === filter) {
+                            item.classList.remove('filter-hidden');
+                            item.classList.add('filter-visible');
+                        } else {
+                            item.classList.remove('filter-visible');
+                            item.classList.add('filter-hidden');
+                        }
+                    });
+
+                    // Prevent any scroll or layout shift
+                    window.scrollTo({
+                        top: window.scrollY,
+                        behavior: 'auto'
+                    });
+                });
+            });
         });
     </script>
 </body>

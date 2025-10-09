@@ -205,9 +205,16 @@
 
     <!-- Override touch detection and fix cursor for contact page -->
     <script>
-        // Override touch detection globally
-        window.isTouchDevice = function () { return false; };
-        window.prefersReducedMotion = function () { return false; };
+        // Detect if device is mobile/touch
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                        ('ontouchstart' in window) ||
+                        (navigator.maxTouchPoints > 0);
+
+        if (!isMobile) {
+            // Override touch detection globally for desktop only
+            window.isTouchDevice = function () { return false; };
+            window.prefersReducedMotion = function () { return false; };
+        }
 
         // Fix navigation links
         document.addEventListener('DOMContentLoaded', function () {
@@ -227,30 +234,41 @@
                     return false;
                 });
             });
+
+            // Hide cursor element on mobile
+            if (isMobile) {
+                const cursor = document.getElementById('cursor');
+                if (cursor) {
+                    cursor.style.display = 'none';
+                }
+            }
         });
 
         window.addEventListener('load', function () {
-            // Wait a bit for everything to load
-            setTimeout(function () {
-                // Force cursor to be visible with CSS overrides
-                const style = document.createElement('style');
-                style.textContent = `
-                    html, body, *, *::before, *::after { 
-                        cursor: none !important; 
-                    }
-                    #cursor { 
-                        display: block !important; 
-                        visibility: visible !important; 
-                        opacity: 1 !important; 
-                        pointer-events: none !important; 
-                        position: fixed !important; 
-                        z-index: 10000 !important; 
-                    }
-                `;
-                document.head.appendChild(style);
+            // Only apply custom cursor styles on desktop
+            if (!isMobile) {
+                // Wait a bit for everything to load
+                setTimeout(function () {
+                    // Force cursor to be visible with CSS overrides
+                    const style = document.createElement('style');
+                    style.textContent = `
+                        html, body, *, *::before, *::after {
+                            cursor: none !important;
+                        }
+                        #cursor {
+                            display: block !important;
+                            visibility: visible !important;
+                            opacity: 1 !important;
+                            pointer-events: none !important;
+                            position: fixed !important;
+                            z-index: 10000 !important;
+                        }
+                    `;
+                    document.head.appendChild(style);
 
-                console.log('Cursor CSS overrides applied');
-            }, 500);
+                    console.log('Cursor CSS overrides applied');
+                }, 500);
+            }
 
             // Trigger page load animations
             setTimeout(() => {

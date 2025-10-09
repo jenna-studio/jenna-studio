@@ -133,7 +133,7 @@
                     </article>
 
                     <!-- Portfolio Item 4 -->
-                    <article class="portfolio-item scale-in stagger-4" data-category="UI/UX"
+                    <article class="portfolio-item scale-in stagger-4" data-category="ui-ux"
                         data-portfolio-id="chrome-theme">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
@@ -371,9 +371,16 @@
 
     <!-- Override touch detection and fix cursor for portfolio page -->
     <script>
-        // Override touch detection globally
-        window.isTouchDevice = function () { return false; };
-        window.prefersReducedMotion = function () { return false; };
+        // Detect if device is mobile/touch
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                        ('ontouchstart' in window) ||
+                        (navigator.maxTouchPoints > 0);
+
+        if (!isMobile) {
+            // Override touch detection globally for desktop only
+            window.isTouchDevice = function () { return false; };
+            window.prefersReducedMotion = function () { return false; };
+        }
 
         // Fix navigation links
         document.addEventListener('DOMContentLoaded', function () {
@@ -384,43 +391,45 @@
                 loadingOverlay.style.pointerEvents = 'none';
             }
 
-            const navLinks = document.querySelectorAll('.nav-link, .nav-logo');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    console.log('Navigation clicked:', this.href);
-                    // Force immediate navigation
-                    window.location.href = this.href;
-                    return false;
+            // Ensure navigation links are clickable on mobile
+            if (isMobile) {
+                const navLinks = document.querySelectorAll('.nav-link, .nav-logo a');
+                navLinks.forEach(link => {
+                    link.style.pointerEvents = 'auto';
+                    link.style.cursor = 'pointer';
                 });
-            });
+            }
         });
 
         window.addEventListener('load', function () {
-            // Wait a bit for everything to load
-            setTimeout(function () {
-                if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
-                    const cursor = window.jennaStudio.components.customCursor;
+            // Only apply custom cursor on desktop
+            if (!isMobile) {
+                // Wait a bit for everything to load
+                setTimeout(function () {
+                    if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
+                        const cursor = window.jennaStudio.components.customCursor;
 
-                    console.log('Fixing cursor...');
+                        console.log('Fixing cursor...');
 
-                    // Reset cursor state
-                    cursor.isLoading = false;
-                    cursor.isVisible = true;
-                    cursor.setLoading(false);
+                        // Reset cursor state
+                        cursor.isLoading = false;
+                        cursor.isVisible = true;
+                        cursor.setLoading(false);
 
-                    // Remove loading class and add proper styling
-                    cursor.element.classList.remove('loading');
-                    cursor.element.style.display = 'block';
-                    cursor.element.style.visibility = 'visible';
-                    cursor.element.style.opacity = '1';
+                        // Remove loading class and add proper styling
+                        cursor.element.classList.remove('loading');
+                        cursor.element.style.display = 'block';
+                        cursor.element.style.visibility = 'visible';
+                        cursor.element.style.opacity = '1';
 
-                    // Force re-initialization
-                    cursor.show();
-                    cursor.animate();
+                        // Force re-initialization
+                        cursor.show();
+                        cursor.animate();
 
-                    console.log('Cursor failed');
-                }
-            }, 1500); // Wait 1.5 seconds for loading to complete
+                        console.log('Cursor fixed');
+                    }
+                }, 1500); // Wait 1.5 seconds for loading to complete
+            }
 
             // Trigger page load animations
             setTimeout(() => {
@@ -795,6 +804,44 @@
                 if (e.key === 'Escape' && imageModal.style.display === 'flex') {
                     closeImageModal();
                 }
+            });
+        });
+
+        // Portfolio Filter Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const filter = this.getAttribute('data-filter');
+
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter portfolio items
+                    portfolioItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+
+                        if (filter === 'all' || category === filter) {
+                            item.classList.remove('filter-hidden');
+                            item.classList.add('filter-visible');
+                        } else {
+                            item.classList.remove('filter-visible');
+                            item.classList.add('filter-hidden');
+                        }
+                    });
+
+                    // Prevent any scroll or layout shift
+                    window.scrollTo({
+                        top: window.scrollY,
+                        behavior: 'auto'
+                    });
+                });
             });
         });
     </script>
