@@ -830,7 +830,7 @@
     }
 
     .education-header h4 {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-md);
     }
 
     .education-period {
