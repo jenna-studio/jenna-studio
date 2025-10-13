@@ -152,23 +152,22 @@
                     </article>
 
                     <!-- Portfolio Item 5 -->
-                    <!-- <article class="portfolio-item scale-in stagger-5" data-category="creation"
-                        data-portfolio-id="illustrations">
+                    <article class="portfolio-item scale-in stagger-5" data-category="3d" data-portfolio-id="3d">
                         <div class="portfolio-card">
-                            <div class="portfolio-image">
+                            <div class="portfolio-image" style="background-color: #ffc0cb;">
                                 <div class="portfolio-overlay portfolio-overlay-visible">
                                     <div class="overlay-content">
-                                        <h3>Character Illustrations</h3>
-                                        <p>Digital character designs</p>
+                                        <h3>Raindrop ASMR LED Humidifier</h3>
+                                        <p>3D Modeling/Printing</p>
                                         <div class="overlay-actions">
                                             <button class="overlay-btn view-btn"
-                                                onclick="openPortfolioModal('illustrations');">View Details</button>
+                                                onclick="openPortfolioModal('humidifier');">View Details</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </article> -->
+                    </article>
 
                     <!-- Portfolio Item 6 -->
                     <!-- <article class="portfolio-item scale-in stagger-6" data-category="ui-ux"
@@ -373,8 +372,8 @@
     <script>
         // Detect if device is mobile/touch
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-                        ('ontouchstart' in window) ||
-                        (navigator.maxTouchPoints > 0);
+            ('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0);
 
         if (!isMobile) {
             // Override touch detection globally for desktop only
@@ -598,6 +597,17 @@
                     { text: 'Download Free', url: '#', primary: true },
                     { text: 'Full Collection', url: '#', primary: false }
                 ]
+            },
+            'humidifier': {
+                title: 'Raindrop ASMR LED Humidifier',
+                category: 'Creation',
+                description: 'A custom-designed 3D printed humidifier featuring LED lighting and ASMR raindrop effects. Combines functionality with aesthetic appeal through innovative 3D modeling and printing techniques.',
+                tags: ['3D Modeling', '3D Printing', 'Product Design', 'LED'],
+                thumbnailImages: [
+                    { src: '../img/portfolio-thumbnails/asmr-humidifier-thumbnail.png', alt: 'ASMR Humidifier Thumbnail' },
+                    { src: '../img/portfolio-thumbnails/asmr-humidifier-panel.png', alt: 'ASMR Humidifier Panel' }
+                ],
+                actions: []
             }
         };
 
@@ -616,7 +626,16 @@
             const modalDetails = modal.querySelector('.modal-details');
             let contentHTML = '';
 
-            if (data.hasCarousel && data.carouselImages) {
+            // Handle inline thumbnail images
+            if (data.thumbnailImages && data.thumbnailImages.length > 0) {
+                contentHTML = `
+                    <div class="modal-thumbnail-container">
+                        ${data.thumbnailImages.map((image, index) =>
+                    `<img src="${image.src}" alt="${image.alt}" class="modal-thumbnail-image" onclick="openImageModal('${image.src}', '${image.alt}', ${index})" style="cursor: pointer;">`
+                ).join('')}
+                    </div>
+                `;
+            } else if (data.hasCarousel && data.carouselImages) {
                 if (data.displayType === 'carousel') {
                     // Slick carousel for chrome themes
                     contentHTML = `
@@ -657,11 +676,15 @@
             const description = modal.querySelector('.modal-description');
             const existingGallery = modal.querySelector('.modal-gallery-container');
             const existingCarousel = modal.querySelector('.modal-carousel-container');
+            const existingThumbnail = modal.querySelector('.modal-thumbnail-container');
             if (existingGallery) {
                 existingGallery.remove();
             }
             if (existingCarousel) {
                 existingCarousel.remove();
+            }
+            if (existingThumbnail) {
+                existingThumbnail.remove();
             }
             if (contentHTML) {
                 description.insertAdjacentHTML('afterend', contentHTML);
@@ -669,9 +692,15 @@
 
             // Update action buttons
             const actionsContainer = modal.querySelector('.modal-actions');
-            actionsContainer.innerHTML = data.actions.map(action =>
-                `<a href="${action.url}" class="btn ${action.primary ? 'btn-primary' : 'btn-outline'}" ${action.url.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}>${action.text}</a>`
-            ).join('');
+            if (data.actions && data.actions.length > 0) {
+                actionsContainer.innerHTML = data.actions.map(action =>
+                    `<a href="${action.url}" class="btn ${action.primary ? 'btn-primary' : 'btn-outline'}" ${action.url.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}>${action.text}</a>`
+                ).join('');
+                actionsContainer.style.display = 'flex';
+            } else {
+                actionsContainer.innerHTML = '';
+                actionsContainer.style.display = 'none';
+            }
 
             // Show modal
             modal.style.display = 'flex';
@@ -708,6 +737,18 @@
                 }, 100);
             }
 
+            // Attach cursor hover to thumbnail images
+            setTimeout(() => {
+                if (window.jennaStudio && window.jennaStudio.components && window.jennaStudio.components.customCursor) {
+                    const cursor = window.jennaStudio.components.customCursor;
+                    const thumbnailImages = document.querySelectorAll('.modal-thumbnail-image');
+                    thumbnailImages.forEach((el) => {
+                        el.addEventListener("mouseenter", () => cursor.setHover(true));
+                        el.addEventListener("mouseleave", () => cursor.setHover(false));
+                    });
+                }
+            }, 100);
+
             // Add animation
             setTimeout(() => {
                 modal.querySelector('.modal-content').style.transform = 'scale(1)';
@@ -731,14 +772,18 @@
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
 
-                // Remove gallery and carousel HTML
+                // Remove gallery, carousel, and thumbnail HTML
                 const galleryContainer = modal.querySelector('.modal-gallery-container');
                 const carouselContainer = modal.querySelector('.modal-carousel-container');
+                const thumbnailContainer = modal.querySelector('.modal-thumbnail-container');
                 if (galleryContainer) {
                     galleryContainer.remove();
                 }
                 if (carouselContainer) {
                     carouselContainer.remove();
+                }
+                if (thumbnailContainer) {
+                    thumbnailContainer.remove();
                 }
             }, 300);
         }

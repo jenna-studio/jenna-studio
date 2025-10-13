@@ -2869,10 +2869,23 @@ p {
         text-align: center;
     }
 
-    .contact-cta {
+    contact-cta {
         flex-direction: column;
-        gap: var(--mobile-spacing-md);
         align-items: center;
+        display: flex;
+        gap: var(--spacing-md) !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 28px;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .contact-cta .btn {
+        width: 200px;
+    }
+
+    .card.contact-card {
+        padding: var(--spacing-2xl);
     }
 
     /* About section mobile */

@@ -1477,7 +1477,7 @@ textarea:hover,
 
     .cta-buttons {
         flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
 
     .cta-buttons .btn {
