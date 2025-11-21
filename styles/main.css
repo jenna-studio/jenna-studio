@@ -28,6 +28,9 @@
 
 /* ===== 1. CSS VARIABLES ===== */
 :root {
+    /* Force light mode only */
+    color-scheme: light only;
+
     /* Cotton Candy Color Palette */
     --color-pink: #ffced6;
     --color-pink-light: #fee1e6;
@@ -1082,6 +1085,19 @@ p {
     height: auto;
     border-radius: var(--border-radius-lg);
     object-fit: cover;
+}
+
+.bunny-3d-container {
+    width: 100%;
+    max-width: 340px;
+    height: 606px;
+    border-radius: var(--border-radius-lg);
+}
+
+.bunny-3d-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: var(--border-radius-lg);
 }
 
 .about-text p {
