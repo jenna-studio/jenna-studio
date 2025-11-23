@@ -446,6 +446,33 @@
             loader.load(
                 'models/bunny.fbx',
                 function (object) {
+                    // Make materials glossy and shiny
+                    object.traverse(function (child) {
+                        if (child.isMesh && child.material) {
+                            // Handle array of materials or single material
+                            const materials = Array.isArray(child.material) ? child.material : [child.material];
+
+                            const newMaterials = materials.map(oldMaterial => {
+                                // Create new glossy material
+                                const glossyMaterial = new THREE.MeshPhysicalMaterial({
+                                    color: oldMaterial.color || 0xffffff,
+                                    map: oldMaterial.map || null,
+                                    metalness: 0.2,
+                                    roughness: 0.3,
+                                    clearcoat: 0.2,
+                                    clearcoatRoughness: 0.2,
+                                    reflectivity: 0.2,
+                                    emissive: 0x111111,
+                                    emissiveIntensity: 0.1
+                                });
+                                return glossyMaterial;
+                            });
+
+                            // Apply new material(s)
+                            child.material = newMaterials.length === 1 ? newMaterials[0] : newMaterials;
+                        }
+                    });
+
                     // Center and scale the model
                     const box = new THREE.Box3().setFromObject(object);
                     const center = box.getCenter(new THREE.Vector3());
@@ -494,7 +521,7 @@
                         const box = new THREE.Box3().setFromObject(object);
                         const size = box.getSize(new THREE.Vector3());
                         const maxDim = Math.max(size.x, size.y, size.z);
-                        const baseScale = 0.2 / maxDim;
+                        const baseScale = 0.12 / maxDim;
 
                         // Create multiple instances of this flower
                         for (let i = 0; i < flowersPerType; i++) {
@@ -514,9 +541,9 @@
                             flower.rotation.y = Math.random() * Math.PI;
                             flower.rotation.z = Math.random() * Math.PI;
 
-                            // Store fall speed
-                            flower.userData.fallSpeed = 0.005 + Math.random() * 0.01;
-                            flower.userData.rotateSpeed = 0.01 + Math.random() * 0.02;
+                            // Store fall speed (slower)
+                            flower.userData.fallSpeed = 0.002 + Math.random() * 0.004;
+                            flower.userData.rotateSpeed = 0.005 + Math.random() * 0.01;
 
                             scene.add(flower);
                             flowers.push(flower);
