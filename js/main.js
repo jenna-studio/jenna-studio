@@ -93,7 +93,7 @@ class CustomCursor {
         this.isHovering = false;
         this.isLoading = false;
         this.sparkleTimer = 0;
-        this.sparkleDelay = 50; // milliseconds between sparkles
+        this.sparkleDelay = 25; // milliseconds between sparkles (more sparkles)
         this.lastMouseX = 0;
         this.lastMouseY = 0;
         this.isMoving = false;
