@@ -5009,12 +5009,13 @@ p {
     .about-image {
         margin: 0 auto !important;
         justify-content: center !important;
-        background: #f1cbd8 !important;
-        padding: var(--spacing-lg) !important;
+        background: transparent !important;
+        padding: var(--mobile-spacing-xs) !important;
         border-radius: var(--border-radius-lg) !important;
         width: 100% !important;
         display: flex !important;
         align-items: center !important;
+        height: 180px;
     }
 
     .about-image .profile-image {
