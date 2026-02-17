@@ -542,7 +542,12 @@
                 category: 'Creation',
                 description: 'Made AI music and distributed it to YouTube Music, Apple Music, Spotify, etc via an artist name Jenna Studio. Jenna Studio is an independent artist that transforms personal growth and resilience into emotional pop, indie, and cinematic soundscapes, capturing the journey from uncertainty to freedom through warm melodies and reflective intensity. Each track is designed to grow with you—gentle yet unshakable, quietly powerful and deeply hopeful—soundtracking moments of healing, self-belief, and the courage to keep moving forward at your own pace.',
                 tags: ['Music', 'Suno AI', 'Jenna Studio'],
-                embedHTML: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/10YbtQS5pUWj10uNEpFxZr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+                pages: [
+                    { embedHTML: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/10YbtQS5pUWj10uNEpFxZr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' },
+                    { embedHTML: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/9k24PlgJPbM?si=bg6_0nrAPBfr0NNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>' },
+                    { embedHTML: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/-HvfdrE5JPE?si=QuqOcjMtGQdki-L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>' },
+                    { embedHTML: '<iframe width="100%" height="315" src="https://www.youtube.com/embed/rld8To_ymEk?si=1utls8MMMJ0ITjKv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>' }
+                ],
                 actions: [
                     { text: 'Spotify', url: 'https://open.spotify.com/artist/10YbtQS5pUWj10uNEpFxZr?si=lJ884oKJQqGfgroLVfpXeA', primary: true },
                     { text: 'Apple Music', url: 'https://music.apple.com/kr/artist/jenna-studio/1871000252', primary: true },
@@ -663,8 +668,22 @@
             const modalDetails = modal.querySelector('.modal-details');
             let contentHTML = '';
 
-            // Handle Spotify / generic embed
-            if (data.embedHTML) {
+            // Handle multi-page paged embed (e.g. Spotify + YouTube pages)
+            if (data.pages && data.pages.length > 0) {
+                window._embedPages = data.pages;
+                window._currentEmbedPage = 0;
+                const total = data.pages.length;
+                contentHTML = `
+                    <div class="modal-paged-embed">
+                        <div class="modal-embed-container">${data.pages[0].embedHTML}</div>
+                        <div class="embed-pagination">
+                            <button class="embed-page-btn embed-prev" onclick="navigateEmbedPage(-1)" disabled>&#8592;</button>
+                            <span class="embed-page-indicator">1 / ${total}</span>
+                            <button class="embed-page-btn embed-next" onclick="navigateEmbedPage(1)" ${total <= 1 ? 'disabled' : ''}>&#8594;</button>
+                        </div>
+                    </div>`;
+            // Handle single Spotify / generic embed
+            } else if (data.embedHTML) {
                 contentHTML = `<div class="modal-embed-container">${data.embedHTML}</div>`;
             // Handle inline thumbnail images
             } else if (data.thumbnailImages && data.thumbnailImages.length > 0) {
@@ -719,10 +738,12 @@
             const existingCarousel = modal.querySelector('.modal-carousel-container');
             const existingThumbnail = modal.querySelector('.modal-thumbnail-container');
             const existingEmbed = modal.querySelector('.modal-embed-container');
+            const existingPaged = modal.querySelector('.modal-paged-embed');
             if (existingGallery) existingGallery.remove();
             if (existingCarousel) existingCarousel.remove();
             if (existingThumbnail) existingThumbnail.remove();
             if (existingEmbed) existingEmbed.remove();
+            if (existingPaged) existingPaged.remove();
             if (contentHTML) {
                 description.insertAdjacentHTML('afterend', contentHTML);
             }
@@ -813,12 +834,16 @@
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
 
-                // Remove gallery, carousel, thumbnail, and embed HTML
+                // Remove gallery, carousel, thumbnail, embed, and paged embed HTML
                 const galleryContainer = modal.querySelector('.modal-gallery-container');
                 const carouselContainer = modal.querySelector('.modal-carousel-container');
                 const thumbnailContainer = modal.querySelector('.modal-thumbnail-container');
                 const embedContainer = modal.querySelector('.modal-embed-container');
+                const pagedEmbed = modal.querySelector('.modal-paged-embed');
                 if (embedContainer) embedContainer.remove();
+                if (pagedEmbed) pagedEmbed.remove();
+                window._embedPages = null;
+                window._currentEmbedPage = 0;
                 if (galleryContainer) {
                     galleryContainer.remove();
                 }
@@ -829,6 +854,26 @@
                     thumbnailContainer.remove();
                 }
             }, 300);
+        }
+
+        // Paged embed navigation
+        function navigateEmbedPage(dir) {
+            const pages = window._embedPages;
+            if (!pages) return;
+            const total = pages.length;
+            window._currentEmbedPage = Math.max(0, Math.min(total - 1, window._currentEmbedPage + dir));
+            const idx = window._currentEmbedPage;
+
+            const modal = document.getElementById('portfolioModal');
+            const embedContainer = modal.querySelector('.modal-embed-container');
+            const indicator = modal.querySelector('.embed-page-indicator');
+            const prevBtn = modal.querySelector('.embed-prev');
+            const nextBtn = modal.querySelector('.embed-next');
+
+            if (embedContainer) embedContainer.innerHTML = pages[idx].embedHTML;
+            if (indicator) indicator.textContent = `${idx + 1} / ${total}`;
+            if (prevBtn) prevBtn.disabled = idx === 0;
+            if (nextBtn) nextBtn.disabled = idx === total - 1;
         }
 
         // Modal event listeners
