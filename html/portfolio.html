@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/portfolio.css">
@@ -75,6 +78,24 @@
             <section class="portfolio-gallery section">
                 <div class="gallery-grid" id="portfolioGrid">
 
+                    <!-- Portfolio Item 1 -->
+                    <article class="portfolio-item scale-in stagger-1" data-category="creation" data-portfolio-id="ai-music">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="portfolio-overlay portfolio-overlay-visible">
+                                    <div class="overlay-content">
+                                        <h3>AI Music Generation</h3>
+                                        <p>Artist name: Jenna Studio</p>
+                                        <div class="overlay-actions">
+                                            <button class="overlay-btn view-btn" onclick="openPortfolioModal('ai-music');">View
+                                                Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
                     <!-- Portfolio Item 1 -->
                     <article class="portfolio-item scale-in stagger-1" data-category="tools"
                         data-portfolio-id="english-tutor">
@@ -155,7 +176,7 @@
                     <!-- Portfolio Item 5 -->
                     <article class="portfolio-item scale-in stagger-5" data-category="3d" data-portfolio-id="3d">
                         <div class="portfolio-card">
-                            <div class="portfolio-image" style="background-color: #ffc0cb;">
+                            <div class="portfolio-image">
                                 <div class="portfolio-overlay portfolio-overlay-visible">
                                     <div class="overlay-content">
                                         <h3>Raindrop ASMR LED Humidifier</h3>
@@ -171,23 +192,23 @@
                     </article>
 
                     <!-- Portfolio Item 6 -->
-                    <!-- <article class="portfolio-item scale-in stagger-6" data-category="ui-ux"
-                        data-portfolio-id="dashboard">
+                    <article class="portfolio-item scale-in stagger-6" data-category="3d"
+                        data-portfolio-id="hello-kitty-modeling">
                         <div class="portfolio-card">
                             <div class="portfolio-image">
                                 <div class="portfolio-overlay portfolio-overlay-visible">
                                     <div class="overlay-content">
-                                        <h3>Analytics Dashboard</h3>
-                                        <p>Data visualization interface</p>
+                                        <h3>Hello Kitty 3D Modeling</h3>
+                                        <p>Modeling tutorial PDF</p>
                                         <div class="overlay-actions">
                                             <button class="overlay-btn view-btn"
-                                                onclick="openPortfolioModal('dashboard');">View Details</button>
+                                                onclick="openPortfolioModal('hello-kitty-modeling');">View Details</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </article> -->
+                    </article>
             </section>
 
 
@@ -199,10 +220,10 @@
                         <div class="stat-number" data-target="50">30+</div>
                         <div class="stat-label">Design Projects</div>
                     </div>
-                    <div class="card stat-card scale-in stagger-1">
+                    <!-- <div class="card stat-card scale-in stagger-1">
                         <div class="stat-number" data-target="20">50k+</div>
                         <div class="stat-label">Happy Clients</div>
-                    </div>
+                    </div> -->
                     <div class="card stat-card scale-in stagger-1">
                         <div class="stat-number" data-target="3">4+</div>
                         <div class="stat-label">Years Experience</div>
@@ -268,7 +289,7 @@
             </section> -->
 
             <!-- CTA Section -->
-            <section class="cta-section section">
+            <!-- <section class="cta-section section">
                 <div class="card cta-card scale-in stagger-1">
                     <h2>Ready to Start Your Project?</h2>
                     <p>Let's collaborate and create something amazing together. I'd love to help bring your vision to
@@ -279,7 +300,7 @@
                         <a href="about.html" class="btn btn-outline">More About Me</a>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
     </main>
 
@@ -426,6 +447,57 @@
                         cursor.show();
                         cursor.animate();
 
+                        // Event delegation for dynamically rendered modal action buttons
+                        document.addEventListener('mouseover', function (e) {
+                            if (e.target.closest('.modal-actions .btn')) {
+                                cursor.isLoading = false;
+                                cursor.isHovering = true;
+                                cursor.element.classList.remove('loading');
+                                cursor.element.classList.add('hover');
+                            }
+                        });
+                        document.addEventListener('mouseout', function (e) {
+                            const fromBtn = e.target.closest('.modal-actions .btn');
+                            const toBtn = e.relatedTarget && e.relatedTarget.closest('.modal-actions .btn');
+                            if (fromBtn && !toBtn) {
+                                cursor.isHovering = false;
+                                cursor.element.classList.remove('hover');
+                            }
+                        });
+
+                        // Embed container (Spotify / iframe) hover
+                        // mouseover/mouseout fire on the container; once mouse enters the iframe
+                        // itself the parent stops receiving events, so we also listen to window blur.
+                        document.addEventListener('mouseover', function (e) {
+                            if (e.target.closest('.modal-embed-container')) {
+                                cursor.isLoading = false;
+                                cursor.isHovering = true;
+                                cursor.element.classList.remove('loading');
+                                cursor.element.classList.add('hover');
+                            }
+                        });
+                        document.addEventListener('mouseout', function (e) {
+                            const fromEmbed = e.target.closest('.modal-embed-container');
+                            const toEmbed = e.relatedTarget && e.relatedTarget.closest('.modal-embed-container');
+                            if (fromEmbed && !toEmbed) {
+                                cursor.isHovering = false;
+                                cursor.element.classList.remove('hover');
+                            }
+                        });
+                        // Keep hover state while mouse is inside the iframe
+                        window.addEventListener('blur', function () {
+                            if (document.activeElement && document.activeElement.closest('.modal-embed-container')) {
+                                cursor.isLoading = false;
+                                cursor.element.classList.add('hover');
+                            }
+                        });
+                        // Restore normal state when focus returns to the parent page
+                        window.addEventListener('focus', function () {
+                            if (!cursor.isHovering) {
+                                cursor.element.classList.remove('hover');
+                            }
+                        });
+
                         console.log('Cursor fixed');
                     }
                 }, 1500); // Wait 1.5 seconds for loading to complete
@@ -465,6 +537,18 @@
 
         // Portfolio Modal Functionality
         const portfolioData = {
+            'ai-music': {
+                title: 'AI Music Creation',
+                category: 'Creation',
+                description: 'Made AI music and distributed it to YouTube Music, Apple Music, Spotify, etc via an artist name Jenna Studio. Jenna Studio is an independent artist that transforms personal growth and resilience into emotional pop, indie, and cinematic soundscapes, capturing the journey from uncertainty to freedom through warm melodies and reflective intensity. Each track is designed to grow with you—gentle yet unshakable, quietly powerful and deeply hopeful—soundtracking moments of healing, self-belief, and the courage to keep moving forward at your own pace.',
+                tags: ['Music', 'Suno AI', 'Jenna Studio'],
+                embedHTML: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/10YbtQS5pUWj10uNEpFxZr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+                actions: [
+                    { text: 'Spotify', url: 'https://open.spotify.com/artist/10YbtQS5pUWj10uNEpFxZr?si=lJ884oKJQqGfgroLVfpXeA', primary: true },
+                    { text: 'Apple Music', url: 'https://music.apple.com/kr/artist/jenna-studio/1871000252', primary: true },
+                    { text: 'Youtube Music', url: 'https://www.youtube.com/channel/UCNYh9DsdcEyJn5DeBrXoZUw', primary: false }
+                ]
+            },
             'english-tutor': {
                 title: 'Your English Tutor',
                 category: 'AI Tools',
@@ -539,66 +623,6 @@
                     { text: 'View More', url: 'https://github.com/jenna-studio/chrome-theme-extensions', primary: false }
                 ]
             },
-            'agency-site': {
-                title: 'Creative Agency Website',
-                category: 'Web Design',
-                description: 'Modern, responsive website design for a creative agency showcasing their portfolio, services, and team. Features clean aesthetics, smooth animations, and optimized user experience across all devices. Built with focus on conversion and client engagement.',
-                tags: ['Web Design', 'Responsive', 'Animation', 'WordPress'],
-                actions: [
-                    { text: 'Live Demo', url: '#', primary: true },
-                    { text: 'View Code', url: '#', primary: false }
-                ]
-            },
-            'illustrations': {
-                title: 'Character Illustrations',
-                category: 'Digital Art',
-                description: 'A collection of original character illustrations created for various digital media projects. Each character is designed with unique personalities, detailed expressions, and vibrant colors, suitable for games, animations, and storytelling applications.',
-                tags: ['Digital Art', 'Character Design', 'Illustration', 'Adobe Photoshop'],
-                actions: [
-                    { text: 'View Gallery', url: '#', primary: true },
-                    { text: 'Commission Art', url: 'contact.html', primary: false }
-                ]
-            },
-            'dashboard': {
-                title: 'Analytics Dashboard',
-                category: 'UI/UX Design',
-                description: 'Data visualization dashboard interface designed for business analytics and reporting. Features intuitive charts, customizable widgets, and real-time data updates. The design prioritizes clarity, functionality, and ease of use for data-driven decision making.',
-                tags: ['Dashboard', 'Data Visualization', 'Analytics', 'React'],
-                actions: [
-                    { text: 'Interactive Demo', url: '#', primary: true },
-                    { text: 'View Documentation', url: '#', primary: false }
-                ]
-            },
-            'tech-brand': {
-                title: 'Tech Startup Brand',
-                category: 'Brand Design',
-                description: 'Modern brand identity for an innovative tech startup, including logo design, brand guidelines, website design, and marketing materials. The brand reflects innovation, reliability, and cutting-edge technology through contemporary visual elements.',
-                tags: ['Tech Branding', 'Startup', 'Modern Design', 'Brand Strategy'],
-                actions: [
-                    { text: 'View Brand Book', url: '#', primary: true },
-                    { text: 'Case Study', url: '#', primary: false }
-                ]
-            },
-            'restaurant': {
-                title: 'Restaurant Website',
-                category: 'Web Design',
-                description: 'Elegant website design for a fine dining restaurant featuring online reservations, menu showcase, and event booking system. The design captures the restaurant\'s sophisticated atmosphere while providing seamless user experience for customers.',
-                tags: ['Restaurant', 'Fine Dining', 'Reservations', 'Hospitality'],
-                actions: [
-                    { text: 'Visit Site', url: '#', primary: true },
-                    { text: 'View Menu', url: '#', primary: false }
-                ]
-            },
-            'icons': {
-                title: 'Custom Icon Set',
-                category: 'Illustration',
-                description: 'A comprehensive collection of custom-designed icons for modern applications and websites. The set includes 200+ icons in multiple styles and formats, ensuring consistency and visual harmony across digital products.',
-                tags: ['Icons', 'UI Elements', 'Vector Graphics', 'Design System'],
-                actions: [
-                    { text: 'Download Free', url: '#', primary: true },
-                    { text: 'Full Collection', url: '#', primary: false }
-                ]
-            },
             'humidifier': {
                 title: 'Raindrop ASMR LED Humidifier',
                 category: 'Creation',
@@ -609,6 +633,18 @@
                     { src: '../img/portfolio-thumbnails/asmr-humidifier-panel.png', alt: 'ASMR Humidifier Panel' }
                 ],
                 actions: []
+            },
+            'hello-kitty-modeling': {
+                title: 'Hello Kitty 3D Modeling Guideline',
+                category: '3D Work',
+                description: '',
+                tags: ['3D Modeling', 'Guideline', 'Tutorial', 'PDF'],
+                thumbnailImages:[
+                    { src:'../img/portfolio-thumbnails/hello-kitty-thumbnail.png', alt: 'Hello Kitty 3D Modeling'}
+                ],
+                actions: [
+                    { text: 'Download PDF', url: '../files/fusion-hello-kitty-modeling-guideline.pdf', primary: true, download: true }
+                ]
             }
         };
 
@@ -627,8 +663,11 @@
             const modalDetails = modal.querySelector('.modal-details');
             let contentHTML = '';
 
+            // Handle Spotify / generic embed
+            if (data.embedHTML) {
+                contentHTML = `<div class="modal-embed-container">${data.embedHTML}</div>`;
             // Handle inline thumbnail images
-            if (data.thumbnailImages && data.thumbnailImages.length > 0) {
+            } else if (data.thumbnailImages && data.thumbnailImages.length > 0) {
                 contentHTML = `
                     <div class="modal-thumbnail-container">
                         ${data.thumbnailImages.map((image, index) =>
@@ -637,6 +676,7 @@
                     </div>
                 `;
             } else if (data.hasCarousel && data.carouselImages) {
+
                 if (data.displayType === 'carousel') {
                     // Slick carousel for chrome themes
                     contentHTML = `
@@ -678,15 +718,11 @@
             const existingGallery = modal.querySelector('.modal-gallery-container');
             const existingCarousel = modal.querySelector('.modal-carousel-container');
             const existingThumbnail = modal.querySelector('.modal-thumbnail-container');
-            if (existingGallery) {
-                existingGallery.remove();
-            }
-            if (existingCarousel) {
-                existingCarousel.remove();
-            }
-            if (existingThumbnail) {
-                existingThumbnail.remove();
-            }
+            const existingEmbed = modal.querySelector('.modal-embed-container');
+            if (existingGallery) existingGallery.remove();
+            if (existingCarousel) existingCarousel.remove();
+            if (existingThumbnail) existingThumbnail.remove();
+            if (existingEmbed) existingEmbed.remove();
             if (contentHTML) {
                 description.insertAdjacentHTML('afterend', contentHTML);
             }
@@ -694,9 +730,13 @@
             // Update action buttons
             const actionsContainer = modal.querySelector('.modal-actions');
             if (data.actions && data.actions.length > 0) {
-                actionsContainer.innerHTML = data.actions.map(action =>
-                    `<a href="${action.url}" class="btn ${action.primary ? 'btn-primary' : 'btn-outline'}" ${action.url.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}>${action.text}</a>`
-                ).join('');
+                actionsContainer.innerHTML = data.actions.map(action => {
+                    const isExternal = action.url.startsWith('http');
+                    const attrs = action.download
+                        ? `download target="_blank"`
+                        : isExternal ? `target="_blank" rel="noopener"` : '';
+                    return `<a href="${action.url}" class="btn ${action.primary ? 'btn-primary' : 'btn-outline'}" ${attrs}>${action.text}</a>`;
+                }).join('');
                 actionsContainer.style.display = 'flex';
             } else {
                 actionsContainer.innerHTML = '';
@@ -773,10 +813,12 @@
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
 
-                // Remove gallery, carousel, and thumbnail HTML
+                // Remove gallery, carousel, thumbnail, and embed HTML
                 const galleryContainer = modal.querySelector('.modal-gallery-container');
                 const carouselContainer = modal.querySelector('.modal-carousel-container');
                 const thumbnailContainer = modal.querySelector('.modal-thumbnail-container');
+                const embedContainer = modal.querySelector('.modal-embed-container');
+                if (embedContainer) embedContainer.remove();
                 if (galleryContainer) {
                     galleryContainer.remove();
                 }

@@ -74,8 +74,8 @@
 }
 
 .edu-logo {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: contain;
     object-position: center;
@@ -171,7 +171,7 @@
 }
 
 .education-period {
-    color: var(--color-green);
+    color: #228b22;
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-sm);
     background: rgba(22, 204, 107, 0.2);
@@ -289,6 +289,19 @@
     font-size: var(--font-size-4xl);
     margin-bottom: var(--spacing-lg);
     display: block;
+}
+
+
+.story-card.stagger-1 .story-icon i {
+    color: var(--color-pink-dark);
+}
+
+.story-card.stagger-2 .story-icon i {
+    color: var(--color-lavender-dark);
+}
+
+.story-card.stagger-3 .story-icon i {
+    color: var(--color-sky-dark);
 }
 
 .story-card h3 {

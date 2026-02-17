@@ -131,13 +131,16 @@ class CustomCursor {
         document.addEventListener("mouseenter", () => this.show());
         document.addEventListener("mouseleave", () => this.hide());
 
-        // Hover effects for interactive elements
-        const hoverElements = document.querySelectorAll(
-            "a, button, .card, .nav-link, .btn, input, textarea, select"
-        );
-        hoverElements.forEach((el) => {
-            el.addEventListener("mouseenter", () => this.setHover(true));
-            el.addEventListener("mouseleave", () => this.setHover(false));
+        // Hover effects via delegation — covers all current AND future interactive elements
+        // No need to rebind when new buttons/links are added to the page
+        const HOVER_SELECTOR = 'a, button, .card, .nav-link, .btn, input, textarea, select';
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.closest(HOVER_SELECTOR)) this.setHover(true);
+        });
+        document.addEventListener('mouseout', (e) => {
+            const from = e.target.closest(HOVER_SELECTOR);
+            const to = e.relatedTarget && e.relatedTarget.closest(HOVER_SELECTOR);
+            if (from && !to) this.setHover(false);
         });
 
         // Loading effects for form submissions and links

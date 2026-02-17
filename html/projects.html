@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
@@ -64,6 +67,12 @@
                     <button class="filter-btn scale-in stagger-4" data-filter="mobile-app">Mobile Apps</button>
                     <button class="filter-btn scale-in stagger-5" data-filter="other">Other</button>
                 </div>
+            </section>
+
+            <!-- Filtered Results (shown above featured project when a category is selected) -->
+            <section class="filtered-results-section section" id="filteredResultsSection" style="display:none;">
+                <h2 class="section-title fade-in-up" id="filteredResultsTitle"></h2>
+                <div class="projects-grid" id="filteredResultsGrid"></div>
             </section>
 
             <!-- Featured Project -->
@@ -117,19 +126,44 @@
                 <h2 class="section-title fade-in-up">All Projects</h2>
                 <div class="projects-grid" id="projectsGrid">
 
+                    
+                    <!-- Project 1: Connect Mate -->
+                    <article class="card project-card scale-in stagger-1" data-category="mobile-app">
+                        <div class="project-image">
+                            <img src="../img/connectmate-thumbnail.png" alt="Connect-Mate-Thumbnail" class="project-thumbnail">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Connect Mate</h3>
+                            <p class="project-description">A Korean social platform for discovering activity companions. Features map-based matching via Kakao Maps, activity creation across dining, fitness, and hobby categories, real-time group chat, and friend management with mutual ratings.</p>
+                            <div class="project-tags">
+                                <span class="tag">Android Studio</span>
+                                <span class="tag">XML</span>
+                                <span class="tag">Java</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="meta-item">
+                                    <span class="meta-label">Type:</span>
+                                    <span class="meta-value">Android Application</span>
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-label">Year:</span>
+                                    <span class="meta-value">2025</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://play.google.com/store/apps/details?id=app.connectmate&hl=en-US&ah=6VRx7YfYYsD3bb5iCsjCRK7JuaM" class="overlay-btn" target="_blank">Play Store</a>
+                            <a href="https://github.com/jenna-studio/ConnectMate" class="overlay-btn" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </article>
+
                     <!-- Project 1: Photo Album Maker -->
                     <article class="card project-card scale-in stagger-1" data-category="web-app">
                         <div class="project-image">
                             <img src="../img/photo-album-maker-thumbnail.png" alt="Photo Album Maker Screenshot"
                                 class="project-thumbnail">
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="https://jenna-studio.github.io/photo-album-maker" class="overlay-btn"
-                                        target="_blank">Live Demo</a>
-                                    <a href="https://github.com/jenna-studio/photo-album-maker" class="overlay-btn"
-                                        target="_blank" rel="noopener">Code</a>
-                                </div>
-                            </div>
+                            <div class="project-overlay"></div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Photo Album Maker</h3>
@@ -153,6 +187,10 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="project-actions">
+                            <a href="https://jenna-studio.github.io/photo-album-maker" class="overlay-btn" target="_blank">Live Demo</a>
+                            <a href="https://github.com/jenna-studio/photo-album-maker" class="overlay-btn" target="_blank" rel="noopener">Code</a>
+                        </div>
                     </article>
 
                     <!-- Project 2: Cotton Candy Code Editor -->
@@ -160,14 +198,7 @@
                         <div class="project-image">
                             <img src="../img/cotton-candy-editor-thumbnail.png" alt="Cotton Candy Editor Screenshot"
                                 class="project-thumbnail">
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="https://jenna-studio.github.io/cotton-candy-editor" class="overlay-btn"
-                                        target="_blank">Live Website</a>
-                                    <a href="https://github.com/jenna-studio/cotton-candy-editor" class="overlay-btn"
-                                        target="_blank" rel="noopener">Code</a>
-                                </div>
-                            </div>
+                            <div class="project-overlay"></div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Cotton Candy Editor</h3>
@@ -191,6 +222,10 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="project-actions">
+                            <a href="https://jenna-studio.github.io/cotton-candy-editor" class="overlay-btn" target="_blank">Live Website</a>
+                            <a href="https://github.com/jenna-studio/cotton-candy-editor" class="overlay-btn" target="_blank" rel="noopener">Code</a>
+                        </div>
                     </article>
 
                     <!-- Project 3: Terminal Snake Game -->
@@ -198,14 +233,7 @@
                         <div class="project-image">
                             <img src="../img/snake-game-thumbnail.png" alt="Terminal Snake Game Screenshot"
                                 class="project-thumbnail">
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="https://github.com/jenna-studio/terminal-snake-game#how-to-play"
-                                        class="overlay-btn" target="_blank">How to Play</a>
-                                    <a href="https://github.com/jenna-studio/terminal-snake-game" class="overlay-btn"
-                                        target="_blank" rel="noopener">Code</a>
-                                </div>
-                            </div>
+                            <div class="project-overlay"></div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Terminal Snake Game</h3>
@@ -229,6 +257,10 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/jenna-studio/terminal-snake-game#how-to-play" class="overlay-btn" target="_blank">How to Play</a>
+                            <a href="https://github.com/jenna-studio/terminal-snake-game" class="overlay-btn" target="_blank" rel="noopener">Code</a>
+                        </div>
                     </article>
 
                     <!-- Project 4: Alfred Color to Hex Workflow -->
@@ -236,17 +268,10 @@
                         <div class="project-image">
                             <img src="../img/color-to-hex-thumbnail.png" alt="Alfred Color to Hex Workflow Screenshot"
                                 class="project-thumbnail">
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="https://github.com/jenna-studio/alfred-colortohex#installation"
-                                        class="overlay-btn" target="_blank">Installation</a>
-                                    <a href="https://github.com/jenna-studio/alfred-colortohex" class="overlay-btn"
-                                        target="_blank" rel="noopener">Code</a>
-                                </div>
-                            </div>
+                            <div class="project-overlay"></div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Alfred - Color to Hex Workflow</h3>
+                            <h3 class="project-title">Alfred - Color to Hex</h3>
                             <p class="project-description">A simple Alfred workflow that allows you to search CSS color
                                 names and copy their HEX values with a circular color preview icon. Perfect tool for
                                 designers and developers who need quick access to color codes with visual previews to
@@ -267,6 +292,10 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/jenna-studio/alfred-colortohex#installation" class="overlay-btn" target="_blank">Installation</a>
+                            <a href="https://github.com/jenna-studio/alfred-colortohex" class="overlay-btn" target="_blank" rel="noopener">Code</a>
+                        </div>
                     </article>
 
                     <!-- Project 5: Chrome Theme Extension -->
@@ -274,17 +303,10 @@
                         <div class="project-image">
                             <img src="../img/pink-workspace-thumbnail.png" alt="Chrome Theme Collection Screenshot"
                                 class="project-thumbnail">
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb"
-                                        class="overlay-btn" target="_blank">Apply This</a>
-                                    <a href="https://github.com/jenna-studio/chrome-theme-extension" class="overlay-btn"
-                                        target="_blank" rel="noopener">View All</a>
-                                </div>
-                            </div>
+                            <div class="project-overlay"></div>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Google Chrome Theme Collection</h3>
+                            <h3 class="project-title">Google Chrome Theme</h3>
                             <p class="project-description">A collection of custom Google Chrome browser themes with
                                 stunning
                                 designs and vibrant color palettes. Features multiple unique themes crafted precisely.
@@ -305,6 +327,10 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="project-actions">
+                            <a href="https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb" class="overlay-btn" target="_blank">Apply This</a>
+                            <a href="https://github.com/jenna-studio/chrome-theme-extension" class="overlay-btn" target="_blank" rel="noopener">View All</a>
+                        </div>
                     </article>
 
                     <!-- Project 6: Monaco Editor Web -->
@@ -312,14 +338,7 @@
                         <div class="project-image">
                             <img src="../img/monaco-editor-web-thumbnail.png" alt="Monaco Editor Web Screenshot"
                                 class="project-thumbnail">
-                            <div class="project-overlay">
-                                <div class="overlay-actions">
-                                    <a href="https://jenna-studio.github.io/monaco-editor-web" class="overlay-btn"
-                                        target="_blank">Live Website</a>
-                                    <a href="https://github.com/jenna-studio/monaco-editor-web" class="overlay-btn"
-                                        target="_blank" rel="noopener">Code</a>
-                                </div>
-                            </div>
+                            <div class="project-overlay"></div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">Monaco Editor Web</h3>
@@ -344,6 +363,10 @@
                                     <span class="meta-value">2025</span>
                                 </span>
                             </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://jenna-studio.github.io/monaco-editor-web" class="overlay-btn" target="_blank">Live Website</a>
+                            <a href="https://github.com/jenna-studio/monaco-editor-web" class="overlay-btn" target="_blank" rel="noopener">Code</a>
                         </div>
                     </article>
 
@@ -643,7 +666,7 @@
             </section> -->
 
             <!-- CTA Section -->
-            <section class="cta-section section">
+            <!-- <section class="cta-section section">
                 <div class="card cta-card scale-in stagger-1">
                     <h2>Have a Project in Mind?</h2>
                     <p>I'm always excited to work on new challenges and bring creative ideas to life. Let's discuss your
@@ -655,7 +678,7 @@
                             GitHub</a>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
     </main>
 
@@ -747,6 +770,24 @@
                     cursor.show();
                     cursor.animate();
 
+                    // Event delegation for .overlay-btn hover (handles static + filter-cloned cards)
+                    document.addEventListener('mouseover', function (e) {
+                        if (e.target.closest('.overlay-btn')) {
+                            cursor.isLoading = false;
+                            cursor.isHovering = true;
+                            cursor.element.classList.remove('loading');
+                            cursor.element.classList.add('hover');
+                        }
+                    });
+                    document.addEventListener('mouseout', function (e) {
+                        const fromBtn = e.target.closest('.overlay-btn');
+                        const toBtn = e.relatedTarget && e.relatedTarget.closest('.overlay-btn');
+                        if (fromBtn && !toBtn) {
+                            cursor.isHovering = false;
+                            cursor.element.classList.remove('hover');
+                        }
+                    });
+
                     console.log('Cursor fixed');
                 }
             }, 1500); // Wait 1.5 seconds for loading to complete
@@ -766,9 +807,12 @@
         // Projects Filter Functionality
         document.addEventListener('DOMContentLoaded', function () {
             const filterBtns = document.querySelectorAll('.filter-btn');
-            const projectItems = document.querySelectorAll('.projects-grid .project-card');
+            const projectItems = document.querySelectorAll('#projectsGrid .project-card');
+            const filteredSection = document.getElementById('filteredResultsSection');
+            const filteredGrid = document.getElementById('filteredResultsGrid');
+            const filteredTitle = document.getElementById('filteredResultsTitle');
 
-            // Ensure all items start visible
+            // All Projects grid always shows all cards
             projectItems.forEach(item => {
                 item.classList.remove('filter-hidden');
                 item.classList.add('filter-visible');
@@ -780,29 +824,32 @@
                     e.stopPropagation();
 
                     const filter = this.getAttribute('data-filter');
+                    const btnText = this.textContent.trim();
 
                     // Update active button
                     filterBtns.forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
 
-                    // Filter project items
-                    projectItems.forEach(item => {
-                        const category = item.getAttribute('data-category');
+                    if (filter === 'all') {
+                        // Hide filtered section — All Projects grid stays fully visible
+                        filteredSection.style.display = 'none';
+                        filteredGrid.innerHTML = '';
+                    } else {
+                        // Populate filtered section above the featured project
+                        filteredTitle.textContent = btnText;
+                        filteredGrid.innerHTML = '';
 
-                        if (filter === 'all' || category === filter) {
-                            item.classList.remove('filter-hidden');
-                            item.classList.add('filter-visible');
-                        } else {
-                            item.classList.remove('filter-visible');
-                            item.classList.add('filter-hidden');
-                        }
-                    });
+                        projectItems.forEach(item => {
+                            if (item.getAttribute('data-category') === filter) {
+                                const clone = item.cloneNode(true);
+                                clone.classList.remove('filter-hidden');
+                                clone.classList.add('filter-visible');
+                                filteredGrid.appendChild(clone);
+                            }
+                        });
 
-                    // Prevent any scroll or layout shift
-                    window.scrollTo({
-                        top: window.scrollY,
-                        behavior: 'auto'
-                    });
+                        filteredSection.style.display = 'block';
+                    }
                 });
             });
         });
