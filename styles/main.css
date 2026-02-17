@@ -4476,26 +4476,7 @@ p {
     }
 }
 
-/* Dark mode preparation (keeping glassmorphism style) */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-text-primary: #f3f4f6;
-        --color-text-secondary: #d1d5db;
-        --color-text-light: #9ca3af;
-    }
 
-    .card {
-        background: rgba(0, 0, 0, 0.25);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(20px);
-    }
-
-    .nav-container {
-        background: rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(20px);
-    }
-}
 
 /* FORCE MOBILE NAVIGATION TO 2-LINE LAYOUT - HIGHEST SPECIFICITY */
 @media screen and (max-width: 480px) {
