@@ -89,8 +89,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 1 -->
-                    <article class="portfolio-item scale-in stagger-1" data-category="tools"
+                    <!-- Portfolio Item 2 -->
+                    <article class="portfolio-item scale-in stagger-2" data-category="tools"
                         data-portfolio-id="english-tutor">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
@@ -101,8 +101,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 2 -->
-                    <article class="portfolio-item scale-in stagger-2" data-category="tools"
+                    <!-- Portfolio Item 3 -->
+                    <article class="portfolio-item scale-in stagger-3" data-category="tools"
                         data-portfolio-id="customGPT">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
@@ -113,8 +113,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 3 -->
-                    <article class="portfolio-item scale-in stagger-3" data-category="creation"
+                    <!-- Portfolio Item 4 -->
+                    <article class="portfolio-item scale-in stagger-4" data-category="creation"
                         data-portfolio-id="travel-map">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
@@ -125,8 +125,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 4 -->
-                    <article class="portfolio-item scale-in stagger-4" data-category="ui-ux"
+                    <!-- Portfolio Item 5 -->
+                    <article class="portfolio-item scale-in stagger-5" data-category="ui-ux"
                         data-portfolio-id="chrome-theme">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
@@ -137,8 +137,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 5 -->
-                    <article class="portfolio-item scale-in stagger-5" data-category="3d" data-portfolio-id="3d">
+                    <!-- Portfolio Item 6 -->
+                    <article class="portfolio-item scale-in stagger-6" data-category="3d" data-portfolio-id="3d">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
                                 <h3 class="portfolio-title">Raindrop ASMR LED Humidifier</h3>
@@ -148,8 +148,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 6 -->
-                    <article class="portfolio-item scale-in stagger-6" data-category="3d"
+                    <!-- Portfolio Item 7 -->
+                    <article class="portfolio-item scale-in stagger-7" data-category="3d"
                         data-portfolio-id="hello-kitty-modeling">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
@@ -160,8 +160,8 @@
                         </div>
                     </article>
 
-                    <!-- Portfolio Item 7 -->
-                    <article class="portfolio-item scale-in stagger-7" data-category="tools" data-portfolio-id="apple-shortcuts">
+                    <!-- Portfolio Item 8 -->
+                    <article class="portfolio-item scale-in stagger-8" data-category="tools" data-portfolio-id="apple-shortcuts">
                         <div class="card portfolio-card">
                             <div class="portfolio-content">
                                 <h3 class="portfolio-title">Apple Shortcuts</h3>
@@ -182,15 +182,15 @@
                         <div class="stat-number" data-target="50">30+</div>
                         <div class="stat-label">Design Projects</div>
                     </div>
-                    <!-- <div class="card stat-card scale-in stagger-1">
+                    <!-- <div class="card stat-card scale-in stagger-2">
                         <div class="stat-number" data-target="20">50k+</div>
                         <div class="stat-label">Happy Clients</div>
                     </div> -->
-                    <div class="card stat-card scale-in stagger-1">
+                    <div class="card stat-card scale-in stagger-2">
                         <div class="stat-number" data-target="3">4+</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
-                    <div class="card stat-card scale-in stagger-1">
+                    <div class="card stat-card scale-in stagger-3">
                         <div class="stat-number" data-target="8">5+</div>
                         <div class="stat-label">Work Experience</div>
                     </div>
@@ -217,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card testimonial-card scale-in stagger-1">
+                    <div class="card testimonial-card scale-in stagger-2">
                         <div class="testimonial-content">
                             <p>"Working with Jenna was a pleasure. She understood our vision immediately and delivered a
                                 stunning e-commerce platform that's both beautiful and highly functional."</p>
@@ -232,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card testimonial-card scale-in stagger-1">
+                    <div class="card testimonial-card scale-in stagger-3">
                         <div class="testimonial-content">
                             <p>"The mobile app UI that Jenna designed for us is intuitive, modern, and our users
                                 absolutely love it. Her design thinking approach is remarkable."</p>
@@ -892,6 +892,15 @@
                     closePortfolioModal();
                 }
             });
+
+            // Auto-open modal from URL hash
+            const hash = window.location.hash.substring(1); // Remove the # symbol
+            if (hash && portfolioData[hash]) {
+                // Small delay to ensure page is fully loaded
+                setTimeout(() => {
+                    openPortfolioModal(hash);
+                }, 300);
+            }
         });
 
         // Image Modal Functions
