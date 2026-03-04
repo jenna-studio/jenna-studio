@@ -1388,23 +1388,32 @@
 }
 
 .portfolio-card {
-    height: 100%;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    transition: all var(--transition-normal);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: var(--border-radius-xl);
-    background: var(--gradient-card);
-    backdrop-filter: var(--backdrop-blur);
-    /* border: 1px solid rgba(255, 255, 255, 0.2); */
-    box-shadow: var(--shadow-card);
-    overflow: hidden;
-    position: relative;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px) scale(1.02);
     box-shadow: var(--shadow-hover);
-    /* border-color: rgba(255, 255, 255, 0.35); */
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-description {
+    text-align: center;
+    margin: 0 auto 15px;
+    width: 100%;
 }
 
 .portfolio-image {
@@ -1440,11 +1449,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.5), 0 8px 32px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1466,8 +1475,8 @@
     font-size: 1.15rem;
     margin-bottom: var(--spacing-xs);
     color: var(--color-text-primary);
-    text-shadow: 0 1px 6px rgba(255, 255, 255, 0.6);
-    font-weight: var(--font-weight-semibold);
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8), 0 0 1px rgba(255, 255, 255, 1);
+    font-weight: var(--font-weight-bold);
 }
 
 .overlay-content p {
@@ -1487,24 +1496,26 @@
 
 .overlay-btn {
     padding: var(--spacing-sm) var(--spacing-md);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.35);
     color: var(--color-text-primary);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: var(--border-radius-sm);
     text-decoration: none;
     font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-semibold);
     cursor: pointer;
     transition: all var(--transition-fast);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .overlay-btn:hover {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.75);
     color: var(--color-text-primary);
     transform: translateY(-2px);
-    border-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-info {
@@ -2052,16 +2063,19 @@
     padding: 0;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: var(--spacing-md);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .modal-thumbnail-image {
-    max-width: 250px;
     width: auto;
-    max-height: 300px;
-    display: inline-block;
+    max-width: 45%;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: var(--color-surface);
+    display: block;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-card);
     transition: all var(--transition-normal);
@@ -2273,8 +2287,7 @@
     }
 
     .modal-thumbnail-image {
-        max-width: 180px;
-        max-height: 250px;
+        height: 250px;
     }
 
     .image-modal-close {
@@ -2372,8 +2385,7 @@
     }
 
     .modal-thumbnail-image {
-        max-width: 200px;
-        max-height: 200px;
+        height: 180px;
     }
 
     .image-modal-close {

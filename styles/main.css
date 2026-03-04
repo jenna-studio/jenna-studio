@@ -1656,6 +1656,7 @@ p {
     padding: 0 10px;
     font-size: var(--font-size-sm);
     word-spacing: -0.1em;
+    word-break: break-all;
 }
 
 .project-tags {
@@ -1725,6 +1726,7 @@ p {
     padding: 0 10px;
     font-size: var(--font-size-sm);
     word-spacing: -0.1em;
+    word-break: break-all;
 }
 
 /* ===== 14. CONTACT SECTION ===== */
