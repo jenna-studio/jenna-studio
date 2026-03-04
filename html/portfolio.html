@@ -616,14 +616,27 @@
             'apple-shortcuts': {
                 title: 'Apple Shortcuts',
                 category: 'Tools',
-                description: '',
+                description: 'A collection of useful automation shortcuts for iOS and MacOS.',
                 tags: ['Apple', 'iOS', 'MacOS', 'automation'],
-                thumbnailImages: [
-                    { src: '../img/shortcuts-thumbnail.png', alt: 'apple-shortcuts' }
+                shortcutsList: [
+                    { name: 'Convert Image Format', icloudLink: 'https://www.icloud.com/shortcuts/9ce2d62e06424d0cbd360f6aa45f10cb' },
+                    { name: 'CSS Gradient', icloudLink: 'https://www.icloud.com/shortcuts/b56c2f1cfc384412ac096d556a20b1b8' },
+                    { name: 'English Dictionary', icloudLink: 'https://www.icloud.com/shortcuts/75e2c5ec76f14b15a6913d4931e2049c' },
+                    { name: 'Extract Text from PDF', icloudLink: 'https://www.icloud.com/shortcuts/1076a9c16a584958b29b1e316a16a086' },
+                    { name: 'Get Current IP Address', icloudLink: 'https://www.icloud.com/shortcuts/9bc0a2a810e348cfb2236a07edd5050c' },
+                    { name: 'Image Edit - Mac OS', icloudLink: 'https://www.icloud.com/shortcuts/ccea7234bdd84cd6a6aa0da10ffaa7fe' },
+                    { name: 'Image Edit - iOS', icloudLink: 'https://www.icloud.com/shortcuts/19e91781e68445aa987f5eeaf11b0ae2' },
+                    { name: 'Korean Grammar', icloudLink: 'https://www.icloud.com/shortcuts/0d44636a5f304af2af2b1f4a407bcc7e' },
+                    { name: 'Open VS Code Workspace', icloudLink: 'https://www.icloud.com/shortcuts/a628af99720447abb286d42e8ce81afa' },
+                    { name: 'PDF to PNG', icloudLink: 'https://www.icloud.com/shortcuts/78b718117f1e4ccfae99d0b4fef34f12' },
+                    { name: 'Rename Photo', icloudLink: 'https://www.icloud.com/shortcuts/b9781c063d744e7193b12e01f8ac4546' },
+                    { name: 'Shorten URL', icloudLink: 'https://www.icloud.com/shortcuts/2efa0ce4985c42c6a8ddfa42106178c8' },
+                    { name: 'Speak Weather - Korean', icloudLink: 'https://www.icloud.com/shortcuts/b9ba553040a640019255a1b15e8ad888' },
+                    { name: 'Split PDF Into PNGs', icloudLink: 'https://www.icloud.com/shortcuts/a7a05ceb15414f1c93c55ebc155c1819' },
+                    { name: 'Summarize PDF', icloudLink: 'https://www.icloud.com/shortcuts/7812b16da351473ba2f302f575a83409' },
+                    { name: 'Wifi Analysis', icloudLink: 'https://www.icloud.com/shortcuts/919838c297774aa0b9f56b4b2520d992' }
                 ],
-                actions: [
-                    { text: 'Download Shortcuts', url: '../files/fusion-hello-kitty-modeling-guideline.pdf', primary: true, download: true }
-                ]
+                actions: []
             }
         };
 
@@ -659,6 +672,18 @@
             // Handle single Spotify / generic embed
             } else if (data.embedHTML) {
                 contentHTML = `<div class="modal-embed-container">${data.embedHTML}</div>`;
+            // Handle shortcuts list
+            } else if (data.shortcutsList && data.shortcutsList.length > 0) {
+                contentHTML = `
+                    <div class="shortcuts-list-container">
+                        ${data.shortcutsList.map(shortcut =>
+                    `<div class="shortcut-item">
+                                <span class="shortcut-name">${shortcut.name}</span>
+                                <a href="${shortcut.icloudLink}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Get Shortcut</a>
+                            </div>`
+                ).join('')}
+                    </div>
+                `;
             // Handle inline thumbnail images
             } else if (data.thumbnailImages && data.thumbnailImages.length > 0) {
                 contentHTML = `
@@ -713,11 +738,13 @@
             const existingThumbnail = modal.querySelector('.modal-thumbnail-container');
             const existingEmbed = modal.querySelector('.modal-embed-container');
             const existingPaged = modal.querySelector('.modal-paged-embed');
+            const existingShortcuts = modal.querySelector('.shortcuts-list-container');
             if (existingGallery) existingGallery.remove();
             if (existingCarousel) existingCarousel.remove();
             if (existingThumbnail) existingThumbnail.remove();
             if (existingEmbed) existingEmbed.remove();
             if (existingPaged) existingPaged.remove();
+            if (existingShortcuts) existingShortcuts.remove();
             if (contentHTML) {
                 description.insertAdjacentHTML('afterend', contentHTML);
             }
