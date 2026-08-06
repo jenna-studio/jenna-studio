@@ -20,16 +20,6 @@ const portfolioEntries: PortfolioEntry[] = [
     tags: ["Music", "Suno AI", "Jenna Studio"],
   },
   {
-    id: "english-tutor", category: "tools", title: "Your English Tutor", subtitle: "Custom ChatGPT", cover: "/media/portfolio-thumbnails/english-tutor-thumbnail-blue.png",
-    description: "A custom ChatGPT-powered English tutor designed to help students improve their language skills through interactive conversations, grammar corrections, and personalized learning experiences. Features include real-time feedback, progress tracking, and adaptive difficulty levels.",
-    tags: ["Education", "Language", "ChatGPT"],
-  },
-  {
-    id: "personal-color-analysis-service", category: "tools", title: "Personal Color Analysis Service", subtitle: "Custom ChatGPT", cover: "/media/portfolio-thumbnails/personal-color-analysis-thumbnail.png",
-    description: "A specialized ChatGPT service that provides personalized color analysis and styling recommendations. Helps users discover their ideal color palette, makeup suggestions, and fashion advice based on their unique features and preferences.",
-    tags: ["Color Analysis", "Lifestyle", "ChatGPT", "AI"],
-  },
-  {
     id: "travel-map", category: "creation", title: "Travel Maps Design", subtitle: "Create cruise travel maps", cover: "/media/travel-maps-thumbnail.JPG",
     description: "Create custom cruise journey maps for (주)삶은여행 that visually highlight routes, ports, and key experiences with clear, intuitive design. These maps help travelers easily understand their itinerary and feel the excitement of their voyage before departure.",
     tags: ["Travel", "Map", "Photoshop"],
@@ -46,13 +36,23 @@ const portfolioEntries: PortfolioEntry[] = [
   },
   {
     id: "hello-kitty-modeling", category: "3d", title: "Hello Kitty 3D Modeling", subtitle: "Modeling tutorial PDF", cover: "/media/portfolio-thumbnails/hello-kitty-thumbnail.png",
-    description: "",
+    description: "Made a Fusion Hello Kitty 3D modeling tutorial that walks through the entire process step by step — from sketching the basic forms to shaping the face, body, and signature ribbon. Written as an easy-to-follow PDF guideline so that even beginners new to Fusion can complete their own Hello Kitty model from start to finish.",
     tags: ["3D Modeling", "Guideline", "Tutorial", "PDF"],
   },
   {
     id: "apple-shortcuts", category: "tools", title: "Apple Shortcuts", subtitle: "A collection of Apple's Shortcuts", cover: "/media/shortcuts-thumbnail.png",
     description: "A collection of useful automation shortcuts for iOS and MacOS.",
     tags: ["Apple", "iOS", "MacOS", "automation"],
+  },
+  {
+    id: "english-tutor", category: "tools", title: "Your English Tutor", subtitle: "Custom ChatGPT", cover: "/media/portfolio-thumbnails/english-tutor-thumbnail-blue.png",
+    description: "A custom ChatGPT-powered English tutor designed to help students improve their language skills through interactive conversations, grammar corrections, and personalized learning experiences. Features include real-time feedback, progress tracking, and adaptive difficulty levels.",
+    tags: ["Education", "Language", "ChatGPT"],
+  },
+  {
+    id: "personal-color-analysis-service", category: "tools", title: "Personal Color Analysis Service", subtitle: "Custom ChatGPT", cover: "/media/portfolio-thumbnails/personal-color-analysis-thumbnail.png",
+    description: "A specialized ChatGPT service that provides personalized color analysis and styling recommendations. Helps users discover their ideal color palette, makeup suggestions, and fashion advice based on their unique features and preferences.",
+    tags: ["Color Analysis", "Lifestyle", "ChatGPT", "AI"],
   },
 ];
 

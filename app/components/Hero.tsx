@@ -100,8 +100,9 @@ export function Hero() {
 
       <div className="hero-ticker" aria-hidden="true">
         <div className="hero-ticker-track">
-          <span>Creative technology&nbsp;&nbsp;✦&nbsp;&nbsp;Expressive interfaces&nbsp;&nbsp;✦&nbsp;&nbsp;Thoughtful systems&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
-          <span>Creative technology&nbsp;&nbsp;✦&nbsp;&nbsp;Expressive interfaces&nbsp;&nbsp;✦&nbsp;&nbsp;Thoughtful systems&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+          {Array.from({ length: 6 }, (_, index) => (
+            <span key={index}>Creative technology&nbsp;&nbsp;✦&nbsp;&nbsp;Expressive interfaces&nbsp;&nbsp;✦&nbsp;&nbsp;Thoughtful systems&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+          ))}
         </div>
       </div>
     </section>

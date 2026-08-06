@@ -167,9 +167,10 @@ export const projects: Project[] = [
 ];
 
 export const featuredGlue = {
-  title: "GLUE - Guideline-based Usability Engineering",
+  title: "GLUE",
+  subtitle: "Guideline-based Usability Engineering",
   description: "GLUE turns the fragmented work of medical-device usability engineering into one connected, evidence-led workflow. From the first device context and use specification through UI safety characteristics, hazards, scenarios, formative and summative evaluation, each step carries its context forward. AI helps teams shape and refine their documents while GLUE keeps the supporting rationale visible, reviewable, and ready to bring together in a final 5.10 usability engineering file and Word deliverable.",
-  tags: ["Medical Devices", "IEC 62366-1", "Human Factors", "AI-assisted", "Documentation", "Workflow"],
+  tags: ["Medical Devices", "IEC 62366-1", "AI-assisted", "Documentation", "Workflow"],
 };
 
 export const shortcuts = [

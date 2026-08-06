@@ -1,13 +1,14 @@
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { Hero } from "./components/Hero";
+import { AboutAvatar } from "./components/AboutAvatar";
 
 const featuredProjects = [
   {
-    number: "01", title: "Agent Track Dashboard", type: "AI agent operations",
-    description: "A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.",
-    tags: ["TypeScript", "React", "MCP"], image: "/media/agent-track-dashboard-thumbnail.png",
-    links: [["View Docs", "https://github.com/jenna-studio/agent-track-dashboard#readme"], ["View Code", "https://github.com/jenna-studio/agent-track-dashboard"]], tone: "coral",
+    number: "01", title: "GLUE", type: "Medical-device workflow",
+    description: "An AI-assisted workspace for medical-device usability engineering that connects project context, safety evidence, evaluation records, and documentation through an IEC 62366-1 workflow.",
+    tags: ["Medical Devices", "IEC 62366-1", "Human Factors"], image: "/media/glue-main-thumbnail.png",
+    links: [["Visit Site", "https://glue-snuh.web.app"], ["Start for Free", "https://glue-snuh.web.app/signup.html"]], tone: "lime",
   },
   {
     number: "02", title: "CS UniVerse", type: "Learning workspace",
@@ -16,17 +17,17 @@ const featuredProjects = [
     links: [["Visit Site", "https://csuniverse.org"], ["Learn More", "https://csuniverse.org"]], tone: "blue",
   },
   {
-    number: "03", title: "GLUE", type: "Medical-device workflow",
-    description: "An AI-assisted workspace for medical-device usability engineering that connects project context, safety evidence, evaluation records, and documentation through an IEC 62366-1 workflow.",
-    tags: ["Medical Devices", "IEC 62366-1", "Human Factors"], image: "/media/glue-screenshot.png",
-    links: [["Visit Site", "https://glue-snuh.web.app"], ["Start for Free", "https://glue-snuh.web.app/signup.html"]], tone: "lime",
+    number: "03", title: "Agent Track Dashboard", type: "AI agent operations",
+    description: "A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.",
+    tags: ["TypeScript", "React", "MCP"], image: "/media/agent-track-dashboard-thumbnail.png",
+    links: [["View Docs", "https://github.com/jenna-studio/agent-track-dashboard#readme"], ["View Code", "https://github.com/jenna-studio/agent-track-dashboard"]], tone: "coral",
   },
 ];
 
 const portfolioHighlights = [
-  { number: "A", title: "Web Design", description: "Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions.", image: "/media/og-thumbnail.png", href: "/portfolios/", tone: "peach" },
-  { number: "B", title: "AI Music Generation", description: "Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.", image: "/media/portfolio-thumbnails/jenna-studio-music-thumbnail.jpeg", href: "/portfolios/#ai-music", tone: "violet" },
-  { number: "C", title: "Apple Shortcuts", description: "Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines.", image: "/media/shortcuts-thumbnail.png", href: "/portfolios/#apple-shortcuts", tone: "mint" },
+  { title: "Web Design", description: "Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions.", image: "/og.png", href: "/portfolios/", tone: "peach" },
+  { title: "AI Music Generation", description: "Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.", image: "/media/portfolio-thumbnails/jenna-studio-music-thumbnail.jpeg", href: "/portfolios/#ai-music", tone: "violet" },
+  { title: "Apple Shortcuts", description: "Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines.", image: "/media/shortcuts-thumbnail.png", href: "/portfolios/#apple-shortcuts", tone: "mint" },
 ];
 
 export default function Home() {
@@ -37,19 +38,19 @@ export default function Home() {
 
       <section className="statement" id="about">
         <p className="section-kicker">About Me</p>
-        <div>
+        <div className="statement-main">
           <h2>Developer &amp;<br /><em>digital artist.</em></h2>
-          <div className="home-about-copy">
-            <p><b>Developer</b><br />Hi! I&apos;m Jenna, a passionate developer who thrives on transforming complex problems into elegant, user-centered solutions. I approach every project with curiosity and precision, combining modern development practices with creative problem-solving to build applications that not only work flawlessly but also delight users at every interaction.</p>
-            <p><b>Digital Artist</b><br />As a digital artist, I specialize in crafting immersive visual experiences that tell compelling stories. From UI design and interactive prototypes to 3D modelings, I merge artistic vision with technical expertise to create content that captivates audiences and enhances user engagement.</p>
-            <div className="button-row"><a href="/about/">View More ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+          <div className="statement-body">
+            <AboutAvatar />
+            <div className="home-about-copy">
+              <p><b>Developer</b><br />Hi! I&apos;m Jenna, a passionate developer who thrives on transforming complex problems into elegant, user-centered solutions. I approach every project with curiosity and precision, combining modern development practices with creative problem-solving to build applications that not only work flawlessly but also delight users at every interaction.</p>
+              <p><b>Digital Artist</b><br />As a digital artist, I specialize in crafting immersive visual experiences that tell compelling stories. From UI design and interactive prototypes to 3D modelings, I merge artistic vision with technical expertise to create content that captivates audiences and enhances user engagement.</p>
+              <div className="button-row"><a href="/about/">View More ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="home-skills" aria-label="Skills">
-        {["HTML5", "CSS3", "Java", "Python", "Web Develop", "UI/UX Design", "3D Modeling"].map((skill, index) => <span key={skill}><b>0{index + 1}</b>{skill}</span>)}
-      </section>
 
       <section className="work" id="projects">
         <div className="section-heading"><p className="section-kicker">Featured Projects</p><h2>Built to be<br /><em>felt &amp; used.</em></h2></div>
@@ -73,7 +74,7 @@ export default function Home() {
           {portfolioHighlights.map((portfolio) => (
             <a className={`portfolio-card portfolio-${portfolio.tone}`} href={portfolio.href} key={portfolio.title}>
               <div className="portfolio-art"><img src={portfolio.image} alt="" aria-hidden="true" /></div>
-              <div className="portfolio-copy"><span>{portfolio.number}</span><h3>{portfolio.title}</h3><p>{portfolio.description}</p><b>View Details ↗</b></div>
+              <div className="portfolio-copy"><h3>{portfolio.title}</h3><p>{portfolio.description}</p><b>View Details ↗</b></div>
             </a>
           ))}
         </div>
