@@ -8,6 +8,7 @@ import { ProjectsCatalog } from "./ProjectsCatalog";
 export const metadata: Metadata = {
   title: "Projects — Jenna Studio",
   description: "Web applications, mobile apps, tools, and creative experiments by Jenna Studio.",
+  alternates: { canonical: "/projects/" },
 };
 
 export default function ProjectsPage() {

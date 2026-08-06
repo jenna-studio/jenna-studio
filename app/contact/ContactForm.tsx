@@ -3,15 +3,18 @@
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-export function ContactForm() {
-  const [sending, setSending] = useState(false);
+export function ContactSuccess() {
   const searchParams = useSearchParams();
   const sent = searchParams.get("success") === "true";
 
+  return sent ? <p className="form-success" role="status">Thank you — your message has been sent. I&apos;ll be in touch soon.</p> : null;
+}
+
+export function ContactForm() {
+  const [sending, setSending] = useState(false);
+
   return (
-    <>
-      {sent && <p className="form-success" role="status">Thank you — your message has been sent. I&apos;ll be in touch soon.</p>}
-      <form className="contact-form-grid" action="https://formspree.io/f/xzzaypnq" method="POST" onSubmit={() => setSending(true)}>
+    <form className="contact-form-grid" action="https://formspree.io/f/xzzaypnq" method="POST" onSubmit={() => setSending(true)}>
         <input type="hidden" name="_to" value="jenna@jenna-studio.dev" />
         <input type="hidden" name="_subject" value="New Contact Form Submission from Jenna Studio" />
         <input type="hidden" name="_replyto" value="jenna@jenna-studio.dev" />
@@ -34,7 +37,6 @@ export function ContactForm() {
         </label>
         <label>Tell Me About Your Project *<textarea name="message" rows={6} placeholder="Describe your project, goals, and any specific requirements..." required /></label>
         <button type="submit" disabled={sending}>{sending ? "Sending..." : "Send Message ↗"}</button>
-      </form>
-    </>
+    </form>
   );
 }

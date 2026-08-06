@@ -1,5 +1,6 @@
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
+import { Hero } from "./components/Hero";
 
 const featuredProjects = [
   {
@@ -32,17 +33,7 @@ export default function Home() {
   return (
     <main>
       <SiteHeader />
-      <section className="hero" id="top">
-        <p className="eyebrow">Creative Next-Gen Developer &amp; Digital Artist</p>
-        <div className="hero-grid">
-          <h1>Welcome to<br /><em>Jenna Studio.</em></h1>
-          <div className="hero-note">
-            <p>Blending creativity and code to design meaningful, human-centered digital experiences. Let&apos;s build beautiful things together!</p>
-            <div className="hero-links"><a className="text-link" href="/projects/">View My Work <b>↗</b></a><a className="text-link" href="/about/">Meet Jenna <b>↗</b></a></div>
-          </div>
-        </div>
-        <div className="orbital-art" aria-hidden="true"><span className="orbit orbit-one" /><span className="orbit orbit-two" /><span className="star star-one">✦</span><span className="star star-two">✳</span><span className="orb-center">J</span><span className="orbit-label">CURIOUS<br />BY DESIGN</span></div>
-      </section>
+      <Hero />
 
       <section className="statement" id="about">
         <p className="section-kicker">About Me</p>
@@ -75,6 +66,7 @@ export default function Home() {
         <div className="section-end-link"><a href="/projects/">View All Projects ↗</a></div>
       </section>
 
+      <span className="legacy-anchor" id="portfolio" aria-hidden="true" />
       <section className="portfolios" id="portfolios">
         <div className="portfolio-heading"><p className="section-kicker">Portfolio Highlights</p><h2>Creative work,<br /><em>many forms.</em></h2></div>
         <div className="portfolio-grid">

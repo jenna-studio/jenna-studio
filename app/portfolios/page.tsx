@@ -7,6 +7,7 @@ import { PortfolioCatalog } from "./PortfolioCatalog";
 export const metadata: Metadata = {
   title: "Portfolios — Jenna Studio",
   description: "Research, music, AI tools, 3D work, design, Apple Shortcuts, and travel journals by Jenna Studio.",
+  alternates: { canonical: "/portfolios/" },
 };
 
 export default function PortfoliosPage() {
@@ -20,7 +21,7 @@ export default function PortfoliosPage() {
       </section>
 
       <div className="content-shell">
-        <section className="content-section research-feature">
+        <section className="content-section research-feature" id="hfes-poster">
           <div><span>Featured</span><p>Research · HFES International Symposium 2026</p></div>
           <h2>RAG-Enhanced LLM System with Decision Tree for Medical Device Usability Engineering Process</h2>
           <p className="research-authors">Junhee Choi, Jinseon Yoo, Saram Lee, Jung Chan Lee</p>

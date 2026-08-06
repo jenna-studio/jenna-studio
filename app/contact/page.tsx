@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
-import { ContactForm } from "./ContactForm";
+import { ContactForm, ContactSuccess } from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact — Jenna Studio",
   description: "Get in touch with Jenna for web development projects, collaborations, and creative opportunities.",
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {
@@ -29,9 +30,10 @@ export default function ContactPage() {
               <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">GitHub ↗</a>
             </div>
           </div>
-          <Suspense fallback={<p className="form-success">Loading contact form…</p>}>
+          <div>
+            <Suspense fallback={null}><ContactSuccess /></Suspense>
             <ContactForm />
-          </Suspense>
+          </div>
         </section>
       </div>
       <SiteFooter />

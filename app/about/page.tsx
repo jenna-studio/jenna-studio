@@ -7,6 +7,7 @@ import { education, experience, journey, skillGroups, stories, values } from "..
 export const metadata: Metadata = {
   title: "About Jenna — Jenna Studio",
   description: "Education, experience, story, skills, values, and journey of Jenna Studio.",
+  alternates: { canonical: "/about/" },
 };
 
 export default function AboutPage() {
