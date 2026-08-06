@@ -1,0 +1,206 @@
+- generic [active] [ref=f37e1]:
+  - main [ref=f37e2]:
+    - generic [ref=f37e3]:
+      - link "Jenna Studio home" [ref=f37e4] [cursor=pointer]:
+        - /url: /
+        - text: Jenna Studio®
+      - navigation "Main navigation" [ref=f37e5]:
+        - link "About" [ref=f37e6] [cursor=pointer]:
+          - /url: /about/
+        - link "Projects" [ref=f37e7] [cursor=pointer]:
+          - /url: /projects/
+        - link "Portfolios" [ref=f37e8] [cursor=pointer]:
+          - /url: /portfolios/
+        - link "Contact" [ref=f37e9] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=f37e10]:
+      - paragraph [ref=f37e11]: Creative Next-Gen Developer & Digital Artist
+      - generic [ref=f37e12]:
+        - heading [level=1] [ref=f37e13]:
+          - text: Welcome to
+          - emphasis [ref=f37e14]: Jenna Studio.
+        - generic [ref=f37e15]:
+          - paragraph [ref=f37e16]: Blending creativity and code to design meaningful, human-centered digital experiences. Let's build beautiful things together!
+          - generic [ref=f37e17]:
+            - link "View My Work ↗" [ref=f37e18] [cursor=pointer]:
+              - /url: /projects/
+            - link "Meet Jenna ↗" [ref=f37e19] [cursor=pointer]:
+              - /url: /about/
+      - generic [ref=f37e20]:
+        - generic [ref=f37e23]: ✦
+        - generic [ref=f37e24]: ✳
+        - generic [ref=f37e25]: J
+        - generic [ref=f37e26]: CURIOUS BY DESIGN
+    - generic [ref=f37e27]:
+      - paragraph [ref=f37e28]: About Me
+      - generic [ref=f37e29]:
+        - heading [level=2] [ref=f37e30]:
+          - text: Developer &
+          - emphasis [ref=f37e31]: digital artist.
+        - generic [ref=f37e32]:
+          - paragraph [ref=f37e33]:
+            - generic [ref=f37e34]: Developer
+            - text: Hi! I'm Jenna, a passionate developer who thrives on transforming complex problems into elegant, user-centered solutions. I approach every project with curiosity and precision, combining modern development practices with creative problem-solving to build applications that not only work flawlessly but also delight users at every interaction.
+          - paragraph [ref=f37e35]:
+            - generic [ref=f37e36]: Digital Artist
+            - text: As a digital artist, I specialize in crafting immersive visual experiences that tell compelling stories. From UI design and interactive prototypes to 3D modelings, I merge artistic vision with technical expertise to create content that captivates audiences and enhances user engagement.
+          - generic [ref=f37e37]:
+            - link "View More ↗" [ref=f37e38] [cursor=pointer]:
+              - /url: /about/
+            - link "LinkedIn ↗" [ref=f37e39] [cursor=pointer]:
+              - /url: https://linkedin.com/in/jinseon-yoo
+    - region "Skills" [ref=f37e40]:
+      - generic [ref=f37e41]:
+        - generic [ref=f37e42]: "01"
+        - text: HTML5
+      - generic [ref=f37e43]:
+        - generic [ref=f37e44]: "02"
+        - text: CSS3
+      - generic [ref=f37e45]:
+        - generic [ref=f37e46]: "03"
+        - text: Java
+      - generic [ref=f37e47]:
+        - generic [ref=f37e48]: "04"
+        - text: Python
+      - generic [ref=f37e49]:
+        - generic [ref=f37e50]: "05"
+        - text: Web Develop
+      - generic [ref=f37e51]:
+        - generic [ref=f37e52]: "06"
+        - text: UI/UX Design
+      - generic [ref=f37e53]:
+        - generic [ref=f37e54]: "07"
+        - text: 3D Modeling
+    - generic [ref=f37e55]:
+      - generic [ref=f37e56]:
+        - paragraph [ref=f37e57]: Featured Projects
+        - heading [level=2] [ref=f37e58]:
+          - text: Built to be
+          - emphasis [ref=f37e59]: felt & used.
+      - generic [ref=f37e60]:
+        - article [ref=f37e61]:
+          - generic [ref=f37e62]:
+            - generic [ref=f37e63]: "01"
+            - generic [ref=f37e64]: AI agent operations
+          - img "Agent Track Dashboard screenshot" [ref=f37e66]
+          - generic [ref=f37e67]:
+            - heading "Agent Track Dashboard" [level=3] [ref=f37e68]
+            - paragraph [ref=f37e69]: A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.
+            - list [ref=f37e70]:
+              - listitem [ref=f37e71]: TypeScript
+              - listitem [ref=f37e72]: React
+              - listitem [ref=f37e73]: MCP
+            - generic [ref=f37e74]:
+              - link "View Docs ↗" [ref=f37e75] [cursor=pointer]:
+                - /url: https://github.com/jenna-studio/agent-track-dashboard#readme
+              - link "View Code ↗" [ref=f37e76] [cursor=pointer]:
+                - /url: https://github.com/jenna-studio/agent-track-dashboard
+          - generic [ref=f37e77]: ↗
+        - article [ref=f37e78]:
+          - generic [ref=f37e79]:
+            - generic [ref=f37e80]: "02"
+            - generic [ref=f37e81]: Learning workspace
+          - img "CS UniVerse screenshot" [ref=f37e83]
+          - generic [ref=f37e84]:
+            - heading "CS UniVerse" [level=3] [ref=f37e85]
+            - paragraph [ref=f37e86]: An all-in-one workspace for computer science students to code, study, and collaborate. Features include code editor, browser-based terminal, calendar integration, assignment tracking, and Baekjoon competitive programming integration.
+            - list [ref=f37e87]:
+              - listitem [ref=f37e88]: Next.js
+              - listitem [ref=f37e89]: Task Management
+            - generic [ref=f37e90]:
+              - link "Visit Site ↗" [ref=f37e91] [cursor=pointer]:
+                - /url: https://csuniverse.org
+              - link "Learn More ↗" [ref=f37e92] [cursor=pointer]:
+                - /url: https://csuniverse.org
+          - generic [ref=f37e93]: ↗
+        - article [ref=f37e94]:
+          - generic [ref=f37e95]:
+            - generic [ref=f37e96]: "03"
+            - generic [ref=f37e97]: Medical-device workflow
+          - img "GLUE screenshot" [ref=f37e99]
+          - generic [ref=f37e100]:
+            - heading "GLUE" [level=3] [ref=f37e101]
+            - paragraph [ref=f37e102]: An AI-assisted workspace for medical-device usability engineering that connects project context, safety evidence, evaluation records, and documentation through an IEC 62366-1 workflow.
+            - list [ref=f37e103]:
+              - listitem [ref=f37e104]: Medical Devices
+              - listitem [ref=f37e105]: IEC 62366-1
+              - listitem [ref=f37e106]: Human Factors
+            - generic [ref=f37e107]:
+              - link "Visit Site ↗" [ref=f37e108] [cursor=pointer]:
+                - /url: https://glue-snuh.web.app
+              - link "Start for Free ↗" [ref=f37e109] [cursor=pointer]:
+                - /url: https://glue-snuh.web.app/signup.html
+          - generic [ref=f37e110]: ↗
+      - link "View All Projects ↗" [ref=f37e112] [cursor=pointer]:
+        - /url: /projects/
+    - generic [ref=f37e113]:
+      - generic [ref=f37e114]:
+        - paragraph [ref=f37e115]: Portfolio Highlights
+        - heading [level=2] [ref=f37e116]:
+          - text: Creative work,
+          - emphasis [ref=f37e117]: many forms.
+      - generic [ref=f37e118]:
+        - link "A Web Design Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions. View Details ↗" [ref=f37e119] [cursor=pointer]:
+          - /url: /portfolios/
+          - generic [ref=f37e122]:
+            - text: A
+            - heading "Web Design" [level=3] [ref=f37e123]
+            - paragraph [ref=f37e124]: Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions.
+            - generic [ref=f37e125]: View Details ↗
+        - link "B AI Music Generation Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity. View Details ↗" [ref=f37e126] [cursor=pointer]:
+          - /url: /portfolios/#ai-music
+          - generic [ref=f37e129]:
+            - text: B
+            - heading "AI Music Generation" [level=3] [ref=f37e130]
+            - paragraph [ref=f37e131]: Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.
+            - generic [ref=f37e132]: View Details ↗
+        - link "C Apple Shortcuts Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines. View Details ↗" [ref=f37e133] [cursor=pointer]:
+          - /url: /portfolios/#apple-shortcuts
+          - generic [ref=f37e136]:
+            - text: C
+            - heading "Apple Shortcuts" [level=3] [ref=f37e137]
+            - paragraph [ref=f37e138]: Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines.
+            - generic [ref=f37e139]: View Details ↗
+      - generic [ref=f37e140]:
+        - generic [ref=f37e141]: to explore
+        - link "View Full Portfolio ↗" [ref=f37e142] [cursor=pointer]:
+          - /url: /portfolios/
+    - generic [ref=f37e143]:
+      - paragraph [ref=f37e144]: Let's Work Together
+      - heading [level=2] [ref=f37e145]:
+        - text: Bring your vision
+        - emphasis [ref=f37e146]: to life.
+      - paragraph [ref=f37e147]: Ready to bring your vision to life? I'd love to hear about your project and discuss how we can create something amazing together.
+      - generic [ref=f37e148]:
+        - link "Email Message directly" [ref=f37e149] [cursor=pointer]:
+          - /url: mailto:jenna@jenna-studio.dev
+          - generic [ref=f37e150]:
+            - generic [ref=f37e151]: Email
+            - text: Message directly
+        - link "LinkedIn Connect professionally" [ref=f37e152] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/jinseon-yoo
+          - generic [ref=f37e153]:
+            - generic [ref=f37e154]: LinkedIn
+            - text: Connect professionally
+        - link "GitHub View my code" [ref=f37e155] [cursor=pointer]:
+          - /url: https://github.com/jenna-studio
+          - generic [ref=f37e156]:
+            - generic [ref=f37e157]: GitHub
+            - text: View my code
+      - generic [ref=f37e158]:
+        - link "Get In Touch ↗" [ref=f37e159] [cursor=pointer]:
+          - /url: /contact/
+        - link "LinkedIn ↗" [ref=f37e160] [cursor=pointer]:
+          - /url: https://linkedin.com/in/jinseon-yoo
+        - link "GitHub ↗" [ref=f37e161] [cursor=pointer]:
+          - /url: https://github.com/jenna-studio
+    - generic [ref=f37e162]:
+      - link "Jenna Studio®" [ref=f37e163] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f37e164]: © 2026 Jenna Studio
+      - generic [ref=f37e165]:
+        - link "LinkedIn" [ref=f37e166] [cursor=pointer]:
+          - /url: https://linkedin.com/in/jinseon-yoo
+        - link "GitHub" [ref=f37e167] [cursor=pointer]:
+          - /url: https://github.com/jenna-studio
+  - alert [ref=f37e168]

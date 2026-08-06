@@ -1,0 +1,642 @@
+- generic [active] [ref=f23e1]:
+  - main [ref=f23e2]:
+    - generic [ref=f23e3]:
+      - link "Jenna Studio home" [ref=f23e4] [cursor=pointer]:
+        - /url: /
+        - text: Jenna Studio®
+      - navigation "Main navigation" [ref=f23e5]:
+        - link "About" [ref=f23e6] [cursor=pointer]:
+          - /url: /about/
+        - link "Projects" [ref=f23e7] [cursor=pointer]:
+          - /url: /projects/
+        - link "Portfolios" [ref=f23e8] [cursor=pointer]:
+          - /url: /portfolios/
+        - link "Contact" [ref=f23e9] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=f23e10]:
+      - paragraph [ref=f23e11]: Projects
+      - heading [level=1] [ref=f23e12]:
+        - text: My
+        - emphasis [ref=f23e13]: Projects.
+      - paragraph [ref=f23e14]: A collection of my latest work and creative experiments
+    - generic [ref=f23e15]:
+      - generic [ref=f23e16]:
+        - generic [ref=f23e17]:
+          - img "GLUE medical-device human factors documentation workspace" [ref=f23e18]
+          - generic [ref=f23e19]: Featured · New
+        - generic [ref=f23e20]:
+          - paragraph [ref=f23e21]: Featured Project
+          - heading "GLUE - Guideline-based Usability Engineering" [level=2] [ref=f23e22]
+          - paragraph [ref=f23e23]: GLUE turns the fragmented work of medical-device usability engineering into one connected, evidence-led workflow. From the first device context and use specification through UI safety characteristics, hazards, scenarios, formative and summative evaluation, each step carries its context forward. AI helps teams shape and refine their documents while GLUE keeps the supporting rationale visible, reviewable, and ready to bring together in a final 5.10 usability engineering file and Word deliverable.
+          - list [ref=f23e24]:
+            - listitem [ref=f23e25]: Medical Devices
+            - listitem [ref=f23e26]: IEC 62366-1
+            - listitem [ref=f23e27]: Human Factors
+            - listitem [ref=f23e28]: AI-assisted
+            - listitem [ref=f23e29]: Documentation
+            - listitem [ref=f23e30]: Workflow
+          - generic [ref=f23e31]:
+            - link "Visit Site ↗" [ref=f23e32] [cursor=pointer]:
+              - /url: https://glue-snuh.web.app
+            - link "Start for Free ↗" [ref=f23e33] [cursor=pointer]:
+              - /url: https://glue-snuh.web.app/signup.html
+      - generic [ref=f23e34]:
+        - generic [ref=f23e35]:
+          - paragraph [ref=f23e36]: All work
+          - heading "All Projects" [level=2] [ref=f23e37]
+        - generic "Filter projects" [ref=f23e38]:
+          - button "All Projects" [ref=f23e39] [cursor=pointer]
+          - button "Web Apps" [ref=f23e40] [cursor=pointer]
+          - button "Websites" [ref=f23e41] [cursor=pointer]
+          - button "Mobile Apps" [ref=f23e42] [cursor=pointer]
+          - button "Tools" [ref=f23e43] [cursor=pointer]
+          - button "Other" [ref=f23e44] [cursor=pointer]
+        - generic [ref=f23e45]:
+          - article [ref=f23e46]:
+            - img "GLUE screenshot" [ref=f23e48]
+            - generic [ref=f23e49]:
+              - generic [ref=f23e50]:
+                - generic [ref=f23e51]: "01"
+                - generic [ref=f23e52]: Web Application · 2026
+              - heading "GLUE" [level=2] [ref=f23e53]
+              - paragraph [ref=f23e54]: An AI-assisted workspace for medical-device human factors engineering. It brings together use specifications, UI safety characteristics, hazard analysis, use scenarios, and evaluation documentation in an IEC 62366-1-aligned workflow.
+              - list [ref=f23e55]:
+                - listitem [ref=f23e56]: Medical Devices
+                - listitem [ref=f23e57]: IEC 62366-1
+              - generic [ref=f23e58]:
+                - link "Visit Site ↗" [ref=f23e59] [cursor=pointer]:
+                  - /url: https://glue-snuh.web.app
+                - link "Start for Free ↗" [ref=f23e60] [cursor=pointer]:
+                  - /url: https://glue-snuh.web.app/signup.html
+          - article [ref=f23e61]:
+            - img "CS UniVerse screenshot" [ref=f23e63]
+            - generic [ref=f23e64]:
+              - generic [ref=f23e65]:
+                - generic [ref=f23e66]: "02"
+                - generic [ref=f23e67]: Web Application · 2026
+              - heading "CS UniVerse" [level=2] [ref=f23e68]
+              - paragraph [ref=f23e69]: An all-in-one workspace for computer science students to code, study, and collaborate. Features Monaco code editor, terminal, calendar integration, assignment tracking, progress analytics, and Baekjoon competitive programming integration.
+              - list [ref=f23e70]:
+                - listitem [ref=f23e71]: Next.js
+                - listitem [ref=f23e72]: React
+              - generic [ref=f23e73]:
+                - link "Visit Site ↗" [ref=f23e74] [cursor=pointer]:
+                  - /url: https://csuniverse.org
+                - link "Learn More ↗" [ref=f23e75] [cursor=pointer]:
+                  - /url: https://csuniverse.org
+          - article [ref=f23e76]:
+            - img "Agent Track Dashboard screenshot" [ref=f23e78]
+            - generic [ref=f23e79]:
+              - generic [ref=f23e80]:
+                - generic [ref=f23e81]: "03"
+                - generic [ref=f23e82]: MCP Tool · 2026
+              - heading "Agent Track Dashboard" [level=2] [ref=f23e83]
+              - paragraph [ref=f23e84]: A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.
+              - list [ref=f23e85]:
+                - listitem [ref=f23e86]: TypeScript
+                - listitem [ref=f23e87]: React
+                - listitem [ref=f23e88]: MCP
+              - generic [ref=f23e89]:
+                - link "View Docs ↗" [ref=f23e90] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/agent-track-dashboard#readme
+                - link "Code ↗" [ref=f23e91] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/agent-track-dashboard
+          - article [ref=f23e92]:
+            - img "Connect Mate screenshot" [ref=f23e94]
+            - generic [ref=f23e95]:
+              - generic [ref=f23e96]:
+                - generic [ref=f23e97]: "04"
+                - generic [ref=f23e98]: Android Application · 2025
+              - heading "Connect Mate" [level=2] [ref=f23e99]
+              - paragraph [ref=f23e100]: A Korean social platform for discovering activity companions. Features map-based matching via Kakao Maps, activity creation across dining, fitness, and hobby categories, real-time group chat, and friend management with mutual ratings.
+              - list [ref=f23e101]:
+                - listitem [ref=f23e102]: Android Studio
+                - listitem [ref=f23e103]: XML
+                - listitem [ref=f23e104]: Java
+              - generic [ref=f23e105]:
+                - link "Play Store ↗" [ref=f23e106] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=app.connectmate&hl=en-US&ah=6VRx7YfYYsD3bb5iCsjCRK7JuaM
+                - link "Code ↗" [ref=f23e107] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/ConnectMate
+          - article [ref=f23e108]:
+            - img "Photo Album Maker screenshot" [ref=f23e110]
+            - generic [ref=f23e111]:
+              - generic [ref=f23e112]:
+                - generic [ref=f23e113]: "05"
+                - generic [ref=f23e114]: Web Application · 2025
+              - heading "Photo Album Maker" [level=2] [ref=f23e115]
+              - paragraph [ref=f23e116]: A web app for creating digital photo albums. Features intelligent photo organization by date, book-style interface, and export options including PDF, JPEG, and interactive HTML albums. 100% client-side processing ensures privacy. Select and view favorite photos separately.
+              - list [ref=f23e117]:
+                - listitem [ref=f23e118]: React
+                - listitem [ref=f23e119]: TypeScript
+                - listitem [ref=f23e120]: Vite
+              - generic [ref=f23e121]:
+                - link "Live Demo ↗" [ref=f23e122] [cursor=pointer]:
+                  - /url: https://jenna-studio.github.io/photo-album-maker
+                - link "Code ↗" [ref=f23e123] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/photo-album-maker
+          - article [ref=f23e124]:
+            - img "Cotton Candy Dodge screenshot" [ref=f23e126]
+            - generic [ref=f23e127]:
+              - generic [ref=f23e128]:
+                - generic [ref=f23e129]: "06"
+                - generic [ref=f23e130]: Retro Game · 2025
+              - heading "Cotton Candy Dodge" [level=2] [ref=f23e131]
+              - paragraph [ref=f23e132]: A browser-based arcade survival game where players navigate through falling obstacles while collecting experience points and leveling up. Features dynamic difficulty levels, shield power-ups, sound effects, and a leaderboard system with vibrant pixel art aesthetic.
+              - list [ref=f23e133]:
+                - listitem [ref=f23e134]: HTML5
+                - listitem [ref=f23e135]: CSS3
+                - listitem [ref=f23e136]: JavaScript
+              - generic [ref=f23e137]:
+                - link "Play Game ↗" [ref=f23e138] [cursor=pointer]:
+                  - /url: https://jenna-studio.github.io/cotton-candy-dodge
+                - link "Code ↗" [ref=f23e139] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/cotton-candy-dodge
+          - article [ref=f23e140]:
+            - img "Cotton Candy Editor screenshot" [ref=f23e142]
+            - generic [ref=f23e143]:
+              - generic [ref=f23e144]:
+                - generic [ref=f23e145]: "07"
+                - generic [ref=f23e146]: Web Code Editor · 2025
+              - heading "Cotton Candy Editor" [level=2] [ref=f23e147]
+              - paragraph [ref=f23e148]: A web-based code editor built with CodeMirror 6 featuring multiple themes. Supports 12+ languages with smart features like auto-completion, syntax highlighting, code copying, and saving. Easy website embedding. Perfect for quick code testing and sharing.
+              - list [ref=f23e149]:
+                - listitem [ref=f23e150]: JavaScript
+                - listitem [ref=f23e151]: CSS3
+                - listitem [ref=f23e152]: HTML5
+              - generic [ref=f23e153]:
+                - link "Live Website ↗" [ref=f23e154] [cursor=pointer]:
+                  - /url: https://jenna-studio.github.io/cotton-candy-editor
+                - link "Code ↗" [ref=f23e155] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/cotton-candy-editor
+          - article [ref=f23e156]:
+            - img "Terminal Snake Game screenshot" [ref=f23e158]
+            - generic [ref=f23e159]:
+              - generic [ref=f23e160]:
+                - generic [ref=f23e161]: "08"
+                - generic [ref=f23e162]: Console Game · 2025
+              - heading "Terminal Snake Game" [level=2] [ref=f23e163]
+              - paragraph [ref=f23e164]: A terminal-based Snake game implemented in C++ using ncurses library. Features stage-based gameplay with 4 unique stages. Includes growth and poison items, teleportation gates, and mission-based progression with scoring and ranking system.
+              - list [ref=f23e165]:
+                - listitem [ref=f23e166]: C++
+                - listitem [ref=f23e167]: ncurses
+                - listitem [ref=f23e168]: Terminal
+              - generic [ref=f23e169]:
+                - link "How to Play ↗" [ref=f23e170] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/terminal-snake-game#how-to-play
+                - link "Code ↗" [ref=f23e171] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/terminal-snake-game
+          - article [ref=f23e172]:
+            - img "Alfred - Color to Hex screenshot" [ref=f23e174]
+            - generic [ref=f23e175]:
+              - generic [ref=f23e176]:
+                - generic [ref=f23e177]: "09"
+                - generic [ref=f23e178]: Productivity Tool · 2025
+              - heading "Alfred - Color to Hex" [level=2] [ref=f23e179]
+              - paragraph [ref=f23e180]: A simple Alfred workflow that allows you to search CSS color names and copy their HEX values with a circular color preview icon. Perfect for designers and developers who need quick access to color codes with visual previews to aid selection. Supports clipboard copying.
+              - list [ref=f23e181]:
+                - listitem [ref=f23e182]: Python
+                - listitem [ref=f23e183]: Alfred
+                - listitem [ref=f23e184]: CSS Colors
+              - generic [ref=f23e185]:
+                - link "Installation ↗" [ref=f23e186] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/alfred-colortohex#installation
+                - link "Code ↗" [ref=f23e187] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/alfred-colortohex
+          - article [ref=f23e188]:
+            - img "Google Chrome Theme screenshot" [ref=f23e190]
+            - generic [ref=f23e191]:
+              - generic [ref=f23e192]:
+                - generic [ref=f23e193]: "10"
+                - generic [ref=f23e194]: Chrome Extension · 2024
+              - heading "Google Chrome Theme" [level=2] [ref=f23e195]
+              - paragraph [ref=f23e196]: A collection of custom Google Chrome browser themes with stunning designs and vibrant color palettes. Features multiple unique themes crafted precisely. Fully compatible with latest Chrome versions for aesthetic browsing experience and adding a personal touch.
+              - list [ref=f23e197]:
+                - listitem [ref=f23e198]: Chrome Extension
+                - listitem [ref=f23e199]: JSON
+                - listitem [ref=f23e200]: UI
+              - generic [ref=f23e201]:
+                - link "Apply This ↗" [ref=f23e202] [cursor=pointer]:
+                  - /url: https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb
+                - link "View All ↗" [ref=f23e203] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/chrome-theme-extension
+          - article [ref=f23e204]:
+            - img "Monaco Editor Web screenshot" [ref=f23e206]
+            - generic [ref=f23e207]:
+              - generic [ref=f23e208]:
+                - generic [ref=f23e209]: "11"
+                - generic [ref=f23e210]: Web Application · 2025
+              - heading "Monaco Editor Web" [level=2] [ref=f23e211]
+              - paragraph [ref=f23e212]: A web-based code editor with a beautiful pastel-themed interface. Features 18+ programming languages, syntax highlighting, auto-language detection, code formatting, and auto-complete. Glass-morphism UI with smooth animations for an aesthetic coding experience.
+              - list [ref=f23e213]:
+                - listitem [ref=f23e214]: Code Editor
+                - listitem [ref=f23e215]: JS
+                - listitem [ref=f23e216]: HTML
+                - listitem [ref=f23e217]: CSS
+              - generic [ref=f23e218]:
+                - link "Live Website ↗" [ref=f23e219] [cursor=pointer]:
+                  - /url: https://jenna-studio.github.io/monaco-editor-web
+                - link "Code ↗" [ref=f23e220] [cursor=pointer]:
+                  - /url: https://github.com/jenna-studio/monaco-editor-web
+      - generic [ref=f23e221]:
+        - generic [ref=f23e222]:
+          - paragraph [ref=f23e223]: Open source
+          - heading "Contribution Activity" [level=2] [ref=f23e224]
+        - generic [ref=f23e225]:
+          - generic [ref=f23e226]:
+            - strong [ref=f23e227]: GitHub @jenna-studio
+            - link "View profile ↗" [ref=f23e228] [cursor=pointer]:
+              - /url: https://github.com/jenna-studio
+          - generic "GitHub contribution activity" [ref=f23e229]:
+            - generic "0 contributions on 2025-08-03" [ref=f23e230]
+            - generic "0 contributions on 2025-08-04" [ref=f23e231]
+            - generic "0 contributions on 2025-08-05" [ref=f23e232]
+            - generic "11 contributions on 2025-08-06" [ref=f23e233]
+            - generic "0 contributions on 2025-08-07" [ref=f23e234]
+            - generic "1 contributions on 2025-08-08" [ref=f23e235]
+            - generic "2 contributions on 2025-08-09" [ref=f23e236]
+            - generic "0 contributions on 2025-08-10" [ref=f23e237]
+            - generic "0 contributions on 2025-08-11" [ref=f23e238]
+            - generic "3 contributions on 2025-08-12" [ref=f23e239]
+            - generic "0 contributions on 2025-08-13" [ref=f23e240]
+            - generic "0 contributions on 2025-08-14" [ref=f23e241]
+            - generic "0 contributions on 2025-08-15" [ref=f23e242]
+            - generic "0 contributions on 2025-08-16" [ref=f23e243]
+            - generic "1 contributions on 2025-08-17" [ref=f23e244]
+            - generic "1 contributions on 2025-08-18" [ref=f23e245]
+            - generic "0 contributions on 2025-08-19" [ref=f23e246]
+            - generic "0 contributions on 2025-08-20" [ref=f23e247]
+            - generic "0 contributions on 2025-08-21" [ref=f23e248]
+            - generic "0 contributions on 2025-08-22" [ref=f23e249]
+            - generic "0 contributions on 2025-08-23" [ref=f23e250]
+            - generic "0 contributions on 2025-08-24" [ref=f23e251]
+            - generic "0 contributions on 2025-08-25" [ref=f23e252]
+            - generic "0 contributions on 2025-08-26" [ref=f23e253]
+            - generic "0 contributions on 2025-08-27" [ref=f23e254]
+            - generic "0 contributions on 2025-08-28" [ref=f23e255]
+            - generic "0 contributions on 2025-08-29" [ref=f23e256]
+            - generic "0 contributions on 2025-08-30" [ref=f23e257]
+            - generic "0 contributions on 2025-08-31" [ref=f23e258]
+            - generic "4 contributions on 2025-09-01" [ref=f23e259]
+            - generic "25 contributions on 2025-09-02" [ref=f23e260]
+            - generic "2 contributions on 2025-09-03" [ref=f23e261]
+            - generic "2 contributions on 2025-09-04" [ref=f23e262]
+            - generic "1 contributions on 2025-09-05" [ref=f23e263]
+            - generic "11 contributions on 2025-09-06" [ref=f23e264]
+            - generic "7 contributions on 2025-09-07" [ref=f23e265]
+            - generic "1 contributions on 2025-09-08" [ref=f23e266]
+            - generic "10 contributions on 2025-09-09" [ref=f23e267]
+            - generic "0 contributions on 2025-09-10" [ref=f23e268]
+            - generic "1 contributions on 2025-09-11" [ref=f23e269]
+            - generic "0 contributions on 2025-09-12" [ref=f23e270]
+            - generic "0 contributions on 2025-09-13" [ref=f23e271]
+            - generic "0 contributions on 2025-09-14" [ref=f23e272]
+            - generic "2 contributions on 2025-09-15" [ref=f23e273]
+            - generic "0 contributions on 2025-09-16" [ref=f23e274]
+            - generic "0 contributions on 2025-09-17" [ref=f23e275]
+            - generic "0 contributions on 2025-09-18" [ref=f23e276]
+            - generic "0 contributions on 2025-09-19" [ref=f23e277]
+            - generic "0 contributions on 2025-09-20" [ref=f23e278]
+            - generic "0 contributions on 2025-09-21" [ref=f23e279]
+            - generic "0 contributions on 2025-09-22" [ref=f23e280]
+            - generic "0 contributions on 2025-09-23" [ref=f23e281]
+            - generic "0 contributions on 2025-09-24" [ref=f23e282]
+            - generic "0 contributions on 2025-09-25" [ref=f23e283]
+            - generic "0 contributions on 2025-09-26" [ref=f23e284]
+            - generic "0 contributions on 2025-09-27" [ref=f23e285]
+            - generic "1 contributions on 2025-09-28" [ref=f23e286]
+            - generic "0 contributions on 2025-09-29" [ref=f23e287]
+            - generic "0 contributions on 2025-09-30" [ref=f23e288]
+            - generic "0 contributions on 2025-10-01" [ref=f23e289]
+            - generic "0 contributions on 2025-10-02" [ref=f23e290]
+            - generic "1 contributions on 2025-10-03" [ref=f23e291]
+            - generic "0 contributions on 2025-10-04" [ref=f23e292]
+            - generic "0 contributions on 2025-10-05" [ref=f23e293]
+            - generic "0 contributions on 2025-10-06" [ref=f23e294]
+            - generic "0 contributions on 2025-10-07" [ref=f23e295]
+            - generic "0 contributions on 2025-10-08" [ref=f23e296]
+            - generic "1 contributions on 2025-10-09" [ref=f23e297]
+            - generic "0 contributions on 2025-10-10" [ref=f23e298]
+            - generic "0 contributions on 2025-10-11" [ref=f23e299]
+            - generic "7 contributions on 2025-10-12" [ref=f23e300]
+            - generic "2 contributions on 2025-10-13" [ref=f23e301]
+            - generic "0 contributions on 2025-10-14" [ref=f23e302]
+            - generic "0 contributions on 2025-10-15" [ref=f23e303]
+            - generic "0 contributions on 2025-10-16" [ref=f23e304]
+            - generic "0 contributions on 2025-10-17" [ref=f23e305]
+            - generic "0 contributions on 2025-10-18" [ref=f23e306]
+            - generic "0 contributions on 2025-10-19" [ref=f23e307]
+            - generic "0 contributions on 2025-10-20" [ref=f23e308]
+            - generic "0 contributions on 2025-10-21" [ref=f23e309]
+            - generic "0 contributions on 2025-10-22" [ref=f23e310]
+            - generic "0 contributions on 2025-10-23" [ref=f23e311]
+            - generic "0 contributions on 2025-10-24" [ref=f23e312]
+            - generic "45 contributions on 2025-10-25" [ref=f23e313]
+            - generic "2 contributions on 2025-10-26" [ref=f23e314]
+            - generic "2 contributions on 2025-10-27" [ref=f23e315]
+            - generic "8 contributions on 2025-10-28" [ref=f23e316]
+            - generic "0 contributions on 2025-10-29" [ref=f23e317]
+            - generic "10 contributions on 2025-10-30" [ref=f23e318]
+            - generic "4 contributions on 2025-10-31" [ref=f23e319]
+            - generic "0 contributions on 2025-11-01" [ref=f23e320]
+            - generic "0 contributions on 2025-11-02" [ref=f23e321]
+            - generic "8 contributions on 2025-11-03" [ref=f23e322]
+            - generic "0 contributions on 2025-11-04" [ref=f23e323]
+            - generic "6 contributions on 2025-11-05" [ref=f23e324]
+            - generic "10 contributions on 2025-11-06" [ref=f23e325]
+            - generic "0 contributions on 2025-11-07" [ref=f23e326]
+            - generic "2 contributions on 2025-11-08" [ref=f23e327]
+            - generic "0 contributions on 2025-11-09" [ref=f23e328]
+            - generic "4 contributions on 2025-11-10" [ref=f23e329]
+            - generic "12 contributions on 2025-11-11" [ref=f23e330]
+            - generic "8 contributions on 2025-11-12" [ref=f23e331]
+            - generic "6 contributions on 2025-11-13" [ref=f23e332]
+            - generic "18 contributions on 2025-11-14" [ref=f23e333]
+            - generic "6 contributions on 2025-11-15" [ref=f23e334]
+            - generic "10 contributions on 2025-11-16" [ref=f23e335]
+            - generic "6 contributions on 2025-11-17" [ref=f23e336]
+            - generic "12 contributions on 2025-11-18" [ref=f23e337]
+            - generic "12 contributions on 2025-11-19" [ref=f23e338]
+            - generic "6 contributions on 2025-11-20" [ref=f23e339]
+            - generic "2 contributions on 2025-11-21" [ref=f23e340]
+            - generic "0 contributions on 2025-11-22" [ref=f23e341]
+            - generic "5 contributions on 2025-11-23" [ref=f23e342]
+            - generic "4 contributions on 2025-11-24" [ref=f23e343]
+            - generic "20 contributions on 2025-11-25" [ref=f23e344]
+            - generic "0 contributions on 2025-11-26" [ref=f23e345]
+            - generic "6 contributions on 2025-11-27" [ref=f23e346]
+            - generic "0 contributions on 2025-11-28" [ref=f23e347]
+            - generic "16 contributions on 2025-11-29" [ref=f23e348]
+            - generic "18 contributions on 2025-11-30" [ref=f23e349]
+            - generic "8 contributions on 2025-12-01" [ref=f23e350]
+            - generic "8 contributions on 2025-12-02" [ref=f23e351]
+            - generic "10 contributions on 2025-12-03" [ref=f23e352]
+            - generic "8 contributions on 2025-12-04" [ref=f23e353]
+            - generic "4 contributions on 2025-12-05" [ref=f23e354]
+            - generic "12 contributions on 2025-12-06" [ref=f23e355]
+            - generic "18 contributions on 2025-12-07" [ref=f23e356]
+            - generic "6 contributions on 2025-12-08" [ref=f23e357]
+            - generic "1 contributions on 2025-12-09" [ref=f23e358]
+            - generic "3 contributions on 2025-12-10" [ref=f23e359]
+            - generic "0 contributions on 2025-12-11" [ref=f23e360]
+            - generic "15 contributions on 2025-12-12" [ref=f23e361]
+            - generic "0 contributions on 2025-12-13" [ref=f23e362]
+            - generic "0 contributions on 2025-12-14" [ref=f23e363]
+            - generic "1 contributions on 2025-12-15" [ref=f23e364]
+            - generic "0 contributions on 2025-12-16" [ref=f23e365]
+            - generic "0 contributions on 2025-12-17" [ref=f23e366]
+            - generic "0 contributions on 2025-12-18" [ref=f23e367]
+            - generic "0 contributions on 2025-12-19" [ref=f23e368]
+            - generic "0 contributions on 2025-12-20" [ref=f23e369]
+            - generic "0 contributions on 2025-12-21" [ref=f23e370]
+            - generic "0 contributions on 2025-12-22" [ref=f23e371]
+            - generic "0 contributions on 2025-12-23" [ref=f23e372]
+            - generic "0 contributions on 2025-12-24" [ref=f23e373]
+            - generic "0 contributions on 2025-12-25" [ref=f23e374]
+            - generic "0 contributions on 2025-12-26" [ref=f23e375]
+            - generic "0 contributions on 2025-12-27" [ref=f23e376]
+            - generic "0 contributions on 2025-12-28" [ref=f23e377]
+            - generic "0 contributions on 2025-12-29" [ref=f23e378]
+            - generic "0 contributions on 2025-12-30" [ref=f23e379]
+            - generic "0 contributions on 2025-12-31" [ref=f23e380]
+            - generic "0 contributions on 2026-01-01" [ref=f23e381]
+            - generic "0 contributions on 2026-01-02" [ref=f23e382]
+            - generic "0 contributions on 2026-01-03" [ref=f23e383]
+            - generic "0 contributions on 2026-01-04" [ref=f23e384]
+            - generic "9 contributions on 2026-01-05" [ref=f23e385]
+            - generic "0 contributions on 2026-01-06" [ref=f23e386]
+            - generic "0 contributions on 2026-01-07" [ref=f23e387]
+            - generic "2 contributions on 2026-01-08" [ref=f23e388]
+            - generic "0 contributions on 2026-01-09" [ref=f23e389]
+            - generic "0 contributions on 2026-01-10" [ref=f23e390]
+            - generic "8 contributions on 2026-01-11" [ref=f23e391]
+            - generic "10 contributions on 2026-01-12" [ref=f23e392]
+            - generic "12 contributions on 2026-01-13" [ref=f23e393]
+            - generic "9 contributions on 2026-01-14" [ref=f23e394]
+            - generic "6 contributions on 2026-01-15" [ref=f23e395]
+            - generic "9 contributions on 2026-01-16" [ref=f23e396]
+            - generic "0 contributions on 2026-01-17" [ref=f23e397]
+            - generic "6 contributions on 2026-01-18" [ref=f23e398]
+            - generic "6 contributions on 2026-01-19" [ref=f23e399]
+            - generic "0 contributions on 2026-01-20" [ref=f23e400]
+            - generic "0 contributions on 2026-01-21" [ref=f23e401]
+            - generic "0 contributions on 2026-01-22" [ref=f23e402]
+            - generic "0 contributions on 2026-01-23" [ref=f23e403]
+            - generic "0 contributions on 2026-01-24" [ref=f23e404]
+            - generic "0 contributions on 2026-01-25" [ref=f23e405]
+            - generic "0 contributions on 2026-01-26" [ref=f23e406]
+            - generic "1 contributions on 2026-01-27" [ref=f23e407]
+            - generic "3 contributions on 2026-01-28" [ref=f23e408]
+            - generic "6 contributions on 2026-01-29" [ref=f23e409]
+            - generic "0 contributions on 2026-01-30" [ref=f23e410]
+            - generic "8 contributions on 2026-01-31" [ref=f23e411]
+            - generic "0 contributions on 2026-02-01" [ref=f23e412]
+            - generic "0 contributions on 2026-02-02" [ref=f23e413]
+            - generic "3 contributions on 2026-02-03" [ref=f23e414]
+            - generic "3 contributions on 2026-02-04" [ref=f23e415]
+            - generic "0 contributions on 2026-02-05" [ref=f23e416]
+            - generic "4 contributions on 2026-02-06" [ref=f23e417]
+            - generic "0 contributions on 2026-02-07" [ref=f23e418]
+            - generic "1 contributions on 2026-02-08" [ref=f23e419]
+            - generic "0 contributions on 2026-02-09" [ref=f23e420]
+            - generic "1 contributions on 2026-02-10" [ref=f23e421]
+            - generic "3 contributions on 2026-02-11" [ref=f23e422]
+            - generic "0 contributions on 2026-02-12" [ref=f23e423]
+            - generic "4 contributions on 2026-02-13" [ref=f23e424]
+            - generic "8 contributions on 2026-02-14" [ref=f23e425]
+            - generic "0 contributions on 2026-02-15" [ref=f23e426]
+            - generic "2 contributions on 2026-02-16" [ref=f23e427]
+            - generic "6 contributions on 2026-02-17" [ref=f23e428]
+            - generic "0 contributions on 2026-02-18" [ref=f23e429]
+            - generic "2 contributions on 2026-02-19" [ref=f23e430]
+            - generic "2 contributions on 2026-02-20" [ref=f23e431]
+            - generic "3 contributions on 2026-02-21" [ref=f23e432]
+            - generic "0 contributions on 2026-02-22" [ref=f23e433]
+            - generic "9 contributions on 2026-02-23" [ref=f23e434]
+            - generic "21 contributions on 2026-02-24" [ref=f23e435]
+            - generic "10 contributions on 2026-02-25" [ref=f23e436]
+            - generic "2 contributions on 2026-02-26" [ref=f23e437]
+            - generic "26 contributions on 2026-02-27" [ref=f23e438]
+            - generic "2 contributions on 2026-02-28" [ref=f23e439]
+            - generic "0 contributions on 2026-03-01" [ref=f23e440]
+            - generic "0 contributions on 2026-03-02" [ref=f23e441]
+            - generic "0 contributions on 2026-03-03" [ref=f23e442]
+            - generic "8 contributions on 2026-03-04" [ref=f23e443]
+            - generic "1 contributions on 2026-03-05" [ref=f23e444]
+            - generic "0 contributions on 2026-03-06" [ref=f23e445]
+            - generic "0 contributions on 2026-03-07" [ref=f23e446]
+            - generic "0 contributions on 2026-03-08" [ref=f23e447]
+            - generic "0 contributions on 2026-03-09" [ref=f23e448]
+            - generic "0 contributions on 2026-03-10" [ref=f23e449]
+            - generic "7 contributions on 2026-03-11" [ref=f23e450]
+            - generic "1 contributions on 2026-03-12" [ref=f23e451]
+            - generic "4 contributions on 2026-03-13" [ref=f23e452]
+            - generic "1 contributions on 2026-03-14" [ref=f23e453]
+            - generic "0 contributions on 2026-03-15" [ref=f23e454]
+            - generic "0 contributions on 2026-03-16" [ref=f23e455]
+            - generic "1 contributions on 2026-03-17" [ref=f23e456]
+            - generic "1 contributions on 2026-03-18" [ref=f23e457]
+            - generic "0 contributions on 2026-03-19" [ref=f23e458]
+            - generic "24 contributions on 2026-03-20" [ref=f23e459]
+            - generic "7 contributions on 2026-03-21" [ref=f23e460]
+            - generic "3 contributions on 2026-03-22" [ref=f23e461]
+            - generic "4 contributions on 2026-03-23" [ref=f23e462]
+            - generic "8 contributions on 2026-03-24" [ref=f23e463]
+            - generic "11 contributions on 2026-03-25" [ref=f23e464]
+            - generic "10 contributions on 2026-03-26" [ref=f23e465]
+            - generic "2 contributions on 2026-03-27" [ref=f23e466]
+            - generic "15 contributions on 2026-03-28" [ref=f23e467]
+            - generic "38 contributions on 2026-03-29" [ref=f23e468]
+            - generic "13 contributions on 2026-03-30" [ref=f23e469]
+            - generic "7 contributions on 2026-03-31" [ref=f23e470]
+            - generic "10 contributions on 2026-04-01" [ref=f23e471]
+            - generic "4 contributions on 2026-04-02" [ref=f23e472]
+            - generic "0 contributions on 2026-04-03" [ref=f23e473]
+            - generic "0 contributions on 2026-04-04" [ref=f23e474]
+            - generic "6 contributions on 2026-04-05" [ref=f23e475]
+            - generic "2 contributions on 2026-04-06" [ref=f23e476]
+            - generic "0 contributions on 2026-04-07" [ref=f23e477]
+            - generic "0 contributions on 2026-04-08" [ref=f23e478]
+            - generic "0 contributions on 2026-04-09" [ref=f23e479]
+            - generic "1 contributions on 2026-04-10" [ref=f23e480]
+            - generic "0 contributions on 2026-04-11" [ref=f23e481]
+            - generic "0 contributions on 2026-04-12" [ref=f23e482]
+            - generic "0 contributions on 2026-04-13" [ref=f23e483]
+            - generic "0 contributions on 2026-04-14" [ref=f23e484]
+            - generic "0 contributions on 2026-04-15" [ref=f23e485]
+            - generic "0 contributions on 2026-04-16" [ref=f23e486]
+            - generic "0 contributions on 2026-04-17" [ref=f23e487]
+            - generic "0 contributions on 2026-04-18" [ref=f23e488]
+            - generic "0 contributions on 2026-04-19" [ref=f23e489]
+            - generic "0 contributions on 2026-04-20" [ref=f23e490]
+            - generic "0 contributions on 2026-04-21" [ref=f23e491]
+            - generic "0 contributions on 2026-04-22" [ref=f23e492]
+            - generic "0 contributions on 2026-04-23" [ref=f23e493]
+            - generic "14 contributions on 2026-04-24" [ref=f23e494]
+            - generic "8 contributions on 2026-04-25" [ref=f23e495]
+            - generic "8 contributions on 2026-04-26" [ref=f23e496]
+            - generic "40 contributions on 2026-04-27" [ref=f23e497]
+            - generic "20 contributions on 2026-04-28" [ref=f23e498]
+            - generic "9 contributions on 2026-04-29" [ref=f23e499]
+            - generic "0 contributions on 2026-04-30" [ref=f23e500]
+            - generic "0 contributions on 2026-05-01" [ref=f23e501]
+            - generic "0 contributions on 2026-05-02" [ref=f23e502]
+            - generic "0 contributions on 2026-05-03" [ref=f23e503]
+            - generic "0 contributions on 2026-05-04" [ref=f23e504]
+            - generic "0 contributions on 2026-05-05" [ref=f23e505]
+            - generic "12 contributions on 2026-05-06" [ref=f23e506]
+            - generic "4 contributions on 2026-05-07" [ref=f23e507]
+            - generic "12 contributions on 2026-05-08" [ref=f23e508]
+            - generic "1 contributions on 2026-05-09" [ref=f23e509]
+            - generic "1 contributions on 2026-05-10" [ref=f23e510]
+            - generic "8 contributions on 2026-05-11" [ref=f23e511]
+            - generic "15 contributions on 2026-05-12" [ref=f23e512]
+            - generic "0 contributions on 2026-05-13" [ref=f23e513]
+            - generic "2 contributions on 2026-05-14" [ref=f23e514]
+            - generic "0 contributions on 2026-05-15" [ref=f23e515]
+            - generic "0 contributions on 2026-05-16" [ref=f23e516]
+            - generic "0 contributions on 2026-05-17" [ref=f23e517]
+            - generic "0 contributions on 2026-05-18" [ref=f23e518]
+            - generic "0 contributions on 2026-05-19" [ref=f23e519]
+            - generic "2 contributions on 2026-05-20" [ref=f23e520]
+            - generic "2 contributions on 2026-05-21" [ref=f23e521]
+            - generic "6 contributions on 2026-05-22" [ref=f23e522]
+            - generic "1 contributions on 2026-05-23" [ref=f23e523]
+            - generic "23 contributions on 2026-05-24" [ref=f23e524]
+            - generic "5 contributions on 2026-05-25" [ref=f23e525]
+            - generic "2 contributions on 2026-05-26" [ref=f23e526]
+            - generic "0 contributions on 2026-05-27" [ref=f23e527]
+            - generic "4 contributions on 2026-05-28" [ref=f23e528]
+            - generic "0 contributions on 2026-05-29" [ref=f23e529]
+            - generic "0 contributions on 2026-05-30" [ref=f23e530]
+            - generic "0 contributions on 2026-05-31" [ref=f23e531]
+            - generic "0 contributions on 2026-06-01" [ref=f23e532]
+            - generic "0 contributions on 2026-06-02" [ref=f23e533]
+            - generic "0 contributions on 2026-06-03" [ref=f23e534]
+            - generic "9 contributions on 2026-06-04" [ref=f23e535]
+            - generic "0 contributions on 2026-06-05" [ref=f23e536]
+            - generic "0 contributions on 2026-06-06" [ref=f23e537]
+            - generic "0 contributions on 2026-06-07" [ref=f23e538]
+            - generic "0 contributions on 2026-06-08" [ref=f23e539]
+            - generic "0 contributions on 2026-06-09" [ref=f23e540]
+            - generic "0 contributions on 2026-06-10" [ref=f23e541]
+            - generic "0 contributions on 2026-06-11" [ref=f23e542]
+            - generic "0 contributions on 2026-06-12" [ref=f23e543]
+            - generic "0 contributions on 2026-06-13" [ref=f23e544]
+            - generic "0 contributions on 2026-06-14" [ref=f23e545]
+            - generic "0 contributions on 2026-06-15" [ref=f23e546]
+            - generic "0 contributions on 2026-06-16" [ref=f23e547]
+            - generic "0 contributions on 2026-06-17" [ref=f23e548]
+            - generic "0 contributions on 2026-06-18" [ref=f23e549]
+            - generic "0 contributions on 2026-06-19" [ref=f23e550]
+            - generic "0 contributions on 2026-06-20" [ref=f23e551]
+            - generic "0 contributions on 2026-06-21" [ref=f23e552]
+            - generic "0 contributions on 2026-06-22" [ref=f23e553]
+            - generic "0 contributions on 2026-06-23" [ref=f23e554]
+            - generic "0 contributions on 2026-06-24" [ref=f23e555]
+            - generic "0 contributions on 2026-06-25" [ref=f23e556]
+            - generic "0 contributions on 2026-06-26" [ref=f23e557]
+            - generic "1 contributions on 2026-06-27" [ref=f23e558]
+            - generic "0 contributions on 2026-06-28" [ref=f23e559]
+            - generic "4 contributions on 2026-06-29" [ref=f23e560]
+            - generic "6 contributions on 2026-06-30" [ref=f23e561]
+            - generic "1 contributions on 2026-07-01" [ref=f23e562]
+            - generic "0 contributions on 2026-07-02" [ref=f23e563]
+            - generic "0 contributions on 2026-07-03" [ref=f23e564]
+            - generic "0 contributions on 2026-07-04" [ref=f23e565]
+            - generic "1 contributions on 2026-07-05" [ref=f23e566]
+            - generic "0 contributions on 2026-07-06" [ref=f23e567]
+            - generic "0 contributions on 2026-07-07" [ref=f23e568]
+            - generic "0 contributions on 2026-07-08" [ref=f23e569]
+            - generic "0 contributions on 2026-07-09" [ref=f23e570]
+            - generic "0 contributions on 2026-07-10" [ref=f23e571]
+            - generic "0 contributions on 2026-07-11" [ref=f23e572]
+            - generic "0 contributions on 2026-07-12" [ref=f23e573]
+            - generic "0 contributions on 2026-07-13" [ref=f23e574]
+            - generic "0 contributions on 2026-07-14" [ref=f23e575]
+            - generic "0 contributions on 2026-07-15" [ref=f23e576]
+            - generic "0 contributions on 2026-07-16" [ref=f23e577]
+            - generic "0 contributions on 2026-07-17" [ref=f23e578]
+            - generic "0 contributions on 2026-07-18" [ref=f23e579]
+            - generic "1 contributions on 2026-07-19" [ref=f23e580]
+            - generic "0 contributions on 2026-07-20" [ref=f23e581]
+            - generic "0 contributions on 2026-07-21" [ref=f23e582]
+            - generic "2 contributions on 2026-07-22" [ref=f23e583]
+            - generic "0 contributions on 2026-07-23" [ref=f23e584]
+            - generic "0 contributions on 2026-07-24" [ref=f23e585]
+            - generic "0 contributions on 2026-07-25" [ref=f23e586]
+            - generic "0 contributions on 2026-07-26" [ref=f23e587]
+            - generic "1 contributions on 2026-07-27" [ref=f23e588]
+            - generic "0 contributions on 2026-07-28" [ref=f23e589]
+            - generic "0 contributions on 2026-07-29" [ref=f23e590]
+            - generic "0 contributions on 2026-07-30" [ref=f23e591]
+            - generic "0 contributions on 2026-07-31" [ref=f23e592]
+            - generic "0 contributions on 2026-08-01" [ref=f23e593]
+            - generic "0 contributions on 2026-08-02" [ref=f23e594]
+            - generic "0 contributions on 2026-08-03" [ref=f23e595]
+            - generic "0 contributions on 2026-08-04" [ref=f23e596]
+            - generic "0 contributions on 2026-08-05" [ref=f23e597]
+            - generic "1 contributions on 2026-08-06" [ref=f23e598]
+          - generic [ref=f23e599]:
+            - generic [ref=f23e600]:
+              - generic [ref=f23e601]: 1,081
+              - generic [ref=f23e602]: Contributions in the last year
+            - generic [ref=f23e603]:
+              - generic [ref=f23e604]: "14"
+              - generic [ref=f23e605]: Longest streak
+            - generic [ref=f23e606]:
+              - generic [ref=f23e607]: "1"
+              - generic [ref=f23e608]: Current streak · Keep it up
+          - generic [ref=f23e609]:
+            - generic [ref=f23e610]: Less
+            - generic [ref=f23e616]: More
+    - generic [ref=f23e617]:
+      - link "Jenna Studio®" [ref=f23e618] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f23e619]: © 2026 Jenna Studio
+      - generic [ref=f23e620]:
+        - link "LinkedIn" [ref=f23e621] [cursor=pointer]:
+          - /url: https://linkedin.com/in/jinseon-yoo
+        - link "GitHub" [ref=f23e622] [cursor=pointer]:
+          - /url: https://github.com/jenna-studio
+  - alert [ref=f23e623]

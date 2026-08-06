@@ -1,0 +1,262 @@
+- generic [active] [ref=f8e1]:
+  - main [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - link "Jenna Studio home" [ref=f8e4] [cursor=pointer]:
+        - /url: /
+        - text: Jenna Studio®
+      - navigation "Main navigation" [ref=f8e5]:
+        - link "About" [ref=f8e6] [cursor=pointer]:
+          - /url: /about/
+        - link "Projects" [ref=f8e7] [cursor=pointer]:
+          - /url: /projects/
+        - link "Portfolios" [ref=f8e8] [cursor=pointer]:
+          - /url: /portfolios/
+        - link "Contact" [ref=f8e9] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=f8e10]:
+      - paragraph [ref=f8e11]: Portfolios
+      - heading [level=1] [ref=f8e12]:
+        - text: Creative
+        - emphasis [ref=f8e13]: Work.
+      - paragraph [ref=f8e14]: A visual journey through my creative work and design evolution
+    - generic [ref=f8e15]:
+      - generic [ref=f8e16]:
+        - generic [ref=f8e17]:
+          - generic [ref=f8e18]: Featured
+          - paragraph [ref=f8e19]: Research · HFES International Symposium 2026
+        - heading "RAG-Enhanced LLM System with Decision Tree for Medical Device Usability Engineering Process" [level=2] [ref=f8e20]
+        - paragraph [ref=f8e21]: Junhee Choi, Jinseon Yoo, Saram Lee, Jung Chan Lee
+        - paragraph [ref=f8e22]: An AI-assisted system that pairs a 37-point decision tree with RAG-enhanced document generation (Gemini Flash and Claude Opus) to guide small and medium medical device manufacturers through the IEC 62366-1/-2 usability engineering process. Applied to four South Korean medical device companies, the framework generates usability engineering documentation while keeping human oversight at every step.
+        - paragraph [ref=f8e23]: Poster Session 1 · Medical and Drug Delivery Devices · Rhinelander Gallery
+        - list [ref=f8e24]:
+          - listitem [ref=f8e25]: Research
+          - listitem [ref=f8e26]: LLM
+          - listitem [ref=f8e27]: RAG
+          - listitem [ref=f8e28]: IEC 62366
+          - listitem [ref=f8e29]: Medical Devices
+        - link "Conference Page ↗" [ref=f8e31] [cursor=pointer]:
+          - /url: https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106
+      - generic [ref=f8e32]:
+        - generic [ref=f8e33]:
+          - paragraph [ref=f8e34]: Full collection
+          - heading "Portfolio" [level=2] [ref=f8e35]
+        - generic "Filter portfolios" [ref=f8e36]:
+          - button "All Work" [ref=f8e37] [cursor=pointer]
+          - button "3D Work" [ref=f8e38] [cursor=pointer]
+          - button "Web Design" [ref=f8e39] [cursor=pointer]
+          - button "UI/UX" [ref=f8e40] [cursor=pointer]
+          - button "Tools" [ref=f8e41] [cursor=pointer]
+          - button "Creation" [ref=f8e42] [cursor=pointer]
+        - generic [ref=f8e43]:
+          - group [ref=f8e44]:
+            - generic [ref=f8e47] [cursor=pointer]:
+              - text: "Artist name: Jenna Studio"
+              - heading "AI Music Generation" [level=2] [ref=f8e48]
+              - paragraph [ref=f8e49]: Explore details +
+          - group [ref=f8e50]:
+            - generic [ref=f8e53] [cursor=pointer]:
+              - text: Custom ChatGPT
+              - heading "Your English Tutor" [level=2] [ref=f8e54]
+              - paragraph [ref=f8e55]: Explore details +
+          - group [ref=f8e56]:
+            - generic [ref=f8e59] [cursor=pointer]:
+              - text: Custom ChatGPT
+              - heading "Personal Color Analysis Service" [level=2] [ref=f8e60]
+              - paragraph [ref=f8e61]: Explore details +
+          - group [ref=f8e62]:
+            - generic [ref=f8e65] [cursor=pointer]:
+              - text: Create cruise travel maps
+              - heading "Travel Maps Design" [level=2] [ref=f8e66]
+              - paragraph [ref=f8e67]: Explore details +
+          - group [ref=f8e68]:
+            - generic [ref=f8e71] [cursor=pointer]:
+              - text: Browser Extension
+              - heading "Chrome Theme Extension" [level=2] [ref=f8e72]
+              - paragraph [ref=f8e73]: Explore details +
+          - group [ref=f8e74]:
+            - generic [ref=f8e77] [cursor=pointer]:
+              - text: 3D Modeling/Printing
+              - heading "Raindrop ASMR LED Humidifier" [level=2] [ref=f8e78]
+              - paragraph [ref=f8e79]: Explore details +
+          - group [ref=f8e80]:
+            - generic [ref=f8e83] [cursor=pointer]:
+              - text: Modeling tutorial PDF
+              - heading "Hello Kitty 3D Modeling" [level=2] [ref=f8e84]
+              - paragraph [ref=f8e85]: Explore details +
+          - group [ref=f8e86]:
+            - generic [ref=f8e89] [cursor=pointer]:
+              - text: A collection of Apple's Shortcuts
+              - heading "Apple Shortcuts" [level=2] [ref=f8e90]
+              - paragraph [ref=f8e91]: Explore details −
+            - generic [ref=f8e92]:
+              - paragraph [ref=f8e93]: A collection of useful automation shortcuts for iOS and MacOS.
+              - list [ref=f8e94]:
+                - listitem [ref=f8e95]: Apple
+                - listitem [ref=f8e96]: iOS
+                - listitem [ref=f8e97]: MacOS
+                - listitem [ref=f8e98]: automation
+              - generic [ref=f8e99]:
+                - link "Convert Image Format Get Shortcut ↗" [ref=f8e100] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/9ce2d62e06424d0cbd360f6aa45f10cb
+                  - generic [ref=f8e101]: Convert Image Format
+                  - generic [ref=f8e102]: Get Shortcut ↗
+                - link "CSS Gradient Get Shortcut ↗" [ref=f8e103] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/b56c2f1cfc384412ac096d556a20b1b8
+                  - generic [ref=f8e104]: CSS Gradient
+                  - generic [ref=f8e105]: Get Shortcut ↗
+                - link "English Dictionary Get Shortcut ↗" [ref=f8e106] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/75e2c5ec76f14b15a6913d4931e2049c
+                  - generic [ref=f8e107]: English Dictionary
+                  - generic [ref=f8e108]: Get Shortcut ↗
+                - link "Extract Text from PDF Get Shortcut ↗" [ref=f8e109] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/1076a9c16a584958b29b1e316a16a086
+                  - generic [ref=f8e110]: Extract Text from PDF
+                  - generic [ref=f8e111]: Get Shortcut ↗
+                - link "Get Current IP Address Get Shortcut ↗" [ref=f8e112] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/9bc0a2a810e348cfb2236a07edd5050c
+                  - generic [ref=f8e113]: Get Current IP Address
+                  - generic [ref=f8e114]: Get Shortcut ↗
+                - link "Image Edit - Mac OS Get Shortcut ↗" [ref=f8e115] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/ccea7234bdd84cd6a6aa0da10ffaa7fe
+                  - generic [ref=f8e116]: Image Edit - Mac OS
+                  - generic [ref=f8e117]: Get Shortcut ↗
+                - link "Image Edit - iOS Get Shortcut ↗" [ref=f8e118] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/19e91781e68445aa987f5eeaf11b0ae2
+                  - generic [ref=f8e119]: Image Edit - iOS
+                  - generic [ref=f8e120]: Get Shortcut ↗
+                - link "Korean Grammar Get Shortcut ↗" [ref=f8e121] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/0d44636a5f304af2af2b1f4a407bcc7e
+                  - generic [ref=f8e122]: Korean Grammar
+                  - generic [ref=f8e123]: Get Shortcut ↗
+                - link "Open VS Code Workspace Get Shortcut ↗" [ref=f8e124] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/a628af99720447abb286d42e8ce81afa
+                  - generic [ref=f8e125]: Open VS Code Workspace
+                  - generic [ref=f8e126]: Get Shortcut ↗
+                - link "PDF to PNG Get Shortcut ↗" [ref=f8e127] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/78b718117f1e4ccfae99d0b4fef34f12
+                  - generic [ref=f8e128]: PDF to PNG
+                  - generic [ref=f8e129]: Get Shortcut ↗
+                - link "Rename Photo Get Shortcut ↗" [ref=f8e130] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/b9781c063d744e7193b12e01f8ac4546
+                  - generic [ref=f8e131]: Rename Photo
+                  - generic [ref=f8e132]: Get Shortcut ↗
+                - link "Shorten URL Get Shortcut ↗" [ref=f8e133] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/2efa0ce4985c42c6a8ddfa42106178c8
+                  - generic [ref=f8e134]: Shorten URL
+                  - generic [ref=f8e135]: Get Shortcut ↗
+                - link "Speak Weather - Korean Get Shortcut ↗" [ref=f8e136] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/b9ba553040a640019255a1b15e8ad888
+                  - generic [ref=f8e137]: Speak Weather - Korean
+                  - generic [ref=f8e138]: Get Shortcut ↗
+                - link "Split PDF Into PNGs Get Shortcut ↗" [ref=f8e139] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/a7a05ceb15414f1c93c55ebc155c1819
+                  - generic [ref=f8e140]: Split PDF Into PNGs
+                  - generic [ref=f8e141]: Get Shortcut ↗
+                - link "Summarize PDF Get Shortcut ↗" [ref=f8e142] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/7812b16da351473ba2f302f575a83409
+                  - generic [ref=f8e143]: Summarize PDF
+                  - generic [ref=f8e144]: Get Shortcut ↗
+                - link "Wifi Analysis Get Shortcut ↗" [ref=f8e145] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/919838c297774aa0b9f56b4b2520d992
+                  - generic [ref=f8e146]: Wifi Analysis
+                  - generic [ref=f8e147]: Get Shortcut ↗
+                - link "GitHub Repository Get Shortcut ↗" [ref=f8e148] [cursor=pointer]:
+                  - /url: https://www.icloud.com/shortcuts/8aa09d5017a5465a8700f0d0f2b7fc67
+                  - generic [ref=f8e149]: GitHub Repository
+                  - generic [ref=f8e150]: Get Shortcut ↗
+      - generic [ref=f8e151]:
+        - generic [ref=f8e152]:
+          - paragraph [ref=f8e153]: Field notes
+          - heading "Travel Journal" [level=2] [ref=f8e154]
+        - paragraph [ref=f8e155]:
+          - text: Field notes from my travels —
+          - link "read all on Tistory ↗" [ref=f8e156] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com
+        - generic [ref=f8e157]:
+          - link [ref=f8e158] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/2
+            - generic [ref=f8e160]:
+              - time [ref=f8e161]: 2023-11-10
+              - heading "CRUISE D0 — 슬로베니아" [level=3] [ref=f8e162]
+              - paragraph [ref=f8e163]: 새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다 — 슬로베니아로 향하는 여행의 시작.
+              - text: Read on Tistory ↗
+          - link [ref=f8e164] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/3
+            - generic [ref=f8e166]:
+              - time [ref=f8e167]: 2023-11-11
+              - heading "CRUISE D1 — 류블랴나 & 트리에스테" [level=3] [ref=f8e168]
+              - paragraph [ref=f8e169]: 류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다 — 맛없는 메뉴가 하나도 없었다.
+              - text: Read on Tistory ↗
+          - link [ref=f8e170] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/4
+            - generic [ref=f8e172]:
+              - time [ref=f8e173]: 2023-11-12
+              - heading "CRUISE D2 — 스플리트" [level=3] [ref=f8e174]
+              - paragraph [ref=f8e175]: 아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만 — 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다.
+              - text: Read on Tistory ↗
+          - link [ref=f8e176] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/5
+            - generic [ref=f8e178]:
+              - time [ref=f8e179]: 2023-11-13
+              - heading "CRUISE D3 — 코토르" [level=3] [ref=f8e180]
+              - paragraph [ref=f8e181]: 아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다 — 여태까지 본 풍경 중 가장 놀라운 장면.
+              - text: Read on Tistory ↗
+          - link [ref=f8e182] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/6
+            - generic [ref=f8e184]:
+              - time [ref=f8e185]: 2023-11-14
+              - heading "CRUISE D4 — 카타콜론 & 올림피아" [level=3] [ref=f8e186]
+              - paragraph [ref=f8e187]: 오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고.
+              - text: Read on Tistory ↗
+          - link [ref=f8e188] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/7
+            - generic [ref=f8e190]:
+              - time [ref=f8e191]: 2023-11-15
+              - heading "CRUISE D5 — 코르푸" [level=3] [ref=f8e192]
+              - paragraph [ref=f8e193]: 그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다.
+              - text: Read on Tistory ↗
+          - link [ref=f8e194] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/8
+            - generic [ref=f8e196]:
+              - time [ref=f8e197]: 2023-11-16
+              - heading "CRUISE D6 — 두브로브닉" [level=3] [ref=f8e198]
+              - paragraph [ref=f8e199]: 드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침.
+              - text: Read on Tistory ↗
+          - link [ref=f8e200] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/9
+            - generic [ref=f8e202]:
+              - time [ref=f8e203]: 2023-11-17
+              - heading "CRUISE D7 — 알베르벨로" [level=3] [ref=f8e204]
+              - paragraph [ref=f8e205]: 다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡 — 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다.
+              - text: Read on Tistory ↗
+          - link [ref=f8e206] [cursor=pointer]:
+            - /url: https://seonyisland.tistory.com/10
+            - generic [ref=f8e208]:
+              - time [ref=f8e209]: 2023-11-18
+              - heading "CRUISE D8 — 블레드" [level=3] [ref=f8e210]
+              - paragraph [ref=f8e211]: 마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군 — 동화 같은 블레드를 향해.
+              - text: Read on Tistory ↗
+      - generic [ref=f8e212]:
+        - generic [ref=f8e213]:
+          - paragraph [ref=f8e214]: At a glance
+          - heading "Portfolio Highlights" [level=2] [ref=f8e215]
+        - generic [ref=f8e216]:
+          - generic [ref=f8e217]:
+            - strong [ref=f8e218]: 30+
+            - generic [ref=f8e219]: Design Projects
+          - generic [ref=f8e220]:
+            - strong [ref=f8e221]: 4+
+            - generic [ref=f8e222]: Years Experience
+          - generic [ref=f8e223]:
+            - strong [ref=f8e224]: 5+
+            - generic [ref=f8e225]: Work Experience
+    - generic [ref=f8e226]:
+      - link "Jenna Studio®" [ref=f8e227] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f8e228]: © 2026 Jenna Studio
+      - generic [ref=f8e229]:
+        - link "LinkedIn" [ref=f8e230] [cursor=pointer]:
+          - /url: https://linkedin.com/in/jinseon-yoo
+        - link "GitHub" [ref=f8e231] [cursor=pointer]:
+          - /url: https://github.com/jenna-studio
+  - alert [ref=f8e232]

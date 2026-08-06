@@ -1,0 +1,267 @@
+- generic [active] [ref=f3e1]:
+  - navigation [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Jenna Studio" [ref=f3e5]:
+        - /url: ../index.html
+      - generic [ref=f3e6]:
+        - link "Home" [ref=f3e7]:
+          - /url: ../index.html
+        - link "About" [ref=f3e8]:
+          - /url: about.html
+        - link "Projects" [ref=f3e9]:
+          - /url: projects.html
+        - link "Portfolio" [ref=f3e10]:
+          - /url: portfolio.html
+        - link "Contact" [ref=f3e11]:
+          - /url: contact.html
+  - main [ref=f3e12]:
+    - generic [ref=f3e13]:
+      - generic [ref=f3e14]:
+        - heading "Portfolio" [level=1] [ref=f3e15]
+        - paragraph [ref=f3e16]: A visual journey through my creative work and design evolution
+      - article [ref=f3e18]:
+        - generic [ref=f3e19]:
+          - generic [ref=f3e20]: 
+          - text: Featured
+        - generic [ref=f3e21]:
+          - paragraph [ref=f3e22]: Research · HFES International Symposium 2026
+          - heading "RAG-Enhanced LLM System with Decision Tree for Medical Device Usability Engineering Process" [level=2] [ref=f3e23]
+          - paragraph [ref=f3e24]: Junhee Choi, Jinseon Yoo, Saram Lee, Jung Chan Lee
+          - paragraph [ref=f3e25]: An AI-assisted system that pairs a 37-point decision tree with RAG-enhanced document generation (Gemini Flash and Claude Opus) to guide small and medium medical device manufacturers through the IEC 62366-1/-2 usability engineering process. Applied to four South Korean medical device companies, the framework generates usability engineering documentation while keeping human oversight at every step…
+          - paragraph [ref=f3e26]: Poster Session 1 · Medical and Drug Delivery Devices · Rhinelander Gallery
+          - generic [ref=f3e27]:
+            - button "View Details" [ref=f3e28]
+            - link "Conference Page" [ref=f3e29]:
+              - /url: https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106
+      - generic [ref=f3e31]:
+        - button "All Work" [ref=f3e32]
+        - button "3D Work" [ref=f3e33]
+        - button "Web Design" [ref=f3e34]
+        - button "UI/UX" [ref=f3e35]
+        - button "Tools" [ref=f3e36]
+        - button "Creation" [ref=f3e37]
+      - generic [ref=f3e39]:
+        - article [ref=f3e40]:
+          - generic [ref=f3e42]:
+            - heading "AI Music Generation" [level=3] [ref=f3e43]
+            - paragraph [ref=f3e44]: "Artist name: Jenna Studio"
+            - button "View Details" [ref=f3e45]
+        - article [ref=f3e46]:
+          - generic [ref=f3e48]:
+            - heading "Your English Tutor" [level=3] [ref=f3e49]
+            - paragraph [ref=f3e50]: Custom ChatGPT
+            - button "View Details" [ref=f3e51]
+        - article [ref=f3e52]:
+          - generic [ref=f3e54]:
+            - heading "Personal Color Analysis Service" [level=3] [ref=f3e55]
+            - paragraph [ref=f3e56]: Custom ChatGPT
+            - button "View Details" [ref=f3e57]
+        - article [ref=f3e58]:
+          - generic [ref=f3e60]:
+            - heading "Travel Maps Design" [level=3] [ref=f3e61]
+            - paragraph [ref=f3e62]: Create cruise travel maps
+            - button "View Details" [ref=f3e63]
+        - article [ref=f3e64]:
+          - generic [ref=f3e66]:
+            - heading "Chrome Theme Extension" [level=3] [ref=f3e67]
+            - paragraph [ref=f3e68]: Browser Extension
+            - button "View Details" [ref=f3e69]
+        - article [ref=f3e70]:
+          - generic [ref=f3e72]:
+            - heading "Raindrop ASMR LED Humidifier" [level=3] [ref=f3e73]
+            - paragraph [ref=f3e74]: 3D Modeling/Printing
+            - button "View Details" [ref=f3e75]
+        - article [ref=f3e76]:
+          - generic [ref=f3e78]:
+            - heading "Hello Kitty 3D Modeling" [level=3] [ref=f3e79]
+            - paragraph [ref=f3e80]: Modeling tutorial PDF
+            - button "View Details" [ref=f3e81]
+        - article [ref=f3e82]:
+          - generic [ref=f3e84]:
+            - heading "Apple Shortcuts" [level=3] [ref=f3e85]
+            - paragraph [ref=f3e86]: A collection of Apple's Shortcuts
+            - button "View Details" [ref=f3e87]
+      - region "Travel journal" [ref=f3e88]:
+        - heading "Travel Journal" [level=2] [ref=f3e89]
+        - paragraph [ref=f3e90]:
+          - text: Field notes from my travels —
+          - link "read all on Tistory →" [ref=f3e91]:
+            - /url: https://seonyisland.tistory.com
+        - generic [ref=f3e92]:
+          - button "Previous post" [ref=f3e93]: ‹
+          - region "Latest blog posts carousel" [ref=f3e94]:
+            - link "Nov 10, 2023 CRUISE D0 — 슬로베니아 새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다 — 슬로베니아로 향하는 여행의 시작. Read on Tistory →" [ref=f3e95]:
+              - /url: https://seonyisland.tistory.com/2
+              - generic [ref=f3e97]:
+                - generic [ref=f3e98]: Nov 10, 2023
+                - heading "CRUISE D0 — 슬로베니아" [level=3] [ref=f3e99]
+                - paragraph [ref=f3e100]: 새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다 — 슬로베니아로 향하는 여행의 시작.
+                - generic [ref=f3e101]: Read on Tistory →
+            - link "Nov 11, 2023 CRUISE D1 — 류블랴나 & 트리에스테 류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다 — 맛없는 메뉴가 하나도 없었다. Read on Tistory →" [ref=f3e102]:
+              - /url: https://seonyisland.tistory.com/3
+              - generic [ref=f3e104]:
+                - generic [ref=f3e105]: Nov 11, 2023
+                - heading "CRUISE D1 — 류블랴나 & 트리에스테" [level=3] [ref=f3e106]
+                - paragraph [ref=f3e107]: 류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다 — 맛없는 메뉴가 하나도 없었다.
+                - generic [ref=f3e108]: Read on Tistory →
+            - link "Nov 12, 2023 CRUISE D2 — 스플리트 아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만 — 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다. Read on Tistory →" [ref=f3e109]:
+              - /url: https://seonyisland.tistory.com/4
+              - generic [ref=f3e111]:
+                - generic [ref=f3e112]: Nov 12, 2023
+                - heading "CRUISE D2 — 스플리트" [level=3] [ref=f3e113]
+                - paragraph [ref=f3e114]: 아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만 — 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다.
+                - generic [ref=f3e115]: Read on Tistory →
+            - link "Nov 13, 2023 CRUISE D3 — 코토르 아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다 — 여태까지 본 풍경 중 가장 놀라운 장면. Read on Tistory →" [ref=f3e116]:
+              - /url: https://seonyisland.tistory.com/5
+              - generic [ref=f3e118]:
+                - generic [ref=f3e119]: Nov 13, 2023
+                - heading "CRUISE D3 — 코토르" [level=3] [ref=f3e120]
+                - paragraph [ref=f3e121]: 아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다 — 여태까지 본 풍경 중 가장 놀라운 장면.
+                - generic [ref=f3e122]: Read on Tistory →
+            - link "Nov 14, 2023 CRUISE D4 — 카타콜론 & 올림피아 오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고. Read on Tistory →" [ref=f3e123]:
+              - /url: https://seonyisland.tistory.com/6
+              - generic [ref=f3e125]:
+                - generic [ref=f3e126]: Nov 14, 2023
+                - heading "CRUISE D4 — 카타콜론 & 올림피아" [level=3] [ref=f3e127]
+                - paragraph [ref=f3e128]: 오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고.
+                - generic [ref=f3e129]: Read on Tistory →
+            - link "Nov 15, 2023 CRUISE D5 — 코르푸 그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다. Read on Tistory →" [ref=f3e130]:
+              - /url: https://seonyisland.tistory.com/7
+              - generic [ref=f3e132]:
+                - generic [ref=f3e133]: Nov 15, 2023
+                - heading "CRUISE D5 — 코르푸" [level=3] [ref=f3e134]
+                - paragraph [ref=f3e135]: 그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다.
+                - generic [ref=f3e136]: Read on Tistory →
+            - link "Nov 16, 2023 CRUISE D6 — 두브로브닉 드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침. Read on Tistory →" [ref=f3e137]:
+              - /url: https://seonyisland.tistory.com/8
+              - generic [ref=f3e139]:
+                - generic [ref=f3e140]: Nov 16, 2023
+                - heading "CRUISE D6 — 두브로브닉" [level=3] [ref=f3e141]
+                - paragraph [ref=f3e142]: 드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침.
+                - generic [ref=f3e143]: Read on Tistory →
+            - link "Nov 17, 2023 CRUISE D7 — 알베르벨로 다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡 — 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다. Read on Tistory →" [ref=f3e144]:
+              - /url: https://seonyisland.tistory.com/9
+              - generic [ref=f3e146]:
+                - generic [ref=f3e147]: Nov 17, 2023
+                - heading "CRUISE D7 — 알베르벨로" [level=3] [ref=f3e148]
+                - paragraph [ref=f3e149]: 다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡 — 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다.
+                - generic [ref=f3e150]: Read on Tistory →
+            - link "Nov 18, 2023 CRUISE D8 — 블레드 마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군 — 동화 같은 블레드를 향해. Read on Tistory →" [ref=f3e151]:
+              - /url: https://seonyisland.tistory.com/10
+              - generic [ref=f3e153]:
+                - generic [ref=f3e154]: Nov 18, 2023
+                - heading "CRUISE D8 — 블레드" [level=3] [ref=f3e155]
+                - paragraph [ref=f3e156]: 마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군 — 동화 같은 블레드를 향해.
+                - generic [ref=f3e157]: Read on Tistory →
+            - link "Nov 10, 2023 CRUISE D0 — 슬로베니아 새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다 — 슬로베니아로 향하는 여행의 시작. Read on Tistory →" [ref=f3e158]:
+              - /url: https://seonyisland.tistory.com/2
+              - generic [ref=f3e160]:
+                - generic [ref=f3e161]: Nov 10, 2023
+                - heading "CRUISE D0 — 슬로베니아" [level=3] [ref=f3e162]
+                - paragraph [ref=f3e163]: 새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다 — 슬로베니아로 향하는 여행의 시작.
+                - generic [ref=f3e164]: Read on Tistory →
+            - link "Nov 11, 2023 CRUISE D1 — 류블랴나 & 트리에스테 류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다 — 맛없는 메뉴가 하나도 없었다. Read on Tistory →" [ref=f3e165]:
+              - /url: https://seonyisland.tistory.com/3
+              - generic [ref=f3e167]:
+                - generic [ref=f3e168]: Nov 11, 2023
+                - heading "CRUISE D1 — 류블랴나 & 트리에스테" [level=3] [ref=f3e169]
+                - paragraph [ref=f3e170]: 류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다 — 맛없는 메뉴가 하나도 없었다.
+                - generic [ref=f3e171]: Read on Tistory →
+            - link "Nov 12, 2023 CRUISE D2 — 스플리트 아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만 — 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다. Read on Tistory →" [ref=f3e172]:
+              - /url: https://seonyisland.tistory.com/4
+              - generic [ref=f3e174]:
+                - generic [ref=f3e175]: Nov 12, 2023
+                - heading "CRUISE D2 — 스플리트" [level=3] [ref=f3e176]
+                - paragraph [ref=f3e177]: 아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만 — 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다.
+                - generic [ref=f3e178]: Read on Tistory →
+            - link "Nov 13, 2023 CRUISE D3 — 코토르 아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다 — 여태까지 본 풍경 중 가장 놀라운 장면. Read on Tistory →" [ref=f3e179]:
+              - /url: https://seonyisland.tistory.com/5
+              - generic [ref=f3e181]:
+                - generic [ref=f3e182]: Nov 13, 2023
+                - heading "CRUISE D3 — 코토르" [level=3] [ref=f3e183]
+                - paragraph [ref=f3e184]: 아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다 — 여태까지 본 풍경 중 가장 놀라운 장면.
+                - generic [ref=f3e185]: Read on Tistory →
+            - link "Nov 14, 2023 CRUISE D4 — 카타콜론 & 올림피아 오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고. Read on Tistory →" [ref=f3e186]:
+              - /url: https://seonyisland.tistory.com/6
+              - generic [ref=f3e188]:
+                - generic [ref=f3e189]: Nov 14, 2023
+                - heading "CRUISE D4 — 카타콜론 & 올림피아" [level=3] [ref=f3e190]
+                - paragraph [ref=f3e191]: 오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고.
+                - generic [ref=f3e192]: Read on Tistory →
+            - link "Nov 15, 2023 CRUISE D5 — 코르푸 그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다. Read on Tistory →" [ref=f3e193]:
+              - /url: https://seonyisland.tistory.com/7
+              - generic [ref=f3e195]:
+                - generic [ref=f3e196]: Nov 15, 2023
+                - heading "CRUISE D5 — 코르푸" [level=3] [ref=f3e197]
+                - paragraph [ref=f3e198]: 그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다.
+                - generic [ref=f3e199]: Read on Tistory →
+            - link "Nov 16, 2023 CRUISE D6 — 두브로브닉 드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침. Read on Tistory →" [ref=f3e200]:
+              - /url: https://seonyisland.tistory.com/8
+              - generic [ref=f3e202]:
+                - generic [ref=f3e203]: Nov 16, 2023
+                - heading "CRUISE D6 — 두브로브닉" [level=3] [ref=f3e204]
+                - paragraph [ref=f3e205]: 드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침.
+                - generic [ref=f3e206]: Read on Tistory →
+            - link "Nov 17, 2023 CRUISE D7 — 알베르벨로 다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡 — 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다. Read on Tistory →" [ref=f3e207]:
+              - /url: https://seonyisland.tistory.com/9
+              - generic [ref=f3e209]:
+                - generic [ref=f3e210]: Nov 17, 2023
+                - heading "CRUISE D7 — 알베르벨로" [level=3] [ref=f3e211]
+                - paragraph [ref=f3e212]: 다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡 — 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다.
+                - generic [ref=f3e213]: Read on Tistory →
+            - link "Nov 18, 2023 CRUISE D8 — 블레드 마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군 — 동화 같은 블레드를 향해. Read on Tistory →" [ref=f3e214]:
+              - /url: https://seonyisland.tistory.com/10
+              - generic [ref=f3e216]:
+                - generic [ref=f3e217]: Nov 18, 2023
+                - heading "CRUISE D8 — 블레드" [level=3] [ref=f3e218]
+                - paragraph [ref=f3e219]: 마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군 — 동화 같은 블레드를 향해.
+                - generic [ref=f3e220]: Read on Tistory →
+          - button "Next post" [ref=f3e221]: ›
+        - generic [ref=f3e222]: drag · scroll · to read
+      - generic [ref=f3e223]:
+        - heading "Portfolio Highlights" [level=2] [ref=f3e224]
+        - generic [ref=f3e225]:
+          - generic [ref=f3e226]:
+            - generic [ref=f3e227]: 30+
+            - generic [ref=f3e228]: Design Projects
+          - generic [ref=f3e229]:
+            - generic [ref=f3e230]: 4+
+            - generic [ref=f3e231]: Years Experience
+          - generic [ref=f3e232]:
+            - generic [ref=f3e233]: 5+
+            - generic [ref=f3e234]: Work Experience
+  - contentinfo [ref=f3e235]:
+    - generic [ref=f3e236]:
+      - generic [ref=f3e237]:
+        - generic [ref=f3e238]:
+          - generic [ref=f3e239]: Jenna Studio
+          - paragraph [ref=f3e240]: Crafting delightful web experiences with creativity and technical excellence.
+        - generic [ref=f3e241]:
+          - generic [ref=f3e242]:
+            - heading "Navigation" [level=4] [ref=f3e243]
+            - list [ref=f3e244]:
+              - listitem [ref=f3e245]:
+                - link "Home" [ref=f3e246]:
+                  - /url: ../index.html
+              - listitem [ref=f3e247]:
+                - link "About" [ref=f3e248]:
+                  - /url: about.html
+              - listitem [ref=f3e249]:
+                - link "Projects" [ref=f3e250]:
+                  - /url: projects.html
+              - listitem [ref=f3e251]:
+                - link "Portfolio" [ref=f3e252]:
+                  - /url: portfolio.html
+          - generic [ref=f3e253]:
+            - heading "Connect" [level=4] [ref=f3e254]
+            - list [ref=f3e255]:
+              - listitem [ref=f3e256]:
+                - link "LinkedIn" [ref=f3e257]:
+                  - /url: https://linkedin.com/in/jinseon-yoo
+              - listitem [ref=f3e258]:
+                - link "GitHub" [ref=f3e259]:
+                  - /url: https://github.com/jenna-studio
+              - listitem [ref=f3e260]:
+                - link "Contact" [ref=f3e261]:
+                  - /url: contact.html
+      - paragraph [ref=f3e263]: © 2026 Jenna Studio. All rights reserved.

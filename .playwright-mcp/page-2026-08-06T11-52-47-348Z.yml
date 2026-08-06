@@ -1,0 +1,228 @@
+- generic [active] [ref=f16e1]:
+  - main [ref=f16e2]:
+    - generic [ref=f16e3]:
+      - link "Jenna Studio home" [ref=f16e4] [cursor=pointer]:
+        - /url: /
+        - text: Jenna Studio®
+      - navigation "Main navigation" [ref=f16e5]:
+        - link "About" [ref=f16e6] [cursor=pointer]:
+          - /url: /about/
+        - link "Projects" [ref=f16e7] [cursor=pointer]:
+          - /url: /projects/
+        - link "Portfolios" [ref=f16e8] [cursor=pointer]:
+          - /url: /portfolios/
+        - link "Contact" [ref=f16e9] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=f16e10]:
+      - paragraph [ref=f16e11]: About
+      - heading [level=1] [ref=f16e12]:
+        - text: About
+        - emphasis [ref=f16e13]: Me.
+      - paragraph [ref=f16e14]: Get to know me better!
+    - generic [ref=f16e15]:
+      - generic [ref=f16e16]:
+        - img "Jenna" [ref=f16e18]
+        - generic [ref=f16e19]:
+          - paragraph [ref=f16e20]: Hello, I'm Jenna! 👋
+          - heading [level=2] [ref=f16e21]:
+            - text: Technical excellence meets
+            - emphasis [ref=f16e22]: creative innovation.
+          - paragraph [ref=f16e23]: A dedicated Software Engineering student at Kookmin University, passionate about bridging the gap between technical excellence and creative innovation. I'm currently pursuing my Bachelor's degree while building a strong foundation in development and other areas.
+          - generic [ref=f16e24]:
+            - generic [ref=f16e25]:
+              - strong [ref=f16e26]: 2+
+              - generic [ref=f16e27]: Years Experience
+            - generic [ref=f16e28]:
+              - strong [ref=f16e29]: 10+
+              - generic [ref=f16e30]: Projects Completed
+            - generic [ref=f16e31]:
+              - strong [ref=f16e32]: 15+
+              - generic [ref=f16e33]: Skills Acquired
+      - generic [ref=f16e34]:
+        - generic [ref=f16e35]:
+          - paragraph [ref=f16e36]: Background
+          - heading "Education" [level=2] [ref=f16e37]
+        - generic [ref=f16e38]:
+          - article [ref=f16e39]:
+            - generic [ref=f16e41]:
+              - heading "Kookmin University" [level=3] [ref=f16e42]
+              - paragraph [ref=f16e43]: Software Engineering
+            - generic [ref=f16e44]: 2024 – Present
+          - article [ref=f16e45]:
+            - generic [ref=f16e47]:
+              - heading "University of London, World Campus" [level=3] [ref=f16e48]
+              - paragraph [ref=f16e49]: Marketing
+            - generic [ref=f16e50]: 2022 – 2023
+          - article [ref=f16e51]:
+            - generic [ref=f16e53]:
+              - heading "University of Utah, Asia Campus" [level=3] [ref=f16e54]
+              - paragraph [ref=f16e55]: Film and Media Arts
+            - generic [ref=f16e56]: 2020 – 2021
+          - article [ref=f16e57]:
+            - generic [ref=f16e59]:
+              - heading "Kookmin University" [level=3] [ref=f16e60]
+              - paragraph [ref=f16e61]: Chinese
+            - generic [ref=f16e62]: "2019"
+          - article [ref=f16e63]:
+            - generic [ref=f16e65]:
+              - heading "Hanyoung Foreign Language High School" [level=3] [ref=f16e66]
+              - paragraph [ref=f16e67]: Chinese
+            - generic [ref=f16e68]: 2015 – 2018
+      - generic [ref=f16e69]:
+        - generic [ref=f16e70]:
+          - paragraph [ref=f16e71]: In practice
+          - heading "Experience" [level=2] [ref=f16e72]
+        - generic [ref=f16e73]:
+          - article [ref=f16e74]:
+            - generic [ref=f16e77]:
+              - generic [ref=f16e78]:
+                - generic [ref=f16e79]:
+                  - heading "Intern" [level=3] [ref=f16e80]
+                  - paragraph [ref=f16e81]: Seoul National University Hospital (SNUH)
+                - generic [ref=f16e82]: Sep 2025 — Present
+              - paragraph [ref=f16e83]: Seoul, South Korea
+              - list [ref=f16e84]:
+                - listitem [ref=f16e85]: Developing a medical device usability testing AI automation platform.
+                - listitem [ref=f16e86]:
+                  - link "[HFES] RAG-Enhanced LLM System with Decision Tree for Medical Device Usability Engineering Process ↗" [ref=f16e87] [cursor=pointer]:
+                    - /url: https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106
+          - article [ref=f16e88]:
+            - generic [ref=f16e91]:
+              - generic [ref=f16e92]:
+                - generic [ref=f16e93]:
+                  - heading "Webmaster" [level=3] [ref=f16e94]
+                  - paragraph [ref=f16e95]: 삶은여행 (Life is a Journey)
+                - generic [ref=f16e96]: Nov 2022 — Present
+              - paragraph [ref=f16e97]: South Korea · Hybrid
+              - list [ref=f16e98]:
+                - listitem [ref=f16e99]: Built a company website with Django and deployed it on AWS Lightsail.
+                - listitem [ref=f16e100]: Maintain and iterate on the live website, shipping feature additions and performance improvements on a regular cadence.
+          - article [ref=f16e101]:
+            - generic [ref=f16e104]:
+              - generic [ref=f16e105]:
+                - generic [ref=f16e106]:
+                  - heading "Intern" [level=3] [ref=f16e107]
+                  - paragraph [ref=f16e108]: Mirinae, Inc.
+                - generic [ref=f16e109]: Jul 2024 — Aug 2024
+              - paragraph [ref=f16e110]: Seoul, South Korea · On-site
+              - list [ref=f16e111]:
+                - listitem [ref=f16e112]: Completed an internship program in the role of Marketing; recognized with a Certificate of Internship.
+                - listitem [ref=f16e113]: Performed competitor research and translated findings into actionable feature recommendations through direct collaboration with the senior developer.
+      - generic [ref=f16e114]:
+        - generic [ref=f16e115]:
+          - paragraph [ref=f16e116]: The throughline
+          - heading "My Story" [level=2] [ref=f16e117]
+        - generic [ref=f16e118]:
+          - article [ref=f16e119]:
+            - generic [ref=f16e120]: "01"
+            - heading "Creative Beginnings" [level=3] [ref=f16e121]
+            - paragraph [ref=f16e122]: My journey started with a love for web development. I discovered that it was the perfect blend of creativity and logic, allowing me to bring beautiful designs to life through code. This is where I found my true talent and passion, which became a turning point for me.
+          - article [ref=f16e123]:
+            - generic [ref=f16e124]: "02"
+            - heading "Technical Growth" [level=3] [ref=f16e125]
+            - paragraph [ref=f16e126]: Over the years, I've expanded my expertise beyond web technologies, maintaining an insatiable curiosity for emerging tools, frameworks, and industry best practices. This continuous learning mindset keeps me at the forefront of the rapidly evolving tech landscape.
+          - article [ref=f16e127]:
+            - generic [ref=f16e128]: "03"
+            - heading "Current Focus" [level=3] [ref=f16e129]
+            - paragraph [ref=f16e130]: I focus on pursuing diverse projects both independently and collaboratively. As an undergraduate student at Kookmin University majoring in Software Engineering, I strive to balance theoretical knowledge with practical skills, creating meaningful digital experiences.
+      - generic [ref=f16e131]:
+        - generic [ref=f16e132]:
+          - paragraph [ref=f16e133]: Toolkit
+          - heading "Skills & Expertise" [level=2] [ref=f16e134]
+        - generic [ref=f16e135]:
+          - article [ref=f16e136]:
+            - heading "Programming" [level=3] [ref=f16e137]
+            - list [ref=f16e138]:
+              - listitem [ref=f16e139]: HTML, CSS, React
+              - listitem [ref=f16e140]: Java, Python, C++
+              - listitem [ref=f16e141]: JavaScript, SQL
+              - listitem [ref=f16e142]: Android Studio, XML, Etc.
+          - article [ref=f16e143]:
+            - heading "Design & Tools" [level=3] [ref=f16e144]
+            - list [ref=f16e145]:
+              - listitem [ref=f16e146]: Adobe PS, AI, PR, AE
+              - listitem [ref=f16e147]: Figma, Canva
+              - listitem [ref=f16e148]: Final Cut Pro, Motion, Capcut
+              - listitem [ref=f16e149]: Fusion, C4D, 3D Printing
+          - article [ref=f16e150]:
+            - heading "Development Tools" [level=3] [ref=f16e151]
+            - list [ref=f16e152]:
+              - listitem [ref=f16e153]: Git & GitHub, Sourcetree
+              - listitem [ref=f16e154]: VS Code, Eclipse, Xcode
+              - listitem [ref=f16e155]: AWS, Google Cloud, Firebase
+              - listitem [ref=f16e156]: Netlify, GitHub Pages, Railway
+      - generic [ref=f16e157]:
+        - generic [ref=f16e158]:
+          - paragraph [ref=f16e159]: Principles
+          - heading "What Drives Me" [level=2] [ref=f16e160]
+        - generic [ref=f16e161]:
+          - article [ref=f16e162]:
+            - text: 💯
+            - heading "Attention to Detail" [level=3] [ref=f16e163]
+            - paragraph [ref=f16e164]: I believe that the smallest details make the biggest difference. Every pixel, every animation, every interaction is carefully crafted to create a cohesive and polished experience. I always try my best to make my work perfect.
+          - article [ref=f16e165]:
+            - text: 💭
+            - heading "Creative Ideas" [level=3] [ref=f16e166]
+            - paragraph [ref=f16e167]: I start each project whenever I come up with a creative idea. I turn them into real web apps and share them on GitHub Pages. I love sharing my projects with lots of people and feel a great sense of pride and fulfillment through this process.
+          - article [ref=f16e168]:
+            - text: 🤝🏻
+            - heading "Collaboration" [level=3] [ref=f16e169]
+            - paragraph [ref=f16e170]: Great projects are built by great teams. I value open communication, constructive feedback, and collaborative problem-solving. I'm eager to expand my teamwork experience through upcoming collaborative projects.
+      - generic [ref=f16e171]:
+        - generic [ref=f16e172]:
+          - paragraph [ref=f16e173]: Milestones
+          - heading "My Journey" [level=2] [ref=f16e174]
+        - list [ref=f16e175]:
+          - listitem [ref=f16e176]:
+            - generic [ref=f16e177]: 2025.09 – present
+            - generic [ref=f16e178]:
+              - heading "Internship at SNUH" [level=3] [ref=f16e179]
+              - paragraph [ref=f16e180]: Currently an intern at SNUH Institute of Convergence Medicine with Innovative Technology, contributing to developing cutting-edge AI automation platform development.
+          - listitem [ref=f16e181]:
+            - generic [ref=f16e182]: 2025 – present
+            - generic [ref=f16e183]:
+              - heading "Continuous Learning" [level=3] [ref=f16e184]
+              - paragraph [ref=f16e185]: Learning the expertise of my major is so fun and practical. I'm incredibly excited about everything I'll learn ahead and the amazing opportunities that await me in this field.
+          - listitem [ref=f16e186]:
+            - generic [ref=f16e187]: "2025.03"
+            - generic [ref=f16e188]:
+              - heading "Changed Major" [level=3] [ref=f16e189]
+              - paragraph [ref=f16e190]: I changed my major from Chinese Language and Literature to Software Engineering. Currently so happy with my major 😊!
+          - listitem [ref=f16e191]:
+            - generic [ref=f16e192]: "2024.03"
+            - generic [ref=f16e193]:
+              - heading "Back to Kookmin University" [level=3] [ref=f16e194]
+              - paragraph [ref=f16e195]: As the world emerged from the COVID-19 pandemic, I made the pivotal decision to re-enter Kookmin University, this time pursuing what truly ignited my passion and aligned with my newfound sense of purpose.
+          - listitem [ref=f16e196]:
+            - generic [ref=f16e197]: "2023"
+            - generic [ref=f16e198]:
+              - heading "Turning Point" [level=3] [ref=f16e199]
+              - paragraph [ref=f16e200]: Started by self-learning HTML & CSS, which sparked my passion for programming. Developed my first website, SeonyWorld.
+          - listitem [ref=f16e201]:
+            - generic [ref=f16e202]: 2019 – 2023
+            - generic [ref=f16e203]:
+              - heading "Exploration Period" [level=3] [ref=f16e204]
+              - paragraph [ref=f16e205]: A period to find my desired university and discover my true career path. Time spent searching for direction and understanding what I truly wanted to pursue.
+    - generic [ref=f16e206]:
+      - paragraph [ref=f16e207]: Let's create
+      - heading [level=2] [ref=f16e208]:
+        - text: Something amazing,
+        - emphasis [ref=f16e209]: together.
+      - paragraph [ref=f16e210]: I'm always excited to work on new projects and collaborate with creative people. Whether you have a specific project in mind or just want to chat about something, I'd love to hear from you!
+      - generic [ref=f16e211]:
+        - link "Get In Touch ↗" [ref=f16e212] [cursor=pointer]:
+          - /url: /contact/
+        - link "LinkedIn ↗" [ref=f16e213] [cursor=pointer]:
+          - /url: https://linkedin.com/in/jinseon-yoo
+        - link "See My Work ↗" [ref=f16e214] [cursor=pointer]:
+          - /url: /projects/
+    - generic [ref=f16e215]:
+      - link "Jenna Studio®" [ref=f16e216] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f16e217]: © 2026 Jenna Studio
+      - generic [ref=f16e218]:
+        - link "LinkedIn" [ref=f16e219] [cursor=pointer]:
+          - /url: https://linkedin.com/in/jinseon-yoo
+        - link "GitHub" [ref=f16e220] [cursor=pointer]:
+          - /url: https://github.com/jenna-studio
+  - alert [ref=f16e221]

@@ -1,0 +1,97 @@
+- generic [active] [ref=f21e1]:
+  - navigation [ref=f21e2]:
+    - generic [ref=f21e3]:
+      - link "Jenna Studio" [ref=f21e5]:
+        - /url: ../index.html
+      - generic [ref=f21e6]:
+        - link "Home" [ref=f21e7]:
+          - /url: ../index.html
+        - link "About" [ref=f21e8]:
+          - /url: about.html
+        - link "Projects" [ref=f21e9]:
+          - /url: projects.html
+        - link "Portfolio" [ref=f21e10]:
+          - /url: portfolio.html
+        - link "Contact" [ref=f21e11]:
+          - /url: contact.html
+  - main [ref=f21e12]:
+    - generic [ref=f21e13]:
+      - generic [ref=f21e14]:
+        - heading "Let's Work Together" [level=1] [ref=f21e15]
+        - paragraph [ref=f21e16]: Ready to bring your ideas to life? I'd love to hear from you!
+      - generic [ref=f21e17]:
+        - heading "Send Me a Message" [level=2] [ref=f21e19]
+        - generic [ref=f21e21]:
+          - generic [ref=f21e22]:
+            - generic [ref=f21e23]:
+              - generic [ref=f21e24]: First Name *
+              - textbox "First Name *" [ref=f21e25]
+            - generic [ref=f21e26]:
+              - generic [ref=f21e27]: Last Name *
+              - textbox "Last Name *" [ref=f21e28]
+          - generic [ref=f21e29]:
+            - generic [ref=f21e30]: Email Address *
+            - textbox "Email Address *" [ref=f21e31]
+          - generic [ref=f21e32]:
+            - generic [ref=f21e33]: Company/Organization
+            - textbox "Company/Organization" [ref=f21e34]
+          - generic [ref=f21e35]:
+            - generic [ref=f21e36]: Project Type
+            - combobox "Project Type" [ref=f21e37]:
+              - option "Select a project type" [selected]
+              - option "Website Development"
+              - option "Website Design"
+              - option "Web Application"
+              - option "AI Chatbot"
+              - option "AI Automation"
+              - option "Other"
+          - generic [ref=f21e38]:
+            - generic [ref=f21e39]: Project Timeline
+            - combobox "Project Timeline" [ref=f21e40]:
+              - option "Select timeline" [selected]
+              - option "ASAP"
+              - option "1-2 Months"
+              - option "3-6 Months"
+              - option "6+ Months"
+              - option "Flexible"
+          - generic [ref=f21e41]:
+            - generic [ref=f21e42]: Tell Me About Your Project *
+            - textbox "Tell Me About Your Project *" [ref=f21e43]:
+              - /placeholder: Describe your project, goals, and any specific requirements...
+          - button "Send Message Sending..." [ref=f21e44]:
+            - generic [ref=f21e45]: Send Message
+  - contentinfo [ref=f21e46]:
+    - generic [ref=f21e47]:
+      - generic [ref=f21e48]:
+        - generic [ref=f21e49]:
+          - generic [ref=f21e50]: Jenna Studio
+          - paragraph [ref=f21e51]: Crafting delightful web experiences with creativity and technical excellence.
+        - generic [ref=f21e52]:
+          - generic [ref=f21e53]:
+            - heading "Navigation" [level=4] [ref=f21e54]
+            - list [ref=f21e55]:
+              - listitem [ref=f21e56]:
+                - link "Home" [ref=f21e57]:
+                  - /url: ../index.html
+              - listitem [ref=f21e58]:
+                - link "About" [ref=f21e59]:
+                  - /url: about.html
+              - listitem [ref=f21e60]:
+                - link "Projects" [ref=f21e61]:
+                  - /url: projects.html
+              - listitem [ref=f21e62]:
+                - link "Portfolio" [ref=f21e63]:
+                  - /url: portfolio.html
+          - generic [ref=f21e64]:
+            - heading "Connect" [level=4] [ref=f21e65]
+            - list [ref=f21e66]:
+              - listitem [ref=f21e67]:
+                - link "LinkedIn" [ref=f21e68]:
+                  - /url: https://linkedin.com/in/jinseon-yoo
+              - listitem [ref=f21e69]:
+                - link "GitHub" [ref=f21e70]:
+                  - /url: https://github.com/jenna-studio
+              - listitem [ref=f21e71]:
+                - link "Contact" [ref=f21e72]:
+                  - /url: contact.html
+      - paragraph [ref=f21e74]: © 2026 Jenna Studio. All rights reserved.

@@ -1,0 +1,190 @@
+- generic [active] [ref=f11e1]:
+  - navigation [ref=f11e2]:
+    - generic [ref=f11e3]:
+      - link "Jenna Studio" [ref=f11e5]:
+        - /url: "#home"
+      - generic [ref=f11e6]:
+        - link "Home" [ref=f11e7]:
+          - /url: "#home"
+        - link "About" [ref=f11e8]:
+          - /url: "#about"
+        - link "Projects" [ref=f11e9]:
+          - /url: "#projects"
+        - link "Portfolio" [ref=f11e10]:
+          - /url: "#portfolio"
+        - link "Contact" [ref=f11e11]:
+          - /url: "#contact"
+  - main [ref=f11e12]:
+    - generic [ref=f11e13]:
+      - generic [ref=f11e16]:
+        - heading "Welcome to Jenna Studio" [level=1] [ref=f11e17]
+        - paragraph [ref=f11e18]: Creative Next-Gen Developer & Digital Artist
+        - paragraph [ref=f11e19]: Blending creativity and code to design meaningful, human-centered digital experiences. Let's build beautiful things together!
+        - generic [ref=f11e20]:
+          - link "View My Work" [ref=f11e21]:
+            - /url: "#projects"
+          - link "Meet Jenna" [ref=f11e22]:
+            - /url: "#about"
+      - generic [ref=f11e26]:
+        - heading "About Me" [level=2] [ref=f11e27]
+        - generic [ref=f11e30]:
+          - paragraph [ref=f11e31]: Developer
+          - paragraph [ref=f11e32]: Hi! I'm Jenna, a passionate developer who thrives on transforming complex problems into elegant, user-centered solutions. I approach every project with curiosity and precision, combining modern development practices with creative problem-solving to build applications that not only work flawlessly but also delight users at every interaction.
+          - paragraph [ref=f11e33]: Digital Artist
+          - paragraph [ref=f11e34]: As a digital artist, I specialize in crafting immersive visual experiences that tell compelling stories. From UI design and interactive prototypes to 3D modelings, I merge artistic vision with technical expertise to create content that captivates audiences and enhances user engagement.
+          - generic [ref=f11e35]:
+            - generic [ref=f11e36]:
+              - link "View More" [ref=f11e37]:
+                - /url: ./html/about.html
+              - link "LinkedIn" [ref=f11e38]:
+                - /url: https://linkedin.com/in/jinseon-yoo
+            - generic [ref=f11e39]:
+              - generic [ref=f11e40]: HTML5
+              - generic [ref=f11e41]: CSS3
+              - generic [ref=f11e42]: Java
+              - generic [ref=f11e43]: Python
+              - generic [ref=f11e44]: Web Develop
+              - generic [ref=f11e45]: UI/UX Design
+              - generic [ref=f11e46]: 3D Modeling
+      - generic [ref=f11e47]:
+        - heading "Featured Projects" [level=2] [ref=f11e48]
+        - generic [ref=f11e49]:
+          - article [ref=f11e50]:
+            - img "Agent Track Dashboard Screenshot" [ref=f11e52]
+            - generic [ref=f11e53]:
+              - heading "Agent Track Dashboard" [level=3] [ref=f11e54]
+              - paragraph [ref=f11e55]: A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.
+              - generic [ref=f11e56]:
+                - generic [ref=f11e57]: TypeScript
+                - generic [ref=f11e58]: React
+                - generic [ref=f11e59]: MCP
+              - generic [ref=f11e60]:
+                - link "View Docs" [ref=f11e61]:
+                  - /url: https://github.com/jenna-studio/agent-track-dashboard#readme
+                - link "View Code" [ref=f11e62]:
+                  - /url: https://github.com/jenna-studio/agent-track-dashboard
+          - article [ref=f11e63]:
+            - img "CS UniVerse Platform Screenshot" [ref=f11e65]
+            - generic [ref=f11e66]:
+              - heading "CS UniVerse" [level=3] [ref=f11e67]
+              - paragraph [ref=f11e68]: An all-in-one workspace for computer science students to code, study, and collaborate. Features include code editor, browser-based terminal, calendar integration, assignment tracking, and Baekjoon competitive programming integration.
+              - generic [ref=f11e69]:
+                - generic [ref=f11e70]: Next.js
+                - generic [ref=f11e71]: Task Management
+              - generic [ref=f11e72]:
+                - link "Visit Site" [ref=f11e73]:
+                  - /url: https://csuniverse.org
+                - link "Learn More" [ref=f11e74]:
+                  - /url: https://csuniverse.org
+          - article [ref=f11e75]:
+            - img "GLUE medical-device human factors documentation workspace" [ref=f11e77]
+            - generic [ref=f11e78]:
+              - heading "GLUE" [level=3] [ref=f11e79]
+              - paragraph [ref=f11e80]: An AI-assisted workspace for medical-device usability engineering that connects project context, safety evidence, evaluation records, and documentation through an IEC 62366-1 workflow.
+              - generic [ref=f11e81]:
+                - generic [ref=f11e82]: Medical Devices
+                - generic [ref=f11e83]: IEC 62366-1
+                - generic [ref=f11e84]: Human Factors
+              - generic [ref=f11e85]:
+                - link "Visit Site" [ref=f11e86]:
+                  - /url: https://glue-snuh.web.app
+                - link "Start for Free" [ref=f11e87]:
+                  - /url: https://glue-snuh.web.app/signup.html
+        - link "View All Projects" [ref=f11e89]:
+          - /url: html/projects.html
+      - generic [ref=f11e90]:
+        - heading "Portfolio Highlights" [level=2] [ref=f11e91]
+        - region "Portfolio carousel" [ref=f11e92]:
+          - generic [ref=f11e93]:
+            - img "Jenna Studio" [ref=f11e95]
+            - generic [ref=f11e96]:
+              - heading "Web Design" [level=3] [ref=f11e97]
+              - paragraph [ref=f11e98]: Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions.
+              - link "View Details" [ref=f11e100]:
+                - /url: https://jenna-studio.dev
+          - generic [ref=f11e101]:
+            - img "AI Music Generation" [ref=f11e103]
+            - generic [ref=f11e104]:
+              - heading "AI Music Generation" [level=3] [ref=f11e105]
+              - paragraph [ref=f11e106]: Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.
+              - link "View Details" [ref=f11e108]:
+                - /url: html/portfolio.html#ai-music
+          - generic [ref=f11e109]:
+            - img "Apple Shortcuts" [ref=f11e111]
+            - generic [ref=f11e112]:
+              - heading "Apple Shortcuts" [level=3] [ref=f11e113]
+              - paragraph [ref=f11e114]: Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines.
+              - link "View Details" [ref=f11e116]:
+                - /url: html/portfolio.html#apple-shortcuts
+        - generic [ref=f11e117]: drag · scroll · to explore
+        - link "View Full Portfolio" [ref=f11e119]:
+          - /url: html/portfolio.html
+      - generic [ref=f11e120]:
+        - heading "Let's Work Together" [level=2] [ref=f11e121]
+        - generic [ref=f11e123]:
+          - paragraph [ref=f11e124]: Ready to bring your vision to life? I'd love to hear about your project and discuss how we can create something amazing together.
+          - generic [ref=f11e125]:
+            - link "Email Messagedirectly" [ref=f11e126]:
+              - /url: mailto:jenna@jenna-studio.dev
+              - generic [ref=f11e127]:
+                - img "Email icon" [ref=f11e129]
+                - generic [ref=f11e130]:
+                  - heading "Email" [level=4] [ref=f11e131]
+                  - paragraph [ref=f11e132]: Messagedirectly
+            - link "LinkedIn Connect professionally" [ref=f11e133]:
+              - /url: https://www.linkedin.com/in/jinseon-yoo
+              - generic [ref=f11e134]:
+                - img "LinkedIn icon" [ref=f11e136]
+                - generic [ref=f11e137]:
+                  - heading "LinkedIn" [level=4] [ref=f11e138]
+                  - paragraph [ref=f11e139]: Connect professionally
+            - link "GitHub Viewmy code" [ref=f11e140]:
+              - /url: https://github.com/jenna-studio
+              - generic [ref=f11e141]:
+                - img "GitHub icon" [ref=f11e143]
+                - generic [ref=f11e144]:
+                  - heading "GitHub" [level=4] [ref=f11e145]
+                  - paragraph [ref=f11e146]: Viewmy code
+          - generic [ref=f11e147]:
+            - link "Get In Touch" [ref=f11e148]:
+              - /url: html/contact.html
+            - link "LinkedIn" [ref=f11e149]:
+              - /url: https://linkedin.com/in/jinseon-yoo
+            - link "GitHub" [ref=f11e150]:
+              - /url: https://github.com/jenna-studio
+  - contentinfo [ref=f11e151]:
+    - generic [ref=f11e152]:
+      - generic [ref=f11e153]:
+        - generic [ref=f11e154]:
+          - generic [ref=f11e155]: Jenna Studio
+          - paragraph [ref=f11e156]: Crafting delightful web experiences with creativity and technical excellence.
+        - generic [ref=f11e157]:
+          - generic [ref=f11e158]:
+            - heading "Navigation" [level=4] [ref=f11e159]
+            - list [ref=f11e160]:
+              - listitem [ref=f11e161]:
+                - link "Home" [ref=f11e162]:
+                  - /url: "#home"
+              - listitem [ref=f11e163]:
+                - link "About" [ref=f11e164]:
+                  - /url: "#about"
+              - listitem [ref=f11e165]:
+                - link "Projects" [ref=f11e166]:
+                  - /url: "#projects"
+              - listitem [ref=f11e167]:
+                - link "Portfolio" [ref=f11e168]:
+                  - /url: "#portfolio"
+          - generic [ref=f11e169]:
+            - heading "Connect" [level=4] [ref=f11e170]
+            - list [ref=f11e171]:
+              - listitem [ref=f11e172]:
+                - link "LinkedIn" [ref=f11e173]:
+                  - /url: https://linkedin.com/in/jinseon-yoo
+              - listitem [ref=f11e174]:
+                - link "GitHub" [ref=f11e175]:
+                  - /url: https://github.com/jenna-studio
+              - listitem [ref=f11e176]:
+                - link "Contact" [ref=f11e177]:
+                  - /url: html/contact.html
+      - paragraph [ref=f11e179]: © 2026 Jenna Studio. All rights reserved.
+  - paragraph [ref=f11e183]: Loading magical experience...

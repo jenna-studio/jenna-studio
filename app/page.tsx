@@ -1,158 +1,105 @@
-"use client";
+import { SiteFooter } from "./components/SiteFooter";
+import { SiteHeader } from "./components/SiteHeader";
 
-import { useState } from "react";
-
-const projects = [
+const featuredProjects = [
   {
-    number: "01",
-    title: "Agent Track",
-    type: "AI operations platform",
-    description:
-      "A live, legible command center for teams building with AI agents — from task state to code changes and performance signals.",
-    tags: ["TypeScript", "React", "MCP"],
-    link: "https://github.com/yoojinseon/agent-track-dashboard",
-    tone: "coral",
+    number: "01", title: "Agent Track Dashboard", type: "AI agent operations",
+    description: "A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.",
+    tags: ["TypeScript", "React", "MCP"], image: "/media/agent-track-dashboard-thumbnail.png",
+    links: [["View Docs", "https://github.com/jenna-studio/agent-track-dashboard#readme"], ["View Code", "https://github.com/jenna-studio/agent-track-dashboard"]], tone: "coral",
   },
   {
-    number: "02",
-    title: "CS UniVerse",
-    type: "Learning workspace",
-    description:
-      "One focused place for computer-science students to code, plan, study, and keep their momentum together.",
-    tags: ["Next.js", "Product design", "Systems"],
-    link: "https://csuniverse.org",
-    tone: "blue",
+    number: "02", title: "CS UniVerse", type: "Learning workspace",
+    description: "An all-in-one workspace for computer science students to code, study, and collaborate. Features include code editor, browser-based terminal, calendar integration, assignment tracking, and Baekjoon competitive programming integration.",
+    tags: ["Next.js", "Task Management"], image: "/media/csuniverse-thumbnail.png",
+    links: [["Visit Site", "https://csuniverse.org"], ["Learn More", "https://csuniverse.org"]], tone: "blue",
   },
   {
-    number: "03",
-    title: "Connect Mate",
-    type: "Social discovery app",
-    description:
-      "A Korean social platform that makes finding the right people for everyday activities feel simple and safe.",
-    tags: ["Android", "Kakao Maps", "Community"],
-    link: "https://github.com/yoojinseon/ConnectMate",
-    tone: "lime",
+    number: "03", title: "GLUE", type: "Medical-device workflow",
+    description: "An AI-assisted workspace for medical-device usability engineering that connects project context, safety evidence, evaluation records, and documentation through an IEC 62366-1 workflow.",
+    tags: ["Medical Devices", "IEC 62366-1", "Human Factors"], image: "/media/glue-screenshot.png",
+    links: [["Visit Site", "https://glue-snuh.web.app"], ["Start for Free", "https://glue-snuh.web.app/signup.html"]], tone: "lime",
   },
 ];
 
-const capabilities = [
-  ["01", "Product thinking", "Turning a fuzzy opportunity into a product people can actually use."],
-  ["02", "Digital experiences", "Designing interfaces with personality, clarity, and a sense of place."],
-  ["03", "Creative technology", "Using code as a material for thoughtful tools, visual systems, and prototypes."],
+const portfolioHighlights = [
+  { number: "A", title: "Web Design", description: "Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions.", image: "/media/og-thumbnail.png", href: "/portfolios/", tone: "peach" },
+  { number: "B", title: "AI Music Generation", description: "Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.", image: "/media/portfolio-thumbnails/jenna-studio-music-thumbnail.jpeg", href: "/portfolios/#ai-music", tone: "violet" },
+  { number: "C", title: "Apple Shortcuts", description: "Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines.", image: "/media/shortcuts-thumbnail.png", href: "/portfolios/#apple-shortcuts", tone: "mint" },
 ];
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const closeMenu = () => setMenuOpen(false);
-
   return (
     <main>
-      <header className="site-header">
-        <a className="wordmark" href="#top" onClick={closeMenu} aria-label="Jenna Studio home">
-          JENNA<span>®</span>
-        </a>
-        <button
-          className="menu-toggle"
-          type="button"
-          aria-expanded={menuOpen}
-          aria-controls="site-navigation"
-          onClick={() => setMenuOpen((value) => !value)}
-        >
-          <span>{menuOpen ? "Close" : "Menu"}</span>
-          <i aria-hidden="true" />
-        </button>
-        <nav id="site-navigation" className={menuOpen ? "nav-open" : ""} aria-label="Main navigation">
-          <a href="#work" onClick={closeMenu}>Work</a>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
-        </nav>
-      </header>
-
+      <SiteHeader />
       <section className="hero" id="top">
-        <p className="eyebrow">Independent designer &amp; developer · Seoul / everywhere</p>
+        <p className="eyebrow">Creative Next-Gen Developer &amp; Digital Artist</p>
         <div className="hero-grid">
-          <h1>Digital ideas<br /><em>with a pulse.</em></h1>
+          <h1>Welcome to<br /><em>Jenna Studio.</em></h1>
           <div className="hero-note">
-            <p>I make expressive, useful digital products where people, technology, and a little wonder meet.</p>
-            <a className="text-link" href="#work">See selected work <b>↘</b></a>
+            <p>Blending creativity and code to design meaningful, human-centered digital experiences. Let&apos;s build beautiful things together!</p>
+            <div className="hero-links"><a className="text-link" href="/projects/">View My Work <b>↗</b></a><a className="text-link" href="/about/">Meet Jenna <b>↗</b></a></div>
           </div>
         </div>
-        <div className="orbital-art" aria-hidden="true">
-          <span className="orbit orbit-one" />
-          <span className="orbit orbit-two" />
-          <span className="star star-one">✦</span>
-          <span className="star star-two">✳</span>
-          <span className="orb-center">J</span>
-          <span className="orbit-label">CURIOUS<br />BY DESIGN</span>
-        </div>
+        <div className="orbital-art" aria-hidden="true"><span className="orbit orbit-one" /><span className="orbit orbit-two" /><span className="star star-one">✦</span><span className="star star-two">✳</span><span className="orb-center">J</span><span className="orbit-label">CURIOUS<br />BY DESIGN</span></div>
       </section>
 
       <section className="statement" id="about">
-        <p className="section-kicker">A small studio with a wide view</p>
+        <p className="section-kicker">About Me</p>
         <div>
-          <h2>Thoughtful systems<br />for the way <em>we live now.</em></h2>
-          <p>I’m Jenna — a developer and digital artist drawn to work that is both clear and alive. My practice moves between product design, creative code, and the small interactions that make technology feel more human.</p>
+          <h2>Developer &amp;<br /><em>digital artist.</em></h2>
+          <div className="home-about-copy">
+            <p><b>Developer</b><br />Hi! I&apos;m Jenna, a passionate developer who thrives on transforming complex problems into elegant, user-centered solutions. I approach every project with curiosity and precision, combining modern development practices with creative problem-solving to build applications that not only work flawlessly but also delight users at every interaction.</p>
+            <p><b>Digital Artist</b><br />As a digital artist, I specialize in crafting immersive visual experiences that tell compelling stories. From UI design and interactive prototypes to 3D modelings, I merge artistic vision with technical expertise to create content that captivates audiences and enhances user engagement.</p>
+            <div className="button-row"><a href="/about/">View More ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+          </div>
         </div>
       </section>
 
-      <section className="capabilities" aria-label="Capabilities">
-        {capabilities.map(([number, title, description]) => (
-          <article key={number}>
-            <span>{number}</span>
-            <h3>{title}</h3>
-            <p>{description}</p>
-          </article>
-        ))}
+      <section className="home-skills" aria-label="Skills">
+        {["HTML5", "CSS3", "Java", "Python", "Web Develop", "UI/UX Design", "3D Modeling"].map((skill, index) => <span key={skill}><b>0{index + 1}</b>{skill}</span>)}
       </section>
 
-      <section className="work" id="work">
-        <div className="section-heading">
-          <p className="section-kicker">Selected work</p>
-          <h2>Built to be<br /><em>felt &amp; used.</em></h2>
-        </div>
+      <section className="work" id="projects">
+        <div className="section-heading"><p className="section-kicker">Featured Projects</p><h2>Built to be<br /><em>felt &amp; used.</em></h2></div>
         <div className="project-list">
-          {projects.map((project) => (
-            <a className={`project project-${project.tone}`} href={project.link} target="_blank" rel="noreferrer" key={project.title}>
+          {featuredProjects.map((project) => (
+            <article className={`project project-${project.tone}`} key={project.title}>
               <div className="project-meta"><span>{project.number}</span><span>{project.type}</span></div>
-              <div className="project-visual" aria-hidden="true">
-                <span className="project-mark">{project.number}</span>
-                <span className="project-shape" />
-              </div>
-              <div className="project-copy">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-              </div>
-              <span className="project-arrow" aria-label={`Open ${project.title}`}>↗</span>
+              <div className="project-visual"><img src={project.image} alt={`${project.title} screenshot`} /></div>
+              <div className="project-copy"><h3>{project.title}</h3><p>{project.description}</p><ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul><div className="project-links">{project.links.map(([label, href]) => <a href={href} target="_blank" rel="noreferrer" key={label}>{label} ↗</a>)}</div></div>
+              <span className="project-arrow" aria-hidden="true">↗</span>
+            </article>
+          ))}
+        </div>
+        <div className="section-end-link"><a href="/projects/">View All Projects ↗</a></div>
+      </section>
+
+      <section className="portfolios" id="portfolios">
+        <div className="portfolio-heading"><p className="section-kicker">Portfolio Highlights</p><h2>Creative work,<br /><em>many forms.</em></h2></div>
+        <div className="portfolio-grid">
+          {portfolioHighlights.map((portfolio) => (
+            <a className={`portfolio-card portfolio-${portfolio.tone}`} href={portfolio.href} key={portfolio.title}>
+              <div className="portfolio-art"><img src={portfolio.image} alt="" aria-hidden="true" /></div>
+              <div className="portfolio-copy"><span>{portfolio.number}</span><h3>{portfolio.title}</h3><p>{portfolio.description}</p><b>View Details ↗</b></div>
             </a>
           ))}
         </div>
-      </section>
-
-      <section className="process">
-        <p className="section-kicker">How I work</p>
-        <div className="process-content">
-          <h2>Start with the<br />right <em>question.</em></h2>
-          <ol>
-            <li><span>01</span><div><h3>Find the signal</h3><p>Listen closely, understand the context, and identify what matters.</p></div></li>
-            <li><span>02</span><div><h3>Make it tangible</h3><p>Prototype ideas early so the conversation has something real to orbit.</p></div></li>
-            <li><span>03</span><div><h3>Refine the feeling</h3><p>Build with care until the experience feels as good as it works.</p></div></li>
-          </ol>
-        </div>
+        <div className="section-end-link"><span>to explore</span><a href="/portfolios/">View Full Portfolio ↗</a></div>
       </section>
 
       <section className="contact" id="contact">
-        <p className="section-kicker">Have a good idea?</p>
-        <h2>Let’s give it<br /><em>some gravity.</em></h2>
-        <a className="contact-button" href="mailto:hello@jenna-studio.dev">Start a conversation <span>↗</span></a>
+        <p className="section-kicker">Let&apos;s Work Together</p>
+        <h2>Bring your vision<br /><em>to life.</em></h2>
+        <p className="contact-description">Ready to bring your vision to life? I&apos;d love to hear about your project and discuss how we can create something amazing together.</p>
+        <div className="contact-options">
+          <a href="mailto:jenna@jenna-studio.dev"><img src="/media/email-pixel.png" alt="" /><span><b>Email</b>Message directly</span></a>
+          <a href="https://www.linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer"><img src="/media/linkedin-pixel.png" alt="" /><span><b>LinkedIn</b>Connect professionally</span></a>
+          <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer"><img src="/media/github-pixel.png" alt="" /><span><b>GitHub</b>View my code</span></a>
+        </div>
+        <div className="button-row"><a href="/contact/">Get In Touch ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">GitHub ↗</a></div>
       </section>
-
-      <footer>
-        <a className="wordmark" href="#top">JENNA<span>®</span></a>
-        <p>© 2026 Jenna Studio</p>
-        <div><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/yoojinseon" target="_blank" rel="noreferrer">GitHub</a></div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

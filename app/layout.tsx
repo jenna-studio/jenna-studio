@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./content-pages.css";
 
 export const metadata: Metadata = {
   title: "Jenna Studio — Digital ideas with a pulse",
   description: "The independent practice of Jenna: expressive digital products, creative technology, and thoughtful systems.",
-  icons: { icon: "/favicon.svg" },
+  metadataBase: new URL("https://jenna-studio.dev"),
+  icons: { icon: "/bunny-friend.svg" },
+  openGraph: { title: "Jenna Studio", description: "Digital ideas with a pulse.", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "Jenna Studio", description: "Digital ideas with a pulse.", images: ["/og.png"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -1,0 +1,345 @@
+- generic [active] [ref=f2e1]:
+  - navigation [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "Jenna Studio" [ref=f2e5]:
+        - /url: ../index.html
+      - generic [ref=f2e6]:
+        - link "Home" [ref=f2e7]:
+          - /url: ../index.html
+        - link "About" [ref=f2e8]:
+          - /url: about.html
+        - link "Projects" [ref=f2e9]:
+          - /url: projects.html
+        - link "Portfolio" [ref=f2e10]:
+          - /url: portfolio.html
+        - link "Contact" [ref=f2e11]:
+          - /url: contact.html
+  - main [ref=f2e12]:
+    - generic [ref=f2e13]:
+      - generic [ref=f2e14]:
+        - heading "My Projects" [level=1] [ref=f2e15]
+        - paragraph [ref=f2e16]: A collection of my latest work and creative experiments
+      - generic [ref=f2e18]:
+        - button "All Projects" [ref=f2e19]
+        - button "Web Apps" [ref=f2e20]
+        - button "Websites" [ref=f2e21]
+        - button "Mobile Apps" [ref=f2e22]
+        - button "Tools" [ref=f2e23]
+        - button "Other" [ref=f2e24]
+      - generic [ref=f2e25]:
+        - heading "Featured Project" [level=2] [ref=f2e26]
+        - generic [ref=f2e27]:
+          - heading "GLUE - Guideline-based Usability Engineering" [level=3] [ref=f2e28]
+          - generic [ref=f2e29]:
+            - generic [ref=f2e30]:
+              - generic [ref=f2e31]:
+                - img "GLUE medical-device human factors documentation workspace" [ref=f2e32]
+                - generic [ref=f2e33]:
+                  - generic [ref=f2e34]: Featured
+                  - generic [ref=f2e35]: New
+              - generic [ref=f2e36]:
+                - generic [ref=f2e37]: Medical Devices
+                - generic [ref=f2e38]: IEC 62366-1
+                - generic [ref=f2e39]: Human Factors
+                - generic [ref=f2e40]: AI-assisted
+                - generic [ref=f2e41]: Documentation
+                - generic [ref=f2e42]: Workflow
+            - generic [ref=f2e43]:
+              - paragraph [ref=f2e44]: GLUE turns the fragmented work of medical-device usability engineering into one connected, evidence-led workflow. From the first device context and use specification through UI safety characteristics, hazards, scenarios, formative and summative evaluation, each step carries its context forward. AI helps teams shape and refine their documents while GLUE keeps the supporting rationale visible, reviewable, and ready to bring together in a final 5.10 usability engineering file and Word deliverable.
+              - generic [ref=f2e45]:
+                - link "Visit Site" [ref=f2e46]:
+                  - /url: https://glue-snuh.web.app
+                - link "Start for Free" [ref=f2e47]:
+                  - /url: https://glue-snuh.web.app/signup.html
+      - generic [ref=f2e48]:
+        - heading "All Projects" [level=2] [ref=f2e49]
+        - generic [ref=f2e50]:
+          - article [ref=f2e51]:
+            - img "GLUE medical-device human factors documentation workspace" [ref=f2e53]
+            - generic [ref=f2e55]:
+              - heading "GLUE" [level=3] [ref=f2e56]
+              - paragraph [ref=f2e57]: An AI-assisted workspace for medical-device human factors engineering. It brings together use specifications, UI safety characteristics, hazard analysis, use scenarios, and evaluation documentation in an IEC 62366-1-aligned workflow.
+              - generic [ref=f2e58]:
+                - generic [ref=f2e59]:
+                  - generic [ref=f2e60]: Medical Devices
+                  - generic [ref=f2e61]: IEC 62366-1
+                - generic [ref=f2e62]:
+                  - generic [ref=f2e63]:
+                    - generic [ref=f2e64]: "Type:"
+                    - generic [ref=f2e65]: Web Application
+                  - generic [ref=f2e66]:
+                    - generic [ref=f2e67]: "Year:"
+                    - generic [ref=f2e68]: "2026"
+                - generic [ref=f2e69]:
+                  - link "Visit Site" [ref=f2e70]:
+                    - /url: https://glue-snuh.web.app
+                  - link "Start for Free" [ref=f2e71]:
+                    - /url: https://glue-snuh.web.app/signup.html
+          - article [ref=f2e72]:
+            - img "CS UniVerse Platform Screenshot" [ref=f2e74]
+            - generic [ref=f2e76]:
+              - heading "CS UniVerse" [level=3] [ref=f2e77]
+              - paragraph [ref=f2e78]: An all-in-one workspace for computer science students to code, study, and collaborate. Features Monaco code editor, terminal, calendar integration, assignment tracking, progress analytics, and Baekjoon competitive programming integration.
+              - generic [ref=f2e79]:
+                - generic [ref=f2e80]:
+                  - generic [ref=f2e81]: Next.js
+                  - generic [ref=f2e82]: React
+                - generic [ref=f2e83]:
+                  - generic [ref=f2e84]:
+                    - generic [ref=f2e85]: "Type:"
+                    - generic [ref=f2e86]: Web Application
+                  - generic [ref=f2e87]:
+                    - generic [ref=f2e88]: "Year:"
+                    - generic [ref=f2e89]: "2026"
+                - generic [ref=f2e90]:
+                  - link "Visit Site" [ref=f2e91]:
+                    - /url: https://csuniverse.org
+                  - link "Learn More" [ref=f2e92]:
+                    - /url: https://csuniverse.org
+          - article [ref=f2e93]:
+            - img "Agent-Track-Dashboard-Thumbnail" [ref=f2e95]
+            - generic [ref=f2e97]:
+              - heading "Agent Track Dashboard" [level=3] [ref=f2e98]
+              - paragraph [ref=f2e99]: A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.
+              - generic [ref=f2e100]:
+                - generic [ref=f2e101]:
+                  - generic [ref=f2e102]: TypeScript
+                  - generic [ref=f2e103]: React
+                  - generic [ref=f2e104]: MCP
+                - generic [ref=f2e105]:
+                  - generic [ref=f2e106]:
+                    - generic [ref=f2e107]: "Type:"
+                    - generic [ref=f2e108]: MCP Tool
+                  - generic [ref=f2e109]:
+                    - generic [ref=f2e110]: "Year:"
+                    - generic [ref=f2e111]: "2026"
+                - generic [ref=f2e112]:
+                  - link "View Docs" [ref=f2e113]:
+                    - /url: https://github.com/jenna-studio/agent-track-dashboard#readme
+                  - link "Code" [ref=f2e114]:
+                    - /url: https://github.com/jenna-studio/agent-track-dashboard
+          - article [ref=f2e115]:
+            - img "Connect-Mate-Thumbnail" [ref=f2e117]
+            - generic [ref=f2e119]:
+              - heading "Connect Mate" [level=3] [ref=f2e120]
+              - paragraph [ref=f2e121]: A Korean social platform for discovering activity companions. Features map-based matching via Kakao Maps, activity creation across dining, fitness, and hobby categories, real-time group chat, and friend management with mutual ratings.
+              - generic [ref=f2e122]:
+                - generic [ref=f2e123]:
+                  - generic [ref=f2e124]: Android Studio
+                  - generic [ref=f2e125]: XML
+                  - generic [ref=f2e126]: Java
+                - generic [ref=f2e127]:
+                  - generic [ref=f2e128]:
+                    - generic [ref=f2e129]: "Type:"
+                    - generic [ref=f2e130]: Android Application
+                  - generic [ref=f2e131]:
+                    - generic [ref=f2e132]: "Year:"
+                    - generic [ref=f2e133]: "2025"
+                - generic [ref=f2e134]:
+                  - link "Play Store" [ref=f2e135]:
+                    - /url: https://play.google.com/store/apps/details?id=app.connectmate&hl=en-US&ah=6VRx7YfYYsD3bb5iCsjCRK7JuaM
+                  - link "Code" [ref=f2e136]:
+                    - /url: https://github.com/jenna-studio/ConnectMate
+          - article [ref=f2e137]:
+            - img "Photo Album Maker Screenshot" [ref=f2e139]
+            - generic [ref=f2e141]:
+              - heading "Photo Album Maker" [level=3] [ref=f2e142]
+              - paragraph [ref=f2e143]: A web app for creating digital photo albums. Features intelligent photo organization by date, book-style interface, and export options including PDF, JPEG, and interactive HTML albums. 100% client-side processing ensures privacy. Select and view favorite photos separately.
+              - generic [ref=f2e144]:
+                - generic [ref=f2e145]:
+                  - generic [ref=f2e146]: React
+                  - generic [ref=f2e147]: TypeScript
+                  - generic [ref=f2e148]: Vite
+                - generic [ref=f2e149]:
+                  - generic [ref=f2e150]:
+                    - generic [ref=f2e151]: "Type:"
+                    - generic [ref=f2e152]: Web Application
+                  - generic [ref=f2e153]:
+                    - generic [ref=f2e154]: "Year:"
+                    - generic [ref=f2e155]: "2025"
+                - generic [ref=f2e156]:
+                  - link "Live Demo" [ref=f2e157]:
+                    - /url: https://jenna-studio.github.io/photo-album-maker
+                  - link "Code" [ref=f2e158]:
+                    - /url: https://github.com/jenna-studio/photo-album-maker
+          - article [ref=f2e159]:
+            - img "Cotton Candy Dodge Game Screenshot" [ref=f2e161]
+            - generic [ref=f2e163]:
+              - heading "Cotton Candy Dodge" [level=3] [ref=f2e164]
+              - paragraph [ref=f2e165]: A browser-based arcade survival game where players navigate through falling obstacles while collecting experience points and leveling up. Features dynamic difficulty levels, shield power-ups, sound effects, and a leaderboard system with vibrant pixel art aesthetic.
+              - generic [ref=f2e166]:
+                - generic [ref=f2e167]:
+                  - generic [ref=f2e168]: HTML5
+                  - generic [ref=f2e169]: CSS3
+                  - generic [ref=f2e170]: JavaScript
+                - generic [ref=f2e171]:
+                  - generic [ref=f2e172]:
+                    - generic [ref=f2e173]: "Type:"
+                    - generic [ref=f2e174]: Retro Game
+                  - generic [ref=f2e175]:
+                    - generic [ref=f2e176]: "Year:"
+                    - generic [ref=f2e177]: "2025"
+                - generic [ref=f2e178]:
+                  - link "Play Game" [ref=f2e179]:
+                    - /url: https://jenna-studio.github.io/cotton-candy-dodge
+                  - link "Code" [ref=f2e180]:
+                    - /url: https://github.com/jenna-studio/cotton-candy-dodge
+          - article [ref=f2e181]:
+            - img "Cotton Candy Editor Screenshot" [ref=f2e183]
+            - generic [ref=f2e185]:
+              - heading "Cotton Candy Editor" [level=3] [ref=f2e186]
+              - paragraph [ref=f2e187]: A web-based code editor built with CodeMirror 6 featuring multiple themes. Supports 12+ languages with smart features like auto-completion, syntax highlighting, code copying, and saving. Easy website embedding. Perfect for quick code testing and sharing.
+              - generic [ref=f2e188]:
+                - generic [ref=f2e189]:
+                  - generic [ref=f2e190]: JavaScript
+                  - generic [ref=f2e191]: CSS3
+                  - generic [ref=f2e192]: HTML5
+                - generic [ref=f2e193]:
+                  - generic [ref=f2e194]:
+                    - generic [ref=f2e195]: "Type:"
+                    - generic [ref=f2e196]: Web Code Editor
+                  - generic [ref=f2e197]:
+                    - generic [ref=f2e198]: "Year:"
+                    - generic [ref=f2e199]: "2025"
+                - generic [ref=f2e200]:
+                  - link "Live Website" [ref=f2e201]:
+                    - /url: https://jenna-studio.github.io/cotton-candy-editor
+                  - link "Code" [ref=f2e202]:
+                    - /url: https://github.com/jenna-studio/cotton-candy-editor
+          - article [ref=f2e203]:
+            - img "Terminal Snake Game Screenshot" [ref=f2e205]
+            - generic [ref=f2e207]:
+              - heading "Terminal Snake Game" [level=3] [ref=f2e208]
+              - paragraph [ref=f2e209]: A terminal-based Snake game implemented in C++ using ncurses library. Features stage-based gameplay with 4 unique stages. Includes growth and poison items, teleportation gates, and mission-based progression with scoring and ranking system.
+              - generic [ref=f2e210]:
+                - generic [ref=f2e211]:
+                  - generic [ref=f2e212]: C++
+                  - generic [ref=f2e213]: ncurses
+                  - generic [ref=f2e214]: Terminal
+                - generic [ref=f2e215]:
+                  - generic [ref=f2e216]:
+                    - generic [ref=f2e217]: "Type:"
+                    - generic [ref=f2e218]: Console Game
+                  - generic [ref=f2e219]:
+                    - generic [ref=f2e220]: "Year:"
+                    - generic [ref=f2e221]: "2025"
+                - generic [ref=f2e222]:
+                  - link "How to Play" [ref=f2e223]:
+                    - /url: https://github.com/jenna-studio/terminal-snake-game#how-to-play
+                  - link "Code" [ref=f2e224]:
+                    - /url: https://github.com/jenna-studio/terminal-snake-game
+          - article [ref=f2e225]:
+            - img "Alfred Color to Hex Workflow Screenshot" [ref=f2e227]
+            - generic [ref=f2e229]:
+              - heading "Alfred - Color to Hex" [level=3] [ref=f2e230]
+              - paragraph [ref=f2e231]: A simple Alfred workflow that allows you to search CSS color names and copy their HEX values with a circular color preview icon. Perfect tool for designers and developers who need quick access to color codes with visual previews to aid selection. Supports clipboard copying.
+              - generic [ref=f2e232]:
+                - generic [ref=f2e233]:
+                  - generic [ref=f2e234]: Python
+                  - generic [ref=f2e235]: Alfred
+                  - generic [ref=f2e236]: CSS Colors
+                - generic [ref=f2e237]:
+                  - generic [ref=f2e238]:
+                    - generic [ref=f2e239]: "Type:"
+                    - generic [ref=f2e240]: Productivity Tool
+                  - generic [ref=f2e241]:
+                    - generic [ref=f2e242]: "Year:"
+                    - generic [ref=f2e243]: "2025"
+                - generic [ref=f2e244]:
+                  - link "Installation" [ref=f2e245]:
+                    - /url: https://github.com/jenna-studio/alfred-colortohex#installation
+                  - link "Code" [ref=f2e246]:
+                    - /url: https://github.com/jenna-studio/alfred-colortohex
+          - article [ref=f2e247]:
+            - img "Chrome Theme Collection Screenshot" [ref=f2e249]
+            - generic [ref=f2e251]:
+              - heading "Google Chrome Theme" [level=3] [ref=f2e252]
+              - paragraph [ref=f2e253]: A collection of custom Google Chrome browser themes with stunning designs and vibrant color palettes. Features multiple unique themes crafted precisely. Fully compatible with latest Chrome versions for aesthetic browsing experience and adding a personal touch.
+              - generic [ref=f2e254]:
+                - generic [ref=f2e255]:
+                  - generic [ref=f2e256]: Chrome Extension
+                  - generic [ref=f2e257]: JSON
+                  - generic [ref=f2e258]: UI
+                - generic [ref=f2e259]:
+                  - generic [ref=f2e260]:
+                    - generic [ref=f2e261]: "Type:"
+                    - generic [ref=f2e262]: Chrome Extension
+                  - generic [ref=f2e263]:
+                    - generic [ref=f2e264]: "Year:"
+                    - generic [ref=f2e265]: "2024"
+                - generic [ref=f2e266]:
+                  - link "Apply This" [ref=f2e267]:
+                    - /url: https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb
+                  - link "View All" [ref=f2e268]:
+                    - /url: https://github.com/jenna-studio/chrome-theme-extension
+          - article [ref=f2e269]:
+            - img "Monaco Editor Web Screenshot" [ref=f2e271]
+            - generic [ref=f2e273]:
+              - heading "Monaco Editor Web" [level=3] [ref=f2e274]
+              - paragraph [ref=f2e275]: A web-based code editor with a beautiful pastel-themed interface. Features 18+ programming languages, syntax highlighting, auto-language detection, code formatting, and auto-complete. Glass-morphism UI with smooth animations for an aesthetic coding experience.
+              - generic [ref=f2e276]:
+                - generic [ref=f2e277]:
+                  - generic [ref=f2e278]: Code Editor
+                  - generic [ref=f2e279]: JS
+                  - generic [ref=f2e280]: HTML
+                  - generic [ref=f2e281]: CSS
+                - generic [ref=f2e282]:
+                  - generic [ref=f2e283]:
+                    - generic [ref=f2e284]: "Type:"
+                    - generic [ref=f2e285]: Web Application
+                  - generic [ref=f2e286]:
+                    - generic [ref=f2e287]: "Year:"
+                    - generic [ref=f2e288]: "2025"
+                - generic [ref=f2e289]:
+                  - link "Live Website" [ref=f2e290]:
+                    - /url: https://jenna-studio.github.io/monaco-editor-web
+                  - link "Code" [ref=f2e291]:
+                    - /url: https://github.com/jenna-studio/monaco-editor-web
+        - button "Load More Projects Loading..." [ref=f2e293]:
+          - generic [ref=f2e294]: Load More Projects
+      - region "GitHub contribution activity" [ref=f2e295]:
+        - heading "Contribution Activity" [level=2] [ref=f2e296]
+        - generic [ref=f2e297]:
+          - generic [ref=f2e298]:
+            - generic [ref=f2e299]:
+              - generic [ref=f2e300]: 
+              - text: GitHub
+              - generic [ref=f2e301]: "@jenna-studio"
+            - link "View profile →" [ref=f2e302]:
+              - /url: https://github.com/jenna-studio
+          - generic [ref=f2e303]: Loading contributions…
+  - contentinfo [ref=f2e305]:
+    - generic [ref=f2e306]:
+      - generic [ref=f2e307]:
+        - generic [ref=f2e308]:
+          - generic [ref=f2e309]: Jenna Studio
+          - paragraph [ref=f2e310]: Crafting delightful web experiences with creativity and technical excellence.
+        - generic [ref=f2e311]:
+          - generic [ref=f2e312]:
+            - heading "Navigation" [level=4] [ref=f2e313]
+            - list [ref=f2e314]:
+              - listitem [ref=f2e315]:
+                - link "Home" [ref=f2e316]:
+                  - /url: ../index.html
+              - listitem [ref=f2e317]:
+                - link "About" [ref=f2e318]:
+                  - /url: about.html
+              - listitem [ref=f2e319]:
+                - link "Projects" [ref=f2e320]:
+                  - /url: projects.html
+              - listitem [ref=f2e321]:
+                - link "Portfolio" [ref=f2e322]:
+                  - /url: portfolio.html
+          - generic [ref=f2e323]:
+            - heading "Connect" [level=4] [ref=f2e324]
+            - list [ref=f2e325]:
+              - listitem [ref=f2e326]:
+                - link "LinkedIn" [ref=f2e327]:
+                  - /url: https://linkedin.com/in/jinseon-yoo
+              - listitem [ref=f2e328]:
+                - link "GitHub" [ref=f2e329]:
+                  - /url: https://github.com/jenna-studio
+              - listitem [ref=f2e330]:
+                - link "Contact" [ref=f2e331]:
+                  - /url: contact.html
+      - paragraph [ref=f2e333]: © 2026 Jenna Studio. All rights reserved.

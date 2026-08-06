@@ -1,0 +1,8 @@
+[     513ms] [LOG] 🎨 Jenna Studio initialized successfully! @ https://jenna-studio.dev/js/main.js?v=custom-cursor-overlay-v3:924
+[     513ms] [LOG] Found education logos: 5 @ https://jenna-studio.dev/html/about.html:569
+[     513ms] [LOG] Processing logo 0 with src: https://jenna-studio.dev/img/kookmin-logo.webp @ https://jenna-studio.dev/html/about.html:582
+[     514ms] [LOG] Processing logo 1 with src: https://jenna-studio.dev/img/uol-logo.png @ https://jenna-studio.dev/html/about.html:582
+[     514ms] [LOG] Processing logo 2 with src: https://jenna-studio.dev/img/uou-logo.png @ https://jenna-studio.dev/html/about.html:582
+[     514ms] [LOG] Processing logo 3 with src: https://jenna-studio.dev/img/kookmin-logo.webp @ https://jenna-studio.dev/html/about.html:582
+[     514ms] [LOG] Processing logo 4 with src: https://jenna-studio.dev/img/hyfl-logo.png @ https://jenna-studio.dev/html/about.html:582
+[    8514ms] [LOG] Final check - ensuring all logos are visible @ https://jenna-studio.dev/html/about.html:652

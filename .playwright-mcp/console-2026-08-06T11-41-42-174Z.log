@@ -1,0 +1,44 @@
+[     123ms] [LOG] 🎨 Jenna Studio initialized successfully! @ https://jenna-studio.dev/js/main.js?v=custom-cursor-overlay-v3:924
+[     127ms] [LOG] Avatar: 36% loaded @ https://jenna-studio.dev/:649
+[     127ms] [LOG] Avatar: 42% loaded @ https://jenna-studio.dev/:649
+[     127ms] [LOG] Avatar: 54% loaded @ https://jenna-studio.dev/:649
+[     128ms] [LOG] pink-flower.fbx: 20.244246547029594% loaded @ https://jenna-studio.dev/:710
+[     128ms] [LOG] yellow-flower.fbx: 11.042613993781341% loaded @ https://jenna-studio.dev/:710
+[     128ms] [LOG] skyblue-flower.fbx: 20.244792321932458% loaded @ https://jenna-studio.dev/:710
+[     128ms] [LOG] skyblue-flower.fbx: 23.925663653192906% loaded @ https://jenna-studio.dev/:710
+[     129ms] [LOG] skyblue-flower.fbx: 25.766099318823127% loaded @ https://jenna-studio.dev/:710
+[     129ms] [LOG] skyblue-flower.fbx: 29.446970650083575% loaded @ https://jenna-studio.dev/:710
+[     129ms] [LOG] purple-flower.fbx: 33.12784198134402% loaded @ https://jenna-studio.dev/:710
+[     129ms] [LOG] purple-flower.fbx: 38.64914897823469% loaded @ https://jenna-studio.dev/:710
+[     130ms] [LOG] green-flower.fbx: 38.64914897823469% loaded @ https://jenna-studio.dev/:710
+[     130ms] [LOG] Avatar: 71% loaded @ https://jenna-studio.dev/:649
+[     130ms] [LOG] skyblue-flower.fbx: 38.64914897823469% loaded @ https://jenna-studio.dev/:710
+[     131ms] [LOG] pink-flower.fbx: 38.64810704432922% loaded @ https://jenna-studio.dev/:710
+[     131ms] [LOG] yellow-flower.fbx: 20.244792321932458% loaded @ https://jenna-studio.dev/:710
+[     134ms] [LOG] Avatar: 101% loaded @ https://jenna-studio.dev/:649
+[     135ms] [LOG] purple-flower.fbx: 58.89394130016715% loaded @ https://jenna-studio.dev/:710
+[     135ms] [LOG] purple-flower.fbx: 86.5004762846205% loaded @ https://jenna-studio.dev/:710
+[     136ms] [LOG] purple-flower.fbx: 88.34091195025073% loaded @ https://jenna-studio.dev/:710
+[     136ms] [LOG] green-flower.fbx: 58.89394130016715% loaded @ https://jenna-studio.dev/:710
+[     136ms] [LOG] green-flower.fbx: 97.54309027840185% loaded @ https://jenna-studio.dev/:710
+[     137ms] [LOG] green-flower.fbx: 100% loaded @ https://jenna-studio.dev/:710
+[     137ms] [LOG] skyblue-flower.fbx: 58.89394130016715% loaded @ https://jenna-studio.dev/:710
+[     137ms] [LOG] skyblue-flower.fbx: 97.54309027840185% loaded @ https://jenna-studio.dev/:710
+[     137ms] [LOG] skyblue-flower.fbx: 100% loaded @ https://jenna-studio.dev/:710
+[     138ms] [LOG] pink-flower.fbx: 58.89235359135881% loaded @ https://jenna-studio.dev/:710
+[     138ms] [LOG] pink-flower.fbx: 99.380846685418% loaded @ https://jenna-studio.dev/:710
+[     138ms] [LOG] pink-flower.fbx: 100% loaded @ https://jenna-studio.dev/:710
+[     146ms] [LOG] yellow-flower.fbx: 58.89394130016715% loaded @ https://jenna-studio.dev/:710
+[     146ms] [LOG] yellow-flower.fbx: 80.97916928772983% loaded @ https://jenna-studio.dev/:710
+[     146ms] [LOG] yellow-flower.fbx: 88.34091195025073% loaded @ https://jenna-studio.dev/:710
+[     147ms] [LOG] yellow-flower.fbx: 92.02178328151118% loaded @ https://jenna-studio.dev/:710
+[     147ms] [LOG] yellow-flower.fbx: 93.8622189471414% loaded @ https://jenna-studio.dev/:710
+[     148ms] [LOG] purple-flower.fbx: 100% loaded @ https://jenna-studio.dev/:710
+[     157ms] [LOG] yellow-flower.fbx: 100% loaded @ https://jenna-studio.dev/:710
+[     371ms] [LOG] purple-flower.fbx loaded successfully @ https://jenna-studio.dev/:707
+[     521ms] [LOG] green-flower.fbx loaded successfully @ https://jenna-studio.dev/:707
+[     665ms] [LOG] skyblue-flower.fbx loaded successfully @ https://jenna-studio.dev/:707
+[     813ms] [LOG] pink-flower.fbx loaded successfully @ https://jenna-studio.dev/:707
+[     960ms] [LOG] yellow-flower.fbx loaded successfully @ https://jenna-studio.dev/:707
+[    1109ms] [LOG] mesh: mesh_0 | mat:  @ https://jenna-studio.dev/:627
+[    1109ms] [LOG] Avatar loaded. Materials upgraded: 1 @ https://jenna-studio.dev/:645
