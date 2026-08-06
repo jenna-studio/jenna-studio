@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { CSSProperties } from "react";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import { education, experience, journey, skillGroups, stories, values } from "../content";
@@ -20,7 +19,7 @@ function linkifyText(text: string) {
 
 export default function AboutPage() {
   return (
-    <main className="interior-main">
+    <main className="interior-main about-page">
       <SiteHeader />
       <section className="page-hero page-hero-about">
         <p className="section-kicker">About</p>
@@ -93,9 +92,6 @@ export default function AboutPage() {
                   {group.items.map((item) => (
                     <li key={item.name}>
                       <span>{item.name}</span>
-                      <span className="skill-level" aria-label={`${item.level} percent`}>
-                        <i style={{ "--skill-level": `${item.level}%` } as CSSProperties} />
-                      </span>
                     </li>
                   ))}
                 </ul>

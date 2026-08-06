@@ -51,10 +51,10 @@ export const stories = [
 
 export const skillGroups = [
   { title: "Programming", items: [
-    { name: "🟢 HTML, CSS, React", level: 90 },
-    { name: "🟠 Java, Python, C++", level: 85 },
-    { name: "🟡 JavaScript, SQL", level: 95 },
-    { name: "⚪️ Android Studio, XML, Etc.", level: 80 },
+    { name: "HTML, CSS, React", level: 90 },
+    { name: "Java, Python, C++", level: 85 },
+    { name: "JavaScript, SQL", level: 95 },
+    { name: "Android Studio, XML, Etc.", level: 80 },
   ] },
   { title: "Design & Tools", items: [
     { name: "Adobe PS, AI, PR, AE", level: 85 },

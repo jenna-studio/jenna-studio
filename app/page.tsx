@@ -26,7 +26,7 @@ const featuredProjects = [
 
 const portfolioHighlights = [
   { title: "Web Design", description: "Modern, responsive websites crafted with clean aesthetics and intuitive user experiences that engage audiences. Blending creativity with functionality to create digital spaces that drive meaningful interactions.", image: "/og.png", href: "/portfolios/", tone: "peach" },
-  { title: "AI Music Generation", description: "Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.", image: "/media/portfolio-thumbnails/jenna-studio-music-thumbnail.jpeg", href: "/portfolios/#ai-music", tone: "violet" },
+  { title: "AI Music Generation", description: "Independent artist transforming personal growth into emotional pop, indie, and cinematic soundscapes that capture the journey from uncertainty to freedom through warm melodies and reflective intensity.", image: "/media/jenna-studio-square.jpeg", href: "/portfolios/#ai-music", tone: "violet" },
   { title: "Apple Shortcuts", description: "Diverse and practical Apple Shortcuts that streamline daily tasks, enhancing productivity and efficiency, making technology work seamlessly for everyday life. Automated workflows designed to simplify routines.", image: "/media/shortcuts-thumbnail.png", href: "/portfolios/#apple-shortcuts", tone: "mint" },
 ];
 
