@@ -14,7 +14,7 @@ export const experience = [
     location: "Seoul, South Korea",
     logo: "/media/snuh-logo.png",
     bullets: [
-      "Developing a medical device usability testing AI automation platform.",
+      "Developing a medical device usability engineering AI automation platform. (https://glue-snuh.web.app)",
       "[HFES] RAG-Enhanced LLM System with Decision Tree for Medical Device Usability Engineering Process",
     ],
     link: "https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106",
@@ -22,7 +22,7 @@ export const experience = [
   {
     role: "Webmaster",
     company: "삶은여행 (Life is a Journey)",
-    period: "Nov 2022 — Present",
+    period: "Nov 2022 — Aug 2026",
     location: "South Korea · Hybrid",
     logo: "/media/lifejourney-logo.png",
     bullets: [
@@ -77,12 +77,12 @@ export const values = [
 ];
 
 export const journey = [
-  { date: "2025.09 – present", title: "Internship at SNUH", text: "Currently an intern at SNUH Institute of Convergence Medicine with Innovative Technology, contributing to developing cutting-edge AI automation platform development." },
-  { date: "2025 – present", title: "Continuous Learning", text: "Learning the expertise of my major is so fun and practical. I'm incredibly excited about everything I'll learn ahead and the amazing opportunities that await me in this field." },
+  { date: "2025.09 - present", title: "Internship at SNUH", text: "Currently an intern at SNUH Institute of Convergence Medicine with Innovative Technology, contributing to developing cutting-edge AI automation platform development." },
+  { date: "2025 - present", title: "Continuous Learning", text: "Learning the expertise of my major is so fun and practical. I'm incredibly excited about everything I'll learn ahead and the amazing opportunities that await me in this field." },
   { date: "2025.03", title: "Changed Major", text: "I changed my major from Chinese Language and Literature to Software Engineering. Currently so happy with my major 😊!" },
   { date: "2024.03", title: "Back to Kookmin University", text: "As the world emerged from the COVID-19 pandemic, I made the pivotal decision to re-enter Kookmin University, this time pursuing what truly ignited my passion and aligned with my newfound sense of purpose." },
   { date: "2023", title: "Turning Point", text: "Started by self-learning HTML & CSS, which sparked my passion for programming. Developed my first website, SeonyWorld." },
-  { date: "2019 – 2023", title: "Exploration Period", text: "A period to find my desired university and discover my true career path. Time spent searching for direction and understanding what I truly wanted to pursue." },
+  { date: "2019 - 2023", title: "Exploration Period", text: "A period to find my desired university and discover my true career path. Time spent searching for direction and understanding what I truly wanted to pursue." },
 ];
 
 export type Project = {

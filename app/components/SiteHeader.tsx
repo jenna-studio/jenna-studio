@@ -6,7 +6,7 @@ import { useState } from "react";
 const navigation = [
   ["About", "/about/"],
   ["Projects", "/projects/"],
-  ["Portfolios", "/portfolios/"],
+  ["Portfolio", "/portfolios/"],
   ["Contact", "/contact/"],
 ];
 

@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about/" },
 };
 
+function linkifyText(text: string) {
+  return text.split(/(https?:\/\/[^\s()]+)/g).map((part, index) =>
+    /^https?:\/\//.test(part)
+      ? <a href={part} target="_blank" rel="noreferrer" key={`${part}-${index}`}>{part}</a>
+      : part,
+  );
+}
+
 export default function AboutPage() {
   return (
     <main className="interior-main">
@@ -28,9 +36,9 @@ export default function AboutPage() {
             <h2>Technical excellence meets <em>creative innovation.</em></h2>
             <p className="lead">A dedicated Software Engineering student at Kookmin University, passionate about bridging the gap between technical excellence and creative innovation. I&apos;m currently pursuing my Bachelor&apos;s degree while building a strong foundation in development and other areas.</p>
             <div className="metric-row">
-              <div><strong>2+</strong><span>Years Experience</span></div>
-              <div><strong>10+</strong><span>Projects Completed</span></div>
-              <div><strong>15+</strong><span>Skills Acquired</span></div>
+              <div><strong>3+</strong><span>Years Experience</span></div>
+              <div><strong>15+</strong><span>Projects Completed</span></div>
+              <div><strong>20+</strong><span>Skills Acquired</span></div>
             </div>
           </div>
         </section>
@@ -59,7 +67,7 @@ export default function AboutPage() {
                   <p className="muted">{item.location}</p>
                   <ul>
                     {item.bullets.map((bullet, index) => (
-                      <li key={bullet}>{item.link && index === 1 ? <a href={item.link} target="_blank" rel="noreferrer">{bullet} ↗</a> : bullet}</li>
+                      <li key={bullet}>{item.link && index === 1 ? <a href={item.link} target="_blank" rel="noreferrer">{bullet} ↗</a> : linkifyText(bullet)}</li>
                     ))}
                   </ul>
                 </div>

@@ -5,7 +5,7 @@ import { travelPosts } from "../content";
 import { PortfolioCatalog } from "./PortfolioCatalog";
 
 export const metadata: Metadata = {
-  title: "Portfolios — Jenna Studio",
+  title: "Portfolio — Jenna Studio",
   description: "Research, music, AI tools, 3D work, design, Apple Shortcuts, and travel journals by Jenna Studio.",
   alternates: { canonical: "/portfolios/" },
 };

@@ -23,7 +23,7 @@ export default function ProjectsPage() {
 
       <div className="content-shell">
         <section className="content-section featured-project-card">
-          <div className="featured-project-image"><img src="/media/glue-screenshot.png" alt="GLUE medical-device human factors documentation workspace" /><span>Featured · New</span></div>
+          <div className="featured-project-image"><img src="/media/glue-featured.png" alt="GLUE medical-device human factors documentation workspace" /><span>Featured · New</span></div>
           <div className="featured-project-copy">
             <p className="section-kicker">Featured Project</p>
             <h2>{featuredGlue.title}</h2>
