@@ -45,7 +45,7 @@ export default function Home() {
             <div className="home-about-copy">
               <p><b>Developer</b><br />Hi! I&apos;m Jenna, a passionate developer who thrives on transforming complex problems into elegant, user-centered solutions. I approach every project with curiosity and precision, combining modern development practices with creative problem-solving to build applications that not only work flawlessly but also delight users at every interaction.</p>
               <p><b>Digital Artist</b><br />As a digital artist, I specialize in crafting immersive visual experiences that tell compelling stories. From UI design and interactive prototypes to 3D modelings, I merge artistic vision with technical expertise to create content that captivates audiences and enhances user engagement.</p>
-              <div className="button-row"><a href="/about/">View More ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+              <div className="button-row"><a href="/about/">View More ↗︎</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗︎</a></div>
             </div>
           </div>
         </div>
@@ -59,12 +59,12 @@ export default function Home() {
             <article className={`project project-${project.tone}`} key={project.title}>
               <div className="project-meta"><span>{project.number}</span><span>{project.type}</span></div>
               <div className="project-visual"><img src={project.image} alt={`${project.title} screenshot`} /></div>
-              <div className="project-copy"><h3>{project.title}</h3><p>{project.description}</p><ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul><div className="project-links">{project.links.map(([label, href]) => <a href={href} target="_blank" rel="noreferrer" key={label}>{label} ↗</a>)}</div></div>
-              <span className="project-arrow" aria-hidden="true">↗</span>
+              <div className="project-copy"><h3>{project.title}</h3><p>{project.description}</p><ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul><div className="project-links">{project.links.map(([label, href]) => <a href={href} target="_blank" rel="noreferrer" key={label}>{label} ↗︎</a>)}</div></div>
+              <span className="project-arrow" aria-hidden="true">↗︎</span>
             </article>
           ))}
         </div>
-        <div className="section-end-link"><a href="/projects/">View All Projects ↗</a></div>
+        <div className="section-end-link"><a href="/projects/">View All Projects ↗︎</a></div>
       </section>
 
       <span className="legacy-anchor" id="portfolio" aria-hidden="true" />
@@ -74,11 +74,11 @@ export default function Home() {
           {portfolioHighlights.map((portfolio) => (
             <a className={`portfolio-card portfolio-${portfolio.tone}`} href={portfolio.href} key={portfolio.title}>
               <div className="portfolio-art"><img src={portfolio.image} alt="" aria-hidden="true" /></div>
-              <div className="portfolio-copy"><h3>{portfolio.title}</h3><p>{portfolio.description}</p><b>View Details ↗</b></div>
+              <div className="portfolio-copy"><h3>{portfolio.title}</h3><p>{portfolio.description}</p><b>View Details ↗︎</b></div>
             </a>
           ))}
         </div>
-        <div className="section-end-link"><span>to explore</span><a href="/portfolios/">View Full Portfolio ↗</a></div>
+        <div className="section-end-link"><span>to explore</span><a href="/portfolios/">View Full Portfolio ↗︎</a></div>
       </section>
 
       <section className="contact" id="contact">
@@ -90,7 +90,7 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer"><img src="/media/linkedin-pixel.png" alt="" /><span><b>LinkedIn</b>Connect professionally</span></a>
           <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer"><img src="/media/github-pixel.png" alt="" /><span><b>GitHub</b>View my code</span></a>
         </div>
-        <div className="button-row"><a href="/contact/">Get In Touch ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        <div className="button-row"><a href="/contact/">Get In Touch ↗︎</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗︎</a><a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">GitHub ↗︎</a></div>
       </section>
       <SiteFooter />
     </main>

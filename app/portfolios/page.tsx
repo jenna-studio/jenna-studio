@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
-import { travelPosts } from "../content";
 import { PortfolioCatalog } from "./PortfolioCatalog";
+import { TravelScroll } from "./TravelScroll";
 
 export const metadata: Metadata = {
   title: "Portfolio — Jenna Studio",
@@ -29,13 +29,13 @@ export default function PortfoliosPage() {
           <p className="muted">Poster Session 1 · Medical and Drug Delivery Devices · Rhinelander Gallery</p>
           <ul><li>Research</li><li>LLM</li><li>RAG</li><li>IEC 62366</li><li>Medical Devices</li></ul>
           <details className="research-details">
-            <summary>View Details ↗</summary>
+            <summary>View Details ↗︎</summary>
             <div>
               <p>An AI-assisted system that helps small and medium medical device manufacturers implement the IEC 62366-1/-2 usability engineering process. A decision tree with 37 decision points guides manufacturers through regulatory requirements, while RAG-enhanced document generation (Gemini Flash and Claude Opus) drafts usability engineering documentation with human oversight. The framework was applied to four South Korean medical device companies. Co-authored with Junhee Choi, Saram Lee, and Jung Chan Lee; presented as a poster at the HFES International Symposium 2026 (Poster Session 1, Medical and Drug Delivery Devices).</p>
               <iframe src="https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106" title="HFES International Symposium 2026 — Poster POST270" loading="lazy" />
             </div>
           </details>
-          <div className="button-row"><a href="https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106" target="_blank" rel="noreferrer">Conference Page ↗</a></div>
+          <div className="button-row"><a href="https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106" target="_blank" rel="noreferrer">Conference Page ↗︎</a></div>
         </section>
 
         <section className="content-section">
@@ -45,15 +45,8 @@ export default function PortfoliosPage() {
 
         <section className="content-section travel-journal">
           <div className="content-heading"><p className="section-kicker">Field notes</p><h2>Travel Journal</h2></div>
-          <p className="section-intro">Field notes from my travels — <a href="https://seonyisland.tistory.com" target="_blank" rel="noreferrer">read all on Tistory ↗</a></p>
-          <div className="travel-scroll">
-            {travelPosts.map((post) => (
-              <a href={post.url} target="_blank" rel="noreferrer" className="travel-card" key={post.url}>
-                <img src={post.image} alt="" aria-hidden="true" />
-                <div><time>{post.date}</time><h3>{post.title}</h3><p>{post.excerpt}</p><span>Read on Tistory ↗</span></div>
-              </a>
-            ))}
-          </div>
+          <p className="section-intro">Field notes from my travels — <a href="https://seonyisland.tistory.com" target="_blank" rel="noreferrer">read all on Tistory ↗︎</a></p>
+          <TravelScroll />
         </section>
 
         <section className="content-section portfolio-stats">

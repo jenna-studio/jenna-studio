@@ -36,7 +36,7 @@ export function ContactForm() {
           </select>
         </label>
         <label>Tell Me About Your Project *<textarea name="message" rows={6} placeholder="Describe your project, goals, and any specific requirements..." required /></label>
-        <button type="submit" disabled={sending}>{sending ? "Sending..." : "Send Message ↗"}</button>
+        <button type="submit" disabled={sending}>{sending ? "Sending..." : "Send Message ↗︎"}</button>
     </form>
   );
 }

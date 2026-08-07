@@ -91,18 +91,18 @@ function DetailContent({ id }: { id: string }) {
     <>
       <div className="embed-grid">
         <iframe data-testid="embed-iframe" className="spotify-embed" style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/artist/10YbtQS5pUWj10uNEpFxZr?utm_source=generator&si=b5d8e04fa4904d61" width="100%" height={500} title="Jenna Studio on Spotify" loading="lazy" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />      </div>
-      <div className="card-actions"><a href="https://open.spotify.com/artist/10YbtQS5pUWj10uNEpFxZr?si=lJ884oKJQqGfgroLVfpXeA" target="_blank" rel="noreferrer">Spotify ↗</a><a href="https://music.apple.com/kr/artist/jenna-studio/1871000252" target="_blank" rel="noreferrer">Apple Music ↗</a><a href="https://www.youtube.com/channel/UCNYh9DsdcEyJn5DeBrXoZUw" target="_blank" rel="noreferrer">YouTube Music ↗</a></div>
+      <div className="card-actions"><a href="https://open.spotify.com/artist/10YbtQS5pUWj10uNEpFxZr?si=lJ884oKJQqGfgroLVfpXeA" target="_blank" rel="noreferrer">Spotify ↗︎</a><a href="https://music.apple.com/kr/artist/jenna-studio/1871000252" target="_blank" rel="noreferrer">Apple Music ↗︎</a><a href="https://www.youtube.com/channel/UCNYh9DsdcEyJn5DeBrXoZUw" target="_blank" rel="noreferrer">YouTube Music ↗︎</a></div>
     </>
   );
-  if (id === "english-tutor") return <div className="card-actions"><a href="https://chatgpt.com/g/g-L4mUqZGvo-your-english-tutor" target="_blank" rel="noreferrer">Try This Tool ↗</a></div>;
-  if (id === "personal-color-analysis-service") return <div className="card-actions"><a href="https://chatgpt.com/g/g-dMlQgetqz-personal-color-analysis-service" target="_blank" rel="noreferrer">Try This Service ↗</a></div>;
+  if (id === "english-tutor") return <div className="card-actions"><a href="https://chatgpt.com/g/g-L4mUqZGvo-your-english-tutor" target="_blank" rel="noreferrer">Try This Tool ↗︎</a></div>;
+  if (id === "personal-color-analysis-service") return <div className="card-actions"><a href="https://chatgpt.com/g/g-dMlQgetqz-personal-color-analysis-service" target="_blank" rel="noreferrer">Try This Service ↗︎</a></div>;
   if (id === "travel-map") return <ZoomGallery galleryClass="travel-gallery" images={travelMaps.map(([file, alt]) => [`/media/travel-maps/${file}`, alt])} />;
   if (id === "chrome-theme") return (
-    <><div className="theme-gallery">{chromeThemes.map(([name, file, url]) => <a href={url} target="_blank" rel="noreferrer" key={name}><img src={`/media/chrome-theme-thumbnails/${file}`} alt={name} /><span>{name} ↗</span></a>)}</div><div className="card-actions"><a href="https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb" target="_blank" rel="noreferrer">Install Pink Workspace ↗</a><a href="https://github.com/jenna-studio/chrome-theme-extensions" target="_blank" rel="noreferrer">View More ↗</a></div></>
+    <><div className="theme-gallery">{chromeThemes.map(([name, file, url]) => <a href={url} target="_blank" rel="noreferrer" key={name}><img src={`/media/chrome-theme-thumbnails/${file}`} alt={name} /><span>{name} ↗︎</span></a>)}</div><div className="card-actions"><a href="https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb" target="_blank" rel="noreferrer">Install Pink Workspace ↗︎</a><a href="https://github.com/jenna-studio/chrome-theme-extensions" target="_blank" rel="noreferrer">View More ↗︎</a></div></>
   );
   if (id === "humidifier") return <ZoomGallery galleryClass="media-gallery-two" images={[["/media/portfolio-thumbnails/asmr-humidifier-thumbnail.png", "ASMR Humidifier"], ["/media/portfolio-thumbnails/asmr-humidifier-panel.png", "ASMR Humidifier panel"]]} />;
-  if (id === "hello-kitty-modeling") return <div className="card-actions"><a href="/files/fusion-hello-kitty-modeling-guideline.pdf" target="_blank" rel="noreferrer">Download PDF ↗</a></div>;
-  if (id === "apple-shortcuts") return <div className="shortcut-grid">{shortcuts.map(([name, url]) => <a href={url} target="_blank" rel="noreferrer" key={name}><span>{name}</span><b>Get Shortcut ↗</b></a>)}</div>;
+  if (id === "hello-kitty-modeling") return <div className="card-actions"><a href="/files/fusion-hello-kitty-modeling-guideline.pdf" target="_blank" rel="noreferrer">Download PDF ↗︎</a></div>;
+  if (id === "apple-shortcuts") return <div className="shortcut-grid">{shortcuts.map(([name, url]) => <a href={url} target="_blank" rel="noreferrer" key={name}><span>{name}</span><b>Get Shortcut ↗︎</b></a>)}</div>;
   return null;
 }
 

@@ -49,16 +49,19 @@ export function Hero() {
             <p>Blending creativity and code to design meaningful, human-centered digital experiences. Let&apos;s build beautiful things together!</p>
             <div className="hero-actions">
               <Link className="hero-action hero-action-primary" href="/projects/">
-                <span>View My Work</span><b aria-hidden="true">↗</b>
+                <span>View My Work</span><b aria-hidden="true">↗︎</b>
               </Link>
               <Link className="hero-action hero-action-secondary" href="/about/">
-                <span>Meet Jenna</span><b aria-hidden="true">↗</b>
+                <span>Meet Jenna</span><b aria-hidden="true">↗︎</b>
               </Link>
             </div>
           </div>
         </div>
 
         <div className="hero-visual" aria-hidden="true">
+          <div className="hero-orbit">
+            <span className="hero-orbit-runner" />
+          </div>
           <div className="hero-aura" />
 
           <div className="hero-bunny-stage">
@@ -82,6 +85,13 @@ export function Hero() {
         </a>
       </div>
 
+      <div className="hero-ticker" aria-hidden="true">
+        <div className="hero-ticker-track">
+          {Array.from({ length: 6 }, (_, index) => (
+            <span key={index}>Creative technology&nbsp;&nbsp;✦&nbsp;&nbsp;Expressive interfaces&nbsp;&nbsp;✦&nbsp;&nbsp;Thoughtful systems&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

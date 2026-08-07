@@ -28,7 +28,7 @@ export function ProjectsCatalog() {
               <h2>{project.title}</h2>
               <p>{project.description}</p>
               <ul>{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-              <div className="card-actions">{project.links.map((link) => <a href={link.url} target="_blank" rel="noreferrer" key={link.label}>{link.label} ↗</a>)}</div>
+              <div className="card-actions">{project.links.map((link) => <a href={link.url} target="_blank" rel="noreferrer" key={link.label}>{link.label} ↗︎</a>)}</div>
             </div>
           </article>
         ))}

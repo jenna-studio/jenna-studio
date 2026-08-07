@@ -25,9 +25,9 @@ export default function ContactPage() {
             <p className="section-kicker">Send me a message</p>
             <h2>Tell me about<br /><em>your project.</em></h2>
             <div className="contact-direct">
-              <a href="mailto:jenna@jenna-studio.dev">jenna@jenna-studio.dev ↗</a>
-              <a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-              <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="mailto:jenna@jenna-studio.dev">jenna@jenna-studio.dev ↗︎</a>
+              <a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗︎</a>
+              <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">GitHub ↗︎</a>
             </div>
           </div>
           <div>

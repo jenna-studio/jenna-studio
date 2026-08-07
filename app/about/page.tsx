@@ -66,7 +66,7 @@ export default function AboutPage() {
                   <p className="muted">{item.location}</p>
                   <ul>
                     {item.bullets.map((bullet, index) => (
-                      <li key={bullet}>{item.link && index === 1 ? <a href={item.link} target="_blank" rel="noreferrer">{bullet} ↗</a> : linkifyText(bullet)}</li>
+                      <li key={bullet}>{item.link && index === 1 ? <a href={item.link} target="_blank" rel="noreferrer">{bullet} ↗︎</a> : linkifyText(bullet)}</li>
                     ))}
                   </ul>
                 </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
         <p className="section-kicker">Let&apos;s create</p>
         <h2>Something amazing, <em>together.</em></h2>
         <p>I&apos;m always excited to work on new projects and collaborate with creative people. Whether you have a specific project in mind or just want to chat about something, I&apos;d love to hear from you!</p>
-        <div className="button-row"><a href="/contact/">Get In Touch ↗</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/projects/">See My Work ↗</a></div>
+        <div className="button-row"><a href="/contact/">Get In Touch ↗︎</a><a href="https://linkedin.com/in/jinseon-yoo" target="_blank" rel="noreferrer">LinkedIn ↗︎</a><a href="/projects/">See My Work ↗︎</a></div>
       </section>
       <SiteFooter />
     </main>

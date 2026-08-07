@@ -32,7 +32,7 @@ export function ContributionActivity() {
     <section className="content-section contribution-section">
       <div className="content-heading"><p className="section-kicker">Open source</p><h2>Contribution Activity</h2></div>
       <div className="contribution-panel">
-        <div className="contribution-panel-top"><strong>GitHub <span>@jenna-studio</span></strong><a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">View profile ↗</a></div>
+        <div className="contribution-panel-top"><strong>GitHub <span>@jenna-studio</span></strong><a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">View profile ↗︎</a></div>
         {failed ? <p>Could not load contribution data. <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">View on GitHub →</a></p> : days.length ? (
           <>
             <div className="contribution-grid" aria-label="GitHub contribution activity">

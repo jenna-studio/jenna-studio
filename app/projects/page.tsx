@@ -30,7 +30,7 @@ export default function ProjectsPage() {
             <h3>{featuredGlue.subtitle}</h3>
             <p>{featuredGlue.description}</p>
             <ul>{featuredGlue.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-            <div className="button-row"><a href="https://glue-snuh.web.app" target="_blank" rel="noreferrer">Visit Site ↗</a><a href="https://glue-snuh.web.app/signup.html" target="_blank" rel="noreferrer">Start for Free ↗</a></div>
+            <div className="button-row"><a href="https://glue-snuh.web.app" target="_blank" rel="noreferrer">Visit Site ↗︎</a><a href="https://glue-snuh.web.app/signup.html" target="_blank" rel="noreferrer">Start for Free ↗︎</a></div>
           </div>
         </section>
 
