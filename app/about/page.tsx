@@ -29,7 +29,7 @@ export default function AboutPage() {
 
       <div className="content-shell">
         <section className="profile-intro content-section">
-          <div className="profile-photo-wrap"><img src="/media/profile-closeup.PNG" alt="Jenna" /></div>
+          <div className="profile-photo-wrap"><img src="/media/jenna-profile-extended.JPG" alt="Jenna" /></div>
           <div className="profile-intro-copy">
             <p className="section-kicker">Hello, I&apos;m Jenna! 👋</p>
             <h2>Technical excellence meets <em>creative innovation.</em></h2>

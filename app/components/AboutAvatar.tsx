@@ -30,7 +30,7 @@ export function AboutAvatar() {
     alt: "Front-facing 3D avatar of Jenna",
     loading: "lazy",
     reveal: "auto",
-    "camera-orbit": "0deg 75deg 105%",
+    "camera-orbit": "0deg 90deg 105%",
     "camera-controls": true,
     "disable-zoom": true,
     "interaction-prompt": "none",
