@@ -40,6 +40,11 @@ const portfolioEntries: PortfolioEntry[] = [
     tags: ["3D Modeling", "Guideline", "Tutorial", "PDF"],
   },
   {
+    id: "floating-lyrics", category: "tools", title: "Floating Lyrics", subtitle: "Native macOS Overlay", cover: "/media/floating-lyrics-thumbnail.png",
+    description: "A native macOS overlay that shows the lyrics of whatever you're playing, in sync, and gets out of the way. Apple Music, Spotify, and YouTube Music are polled once a second and the source actually playing wins. Synced LRC lyrics come from LRCLIB and are cached on disk, so the current line is highlighted and scrolled to as it plays. The panel floats above other windows, joins all Spaces, and switches between a compact one-line bar and a full scrolling lyric sheet — with font, weight, colors, and size all tunable from a live-preview settings window.",
+    tags: ["Swift", "SwiftUI", "macOS", "LRCLIB"],
+  },
+  {
     id: "apple-shortcuts", category: "tools", title: "Apple Shortcuts", subtitle: "A collection of Apple's Shortcuts", cover: "/media/shortcuts-thumbnail.png",
     description: "A collection of useful automation shortcuts for iOS and MacOS.",
     tags: ["Apple", "iOS", "MacOS", "automation"],
@@ -102,6 +107,12 @@ function DetailContent({ id }: { id: string }) {
   );
   if (id === "humidifier") return <ZoomGallery galleryClass="media-gallery-two" images={[["/media/portfolio-thumbnails/asmr-humidifier-thumbnail.png", "ASMR Humidifier"], ["/media/portfolio-thumbnails/asmr-humidifier-panel.png", "ASMR Humidifier panel"]]} />;
   if (id === "hello-kitty-modeling") return <div className="card-actions"><a href="/files/fusion-hello-kitty-modeling-guideline.pdf" target="_blank" rel="noreferrer">Download PDF ↗︎</a></div>;
+  if (id === "floating-lyrics") return (
+    <>
+      <ZoomGallery images={[["/media/portfolio-thumbnails/floating-lyrics-mini-full-player.png", "Floating Lyrics full overlay"], ["/media/portfolio-thumbnails/floating-lyrics-one-line-player.png", "Floating Lyrics compact bar"], ["/media/portfolio-thumbnails/floating-lyrics-settings.png", "Floating Lyrics settings window"]]} />
+      <div className="card-actions"><a href="https://github.com/jenna-studio/floating-lyrics#build" target="_blank" rel="noreferrer">How to Build ↗︎</a><a href="https://github.com/jenna-studio/floating-lyrics" target="_blank" rel="noreferrer">View Code ↗︎</a></div>
+    </>
+  );
   if (id === "apple-shortcuts") return <div className="shortcut-grid">{shortcuts.map(([name, url]) => <a href={url} target="_blank" rel="noreferrer" key={name}><span>{name}</span><b>Get Shortcut ↗︎</b></a>)}</div>;
   return null;
 }
