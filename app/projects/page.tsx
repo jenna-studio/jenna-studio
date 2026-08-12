@@ -6,7 +6,7 @@ import { ContributionActivity } from "./ContributionActivity";
 import { ProjectsCatalog } from "./ProjectsCatalog";
 
 export const metadata: Metadata = {
-  title: "Projects — Jenna Studio",
+  title: "Projects | Jenna Studio",
   description: "Web applications, mobile apps, tools, and creative experiments by Jenna Studio.",
   alternates: { canonical: "/projects/" },
 };

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { projects } from "../content";
 
 const filters = [
-  ["all", "All Projects"], ["web-app", "Web Apps"], ["website", "Websites"],
+  ["all", "All Projects"], ["web-app", "Web Apps"],
   ["mobile-app", "Mobile Apps"], ["tools", "Tools"], ["other", "Other"],
 ] as const;
 

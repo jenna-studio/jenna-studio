@@ -5,7 +5,7 @@ import { SiteHeader } from "../components/SiteHeader";
 import { ContactForm, ContactSuccess } from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Jenna Studio",
+  title: "Contact | Jenna Studio",
   description: "Get in touch with Jenna for web development projects, collaborations, and creative opportunities.",
   alternates: { canonical: "/contact/" },
 };

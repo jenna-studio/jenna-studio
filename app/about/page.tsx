@@ -4,15 +4,19 @@ import { SiteHeader } from "../components/SiteHeader";
 import { education, experience, journey, skillGroups, stories, values } from "../content";
 
 export const metadata: Metadata = {
-  title: "About Jenna — Jenna Studio",
+  title: "About Jenna | Jenna Studio",
   description: "Education, experience, story, skills, values, and journey of Jenna Studio.",
   alternates: { canonical: "/about/" },
 };
 
 function linkifyText(text: string) {
-  return text.split(/(https?:\/\/[^\s()]+)/g).map((part, index) =>
+  return text.split(/\s*\(?(https?:\/\/[^\s()]+)\)?/g).map((part, index) =>
     /^https?:\/\//.test(part)
-      ? <a href={part} target="_blank" rel="noreferrer" key={`${part}-${index}`}>{part}</a>
+      ? (
+        <a className="inline-link-chip" href={part} target="_blank" rel="noreferrer" key={`${part}-${index}`}>
+          {part.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}<span aria-hidden="true">↗︎</span>
+        </a>
+      )
       : part,
   );
 }
@@ -69,6 +73,12 @@ export default function AboutPage() {
                       <li key={bullet}>{item.link && index === 1 ? <a href={item.link} target="_blank" rel="noreferrer">{bullet} ↗︎</a> : linkifyText(bullet)}</li>
                     ))}
                   </ul>
+                  {"certificate" in item && item.certificate && (
+                    <a className="experience-certificate" href={item.certificate.image} target="_blank" rel="noreferrer">
+                      <img src={item.certificate.image} alt={item.certificate.alt} />
+                      <span><b>{item.certificate.label}</b>{item.certificate.issuer}<i>View full size ↗︎</i></span>
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

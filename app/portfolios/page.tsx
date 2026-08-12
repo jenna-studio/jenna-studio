@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
+import { certificationGroups } from "../content";
 import { PortfolioCatalog } from "./PortfolioCatalog";
 import { TravelScroll } from "./TravelScroll";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Jenna Studio",
+  title: "Portfolio | Jenna Studio",
   description: "Research, music, AI tools, 3D work, design, Apple Shortcuts, and travel journals by Jenna Studio.",
   alternates: { canonical: "/portfolios/" },
 };
@@ -32,7 +33,7 @@ export default function PortfoliosPage() {
             <summary>View Details ↗︎</summary>
             <div>
               <p>An AI-assisted system that helps small and medium medical device manufacturers implement the IEC 62366-1/-2 usability engineering process. A decision tree with 37 decision points guides manufacturers through regulatory requirements, while RAG-enhanced document generation (Gemini Flash and Claude Opus) drafts usability engineering documentation with human oversight. The framework was applied to four South Korean medical device companies. Co-authored with Junhee Choi, Saram Lee, and Jung Chan Lee; presented as a poster at the HFES International Symposium 2026 (Poster Session 1, Medical and Drug Delivery Devices).</p>
-              <iframe src="https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106" title="HFES International Symposium 2026 — Poster POST270" loading="lazy" />
+              <iframe src="https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106" title="HFES International Symposium 2026: Poster POST270" loading="lazy" />
             </div>
           </details>
           <div className="button-row"><a href="https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106" target="_blank" rel="noreferrer">Conference Page ↗︎</a></div>
@@ -43,9 +44,39 @@ export default function PortfoliosPage() {
           <PortfolioCatalog />
         </section>
 
+        <section className="content-section certifications" id="certifications">
+          <div className="content-heading"><p className="section-kicker">Credentials</p><h2>Certifications</h2></div>
+          {certificationGroups.map((group) => (
+            <details className="cert-group" id={group.id} key={group.id}>
+              <summary>
+                <div className={group.badgeStyle === "document" ? "cert-badge cert-badge-doc" : "cert-badge"}>
+                  <img src={group.badge} alt={group.badgeAlt} />
+                </div>
+                <div className="cert-summary-copy">
+                  <span>{group.issuer}</span>
+                  <h3>{group.title}</h3>
+                  <p>{group.items.length} {group.items.length === 1 ? "certificate" : "certificates"}</p>
+                </div>
+              </summary>
+              <div className="cert-body">
+                <p>{group.description}</p>
+                <ol className="cert-list">
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <a href={item.href} target="_blank" rel="noreferrer">
+                        <span>{item.name}</span><time>{item.date}</time><b>View ↗︎</b>
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </details>
+          ))}
+        </section>
+
         <section className="content-section travel-journal">
           <div className="content-heading"><p className="section-kicker">Field notes</p><h2>Travel Journal</h2></div>
-          <p className="section-intro">Field notes from my travels — <a href="https://seonyisland.tistory.com" target="_blank" rel="noreferrer">read all on Tistory ↗︎</a></p>
+          <p className="section-intro">Field notes from my travels · <a href="https://seonyisland.tistory.com" target="_blank" rel="noreferrer">read all on Tistory ↗︎</a></p>
           <TravelScroll />
         </section>
 

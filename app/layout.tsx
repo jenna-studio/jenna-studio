@@ -4,7 +4,7 @@ import "./globals.css";
 import "./content-pages.css";
 
 export const metadata: Metadata = {
-  title: "Jenna Studio — Digital ideas with a pulse",
+  title: "Jenna Studio | Digital ideas with a pulse",
   description: "The independent practice of Jenna: expressive digital products, creative technology, and thoughtful systems.",
   metadataBase: new URL("https://jenna-studio.dev"),
   alternates: { canonical: "/" },

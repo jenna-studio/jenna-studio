@@ -10,11 +10,11 @@ export const experience = [
   {
     role: "Intern",
     company: "Seoul National University Hospital (SNUH)",
-    period: "Sep 2025 — Present",
+    period: "Sep 2025 – Present",
     location: "Seoul, South Korea",
     logo: "/media/snuh-logo.png",
     bullets: [
-      "Developing a medical device usability engineering AI automation platform. (https://glue-snuh.web.app)",
+      "Lead developer of a medical device usability engineering AI automation platform. (https://glue-snuh.web.app)",
       "[HFES] RAG-Enhanced LLM System with Decision Tree for Medical Device Usability Engineering Process",
     ],
     link: "https://hfeshcs2026.conference-program.com/presentation/?id=POST270&sess=sess106",
@@ -22,7 +22,7 @@ export const experience = [
   {
     role: "Webmaster",
     company: "삶은여행 (Life is a Journey)",
-    period: "Nov 2022 — Aug 2026",
+    period: "Nov 2022 – Aug 2026",
     location: "South Korea · Hybrid",
     logo: "/media/lifejourney-logo.png",
     bullets: [
@@ -33,13 +33,19 @@ export const experience = [
   {
     role: "Intern",
     company: "Mirinae, Inc.",
-    period: "Jul 2024 — Aug 2024",
+    period: "Jul 2024 – Aug 2024",
     location: "Seoul, South Korea · On-site",
     logo: "/media/mirinae-logo.png",
     bullets: [
       "Completed an internship program in the role of Marketing; recognized with a Certificate of Internship.",
       "Performed competitor research and translated findings into actionable feature recommendations through direct collaboration with the senior developer.",
     ],
+    certificate: {
+      image: "/media/certificates/mirinae-certificate-of-internship.png",
+      label: "Certificate of Internship",
+      issuer: "Mirinae Technologies, Inc. · 2024",
+      alt: "Certificate of Internship awarded to Jinseon Yoo by Mirinae Technologies, Inc.",
+    },
   },
 ];
 
@@ -87,7 +93,7 @@ export const journey = [
 
 export type Project = {
   title: string;
-  category: "web-app" | "website" | "mobile-app" | "tools" | "other";
+  category: "web-app" | "mobile-app" | "tools" | "other";
   description: string;
   tags: string[];
   type: string;
@@ -153,12 +159,6 @@ export const projects: Project[] = [
     links: [{ label: "Installation", url: "https://github.com/jenna-studio/alfred-colortohex#installation" }, { label: "Code", url: "https://github.com/jenna-studio/alfred-colortohex" }],
   },
   {
-    title: "Google Chrome Theme", category: "website",
-    description: "A collection of custom Google Chrome browser themes with stunning designs and vibrant color palettes. Features multiple unique themes crafted precisely. Fully compatible with latest Chrome versions for aesthetic browsing experience and adding a personal touch.",
-    tags: ["Chrome Extension", "JSON", "UI"], type: "Chrome Extension", year: "2024", image: "/media/pink-workspace-thumbnail.png",
-    links: [{ label: "Apply This", url: "https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb" }, { label: "View All", url: "https://github.com/jenna-studio/chrome-theme-extension" }],
-  },
-  {
     title: "Monaco Editor Web", category: "web-app",
     description: "A web-based code editor with a beautiful pastel-themed interface. Features 18+ programming languages, syntax highlighting, auto-language detection, code formatting, and auto-complete. Glass-morphism UI with smooth animations for an aesthetic coding experience.",
     tags: ["Code Editor", "JS", "HTML", "CSS"], type: "Web Application", year: "2025", image: "/media/monaco-editor-web-thumbnail.png",
@@ -215,6 +215,55 @@ export const chromeThemes = [
   ["Purple Green Gradient Theme", "purple-green-screenshot.jpg", "https://chromewebstore.google.com/detail/purple-green-gradient/bieanadeicepnfhlajaiogbgmmbpfben"],
 ] as const;
 
+export type CertificationGroup = {
+  id: string;
+  issuer: string;
+  title: string;
+  badge: string;
+  badgeAlt: string;
+  badgeStyle?: "document";
+  description: string;
+  items: { name: string; date: string; href: string }[];
+};
+
+export const certificationGroups: CertificationGroup[] = [
+  {
+    id: "aws-certifications",
+    issuer: "AWS Training & Certification",
+    title: "AWS Certifications",
+    badge: "/media/aws-certifications/aws-knowledge-cloud-essentials-training-badge.png",
+    badgeAlt: "AWS Knowledge: Cloud Essentials training badge",
+    description: "Completion certificates earned through AWS Training & Certification in 2025, working from cloud fundamentals and job roles through the core services (EC2, S3, VPC, IAM, CloudFront) plus billing, cloud acquisition, and generative AI on Amazon Bedrock, finishing with the Cloud Essentials Knowledge Badge readiness path.",
+    items: [
+      { name: "Cloud Essentials: Knowledge Badge Readiness Path (includes Labs)", date: "2025.12.07", href: "/media/aws-certifications/cloud-essentials-knowledge-badge-readiness-path.png" },
+      { name: "Introduction to Amazon CloudFront", date: "2025.12.07", href: "/media/aws-certifications/introduction-to-amazon-cloudfront.png" },
+      { name: "Introduction to Amazon Simple Storage Service (S3)", date: "2025.11.19", href: "/media/aws-certifications/introduction-to-amazon-s3.png" },
+      { name: "Introduction to AWS Identity and Access Management (IAM)", date: "2025.11.19", href: "/media/aws-certifications/introduction-to-aws-iam.png" },
+      { name: "Introduction to Amazon Virtual Private Cloud (VPC)", date: "2025.11.19", href: "/media/aws-certifications/introduction-to-amazon-vpc.png" },
+      { name: "AWS Billing and Cost Management", date: "2025.11.04", href: "/media/aws-certifications/aws-billing-and-cost-management.png" },
+      { name: "AWS Foundations: Getting Started with the AWS Cloud Essentials", date: "2025.11.04", href: "/media/aws-certifications/aws-foundations-getting-started-with-the-aws-cloud-essentials.png" },
+      { name: "Introduction to Amazon EC2", date: "2025.11.04", href: "/media/aws-certifications/introduction-to-amazon-ec2.png" },
+      { name: "AWS Cloud Practitioner Essentials", date: "2025.10.26", href: "/media/aws-certifications/aws-cloud-practitioner-essentials.png" },
+      { name: "Getting Started with Cloud Acquisition", date: "2025.10.26", href: "/media/aws-certifications/getting-started-with-cloud-acquisition.png" },
+      { name: "Amazon Bedrock Getting Started", date: "2025.09.14", href: "/media/aws-certifications/amazon-bedrock-getting-started.png" },
+      { name: "AWS Technical Essentials", date: "2025.07.31", href: "/media/aws-certifications/aws-technical-essentials.png" },
+      { name: "Job Roles in the Cloud", date: "2025.07.31", href: "/media/aws-certifications/job-roles-in-the-cloud.png" },
+    ],
+  },
+  {
+    id: "microsoft-certifications",
+    issuer: "Microsoft · Certiport",
+    title: "Microsoft Certifications",
+    badge: "/media/certificates/MS-AI-900-Certificate.png",
+    badgeAlt: "Certiport authenticated digital transcript: Microsoft Azure AI Fundamentals",
+    badgeStyle: "document",
+    description: "Microsoft Certified Fundamentals credential, verified through a Certiport authenticated digital transcript. The AI-900 exam covers core machine learning concepts and the Azure services behind computer vision, natural language processing, and generative AI workloads.",
+    items: [
+      { name: "Microsoft Certified: Azure AI Fundamentals (AI-900)", date: "2024.11.19", href: "/media/certificates/MS-AI-900-Certificate.png" },
+    ],
+  },
+];
+
 export const travelMaps = [
   ["map1.JPG", "Mediterranean Cruise Map"], ["map2.jpg", "Northern Europe Cruise Route"],
   ["map3.jpg", "Western Mediterranean Europe Journey"], ["map4.jpg", "Balkan Peninsula Cruise Destination"],
@@ -222,13 +271,13 @@ export const travelMaps = [
 ] as const;
 
 export const travelPosts = [
-  { title: "CRUISE D0 — 슬로베니아", url: "https://seonyisland.tistory.com/2", date: "2023-11-10", excerpt: "새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다 — 슬로베니아로 향하는 여행의 시작.", image: "/media/travel-journal/day-0.jpg" },
-  { title: "CRUISE D1 — 류블랴나 & 트리에스테", url: "https://seonyisland.tistory.com/3", date: "2023-11-11", excerpt: "류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다 — 맛없는 메뉴가 하나도 없었다.", image: "/media/travel-journal/day-1.jpg" },
-  { title: "CRUISE D2 — 스플리트", url: "https://seonyisland.tistory.com/4", date: "2023-11-12", excerpt: "아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만 — 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다.", image: "/media/travel-journal/day-2.jpg" },
-  { title: "CRUISE D3 — 코토르", url: "https://seonyisland.tistory.com/5", date: "2023-11-13", excerpt: "아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다 — 여태까지 본 풍경 중 가장 놀라운 장면.", image: "/media/travel-journal/day-3.jpg" },
-  { title: "CRUISE D4 — 카타콜론 & 올림피아", url: "https://seonyisland.tistory.com/6", date: "2023-11-14", excerpt: "오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고.", image: "/media/travel-journal/day-4.jpg" },
-  { title: "CRUISE D5 — 코르푸", url: "https://seonyisland.tistory.com/7", date: "2023-11-15", excerpt: "그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다.", image: "/media/travel-journal/day-5.jpg" },
-  { title: "CRUISE D6 — 두브로브닉", url: "https://seonyisland.tistory.com/8", date: "2023-11-16", excerpt: "드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침.", image: "/media/travel-journal/day-6.jpg" },
-  { title: "CRUISE D7 — 알베르벨로", url: "https://seonyisland.tistory.com/9", date: "2023-11-17", excerpt: "다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡 — 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다.", image: "/media/travel-journal/day-7.jpg" },
-  { title: "CRUISE D8 — 블레드", url: "https://seonyisland.tistory.com/10", date: "2023-11-18", excerpt: "마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군 — 동화 같은 블레드를 향해.", image: "/media/travel-journal/day-8.jpg" },
+  { title: "CRUISE D0 · 슬로베니아", url: "https://seonyisland.tistory.com/2", date: "2023-11-10", excerpt: "새벽 5시, 칼바람을 맞으며 공항버스를 탔다. 밤을 샜지만 아직 피곤하진 않다. 슬로베니아로 향하는 여행의 시작.", image: "/media/travel-journal/day-0.jpg" },
+  { title: "CRUISE D1 · 류블랴나 & 트리에스테", url: "https://seonyisland.tistory.com/3", date: "2023-11-11", excerpt: "류블랴나 시내 투어를 마치고 잠시 숨 고르는 시간. 호텔 조식이 내가 먹어본 중 거의 최고였다. 맛없는 메뉴가 하나도 없었다.", image: "/media/travel-journal/day-1.jpg" },
+  { title: "CRUISE D2 · 스플리트", url: "https://seonyisland.tistory.com/4", date: "2023-11-12", excerpt: "아침 조식 먹고 급하게 커피 한 잔. 평소 아이스만 마시는 내가 여행 내내 따뜻한 커피만. 그래도 얼음컵 받아 에스프레소를 부어 만들어 마셨다.", image: "/media/travel-journal/day-2.jpg" },
+  { title: "CRUISE D3 · 코토르", url: "https://seonyisland.tistory.com/5", date: "2023-11-13", excerpt: "아침에 발코니로 나서자마자 깜짝 놀랐다. 구름인 줄 알았던 거대 바위가 마을을 둘러싸고 있었다. 여태까지 본 풍경 중 가장 놀라운 장면.", image: "/media/travel-journal/day-3.jpg" },
+  { title: "CRUISE D4 · 카타콜론 & 올림피아", url: "https://seonyisland.tistory.com/6", date: "2023-11-14", excerpt: "오늘은 늦게 일어났다. 선내 햄버거는 의외로 맛있었고, 아침부터 먹는 초코 케이크가 여태 먹은 디저트 중 단연 최고.", image: "/media/travel-journal/day-4.jpg" },
+  { title: "CRUISE D5 · 코르푸", url: "https://seonyisland.tistory.com/7", date: "2023-11-15", excerpt: "그리스 코르푸. 2층 시내버스 투어 중이다. 16–21도, 햇살 좋은 날씨. 바닷가에선 정말로 수영하는 사람들도 보였다.", image: "/media/travel-journal/day-5.jpg" },
+  { title: "CRUISE D6 · 두브로브닉", url: "https://seonyisland.tistory.com/8", date: "2023-11-16", excerpt: "드디어 크로아티아 두브로브닉 기항지 관광. 엄청 기대했던 곳이라 설레는 마음으로 발을 내디딘 아침.", image: "/media/travel-journal/day-6.jpg" },
+  { title: "CRUISE D7 · 알베르벨로", url: "https://seonyisland.tistory.com/9", date: "2023-11-17", excerpt: "다시 이탈리아. 알베르벨로의 스머프 마을로 가는 길. Trulli가 빼곡. 꼬깔콘 같기도 하고, 보면 볼수록 진짜 스머프 마을 같기도 하다.", image: "/media/travel-journal/day-7.jpg" },
+  { title: "CRUISE D8 · 블레드", url: "https://seonyisland.tistory.com/10", date: "2023-11-18", excerpt: "마지막 날이다 ㅠㅠ 아침에 짐 정리를 끝내고 평소엔 안 마시는 뜨거운 아메리카노 한 잔. 사람은 정말 적응의 동물이군. 동화 같은 블레드를 향해.", image: "/media/travel-journal/day-8.jpg" },
 ];

@@ -16,7 +16,7 @@ type PortfolioEntry = {
 const portfolioEntries: PortfolioEntry[] = [
   {
     id: "ai-music", category: "creation", title: "AI Music Generation", subtitle: "Artist name: Jenna Studio", cover: "/media/portfolio-thumbnails/jenna-studio-music-thumbnail.jpeg",
-    description: "Made AI music and distributed it to YouTube Music, Apple Music, Spotify, etc via an artist name Jenna Studio. Jenna Studio is an independent artist that transforms personal growth and resilience into emotional pop, indie, and cinematic soundscapes, capturing the journey from uncertainty to freedom through warm melodies and reflective intensity. Each track is designed to grow with you—gentle yet unshakable, quietly powerful and deeply hopeful—soundtracking moments of healing, self-belief, and the courage to keep moving forward at your own pace.",
+    description: "Made AI music and distributed it to YouTube Music, Apple Music, Spotify, etc via an artist name Jenna Studio. Jenna Studio is an independent artist that transforms personal growth and resilience into emotional pop, indie, and cinematic soundscapes, capturing the journey from uncertainty to freedom through warm melodies and reflective intensity. Each track is designed to grow with you: gentle yet unshakable, quietly powerful and deeply hopeful, soundtracking moments of healing, self-belief, and the courage to keep moving forward at your own pace.",
     tags: ["Music", "Suno AI", "Jenna Studio"],
   },
   {
@@ -36,12 +36,12 @@ const portfolioEntries: PortfolioEntry[] = [
   },
   {
     id: "hello-kitty-modeling", category: "3d", title: "Hello Kitty 3D Modeling", subtitle: "Modeling tutorial PDF", cover: "/media/portfolio-thumbnails/hello-kitty-thumbnail.png",
-    description: "Made a Fusion Hello Kitty 3D modeling tutorial that walks through the entire process step by step — from sketching the basic forms to shaping the face, body, and signature ribbon. Written as an easy-to-follow PDF guideline so that even beginners new to Fusion can complete their own Hello Kitty model from start to finish.",
+    description: "Made a Fusion Hello Kitty 3D modeling tutorial that walks through the entire process step by step, from sketching the basic forms to shaping the face, body, and signature ribbon. Written as an easy-to-follow PDF guideline so that even beginners new to Fusion can complete their own Hello Kitty model from start to finish.",
     tags: ["3D Modeling", "Guideline", "Tutorial", "PDF"],
   },
   {
     id: "floating-lyrics", category: "tools", title: "Floating Lyrics", subtitle: "Native macOS Overlay", cover: "/media/floating-lyrics-thumbnail.png",
-    description: "A native macOS overlay that shows the lyrics of whatever you're playing, in sync, and gets out of the way. Apple Music, Spotify, and YouTube Music are polled once a second and the source actually playing wins. Synced LRC lyrics come from LRCLIB and are cached on disk, so the current line is highlighted and scrolled to as it plays. The panel floats above other windows, joins all Spaces, and switches between a compact one-line bar and a full scrolling lyric sheet — with font, weight, colors, and size all tunable from a live-preview settings window.",
+    description: "A native macOS overlay that shows the lyrics of whatever you're playing, in sync, and gets out of the way. Apple Music, Spotify, and YouTube Music are polled once a second and the source actually playing wins. Synced LRC lyrics come from LRCLIB and are cached on disk, so the current line is highlighted and scrolled to as it plays. The panel floats above other windows, joins all Spaces, and switches between a compact one-line bar and a full scrolling lyric sheet, with font, weight, colors, and size all tunable from a live-preview settings window.",
     tags: ["Swift", "SwiftUI", "macOS", "LRCLIB"],
   },
   {

@@ -7,7 +7,7 @@ export function ContactSuccess() {
   const searchParams = useSearchParams();
   const sent = searchParams.get("success") === "true";
 
-  return sent ? <p className="form-success" role="status">Thank you — your message has been sent. I&apos;ll be in touch soon.</p> : null;
+  return sent ? <p className="form-success" role="status">Thank you! Your message has been sent. I&apos;ll be in touch soon.</p> : null;
 }
 
 export function ContactForm() {
