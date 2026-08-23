@@ -106,9 +106,15 @@ export const projects: Project[] = [
   {
     title: "GLUE",
     category: "web-app",
-    description: "An AI-assisted workspace for medical-device human factors engineering. It brings together use specifications, UI safety characteristics, hazard analysis, use scenarios, and evaluation documentation in an IEC 62366-1-aligned workflow.",
+    description: "An AI-assisted workspace for medical-device engineering file auto generation. Eleven linked phases carry use specifications, hazard analysis, use scenarios, and formative and summative evaluation through one IEC 62366-1-aligned flow, consolidating into a single 5.10 usability engineering file with Word output.",
     tags: ["Medical Devices", "IEC 62366-1"], type: "Web Application", year: "2026", image: "/media/glue-screenshot.png",
     links: [{ label: "Visit Site", url: "https://glue-snuh.web.app" }, { label: "Start for Free", url: "https://glue-snuh.web.app/signup.html" }],
+  },
+  {
+    title: "Dreamspace", category: "tools",
+    description: "A local-first desktop workspace for university life. Tasks, assignments, exams, courses, projects, notes, and calendar are projections of one relational source, so a Kanban drag and a calendar chip update together rather than syncing. Includes a command palette, natural-language quick add, a Markdown studio with Mermaid and KaTeX, and one-way Google Calendar import.",
+    tags: ["Tauri", "React", "TypeScript"], type: "Desktop Application", year: "2026", image: "/media/dreamspace-today.png",
+    links: [{ label: "View Docs", url: "https://github.com/jenna-studio/pixel-dream-workspace/blob/main/docs/USAGE.md" }, { label: "View Code", url: "https://github.com/jenna-studio/pixel-dream-workspace" }],
   },
   {
     title: "CS UniVerse", category: "web-app",
@@ -169,7 +175,7 @@ export const projects: Project[] = [
 export const featuredGlue = {
   title: "GLUE",
   subtitle: "Guideline-based Usability Engineering",
-  description: "GLUE turns the fragmented work of medical-device usability engineering into one connected, evidence-led workflow. From the first device context and use specification through UI safety characteristics, hazards, scenarios, formative and summative evaluation, each step carries its context forward. AI helps teams shape and refine their documents while GLUE keeps the supporting rationale visible, reviewable, and ready to bring together in a final 5.10 usability engineering file and Word deliverable.",
+  description: "GLUE turns the fragmented work of medical-device usability engineering into one connected, evidence-led workflow. Eleven linked phases carry a device from its first context and use specification through UI safety characteristics, hazard analysis, use scenarios and UI specifications, into formative and summative evaluation. Nothing is re-entered along the way: user data, hazards, scenarios and UI decisions become the inputs to the next deliverable, so traceability falls out of the workflow instead of being reconstructed at the end. The nine section documents, 5.1 through 5.9, consolidate into a single IEC 62366-1 usability engineering file with Word output and a live preview as each document is written. Manufacturers, usability specialists, RA/QA and evaluation teams all work from the same shared workspace.",
   tags: ["Medical Devices", "IEC 62366-1", "AI-assisted", "Documentation", "Workflow"],
 };
 

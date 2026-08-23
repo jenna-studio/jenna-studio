@@ -11,16 +11,16 @@ const featuredProjects = [
     links: [["Visit Site", "https://glue-snuh.web.app"], ["Start for Free", "https://glue-snuh.web.app/signup.html"]], tone: "lime",
   },
   {
-    number: "02", title: "CS UniVerse", type: "Learning workspace",
+    number: "02", title: "Dreamspace", type: "University life OS",
+    description: "A local-first desktop workspace for university life, where tasks, assignments, exams, courses, projects, notes, and calendar are projections of one relational source instead of separate tools. Move a card on the Kanban board and the calendar updates in the same frame, because there is nothing to synchronise. Wrapped in a dreamy retro-pixel pastel interface.",
+    tags: ["Tauri", "React", "TypeScript"], image: "/media/dreamspace-today.png",
+    links: [["View Docs", "https://github.com/jenna-studio/pixel-dream-workspace/blob/main/docs/USAGE.md"], ["View Code", "https://github.com/jenna-studio/pixel-dream-workspace"]], tone: "coral",
+  },
+  {
+    number: "03", title: "CS UniVerse", type: "Learning workspace",
     description: "An all-in-one workspace for computer science students to code, study, and collaborate. Features include code editor, browser-based terminal, calendar integration, assignment tracking, and Baekjoon competitive programming integration.",
     tags: ["Next.js", "Task Management"], image: "/media/csuniverse-thumbnail.png",
     links: [["Visit Site", "https://csuniverse.org"], ["Learn More", "https://csuniverse.org"]], tone: "blue",
-  },
-  {
-    number: "03", title: "Agent Track Dashboard", type: "AI agent operations",
-    description: "A comprehensive kanban-based monitoring system for AI agents. Features real-time activity tracking, code change visibility, task lifecycle management, and agent performance insights including token usage and completion metrics.",
-    tags: ["TypeScript", "React", "MCP"], image: "/media/agent-track-dashboard-thumbnail.png",
-    links: [["View Docs", "https://github.com/jenna-studio/agent-track-dashboard#readme"], ["View Code", "https://github.com/jenna-studio/agent-track-dashboard"]], tone: "coral",
   },
 ];
 
