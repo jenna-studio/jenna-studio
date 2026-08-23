@@ -298,7 +298,7 @@ footer { position:relative; z-index:2; border-top:1px solid var(--line); backgro
 .menu-toggle[aria-expanded="true"] i:after { top:0; transform:rotate(90deg); }
 .catalog-image { position:relative; }
 .project-visual:after,.portfolio-art:after,.catalog-image:after { content:""; position:absolute; z-index:4; inset:0; background:linear-gradient(110deg,transparent 34%,rgba(255,255,255,.5) 50%,transparent 66%); transform:translateX(-115%); pointer-events:none; }
-.catalog-card:focus-within,.portfolio-detail:focus-within,.contact-options a:focus-visible,.theme-gallery a:focus-visible { border-color:rgba(104,77,145,.5); box-shadow:0 20px 48px rgba(74,61,105,.16); }
+.catalog-card:focus-within,.portfolio-detail:focus-within,.contact-options a:focus-visible,.theme-card:focus-within { border-color:rgba(104,77,145,.5); box-shadow:0 20px 48px rgba(74,61,105,.16); }
 .portfolio-detail summary { transition:background .25s ease; }
 .portfolio-detail[open] summary,.portfolio-detail summary:focus-visible { background:rgba(220,197,255,.18); }
 

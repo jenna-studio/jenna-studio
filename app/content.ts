@@ -213,6 +213,9 @@ export const chromeThemes = [
   ["Pink Green Theme", "pinkgreen-screenshot.png", "https://chromewebstore.google.com/detail/pink-green/alckjkejfeekolloegjdcgpoicllkhfb"],
   ["Prague Sunset Theme", "prague-screenshot.png", "https://chromewebstore.google.com/detail/prague-sunset/bghpmnhknhagilmjobfcfebfmfnmgdgl"],
   ["Purple Green Gradient Theme", "purple-green-screenshot.jpg", "https://chromewebstore.google.com/detail/purple-green-gradient/bieanadeicepnfhlajaiogbgmmbpfben"],
+  ["Pastel Pixel Desktop Theme", "pastel-pixel-desktop-screenshot.png", "https://chromewebstore.google.com/detail/pastel-pixel-desktop/cfdpffdjahhcnimbjoeeogomchmhijbj"],
+  ["Sky Dream Theme", "sky-dream-screenshot.png", "https://chromewebstore.google.com/detail/sky-dream/cfmfhpjiankdlcpknbnglfghdieoopfn"],
+  ["Mushroom Cottage Meadow Theme", "mushroom-cottage-meadow-screenshot.png", "https://chromewebstore.google.com/detail/mushroom-cottage-meadow/fhkochmhiabfjkjdbbepabgaifkdlcpn"],
 ] as const;
 
 export type CertificationGroup = {

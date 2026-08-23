@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { chromeThemes, shortcuts, travelMaps } from "../content";
+import { shortcuts, travelMaps } from "../content";
+import ThemeGallery from "./ThemeGallery";
 
 type PortfolioEntry = {
   id: string;
@@ -103,7 +104,7 @@ function DetailContent({ id }: { id: string }) {
   if (id === "personal-color-analysis-service") return <div className="card-actions"><a href="https://chatgpt.com/g/g-dMlQgetqz-personal-color-analysis-service" target="_blank" rel="noreferrer">Try This Service ↗︎</a></div>;
   if (id === "travel-map") return <ZoomGallery galleryClass="travel-gallery" images={travelMaps.map(([file, alt]) => [`/media/travel-maps/${file}`, alt])} />;
   if (id === "chrome-theme") return (
-    <><div className="theme-gallery">{chromeThemes.map(([name, file, url]) => <a href={url} target="_blank" rel="noreferrer" key={name}><img src={`/media/chrome-theme-thumbnails/${file}`} alt={name} /><span>{name} ↗︎</span></a>)}</div><div className="card-actions"><a href="https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb" target="_blank" rel="noreferrer">Install Pink Workspace ↗︎</a><a href="https://github.com/jenna-studio/chrome-theme-extensions" target="_blank" rel="noreferrer">View More ↗︎</a></div></>
+    <><ThemeGallery /><div className="card-actions"><a href="https://chromewebstore.google.com/detail/kaedikmphlfjdjhodnigpmacidjkjlbl?utm_source=item-share-cb" target="_blank" rel="noreferrer">Install Pink Workspace ↗︎</a><a href="https://github.com/jenna-studio/chrome-theme-extension" target="_blank" rel="noreferrer">View Code ↗︎</a></div></>
   );
   if (id === "humidifier") return <ZoomGallery galleryClass="media-gallery-two" images={[["/media/portfolio-thumbnails/asmr-humidifier-thumbnail.png", "ASMR Humidifier"], ["/media/portfolio-thumbnails/asmr-humidifier-panel.png", "ASMR Humidifier panel"]]} />;
   if (id === "hello-kitty-modeling") return <div className="card-actions"><a href="/files/fusion-hello-kitty-modeling-guideline.pdf" target="_blank" rel="noreferrer">Download PDF ↗︎</a></div>;
