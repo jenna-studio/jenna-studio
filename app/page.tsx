@@ -7,7 +7,7 @@ const featuredProjects = [
   {
     number: "01", title: "GLUE", type: "Medical-device workflow",
     description: "An AI-assisted workspace for medical-device usability engineering that connects project context, safety evidence, evaluation records, and documentation through an IEC 62366-1 workflow.",
-    tags: ["Medical Devices", "IEC 62366-1", "Human Factors"], image: "/media/glue-main-thumbnail.png",
+    tags: ["Medical Devices", "IEC 62366-1", "Human Factors"], image: "/media/glue-screenshot.png",
     links: [["Visit Site", "https://glue-snuh.web.app"], ["Start for Free", "https://glue-snuh.web.app/signup.html"]], tone: "lime",
   },
   {
