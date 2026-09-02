@@ -12,15 +12,15 @@ const featuredProjects = [
   },
   {
     number: "02", title: "Dreamspace", type: "University life OS",
-    description: "A local-first desktop workspace for university life, where tasks, assignments, exams, courses, projects, notes, and calendar are projections of one relational source instead of separate tools. Move a card on the Kanban board and the calendar updates in the same frame, because there is nothing to synchronise. Wrapped in a dreamy retro-pixel pastel interface.",
+    description: "One local-first workspace for a whole semester. Tasks, exams, courses, notes, and calendar share a single source, so a Kanban drag moves its calendar chip instantly, all in a dreamy retro-pixel interface.",
     tags: ["Tauri", "React", "TypeScript"], image: "/media/dreamspace-today.png",
-    links: [["View Docs", "https://github.com/jenna-studio/pixel-dream-workspace/blob/main/docs/USAGE.md"], ["View Code", "https://github.com/jenna-studio/pixel-dream-workspace"]], tone: "coral",
+    links: [["Download for Windows", "https://github.com/jenna-studio/dreamspace-releases"], ["Download on MacOS App Store", "https://apps.apple.com/kr/app/dreamspace-for-students/id6806326816?l=en-GB&mt=12"]], tone: "coral",
   },
   {
     number: "03", title: "CS UniVerse", type: "Learning workspace",
     description: "An all-in-one workspace for computer science students to code, study, and collaborate. Features include code editor, browser-based terminal, calendar integration, assignment tracking, and Baekjoon competitive programming integration.",
     tags: ["Next.js", "Task Management"], image: "/media/csuniverse-thumbnail.png",
-    links: [["Visit Site", "https://csuniverse.org"], ["Learn More", "https://csuniverse.org"]], tone: "blue",
+    links: [["Learn More", "https://csuniverse.org"], ["Open Workspace", "https://csuniverse.org/signup"]], tone: "blue",
   },
 ];
 
