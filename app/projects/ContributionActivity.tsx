@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type Contribution = { date: string; count: number; level: number };
 
 export function ContributionActivity() {
   const [days, setDays] = useState<Contribution[]>([]);
   const [failed, setFailed] = useState(false);
+  const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch("https://github-contributions-api.jogruber.de/v4/jenna-studio?y=last")
@@ -14,6 +15,13 @@ export function ContributionActivity() {
       .then((data) => setDays((data.contributions || []).sort((a: Contribution, b: Contribution) => a.date.localeCompare(b.date))))
       .catch(() => setFailed(true));
   }, []);
+
+  // Narrow screens cannot show a full year, so open on the most recent weeks and
+  // let the reader scroll left into the past.
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (grid) grid.scrollLeft = grid.scrollWidth;
+  }, [days]);
 
   const stats = useMemo(() => {
     const total = days.reduce((sum, day) => sum + (day.count || 0), 0);
@@ -35,7 +43,7 @@ export function ContributionActivity() {
         <div className="contribution-panel-top"><strong>GitHub <span>@jenna-studio</span></strong><a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">View profile ↗︎</a></div>
         {failed ? <p>Could not load contribution data. <a href="https://github.com/jenna-studio" target="_blank" rel="noreferrer">View on GitHub →</a></p> : days.length ? (
           <>
-            <div className="contribution-grid" aria-label="GitHub contribution activity">
+            <div className="contribution-grid" ref={gridRef} aria-label="GitHub contribution activity">
               {days.map((day) => <span className={`level-${day.level}`} title={`${day.count} contributions on ${day.date}`} key={day.date} />)}
             </div>
             <div className="contribution-stats">
