@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/0tn6ssiojml_k.css","style"]
+:HL["/media/jenna-profile-extended.JPG","image"]
+:HL["/media/kookmin-logo.webp","image"]
+:HL["/media/uol-logo.png","image"]
+:HL["/media/uou-logo.png","image"]
+:HL["/media/hyfl-logo.png","image"]
+:HL["/media/snuh-logo.png","image"]
+:HL["/media/lifejourney-logo.png","image"]
+:HL["/media/mirinae-logo.png","image"]
+:HL["/media/certificates/mirinae-certificate-of-internship.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Ef_-nyTy6i6nGFI-TITMy"}

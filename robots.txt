@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://jenna-studio.dev
+Sitemap: https://jenna-studio.dev/sitemap.xml

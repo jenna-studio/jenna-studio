@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/0tn6ssiojml_k.css","style"]
+:HL["/media/aws-certifications/aws-knowledge-cloud-essentials-training-badge.png","image"]
+:HL["/media/certificates/MS-AI-900-Certificate.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"portfolios","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Ef_-nyTy6i6nGFI-TITMy"}
